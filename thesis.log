@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  10 AUG 2024 10:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  10 AUG 2024 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1043,25 +1043,6 @@ Package pdftex.def Info: Chapters/detail-retouching-figs/AblationStudy_K.pdf  u
 sed on input line 41.
 (pdftex.def)             Requested size: 364.19667pt x 275.11084pt.
  [36]
-
-./Chapters/detail-retouching-secs/Results.tex:51: LaTeX Error: Unicode characte
-r 𝑥 (U+1D465)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 .... However, since each patch of size $3𝑥
-                                                  3$ has only one weight, we...
-
-? 
-./Chapters/detail-retouching-secs/Results.tex:51: Misplaced alignment tab chara
-cter &.
-l.51 ...mple images in our teaser figure (middle &
-                                                   right insets). The input ...
-
-? 
 <Chapters/detail-retouching-figs/weight_visualise.pdf, id=769, 896.34875pt x 52
 5.965pt>
 File: Chapters/detail-retouching-figs/weight_visualise.pdf Graphic file (type p
@@ -1070,9 +1051,9 @@ df)
 Package pdftex.def Info: Chapters/detail-retouching-figs/weight_visualise.pdf  
 used on input line 55.
 (pdftex.def)             Requested size: 364.19667pt x 213.70485pt.
-[37 <./Chapters/detail-retouching-figs/ablation_matrices_new.png>] [38 <./Chapt
-ers/detail-retouching-figs/AblationStudy_K.pdf> <./Chapters/detail-retouching-f
-igs/weight_visualise.pdf>]
+ [37 <./Chapters/detail-retouching-figs/ablation_matrices_new.png>] [38 <./Chap
+ters/detail-retouching-figs/AblationStudy_K.pdf> <./Chapters/detail-retouching-
+figs/weight_visualise.pdf>]
 <Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf, id=821, 382.42876pt
  x 394.47375pt>
 File: Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf Graphic file (t
@@ -1096,8 +1077,9 @@ File: Chapters/detail-retouching-figs/Nuances.pdf Graphic file (type pdf)
 Package pdftex.def Info: Chapters/detail-retouching-figs/Nuances.pdf  used on i
 nput line 84.
 (pdftex.def)             Requested size: 364.19667pt x 345.62769pt.
- [40 <./Chapters/detail-retouching-figs/MaterialResults.pdf>]
-[41 <./Chapters/detail-retouching-figs/Nuances.pdf>]
+
+[40 <./Chapters/detail-retouching-figs/MaterialResults.pdf>] [41 <./Chapters/de
+tail-retouching-figs/Nuances.pdf>]
 <Chapters/detail-retouching-figs/Qualitative_zoomed.pdf, id=911, 362.35374pt x 
 359.3425pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed.pdf Graphic file (type
@@ -1115,8 +1097,7 @@ Package pdftex.def Info: Chapters/detail-retouching-figs/Limitations.pdf  used
 on input line 160.
 (pdftex.def)             Requested size: 364.19667pt x 251.8393pt.
  [44 <./Chapters/detail-retouching-figs/Limitations.pdf>])) (./Chapters/Zerosho
-tDiffusion.tex)
-(./Chapters/HyperBRDF.tex [45] [46
+tDiffusion.tex) (./Chapters/HyperBRDF.tex [45] [46
 
 ]
 Chapter 4.
@@ -1290,10 +1271,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: B56B3E043F7772DAFE03BC92464AA289;8565.
  ) 
 Here is how much of TeX's memory you used:
- 21982 strings out of 474116
- 371618 string characters out of 5743683
- 1942187 words of memory out of 5000000
- 43316 multiletter control sequences out of 15000+600000
+ 21981 strings out of 474116
+ 371611 string characters out of 5743683
+ 1941187 words of memory out of 5000000
+ 43315 multiletter control sequences out of 15000+600000
  581007 words of font info for 221 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,11n,131p,2400b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1314,7 +1295,7 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (78 pages, 168204293 bytes).
+Output written on thesis.pdf (78 pages, 168204865 bytes).
 PDF statistics:
  2255 PDF objects out of 2487 (max. 8388607)
  1424 compressed objects within 15 object streams
