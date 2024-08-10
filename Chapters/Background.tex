@@ -1,8 +1,8 @@
 \chapter{Background}
 
 % \section{Rendering an Image of a 3D Scene}
-
-\section{Displaying an image}
+\section{Rendering}
+\subsection{Displaying an image}
 An image is displayed on a computer screen or, in general, a display system, after the processing of the stored data in a computer. Here, both the computer and display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces, pixels, for the display of their image. This operation is known as discretization. 
 
 Let's consider the display of a sphere on a computer screen. We apply a grid on the sphere to represent pixels. Some pixels have a constant color of the object, while some are blank. On the other hand, some pixels include different shades of the object color or some are half-overlapped with the sphere. The question here is how to fill the pixels with mixed colors. 
@@ -71,7 +71,7 @@ Another problem we need to consider is aliasing, which occurs when sampling freq
 
 Lastly, I would like to mention that the pixel-based displays discussed above is called raster graphics or raster displays. It lay outs the image onto a two-dimensional array of pixels with a grid of x and y coordinates on a display space. Here, zoom-in does not bring us any more details as we are limited by the image or screen resolution. To address this issue, vector graphics stores the shape of objects with mathematical expressions instead of pixel values. This offers flexibility with the resolution as the shape of the objects is computed based on the desired resolution.
 
-\section{3D scene components}
+\subsection{3D scene components}
 
 A 3D scene is composed of objects of different sizes, shapes, and appearances . To render an image of a scene, we first need a viewpoint, which will be represented by a camera. This mimics the case in the human visual system (HVS) where we look at a scene from a certain viewpoint, and the image of the scene appears in our retina. Without any light, all scene components appear dark. Therefore, light is a crucial aspect while describing a scene. Another important aspect is geometry which describes the shape of the objects. Geometry, camera and light are three essential components of a 3D scene. While rendering a scene in a 3D software platform, such as Blender or Maya, a scene file contains all this information along with material/texture details. The light-material interaction defines the appearance, which this thesis is focused on. Before delving into the details of appearance, I will briefly review geometry as it builds up a baseline for the appearance representation in computer graphics.
 
@@ -84,8 +84,7 @@ A 3D scene is composed of objects of different sizes, shapes, and appearances . 
 \end{figure}
 
 
-\paragraph{Geometry}
-In real world, what differentiates the state of the objects is the density of the matter the objects are made of. For instance, clouds are made of loosely connected molecules with large holes in-between. Wood and metal, on the other hand, are densely composed with little empty space between the molecules. On the other hand, computer graphics assumes that objects are either solid or not. This helps keep things simple since the external shape of an object is what matters at the end. 
+\paragraph{Geometry.} In real world, what differentiates the state of the objects is the density of the matter the objects are made of. For instance, clouds are made of loosely connected molecules with large holes in-between. Wood and metal, on the other hand, are densely composed with little empty space between the molecules. On the other hand, computer graphics assumes that objects are either solid or not. This helps keep things simple since the external shape of an object is what matters at the end. 
 
 
 In general, the shape of an object is represented with 3D points in computers' memory, with $x$, $y$, $z$ axes defined in the Cartesian coordinate system. The surface (a polygon) can then be constructed by connecting multiple points that lie on the same plane (co-planar). The simplest polygon we can create is a triangle. Triangles are widely used because of their simplicity and efficiency which led to the development of multiple efficient algorithms to compute the intersection of a triangle with a line. In case surfaces are defined by multiple points, it is common to  divide them into multiple triangles, known as triangulation. Although the real-world objects are not naturally polygonal, this simplification helps efficient rendering and digital representation.
@@ -107,7 +106,7 @@ Ray tracing algorithms, which HyperBRDF is built on, do not necessarily need a p
 
  Although geometry can be defined by various methods, such as meshes, NURBS, subdivision surfaces, implicit surfaces, etc, this section only focuses on polygonal mesh representation. Triangle is the most common rendering primitive used in ray tracing and on modern GPUs. Since the support of only one primitive is preferred due to simplicity and efficiency, most 3D platforms first convert geometry to triangular meshes before rendering.
  
-\section{Photo-realistic rendering}
+\subsection{Photo-realistic rendering}
 There are different approaches to render an image of a scene. Whichever rendering method we choose, we should expect the same image as the output. In photo-realistic rendering, which is often the most desired, the expectation from a rendered image is to look the same as how our eyes perceive the scene. In other words, the image should look like a "photograph". Achieving such photo-realism requires us to understand two main aspects of our visual system: 1) geometric construction of the shapes with respect to other objects, 2) the physics laws behind appearance. More specifically, photo-realistic rendering focuses on simulating the behaviour of light throughout its propagation and its interaction with matter.
 
 \paragraph{Perspective projection and visibility.}
@@ -200,8 +199,9 @@ Shading is concerned with the interaction of light with the material. Light tran
 
 \paragraph{Ray tracing - Light transport simulation.}
 
-Light starts its journey from a light source and travels in a straight line, bouncing off surfaces, Following this path is known as forward tracing. However, not all rays emitted from a source will reach the eye/camera. Considering the size of an eye, most rays are unlikely to contribute to our view of the scene, travelling in different directions. As it is highly impractical to trace all rays including those not contributing to our view, ray tracing algorithms trace the rays from the eye to the light source in the reverse direction for efficient computations (backward tracing). 
-Rendering is tough
+Light starts its journey from a light source and travels in a straight line, bouncing off surfaces, Following this path is known as forward tracing. However, not all rays emitted from a source will reach the eye/camera. Considering their size, most rays are unlikely to contribute to our view of the scene, travelling in different directions. As it is highly impractical to trace all rays including those not contributing to our view, ray tracing algorithms trace the rays from the eye to the light source in the reverse direction for efficient computations (backward tracing).
+
+The simulation starts with shooting rays from the virtual camera to the light source for each pixel on an image plane (Figure \ref{fig:raytracing}). Here, the view ray,  also known as primary or camera ray, passes through the center of a pixel on the image plane. The color of that pixel is computed by the shading algorithms that define the light-material interactions. Let's imagine we shoot a ray that encounters an object on its way to the light source. The intersection point can be computed by equating the mathematical equations defining the ray (a line) and the object. If a solution exists, then the object and the ray intersect. Once we obtain the intersection point with the object, we can shoot shadow rays from that point to the light source to calculate the diffuse and specular reflections at that point. If the shadow ray encounters another object before reaching the light source,  the intersection point remains in the shadow of the other object. Furthermore, the ray can be absorbed, reflected or refracted based on the material properties. In case of reflection, new rays can be spawned to compute the contribution of the reflection to the color of the object at that point.
 
 
 
@@ -209,16 +209,23 @@ Rendering is tough
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=0.5\linewidth]{Images/ray-tracing-image-1.jpg}
-   \caption{Ray tracing -Image courtesy of \href{https://commons.wikimedia.org/wiki/File:Ray_trace_diagram.svg}{Henrik, CC BY-SA 4.0}}
+   \caption{Ray tracing simulate the light's journey to compute the color of each pixel on the rendered image. - Image courtesy of \href{https://commons.wikimedia.org/wiki/File:Ray_trace_diagram.svg}{Henrik, CC BY-SA 4.0}}
    \label{fig:raytracing}
 \end{figure}
 
+Shooting only one ray per pixel can cause artifacts, such as jagged edges or missing tiny objects. To alleviate such artifacts, we can shoot multiple rays in a sub-pixel grid or in a random setting. However, this increases the render time  because of the huge amount of computations required to trace the rays. This brings us to the trade-off between the render time and accuracy of the rendered image. This trade-off often leads to different applications, such as virtual effects in film industry requiring high accuracy with longer render time and real-time AR/VR applications with fast rendering but relatively low quality.
 
+Ray tracing is a computationally-expensive rendering technique that simulates the light transport realistically, following the laws of physics. One important feature of ray tracing is that, it does not deal with perspective projection or visibility explicitly. Unlike rasterization, ray tracing inherently computes both by computing the intersection points of the ray with objects. Here, I explained the basics of the algorithm, which has been advanced in the recent years with intensive versions, known as path tracing. I will not go into the details of ray tracing as this thesis, more specifically HyperBRDF, is primarily focused on the shading part of the lighting simulations.
 
+\subsection{Shaders and BRDF}
 
-Simulating the light-matter interactions is very complex not because we cannot accurately simulate the physics laws but because of the huge amount of computations required to trace the rays. This brings us to the trade-off between the render time and accuracy of the rendered image. This trade-off often leads to different applications, such as virtual effects in film industry requiring high accuracy with longer render time and real-time AR/VR applications with fast rendering but relatively low quality.
+Shading 
 
+If photorealism is the goal, shading is concerned with reproducing the appearance or look of real surfaces with such accuracy that the human eye cannot distinguish between an image of the real world and the real world itself. The goal of Photorealistic Rendering is to produce computer-generated images that look real or resemble photographs. 
 
+the appearance of objects, which we aim to simulate in photorealistic rendering, is essentially the by-product of two main factors: lighting and the properties of the object.
+
+ Generally, the more light there is, the brighter the objects appear. The properties of an object can be broadly categorized into two main types: the geometric properties of objects' surfaces (such as their orientation) and the properties that influence how light and objects interact (such as the object's color)
 
 
 \TODO{You should start with rendering. What it actually means. How is that related to image formation or rendering an image of a virtual environment.}
@@ -232,8 +239,7 @@ Even though we haven't detailed how the visibility problem can be solved, let's 
 Finding the right balance between photorealism and render time is key to effective rendering
 
 
-\section{Rendering and Image Formation}
 \section{Deep learning}
-\subsection{Multilayer Perceptron}
-\subsection{Hypernetworks}
+\subsection{Multilayer Perceptrons}
+\subsection{Neural representations - Hypernetworks}
 \subsection{Diffusion models}
