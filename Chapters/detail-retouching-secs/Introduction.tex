@@ -1,0 +1,26 @@
+
+
+
+\section{Introduction}\label{sec:introduction}
+
+Photo retouching is often desirable as it improves the aesthetic quality of photographs by eliminating imperfections and \nobreak highlighting subjects of interest. Even with significant progress in digital photography owing to advancements in camera sensors and image processing algorithms, professional retouches via manual adjustments are still needed to achieve a desired look. These artistic edits require considerable manual effort as they consist of global adjustments, such as brightening and contrast enhancement, as well as fine edits applied to local regions. Professionals spend a great deal of time to generate such edits, which motivates us to automatically mimic a specific style or type of retouch.
+
+The development of automatic photo retouching tools can be helpful for both novice users and experts as it offers a basis for a professional retouching style. However, automating detailed edits of professionals is challenging as their editing pipelines are spatially varying, context-aware, and highly nonlinear, containing per-pixel adjustments. Recent learning-based methods address this complexity in image-to-image translation by proposing local context-aware methods, such as pixel-adaptive neural network architectures \cite{shaham2021spatially, li2020lapar}, learning parameters of local filters \cite{moran2020deeplpf}, or multi-stream models to extract global and local features separately \cite{Gharbi17Deep}. However, these data-driven methods require a large dataset of matching example image pairs. Even then, the mappings are sensitive to segmentation errors, unseen semantic regions, and image content~\cite{yan2016automatic}. %Many successful methods require example and input images to be content-wise pixel-level aligned to achieve plausible results \cite{Shih14Style}.
+
+% in intricate details 
+Motivated by the gap between manual and automatic enhancement, we propose a novel photo retouching technique that can learn global and local adjustments from just \emph{a single example image pair}. Our method thus sidesteps the need for large datasets, which are very difficult to obtain for the detail retouching task. We allow users to choose one example \emph{before-after} pair from which our technique learns the underlying retouching style. Subsequently, we can apply the retouching edit to a different input image.
+
+We assume that example and input images share similar local content. The user can thus decide on the semantics of the example and input photos and the structural changes to be transferred. This is easy for humans and practical for many scenarios, e.g. face edits transferred to faces. Our method then handles the difficult part for humans: capturing how fine details change in an edit and applying those automatically to a new image. The method can further be combined with brushes if fully automatic transfers are not desired. 
+
+We achieve these by defining the retouching problem as a map that is given by a \emph{spatio-spectral patch-space neural field based transformation blending}. This representation is primarily inspired by professional detail retouching pipelines as we elaborate on in Section \ref{chap:motivations}. Our map representation is composed of learned patch maps at multiple scales, i.e. frequency bands. Each of these maps is represented by a number of \emph{transformation matrices} blended with \emph{patch-adaptive weights} that are represented as neural fields. We jointly optimize the transformation matrices and corresponding weights for each band. This representation captures edits to details better than any previous techniques while staying generalizable to new images. It is also simple enough to be extended in many different ways in future works.
+
+In summary, there are two main contributions of this work: 
+
+%Multiple Transformation Blending
+\begin{itemize}
+
+    \item \textbf{A novel patch-space image map representation} as a blending of transformation matrices with neural fields.
+    
+	\item \textbf{A one-shot detail retouching algorithm} that allows transfer of edits to details to new images based on a single before-after image pair.
+
+\end{itemize}

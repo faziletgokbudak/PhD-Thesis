@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+The style file: plainnat.bst
+Database file #1: thesis.bib
+Warning--I didn't find a database entry for ""
+Warning--empty year in googlePhysicallyBased
+Warning--empty publisher in sun2007interactive
+You've used 124 entries,
+            2773 wiz_defined-function locations,
+            1317 strings with 30086 characters,
+and the built_in function-call counts, 75020 in all, are:
+= -- 6759
+> -- 5128
+< -- 72
++ -- 1720
+- -- 1589
+* -- 6589
+:= -- 11314
+add.period$ -- 476
+call.type$ -- 124
+change.case$ -- 896
+chr.to.int$ -- 117
+cite$ -- 250
+duplicate$ -- 3103
+empty$ -- 5411
+format.name$ -- 1744
+if$ -- 15873
+int.to.chr$ -- 8
+int.to.str$ -- 1
+missing$ -- 120
+newline$ -- 710
+num.names$ -- 498
+pop$ -- 1720
+preamble$ -- 1
+purify$ -- 772
+quote$ -- 0
+skip$ -- 2567
+stack$ -- 0
+substring$ -- 3019
+swap$ -- 632
+text.length$ -- 51
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1364
+warning$ -- 2
+while$ -- 587
+width$ -- 0
+write$ -- 1803
+(There were 3 warnings)

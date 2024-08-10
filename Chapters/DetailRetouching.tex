@@ -1,0 +1,43 @@
+\chapter{One-shot Detail Retouching}
+
+ Photo retouching is a difficult task for novice users as it requires expert knowledge and advanced tools. Photographers often spend a great deal of time generating high-quality retouched photos with intricate details. In this paper, we introduce a one-shot learning based technique to automatically retouch details of an input image based on just a single pair of before and after example images. Our approach provides accurate and generalizable detail edit transfer to new images. We achieve these by proposing a new representation for image to image maps. Specifically, we propose neural field based transformation blending in the patch space for defining patch to patch transformations for each frequency band. This parametrization of the map with anchor transformations and associated weights, and spatio-spectral localized patches, allows us to capture details well while staying generalizable. We evaluate our technique both on known ground truth filters and artist retouching edits. Our method accurately transfers complex detail retouching edits.
+
+
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{Chapters/detail-retouching-figs/teaser_CVMP.pdf}
+  \caption{Our technique automatically transfers retouching edits to new images by learning the desired edits from one example \textit{before-after} pair (insets). The transferred edits accurately capture intricate details such as wrinkles, dark spots, strands of hair, or eyelashes, as shown in the input (top) and retouched (bottom) pairs. Image courtesy of Jenavieve (top-left), Logan ProPro (top-left, inset), Marissa Oosterlee (top-middle). (CC-BY).}
+  % \Description{Our technique automatically transfers retouching edits to new images by learning the desired edits from one example \textit{before-after} pair (insets). The transferred edits accurately capture intricate details such as wrinkles, dark spots, strands of hair, or eyelashes, as shown in the input (top) and retouched (bottom) pairs.}
+  \label{fig:teaser}
+\end{figure}
+
+
+% \received{20 February 2007}
+% \received[revised]{12 March 2009}
+% \received[accepted]{5 June 2009}
+
+
+
+\input{Chapters/detail-retouching-secs/Introduction}
+
+\input{Chapters/detail-retouching-secs/RelatedWork}
+
+
+\input{Chapters/detail-retouching-secs/Methodology}
+
+
+\input{Chapters/detail-retouching-secs/Results}
+
+
+\section{Conclusions}
+We presented a neural field based technique for example-based automatic retouching of images. By formulating the transfer problem in the patch space, we showed that blending multiple transformation matrices with patch-adaptive weights can be utilized to learn an accurate and generalizable map. This allowed us to use images of different scenes, people, views, and environmental conditions as the example pair and input. We illustrated the technique's utility on various retouching examples. We believe that our image map representation can be helpful in many other image processing tasks.
+
+% \begin{figure*}%[th]
+%   \centering
+%   \includegraphics[height=0.8\textheight, width=\linewidth,keepaspectratio]{Images/AdditionalResults_op2.pdf}
+%   \caption{
+%            Retouches reproduced by our algorithm based on single before-after pairs. }
+%            \label{fig:AdditionalRes}%
+% \end{figure*}
+
+% \section{Appendices}

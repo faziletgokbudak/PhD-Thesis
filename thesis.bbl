@@ -1,0 +1,952 @@
+\begin{thebibliography}{124}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[An and Pellacini(2010)]{An10User}
+Xiaobo An and Fabio Pellacini.
+\newblock User-controllable color transfer.
+\newblock \emph{Computer Graphics Forum}, 29\penalty0 (2):\penalty0 263--271,
+  2010.
+\newblock ISSN 1467-8659.
+\newblock \doi{10.1111/j.1467-8659.2009.01595.x}.
+
+\bibitem[Ashikhmin and Premoze(2007)]{ashikhmin2007}
+Michael Ashikhmin and Simon Premoze.
+\newblock Distribution-based brdfs.
+\newblock Technical report, Stony Brook University, 2007.
+
+\bibitem[Bae et~al.(2006)Bae, Paris, and Durand]{Bae06Two}
+Soonmin Bae, Sylvain Paris, and Fr{\'e}do Durand.
+\newblock Two-scale tone management for photographic look.
+\newblock \emph{ACM Trans. Graph.}, 25\penalty0 (3):\penalty0 637--645, July
+  2006.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/1141911.1141935}.
+
+\bibitem[Bagher et~al.(2016{\natexlab{a}})Bagher, Snyder, and
+  Nowrouzezahrai]{bagher2016}
+Mahdi~M Bagher, John Snyder, and Derek Nowrouzezahrai.
+\newblock A non-parametric factor microfacet model for isotropic brdfs.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 35\penalty0 (5):\penalty0
+  1--16, 2016{\natexlab{a}}.
+
+\bibitem[Bagher et~al.(2016{\natexlab{b}})Bagher, Snyder, and
+  Nowrouzezahrai]{bagher2016non}
+Mahdi~M Bagher, John Snyder, and Derek Nowrouzezahrai.
+\newblock A non-parametric factor microfacet model for isotropic brdfs.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 35\penalty0 (5):\penalty0
+  1--16, 2016{\natexlab{b}}.
+
+\bibitem[Berthouzoz et~al.(2011)Berthouzoz, Li, Dontcheva, and
+  Agrawala]{Berthouzoz11AFramework}
+Floraine Berthouzoz, Wilmot Li, Mira Dontcheva, and Maneesh Agrawala.
+\newblock A framework for content-adaptive photo manipulation macros:
+  Application to face, landscape, and global manipulations.
+\newblock \emph{ACM Trans. Graph.}, 30\penalty0 (5):\penalty0 120:1--120:14,
+  October 2011.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2019627.2019639}.
+\newblock URL \url{http://doi.acm.org/10.1145/2019627.2019639}.
+
+\bibitem[Besl and McKay(1992)]{Besl92AMethod}
+Paul~J. Besl and Neil~D. McKay.
+\newblock A method for registration of 3-d shapes.
+\newblock \emph{IEEE Trans. Pattern Anal. Mach. Intell.}, 14\penalty0
+  (2):\penalty0 239--256, February 1992.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/34.121791}.
+
+\bibitem[Bilgili et~al.(2011)Bilgili, {\"O}zt{\"u}rk, and
+  Kurt]{bilgili2011general}
+Ahmet Bilgili, Aydn {\"O}zt{\"u}rk, and Murat Kurt.
+\newblock A general brdf representation based on tensor decomposition.
+\newblock In \emph{Computer Graphics Forum}, volume~30, pages 2427--2439. Wiley
+  Online Library, 2011.
+
+\bibitem[Blinn(1977)]{blinn77}
+James~F Blinn.
+\newblock Models of light reflection for computer synthesized pictures.
+\newblock In \emph{Proceedings of the 4th annual conference on Computer
+  graphics and interactive techniques}, pages 192--198, 1977.
+
+\bibitem[Boss et~al.(2021)Boss, Braun, Jampani, Barron, Liu, and
+  Lensch]{boss2021nerd}
+Mark Boss, Raphael Braun, Varun Jampani, Jonathan~T. Barron, Ce~Liu, and
+  Hendrik~P.A. Lensch.
+\newblock Nerd: Neural reflectance decomposition from image collections.
+\newblock In \emph{IEEE International Conference on Computer Vision (ICCV)},
+  2021.
+
+\bibitem[Boyadzhiev et~al.(2015)Boyadzhiev, Bala, Paris, and
+  Adelson]{Boyadzhiev15Band}
+Ivaylo Boyadzhiev, Kavita Bala, Sylvain Paris, and Edward Adelson.
+\newblock Band-sifting decomposition for image-based material editing.
+\newblock \emph{ACM Trans. Graph.}, 34\penalty0 (5):\penalty0 163:1--163:16,
+  November 2015.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2809796}.
+
+\bibitem[Broeren et~al.(2019)Broeren, van~de Sande, van~der Wijk, and
+  Herder]{triangulation}
+Freek Broeren, Werner van~de Sande, Volkert van~der Wijk, and Just Herder.
+\newblock A general method for the creation of dilational surfaces.
+\newblock \emph{Nature Communications}, 10, 11 2019.
+\newblock \doi{10.1038/s41467-019-13134-0}.
+
+\bibitem[Bychkovsky et~al.(2011)Bychkovsky, Paris, Chan, and
+  Durand]{Bychkovsky11Learning}
+V.~Bychkovsky, S.~Paris, E.~Chan, and F.~Durand.
+\newblock Learning photographic global tonal adjustment with a database of
+  input/output image pairs.
+\newblock In \emph{Proceedings of the 2011 IEEE Conference on Computer Vision
+  and Pattern Recognition}, CVPR '11, pages 97--104, Washington, DC, USA, 2011.
+  IEEE Computer Society.
+\newblock ISBN 978-1-4577-0394-2.
+\newblock \doi{10.1109/CVPR.2011.5995413}.
+
+\bibitem[Cazenavette and De~Guevara(2021)]{cazenavette2021mixergan}
+George Cazenavette and Manuel~Ladron De~Guevara.
+\newblock Mixergan: An mlp-based architecture for unpaired image-to-image
+  translation.
+\newblock \emph{arXiv preprint arXiv:2105.14110}, 2021.
+
+\bibitem[Chen et~al.(2016)Chen, Adams, Wadhwa, and Hasinoff]{chen2016bilateral}
+Jiawen Chen, Andrew Adams, Neal Wadhwa, and Samuel~W Hasinoff.
+\newblock Bilateral guided upsampling.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 35\penalty0 (6):\penalty0
+  1--8, 2016.
+
+\bibitem[Chen et~al.(2017)Chen, Xu, and Koltun]{chen2017fast}
+Qifeng Chen, Jia Xu, and Vladlen Koltun.
+\newblock Fast image processing with fully-convolutional networks.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 2497--2506, 2017.
+
+\bibitem[Chen et~al.(2018{\natexlab{a}})Chen, Wang, Kao, and
+  Chuang]{Chen18Deep}
+Yu-Sheng Chen, Yu-Ching Wang, Man-Hsin Kao, and Yung-Yu Chuang.
+\newblock Deep photo enhancer: Unpaired learning for image enhancement from
+  photographs with gans.
+\newblock In \emph{The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, June 2018{\natexlab{a}}.
+
+\bibitem[Chen et~al.(2018{\natexlab{b}})Chen, Wang, Kao, and
+  Chuang]{chen2018deep}
+Yu-Sheng Chen, Yu-Ching Wang, Man-Hsin Kao, and Yung-Yu Chuang.
+\newblock Deep photo enhancer: Unpaired learning for image enhancement from
+  photographs with gans.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 6306--6314, 2018{\natexlab{b}}.
+
+\bibitem[Chen et~al.(2021)Chen, Nobuhara, and Nishino]{chen2021invertible}
+Zhe Chen, Shohei Nobuhara, and Ko~Nishino.
+\newblock Invertible neural brdf for object inverse rendering.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 44\penalty0 (12):\penalty0 9380--9395, 2021.
+
+\bibitem[Cohen-Or et~al.(2006)Cohen-Or, Sorkine, Gal, Leyvand, and
+  Xu]{CohenOr06Color}
+Daniel Cohen-Or, Olga Sorkine, Ran Gal, Tommer Leyvand, and Ying-Qing Xu.
+\newblock Color harmonization.
+\newblock \emph{ACM Trans. Graph.}, 25\penalty0 (3):\penalty0 624--630, July
+  2006.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/1141911.1141933}.
+
+\bibitem[Cook and Torrance(1982)]{cooktorrance1982}
+Robert~L Cook and Kenneth~E. Torrance.
+\newblock A reflectance model for computer graphics.
+\newblock \emph{ACM Transactions on Graphics (ToG)}, 1\penalty0 (1):\penalty0
+  7--24, 1982.
+
+\bibitem[Deschaintre et~al.(2018)Deschaintre, Aittala, Durand, Drettakis, and
+  Bousseau]{deschaintre2018single}
+Valentin Deschaintre, Miika Aittala, Fredo Durand, George Drettakis, and Adrien
+  Bousseau.
+\newblock Single-image svbrdf capture with a rendering-aware deep network.
+\newblock \emph{ACM Transactions on Graphics (ToG)}, 37\penalty0 (4):\penalty0
+  1--15, 2018.
+
+\bibitem[Deschaintre et~al.(2019)Deschaintre, Aittala, Durand, Drettakis, and
+  Bousseau]{deschaintre2019flexible}
+Valentin Deschaintre, Miika Aittala, Fr{\'e}do Durand, George Drettakis, and
+  Adrien Bousseau.
+\newblock Flexible svbrdf capture with a multi-image deep network.
+\newblock In \emph{Computer graphics forum}, volume~38, pages 1--13. Wiley
+  Online Library, 2019.
+
+\bibitem[Dupuy and Jakob(2018)]{dupuy2018adaptive}
+Jonathan Dupuy and Wenzel Jakob.
+\newblock An adaptive parameterization for efficient material acquisition and
+  rendering.
+\newblock \emph{ACM Transactions on graphics (TOG)}, 37\penalty0 (6):\penalty0
+  1--14, 2018.
+
+\bibitem[Dupuy et~al.(2015)Dupuy, Heitz, Iehl, Poulin, and
+  Ostromoukhov]{dupuy2015}
+Jonathan Dupuy, Eric Heitz, Jean-Claude Iehl, Pierre Poulin, and Victor
+  Ostromoukhov.
+\newblock Extracting microfacet-based brdf parameters from arbitrary materials
+  with power iterations.
+\newblock \emph{Comput. Graph. Forum}, 34\penalty0 (4):\penalty0 21--30, July
+  2015.
+\newblock ISSN 0167-7055.
+
+\bibitem[Erko{\c{c}} et~al.(2023)Erko{\c{c}}, Ma, Shan, Nie{\ss}ner, and
+  Dai]{erkocc2023hyperdiffusion}
+Ziya Erko{\c{c}}, Fangchang Ma, Qi~Shan, Matthias Nie{\ss}ner, and Angela Dai.
+\newblock Hyperdiffusion: Generating implicit neural fields with weight-space
+  diffusion.
+\newblock \emph{arXiv preprint arXiv:2303.17015}, 2023.
+
+\bibitem[Fan et~al.(2021)Fan, Wang, Ha{\v{s}}an, Yang, and Yan]{fan2021neural}
+Jiahui Fan, Beibei Wang, Milo{\v{s}} Ha{\v{s}}an, Jian Yang, and Ling-Qi Yan.
+\newblock Neural brdfs: Representation and operations.
+\newblock \emph{arXiv preprint arXiv:2111.03797}, 2021.
+
+\bibitem[Faridul et~al.(2014)Faridul, Pouli, Chamaret, Stauder, Tremeau, and
+  Reinhard]{Faridul14ASurvey}
+H.~S. Faridul, T.~Pouli, C.~Chamaret, J.~Stauder, A.~Tremeau, and E.~Reinhard.
+\newblock {A Survey of Color Mapping and its Applications}.
+\newblock In Sylvain Lefebvre and Michela Spagnuolo, editors,
+  \emph{Eurographics 2014 - State of the Art Reports}. The Eurographics
+  Association, 2014.
+\newblock \doi{10.2312/egst.20141035}.
+
+\bibitem[Frigo et~al.(2016)Frigo, Sabater, Delon, and Hellier]{Frigo16Split}
+Oriel Frigo, Neus Sabater, Julie Delon, and Pierre Hellier.
+\newblock {Split and Match: Example-based Adaptive Patch Sampling for
+  Unsupervised Style Transfer}.
+\newblock Peer-reviewed paper accepted to be presented at IEEE International
+  Conference on Computer Vision and Pattern Recognition (CVPR), Jun 2016, Las
+  Vegas, United States., March 2016.
+
+\bibitem[Gao et~al.(2019)Gao, Li, Dong, Peers, Xu, and Tong]{gao2019deep}
+Duan Gao, Xiao Li, Yue Dong, Pieter Peers, Kun Xu, and Xin Tong.
+\newblock Deep inverse rendering for high-resolution svbrdf estimation from an
+  arbitrary number of images.
+\newblock \emph{ACM Trans. Graph.}, 38\penalty0 (4):\penalty0 134--1, 2019.
+
+\bibitem[Gharbi et~al.(2017)Gharbi, Chen, Barron, Hasinoff, and
+  Durand]{Gharbi17Deep}
+Micha\"{e}l Gharbi, Jiawen Chen, Jonathan~T. Barron, Samuel~W. Hasinoff, and
+  Fr{\'e}do Durand.
+\newblock Deep bilateral learning for real-time image enhancement.
+\newblock \emph{ACM Trans. Graph.}, 36\penalty0 (4):\penalty0 118:1--118:12,
+  July 2017.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/3072959.3073592}.
+
+\bibitem[Guarnera et~al.(2016)Guarnera, Guarnera, Ghosh, Denk, and
+  Glencross]{guarnera2016}
+D.~Guarnera, G.C. Guarnera, A.~Ghosh, C.~Denk, and M.~Glencross.
+\newblock Brdf representation and acquisition.
+\newblock \emph{Computer Graphics Forum}, 35\penalty0 (2):\penalty0 625--650,
+  2016.
+\newblock \doi{https://doi.org/10.1111/cgf.12867}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12867}.
+
+\bibitem[Guo et~al.(2021)Guo, Lai, Tao, Cai, Wang, Guo, and
+  Yan]{guo2021highlight}
+Jie Guo, Shuichang Lai, Chengzhi Tao, Yuelong Cai, Lei Wang, Yanwen Guo, and
+  Ling-Qi Yan.
+\newblock Highlight-aware two-stream network for single-image svbrdf
+  acquisition.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 40\penalty0 (4):\penalty0
+  1--14, 2021.
+
+\bibitem[Guy and Agopian()]{googlePhysicallyBased}
+Romain Guy and Mathias Agopian.
+\newblock {P}hysically {B}ased {R}endering in {F}ilament --- google.github.io.
+\newblock \url{https://google.github.io/filament/Filament.html}.
+\newblock [Accessed 08-08-2024].
+
+\bibitem[Ha et~al.(2017)Ha, Dai, and Le]{ha2017hypernetworks}
+David Ha, Andrew~M. Dai, and Quoc~V. Le.
+\newblock Hypernetworks.
+\newblock In \emph{International Conference on Learning Representations}, 2017.
+\newblock URL \url{https://openreview.net/forum?id=rkpACe1lx}.
+
+\bibitem[HaCohen et~al.(2011)HaCohen, Shechtman, Goldman, and
+  Lischinski]{HaCohen11Nonrigid}
+Yoav HaCohen, Eli Shechtman, Dan~B. Goldman, and Dani Lischinski.
+\newblock Non-rigid dense correspondence with applications for image
+  enhancement.
+\newblock \emph{ACM Trans. Graph.}, 30\penalty0 (4):\penalty0 70:1--70:10, July
+  2011.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2010324.1964965}.
+
+\bibitem[He et~al.(2020)He, Liu, Qiao, and Dong]{he2020conditional}
+Jingwen He, Yihao Liu, Yu~Qiao, and Chao Dong.
+\newblock Conditional sequential modulation for efficient global image
+  retouching.
+\newblock In \emph{European Conference on Computer Vision}, pages 679--695.
+  Springer, 2020.
+
+\bibitem[Hertzmann et~al.(2001)Hertzmann, Jacobs, Oliver, Curless, and
+  Salesin]{Hertzmann01Image}
+Aaron Hertzmann, Charles~E. Jacobs, Nuria Oliver, Brian Curless, and David~H.
+  Salesin.
+\newblock Image analogies.
+\newblock In \emph{Proceedings of the 28th Annual Conference on Computer
+  Graphics and Interactive Techniques}, SIGGRAPH '01, pages 327--340, New York,
+  NY, USA, 2001. ACM.
+\newblock ISBN 1-58113-374-X.
+\newblock \doi{10.1145/383259.383295}.
+
+\bibitem[Hu et~al.(2020)Hu, Guo, Chen, Li, and Guo]{hu2020deepbrdf}
+Bingyang Hu, Jie Guo, Yanjun Chen, Mengtian Li, and Yanwen Guo.
+\newblock Deepbrdf: A deep representation for manipulating measured brdf.
+\newblock In \emph{Computer Graphics Forum}, volume~39, pages 157--166. Wiley
+  Online Library, 2020.
+
+\bibitem[Hu et~al.(2018)Hu, He, Xu, Wang, and Lin]{Hu18Exposure}
+Yuanming Hu, Hao He, Chenxi Xu, Baoyuan Wang, and Stephen Lin.
+\newblock Exposure: A white-box photo post-processing framework.
+\newblock \emph{ACM Trans. Graph.}, 37\penalty0 (2):\penalty0 26:1--26:17, May
+  2018.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/3181974}.
+\newblock URL \url{http://doi.acm.org/10.1145/3181974}.
+
+\bibitem[Huang et~al.(2014)Huang, Zhang, Lai, Kopf, Cohen-Or, and
+  Hu]{Huang14Parametric}
+Shi-Sheng Huang, Guo-Xin Zhang, Yu-Kun Lai, Johannes Kopf, Daniel Cohen-Or, and
+  Shi-Min Hu.
+\newblock Parametric meta-filter modeling from a single example pair.
+\newblock \emph{Vis. Comput.}, 30\penalty0 (6-8):\penalty0 673--684, June 2014.
+\newblock ISSN 0178-2789.
+\newblock \doi{10.1007/s00371-014-0973-y}.
+
+\bibitem[Hui et~al.(2017)Hui, Sunkavalli, Lee, Hadap, Wang, and
+  Sankaranarayanan]{hui2017reflectance}
+Zhuo Hui, Kalyan Sunkavalli, Joon-Young Lee, Sunil Hadap, Jian Wang, and
+  Aswin~C Sankaranarayanan.
+\newblock Reflectance capture using univariate sampling of brdfs.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 5362--5370, 2017.
+
+\bibitem[Hwang et~al.(2012)Hwang, Kapoor, and Kang]{Hwang12Context}
+Sung~Ju Hwang, Ashish Kapoor, and Sing~Bing Kang.
+\newblock Context-based automatic local image enhancement.
+\newblock In \emph{Proceedings of the 12th European Conference on Computer
+  Vision - Volume Part I}, ECCV 2012, pages 569--582, Berlin, Heidelberg, 2012.
+  Springer-Verlag.
+\newblock ISBN 978-3-642-33717-8.
+
+\bibitem[Jiang et~al.(2021{\natexlab{a}})Jiang, Trulls, Hosang, Tagliasacchi,
+  and Yi]{jiang2021cotr}
+Wei Jiang, Eduard Trulls, Jan Hosang, Andrea Tagliasacchi, and Kwang~Moo Yi.
+\newblock Cotr: Correspondence transformer for matching across images.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 6207--6217, 2021{\natexlab{a}}.
+
+\bibitem[Jiang et~al.(2021{\natexlab{b}})Jiang, Gong, Liu, Cheng, Fang, Shen,
+  Yang, Zhou, and Wang]{9334429}
+Yifan Jiang, Xinyu Gong, Ding Liu, Yu~Cheng, Chen Fang, Xiaohui Shen, Jianchao
+  Yang, Pan Zhou, and Zhangyang Wang.
+\newblock Enlightengan: Deep light enhancement without paired supervision.
+\newblock \emph{IEEE Transactions on Image Processing}, 30:\penalty0
+  2340--2349, 2021{\natexlab{b}}.
+\newblock \doi{10.1109/TIP.2021.3051462}.
+
+\bibitem[Kagarlitsky et~al.(2009)Kagarlitsky, Moses, and
+  Hel-Or]{Kagarlitsky09Piecewise}
+S.~Kagarlitsky, Y.~Moses, and Y.~Hel-Or.
+\newblock Piecewise-consistent color mappings of images acquired under various
+  conditions.
+\newblock In \emph{Computer Vision, 2009 IEEE 12th International Conference
+  on}, pages 2311--2318, September 2009.
+\newblock \doi{10.1109/ICCV.2009.5459437}.
+
+\bibitem[Kang et~al.(2018)]{kang2018efficient}
+K.~Kang et~al.
+\newblock Efficient reflectance capture using an autoencoder.
+\newblock \emph{ACM TOG}, 37\penalty0 (4):\penalty0 127--1, 2018.
+\newblock \doi{10.1145/3197517.3201279}.
+
+\bibitem[Kang et~al.(2019)]{kang2019learning}
+K.~Kang et~al.
+\newblock Learning efficient illumination multiplexing for joint capture of
+  reflectance and shape.
+\newblock \emph{ACM TOG}, 38\penalty0 (6):\penalty0 165--1, 2019.
+
+\bibitem[Karras et~al.(2021)Karras, Laine, and Aila]{karras2019style}
+T.~Karras, S.~Laine, and T.~Aila.
+\newblock A style-based generator architecture for generative adversarial
+  networks.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 43\penalty0 (12):\penalty0 4217--4228, dec 2021.
+\newblock ISSN 1939-3539.
+\newblock \doi{10.1109/TPAMI.2020.2970919}.
+
+\bibitem[Kaufman et~al.(2012)Kaufman, Lischinski, and Werman]{Kaufman12Content}
+Liad Kaufman, Dani Lischinski, and Michael Werman.
+\newblock Content-aware automatic photo enhancement.
+\newblock \emph{Comput. Graph. Forum}, 31\penalty0 (8):\penalty0 2528--2540,
+  December 2012.
+\newblock ISSN 0167-7055.
+\newblock \doi{10.1111/j.1467-8659.2012.03225.x}.
+
+\bibitem[Kim et~al.(2021)Kim, Choi, Kim, and Koh]{kim2021representative}
+Hanul Kim, Su-Min Choi, Chang-Su Kim, and Yeong~Jun Koh.
+\newblock Representative color transform for image enhancement.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 4459--4468, 2021.
+
+\bibitem[Laffont et~al.(2014)Laffont, Ren, Tao, Qian, and
+  Hays]{Laffont14Transient}
+Pierre-Yves Laffont, Zhile Ren, Xiaofeng Tao, Chao Qian, and James Hays.
+\newblock Transient attributes for high-level understanding and editing of
+  outdoor scenes.
+\newblock \emph{ACM Trans. Graph.}, 33\penalty0 (4):\penalty0 149:1--149:11,
+  July 2014.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2601097.2601101}.
+
+\bibitem[Lawrence et~al.(2004)Lawrence, Rusinkiewicz, and
+  Ramamoorthi]{lawrence2004efficient}
+Jason Lawrence, Szymon Rusinkiewicz, and Ravi Ramamoorthi.
+\newblock Efficient brdf importance sampling using a factored representation.
+\newblock \emph{ACM Transactions on Graphics (ToG)}, 23\penalty0 (3):\penalty0
+  496--505, 2004.
+
+\bibitem[Lawrence et~al.(2006)Lawrence, Ben-Artzi, DeCoro, Matusik, Pfister,
+  Ramamoorthi, and Rusinkiewicz]{lawrence2006inverse}
+Jason Lawrence, Aner Ben-Artzi, Christopher DeCoro, Wojciech Matusik, Hanspeter
+  Pfister, Ravi Ramamoorthi, and Szymon Rusinkiewicz.
+\newblock Inverse shade trees for non-parametric material representation and
+  editing.
+\newblock \emph{ACM Transactions on Graphics (ToG)}, 25\penalty0 (3):\penalty0
+  735--745, 2006.
+
+\bibitem[Li et~al.(2020)Li, Zhou, Qi, Jiang, Lu, and Jia]{li2020lapar}
+Wenbo Li, Kun Zhou, Lu~Qi, Nianjuan Jiang, Jiangbo Lu, and Jiaya Jia.
+\newblock Lapar: Linearly-assembled pixel-adaptive regression network for
+  single image super-resolution and beyond.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 20343--20355, 2020.
+
+\bibitem[Liao et~al.(2017)Liao, Yao, Yuan, Hua, and Kang]{visual_attribute}
+Jing Liao, Yuan Yao, Lu~Yuan, Gang Hua, and Sing~Bing Kang.
+\newblock Visual attribute transfer through deep image analogy.
+\newblock \emph{ACM Trans. Graph.}, 36\penalty0 (4), jul 2017.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/3072959.3073683}.
+\newblock URL \url{https://doi.org/10.1145/3072959.3073683}.
+
+\bibitem[Lin et~al.(2020)Lin, Pang, Xia, Chen, and Luo]{lin2020tuigan}
+Jianxin Lin, Yingxue Pang, Yingce Xia, Zhibo Chen, and Jiebo Luo.
+\newblock Tuigan: Learning versatile image-to-image translation with two
+  unpaired images.
+\newblock In \emph{Computer Vision--ECCV 2020: 16th European Conference,
+  Glasgow, UK, August 23--28, 2020, Proceedings, Part IV 16}, pages 18--35.
+  Springer, 2020.
+
+\bibitem[Liu et~al.(2023)Liu, Fischer, and Ritschel]{liu2023learning}
+Chen Liu, Michael Fischer, and Tobias Ritschel.
+\newblock Learning to learn and sample brdfs.
+\newblock In \emph{Computer Graphics Forum}, volume~42, pages 201--211. Wiley
+  Online Library, 2023.
+
+\bibitem[Liu et~al.(2016)Liu, Ou, Qian, Wang, and Cao]{Liu16Makeup}
+Si~Liu, Xinyu Ou, Ruihe Qian, Wei Wang, and Xiaochun Cao.
+\newblock Makeup like a superstar: Deep localized makeup transfer network.
+\newblock In \emph{Proceedings of the Twenty-Fifth International Joint
+  Conference on Artificial Intelligence}, IJCAI'16, page 2568–2575. AAAI
+  Press, 2016.
+\newblock ISBN 9781577357704.
+
+\bibitem[L{\"{o}}w et~al.(2012)L{\"{o}}w, Kronander, Ynnerman, and
+  Unger]{low2012}
+Joakim L{\"{o}}w, Joel Kronander, Anders Ynnerman, and Jonas Unger.
+\newblock {BRDF} models for accurate and efficient rendering of glossy
+  surfaces.
+\newblock \emph{ACM Transactions on Graphics}, 31\penalty0 (1):\penalty0
+  9:1--9:14, 2012.
+\newblock \doi{10.1145/2077341.2077350}.
+
+\bibitem[Ma et~al.(2021{\natexlab{a}})Ma, Guo, Yu, Chen, Ren, Xi, Li, and
+  Zhou]{ma2021retinexgan}
+Tian Ma, Ming Guo, Zhenhua Yu, Yanping Chen, Xincheng Ren, Runtao Xi, Yuancheng
+  Li, and Xinlei Zhou.
+\newblock Retinexgan: Unsupervised low-light enhancement with two-layer
+  convolutional decomposition networks.
+\newblock \emph{IEEE Access}, 9:\penalty0 56539--56550, 2021{\natexlab{a}}.
+
+\bibitem[Ma et~al.(2021{\natexlab{b}})]{ma2021free}
+X.~Ma et~al.
+\newblock Free-form scanning of non-planar appearance with neural trace
+  photography.
+\newblock \emph{ACM TOG}, 40\penalty0 (4), 2021{\natexlab{b}}.
+
+\bibitem[Ma et~al.(2023)Ma, Xu, Zhang, Zhou, and Wu]{ma2023opensvbrdf}
+Xiaohe Ma, Xianmin Xu, Leyao Zhang, Kun Zhou, and Hongzhi Wu.
+\newblock Opensvbrdf: A database of measured spatially-varying reflectance.
+\newblock \emph{ACM Transactions on Graphics}, 42\penalty0 (6), 2023.
+
+\bibitem[Martin et~al.(2022)Martin, Roullier, Rouffet, Kaiser, and
+  Boubekeur]{martin2022materia}
+Rosalie Martin, Arthur Roullier, Romain Rouffet, Adrien Kaiser, and Tamy
+  Boubekeur.
+\newblock Materia: Single image high-resolution material capture in the wild.
+\newblock In \emph{Computer Graphics Forum}, volume~41, pages 163--177. Wiley
+  Online Library, 2022.
+
+\bibitem[Matusik et~al.(2003)Matusik, Pfister, Brand, and
+  McMillan]{Matusik2003jul}
+W.~Matusik, H.~Pfister, M.~Brand, and L.~McMillan.
+\newblock A data-driven reflectance model.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 22\penalty0 (3):\penalty0
+  759--769, July 2003.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/882262.882343}.
+\newblock URL \url{https://www.merl.com/publications/TR2003-83}.
+
+\bibitem[Matusik(2003)]{matusik2003data}
+Wojciech Matusik.
+\newblock \emph{A data-driven reflectance model}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 2003.
+
+\bibitem[Maximov et~al.(2019)Maximov, Leal-Taix{\'e}, Fritz, and
+  Ritschel]{maximov2019deep}
+Maxim Maximov, Laura Leal-Taix{\'e}, Mario Fritz, and Tobias Ritschel.
+\newblock Deep appearance maps.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 8729--8738, 2019.
+
+\bibitem[Moran et~al.(2020)Moran, Marza, McDonagh, Parisot, and
+  Slabaugh]{moran2020deeplpf}
+Sean Moran, Pierre Marza, Steven McDonagh, Sarah Parisot, and Gregory Slabaugh.
+\newblock Deeplpf: Deep local parametric filters for image enhancement.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 12826--12835, 2020.
+
+\bibitem[Mustafa et~al.(2022)Mustafa, Hanji, and
+  Mantiuk]{mustafa2022distilling}
+Aamir Mustafa, Param Hanji, and Rafal Mantiuk.
+\newblock Distilling style from image pairs for global forward and inverse tone
+  mapping.
+\newblock In \emph{Proceedings of the 19th ACM SIGGRAPH European Conference on
+  Visual Media Production}, pages 1--10, 2022.
+
+\bibitem[Nam and Kim(2017)]{Nam17Deep}
+Seonghyeon Nam and Seon~Joo Kim.
+\newblock Deep semantics-aware photo adjustment.
+\newblock \emph{CoRR}, abs/1706.08260, 2017.
+
+\bibitem[Ngan et~al.(2005{\natexlab{a}})Ngan, Durand, and
+  Matusik]{ngan2005experimental}
+Addy Ngan, Fr{\'e}do Durand, and Wojciech Matusik.
+\newblock Experimental analysis of brdf models.
+\newblock \emph{Rendering Techniques}, 2005\penalty0 (16th):\penalty0 2,
+  2005{\natexlab{a}}.
+
+\bibitem[Ngan et~al.(2005{\natexlab{b}})Ngan, Durand, and Matusik]{ngan2005}
+Addy Ngan, Frédo Durand, and Wojciech Matusik.
+\newblock {Experimental Analysis of BRDF Models}.
+\newblock In \emph{Eurographics Symposium on Rendering}. The Eurographics
+  Association, 2005{\natexlab{b}}.
+\newblock ISBN 3-905673-23-1.
+\newblock \doi{10.2312/EGWR/EGSR05/117-126}.
+
+\bibitem[Ngan et~al.(2006)Ngan, Durand, and Matusik]{ngan2006image}
+Addy Ngan, Fr{\'e}do Durand, and Wojciech Matusik.
+\newblock Image-driven navigation of analytical brdf models.
+\newblock \emph{Rendering Techniques}, 2006:\penalty0 399--407, 2006.
+
+\bibitem[Nielsen et~al.(2015)Nielsen, Jensen, and
+  Ramamoorthi]{nielsen2015optimal}
+Jannik~Boll Nielsen, Henrik~Wann Jensen, and Ravi Ramamoorthi.
+\newblock On optimal, minimal brdf sampling for reflectance acquisition.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 34\penalty0 (6):\penalty0
+  1--11, 2015.
+
+\bibitem[Omiya et~al.(2018)Omiya, Simo-Serra, Iizuka, and
+  Ishikawa]{Omiya18Learning}
+Mayu Omiya, Edgar Simo-Serra, Satoshi Iizuka, and Hiroshi Ishikawa.
+\newblock {Learning Photo Enhancement by Black-Box Model Optimization Data
+  Generation}.
+\newblock In \emph{SIGGRAPH Asia 2018 Technical Briefs}, 2018.
+
+\bibitem[Park et~al.(2019)Park, Florence, Straub, Newcombe, and
+  Lovegrove]{park2019deepsdf}
+Jeong~Joon Park, Peter Florence, Julian Straub, Richard Newcombe, and Steven
+  Lovegrove.
+\newblock Deepsdf: Learning continuous signed distance functions for shape
+  representation.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision
+  and pattern recognition}, pages 165--174, 2019.
+
+\bibitem[Park et~al.(2018)Park, Lee, Yoo, and Kweon]{park2018distort}
+Jongchan Park, Joon-Young Lee, Donggeun Yoo, and In~So Kweon.
+\newblock Distort-and-recover: Color enhancement using deep reinforcement
+  learning.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 5928--5936, 2018.
+
+\bibitem[Park and Baek(2021)]{specfig}
+Sukjun Park and Nakhoon Baek.
+\newblock A shader-based ray tracing engine.
+\newblock \emph{Applied Sciences}, 11:\penalty0 3264, 04 2021.
+\newblock \doi{10.3390/app11073264}.
+
+\bibitem[Pitie et~al.(2005)Pitie, Kokaram, and Dahyot]{Pitie05NDimensional}
+F.~Pitie, A.C. Kokaram, and R.~Dahyot.
+\newblock N-dimensional probability density function transfer and its
+  application to color transfer.
+\newblock In \emph{Computer Vision, 2005. ICCV 2005. Tenth IEEE International
+  Conference on}, volume~2, pages 1434--1439 Vol. 2, October 2005.
+\newblock \doi{10.1109/ICCV.2005.166}.
+
+\bibitem[Piti{\'e} et~al.(2007)Piti{\'e}, Kokaram, and
+  Dahyot]{Pitie07Automated}
+Fran\c{c}ois Piti{\'e}, Anil~C. Kokaram, and Rozenn Dahyot.
+\newblock Automated colour grading using colour distribution transfer.
+\newblock \emph{Comput. Vis. Image Underst.}, 107\penalty0 (1-2):\penalty0
+  123--137, July 2007.
+\newblock ISSN 1077-3142.
+\newblock \doi{10.1016/j.cviu.2006.11.011}.
+
+\bibitem[Pouli and Reinhard(2011)]{Pouli11Progressive}
+Tania Pouli and Erik Reinhard.
+\newblock Progressive color transfer for images of arbitrary dynamic range.
+\newblock \emph{Computers \& Graphics}, 35\penalty0 (1):\penalty0 67 -- 80,
+  2011.
+\newblock ISSN 0097-8493.
+\newblock \doi{http://dx.doi.org/10.1016/j.cag.2010.11.003}.
+\newblock Extended Papers from Non-Photorealistic Animation and Rendering
+  (NPAR) 2010.
+
+\bibitem[Rainer et~al.(2019)Rainer, Jakob, Ghosh, and
+  Weyrich]{rainer2019neural}
+Gilles Rainer, Wenzel Jakob, Abhijeet Ghosh, and Tim Weyrich.
+\newblock Neural btf compression and interpolation.
+\newblock In \emph{Computer Graphics Forum}, volume~38, pages 235--244. Wiley
+  Online Library, 2019.
+
+\bibitem[Ratzlaff and Fuxin(2019)]{ratzlaff2019hypergan}
+Neale Ratzlaff and Li~Fuxin.
+\newblock Hypergan: A generative model for diverse, performant neural networks.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  5361--5369. PMLR, 2019.
+
+\bibitem[Rebain et~al.(2022)Rebain, Matthews, Yi, Sharma, Lagun, and
+  Tagliasacchi]{rebain2022attention}
+Daniel Rebain, Mark~J Matthews, Kwang~Moo Yi, Gopal Sharma, Dmitry Lagun, and
+  Andrea Tagliasacchi.
+\newblock Attention beats concatenation for conditioning neural fields.
+\newblock \emph{arXiv preprint arXiv:2209.10684}, 2022.
+
+\bibitem[Reinhard et~al.(2001)Reinhard, Ashikhmin, Gooch, and
+  Shirley]{Reinhard01Color}
+E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley.
+\newblock Color transfer between images.
+\newblock \emph{Computer Graphics and Applications, IEEE}, 21\penalty0
+  (5):\penalty0 34--41, September 2001.
+\newblock ISSN 0272-1716.
+\newblock \doi{10.1109/38.946629}.
+
+\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and
+  Brox]{ronneberger2015u}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In \emph{Medical Image Computing and Computer-Assisted
+  Intervention--MICCAI 2015: 18th International Conference, Munich, Germany,
+  October 5-9, 2015, Proceedings, Part III 18}, pages 234--241. Springer, 2015.
+
+\bibitem[Rusinkiewicz(1998)]{rusinkiewicz1998new}
+Szymon~M Rusinkiewicz.
+\newblock A new change of variables for efficient brdf representation.
+\newblock In \emph{Rendering Techniques’ 98: Proceedings of the Eurographics
+  Workshop in Vienna, Austria, June 29—July 1, 1998 9}, pages 11--22.
+  Springer, 1998.
+
+\bibitem[Saeedi et~al.(2018)Saeedi, Hoffman, DiVerdi, Ghandeharioun, Johnson,
+  and Adams]{Saeedi18Multimodal}
+Ardavan Saeedi, Matthew~D. Hoffman, Stephen~J. DiVerdi, Asma Ghandeharioun,
+  Matthew~J. Johnson, and Ryan~P. Adams.
+\newblock Multimodal prediction and personalization of photo edits with deep
+  generative models.
+\newblock In \emph{Proceedings of the 21st International Conference on
+  Artificial Intelligence and Statistics (AISTATS)}, 2018.
+\newblock URL
+  \url{http://www.cs.princeton.edu/~rpa/pubs/saeedi2018multimodal.pdf}.
+\newblock arXiv:1704.04997 [stat.ML].
+
+\bibitem[Schewe and Fraser(2007)]{schewe2007color}
+J~Schewe and B~Fraser.
+\newblock A color managed raw workflow-from camera to final print.
+\newblock \emph{Recuperado de: http://www. adobe.
+  com/digitalimag/pdfs/color\_managed\_raw\_workflow}, 2007.
+
+\bibitem[Serrano et~al.(2018)Serrano, Gutierrez, Myszkowski, Seidel, and
+  Masia]{serrano2018intuitive}
+Ana Serrano, Diego Gutierrez, Karol Myszkowski, Hans-Peter Seidel, and Belen
+  Masia.
+\newblock An intuitive control space for material appearance.
+\newblock \emph{arXiv preprint arXiv:1806.04950}, 2018.
+
+\bibitem[Shaham et~al.(2021)Shaham, Gharbi, Zhang, Shechtman, and
+  Michaeli]{shaham2021spatially}
+Tamar~Rott Shaham, Micha{\"e}l Gharbi, Richard Zhang, Eli Shechtman, and Tomer
+  Michaeli.
+\newblock Spatially-adaptive pixelwise networks for fast image translation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 14882--14891, 2021.
+
+\bibitem[Shapira et~al.(2013)Shapira, Avidan, and Hel-Or]{Shapira13Image}
+D.~Shapira, S.~Avidan, and Y.~Hel-Or.
+\newblock Multiple histogram matching.
+\newblock In \emph{Image Processing (ICIP), 2013 20th IEEE International
+  Conference on}, pages 2269--2273, September 2013.
+\newblock \doi{10.1109/ICIP.2013.6738468}.
+
+\bibitem[Shih et~al.(2013)Shih, Paris, Durand, and Freeman]{Shih13Data}
+Yichang Shih, Sylvain Paris, Fr{\'e}do Durand, and William~T. Freeman.
+\newblock Data-driven hallucination of different times of day from a single
+  outdoor photo.
+\newblock \emph{ACM Trans. Graph.}, 32\penalty0 (6):\penalty0 200:1--200:11,
+  November 2013.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2508363.2508419}.
+
+\bibitem[Shih et~al.(2014)Shih, Paris, Barnes, Freeman, and
+  Durand]{Shih14Style}
+YiChang Shih, Sylvain Paris, Connelly Barnes, William~T. Freeman, and Fr{\'e}do
+  Durand.
+\newblock Style transfer for headshot portraits.
+\newblock \emph{ACM Trans. Graph.}, 33\penalty0 (4):\penalty0 148:1--148:14,
+  July 2014.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2601097.2601137}.
+
+\bibitem[Sitzmann et~al.(2020{\natexlab{a}})Sitzmann, Chan, Tucker, Snavely,
+  and Wetzstein]{sitzmann2020metasdf}
+Vincent Sitzmann, Eric Chan, Richard Tucker, Noah Snavely, and Gordon
+  Wetzstein.
+\newblock Metasdf: Meta-learning signed distance functions.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 10136--10147, 2020{\natexlab{a}}.
+
+\bibitem[Sitzmann et~al.(2020{\natexlab{b}})Sitzmann, Martel, Bergman, Lindell,
+  and Wetzstein]{sitzmann2020siren}
+Vincent Sitzmann, Julien~N.P. Martel, Alexander~W. Bergman, David~B. Lindell,
+  and Gordon Wetzstein.
+\newblock Implicit neural representations with periodic activation functions.
+\newblock In \emph{NeurIPS}, 2020{\natexlab{b}}.
+
+\bibitem[Sun et~al.(2007)Sun, Zhou, Chen, Lin, Shi, and
+  Guo]{sun2007interactive}
+Xin Sun, Kun Zhou, Yanyun Chen, Stephen Lin, Jiaoying Shi, and Baining Guo.
+\newblock Interactive relighting with dynamic brdfs.
+\newblock In \emph{ACM SIGGRAPH 2007 papers}, pages 27--es. 2007.
+
+\bibitem[Sunkavalli et~al.(2010)Sunkavalli, Johnson, Matusik, and
+  Pfister]{Sunkavalli10Multi}
+Kalyan Sunkavalli, Micah~K. Johnson, Wojciech Matusik, and Hanspeter Pfister.
+\newblock Multi-scale image harmonization.
+\newblock \emph{ACM Trans. Graph.}, 29\penalty0 (4):\penalty0 125:1--125:10,
+  July 2010.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/1778765.1778862}.
+
+\bibitem[Sztrajman et~al.(2021)Sztrajman, Rainer, Ritschel, and
+  Weyrich]{sztrajman2021neural}
+Alejandro Sztrajman, Gilles Rainer, Tobias Ritschel, and Tim Weyrich.
+\newblock Neural brdf representation and importance sampling.
+\newblock In \emph{Computer Graphics Forum}, volume~40, pages 332--346. Wiley
+  Online Library, 2021.
+
+\bibitem[Tai et~al.(2007)Tai, Jia, and Tang]{Tai07Soft}
+Y.~W. Tai, J.~Jia, and C.~K. Tang.
+\newblock Soft color segmentation and its applications.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29\penalty0 (9):\penalty0 1520--1537, September 2007.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2007.1168}.
+
+\bibitem[Tai et~al.(2005)Tai, Jia, and Tang]{Tai05Local}
+Yu-Wing Tai, Jiaya Jia, and Chi-Keung Tang.
+\newblock Local color transfer via probabilistic segmentation by
+  expectation-maximization.
+\newblock In \emph{Computer Vision and Pattern Recognition, 2005. CVPR 2005.
+  IEEE Computer Society Conference on}, volume~1, pages 747--754 vol. 1, June
+  2005.
+\newblock \doi{10.1109/CVPR.2005.215}.
+
+\bibitem[Tancik et~al.(2020)Tancik, Srinivasan, Mildenhall, Fridovich-Keil,
+  Raghavan, Singhal, Ramamoorthi, Barron, and Ng]{ffn}
+Matthew Tancik, Pratul~P. Srinivasan, Ben Mildenhall, Sara Fridovich-Keil,
+  Nithin Raghavan, Utkarsh Singhal, Ravi Ramamoorthi, Jonathan~T. Barron, and
+  Ren Ng.
+\newblock Fourier features let networks learn high frequency functions in low
+  dimensional domains.
+\newblock \emph{NeurIPS}, 2020.
+
+\bibitem[Tolstikhin et~al.(2021)Tolstikhin, Houlsby, Kolesnikov, Beyer, Zhai,
+  Unterthiner, Yung, Steiner, Keysers, Uszkoreit, et~al.]{tolstikhin2021mlp}
+Ilya~O Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua
+  Zhai, Thomas Unterthiner, Jessica Yung, Andreas Steiner, Daniel Keysers,
+  Jakob Uszkoreit, et~al.
+\newblock Mlp-mixer: An all-mlp architecture for vision.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 24261--24272, 2021.
+
+\bibitem[Tongbuasirilai et~al.(2020)Tongbuasirilai, Unger, Kronander, and
+  Kurt]{tongbuasirilai2020compact}
+Tanaboon Tongbuasirilai, Jonas Unger, Joel Kronander, and Murat Kurt.
+\newblock Compact and intuitive data-driven brdf models.
+\newblock \emph{The Visual Computer}, 36:\penalty0 855--872, 2020.
+
+\bibitem[Tseng et~al.(2019)Tseng, Yu, Yang, Mannan, Arnaud, Nowrouzezahrai,
+  Lalonde, and Heide]{tseng2019hyperparameter}
+Ethan Tseng, Felix Yu, Yuting Yang, Fahim Mannan, Karl~ST Arnaud, Derek
+  Nowrouzezahrai, Jean-Fran{\c{c}}ois Lalonde, and Felix Heide.
+\newblock Hyperparameter optimization in black-box image processing using
+  differentiable proxies.
+\newblock \emph{ACM Trans. Graph.}, 38\penalty0 (4):\penalty0 27--1, 2019.
+
+\bibitem[Tseng et~al.(2022)Tseng, Zhang, Jebe, Zhang, Xia, Fan, Heide, and
+  Chen]{tseng2022neural}
+Ethan Tseng, Yuxuan Zhang, Lars Jebe, Xuaner Zhang, Zhihao Xia, Yifei Fan,
+  Felix Heide, and Jiawen Chen.
+\newblock Neural photo-finishing.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 41\penalty0 (6):\penalty0
+  1--15, 2022.
+
+\bibitem[Tunwattanapong et~al.(2013)Tunwattanapong, Fyffe, Graham, Busch, Yu,
+  Ghosh, and Debevec]{tunwattanapong2013acquiring}
+Borom Tunwattanapong, Graham Fyffe, Paul Graham, Jay Busch, Xueming Yu,
+  Abhijeet Ghosh, and Paul Debevec.
+\newblock Acquiring reflectance and shape from continuous spherical harmonic
+  illumination.
+\newblock \emph{ACM Transactions on graphics (TOG)}, 32\penalty0 (4):\penalty0
+  1--12, 2013.
+
+\bibitem[Walter et~al.(2007)Walter, Marschner, Li, and
+  Torrance]{walter2007microfacet}
+Bruce Walter, Stephen~R. Marschner, Hongsong Li, and Kenneth~E. Torrance.
+\newblock Microfacet models for refraction through rough surfaces.
+\newblock In \emph{Proceedings of the 18th Eurographics Conference on Rendering
+  Techniques}, EGSR'07, pages 195--206, Aire-la-Ville, Switzerland,
+  Switzerland, 2007. Eurographics Association.
+\newblock ISBN 978-3-905673-52-4.
+\newblock \doi{10.2312/EGWR/EGSR07/195-206}.
+\newblock URL \url{http://dx.doi.org/10.2312/EGWR/EGSR07/195-206}.
+
+\bibitem[Wang et~al.(2022)Wang, Chen, Chen, Venugopalan, Wang,
+  et~al.]{wang2022attention}
+Peihao Wang, Xuxi Chen, Tianlong Chen, Subhashini Venugopalan, Zhangyang Wang,
+  et~al.
+\newblock Is attention all nerf needs?
+\newblock \emph{arXiv preprint arXiv:2207.13298}, 2022.
+
+\bibitem[Wang et~al.(2019)Wang, Zhang, Fu, Shen, Zheng, and
+  Jia]{wang2019underexposed}
+Ruixing Wang, Qing Zhang, Chi-Wing Fu, Xiaoyong Shen, Wei-Shi Zheng, and Jiaya
+  Jia.
+\newblock Underexposed photo enhancement using deep illumination estimation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 6849--6857, 2019.
+
+\bibitem[Ward(1992)]{ward1992}
+Gregory~J Ward.
+\newblock Measuring and modeling anisotropic reflection.
+\newblock In \emph{Proceedings of the 19th annual conference on Computer
+  graphics and interactive techniques}, pages 265--272, 1992.
+
+\bibitem[Xu et~al.(2015)Xu, Ren, Yan, Liao, and Jia]{xu2015deep}
+Li~Xu, Jimmy Ren, Qiong Yan, Renjie Liao, and Jiaya Jia.
+\newblock Deep edge-aware filters.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  1669--1678. PMLR, 2015.
+
+\bibitem[Yan et~al.(2014)Yan, Zhang, Wang, Paris, and Yu]{Yan14Automatic}
+Zhicheng Yan, Hao Zhang, Baoyuan Wang, Sylvain Paris, and Yizhou Yu.
+\newblock Automatic photo adjustment using deep learning.
+\newblock \emph{CoRR}, abs/1412.7725, 2014.
+
+\bibitem[Yan et~al.(2016{\natexlab{a}})Yan, Zhang, Wang, Paris, and
+  Yu]{10.1145/2790296}
+Zhicheng Yan, Hao Zhang, Baoyuan Wang, Sylvain Paris, and Yizhou Yu.
+\newblock Automatic photo adjustment using deep neural networks.
+\newblock \emph{ACM Trans. Graph.}, 35\penalty0 (2), February
+  2016{\natexlab{a}}.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2790296}.
+\newblock URL \url{https://doi.org/10.1145/2790296}.
+
+\bibitem[Yan et~al.(2016{\natexlab{b}})Yan, Zhang, Wang, Paris, and
+  Yu]{yan2016automatic}
+Zhicheng Yan, Hao Zhang, Baoyuan Wang, Sylvain Paris, and Yizhou Yu.
+\newblock Automatic photo adjustment using deep neural networks.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 35\penalty0 (2):\penalty0
+  1--15, 2016{\natexlab{b}}.
+
+\bibitem[Yang et~al.(2023)Yang, Hong, Li, Hu, Li, Lee, and
+  Wang]{yang2023contranerf}
+Hao Yang, Lanqing Hong, Aoxue Li, Tianyang Hu, Zhenguo Li, Gim~Hee Lee, and
+  Liwei Wang.
+\newblock Contranerf: Generalizable neural radiance fields for
+  synthetic-to-real novel view synthesis via contrastive learning.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 16508--16517, 2023.
+
+\bibitem[Yang et~al.(2020)Yang, Wang, Fang, Wang, and Liu]{yang2020fidelity}
+Wenhan Yang, Shiqi Wang, Yuming Fang, Yue Wang, and Jiaying Liu.
+\newblock From fidelity to perceptual quality: A semi-supervised approach for
+  low-light image enhancement.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision
+  and pattern recognition}, pages 3063--3072, 2020.
+
+\bibitem[Yu et~al.(2021)Yu, Li, Peng, Loy, and Gu]{yu2021reconfigisp}
+Ke~Yu, Zexian Li, Yue Peng, Chen~Change Loy, and Jinwei Gu.
+\newblock Reconfigisp: Reconfigurable camera image processing pipeline.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 4248--4257, 2021.
+
+\bibitem[Zaheer et~al.(2017)Zaheer, Kottur, Ravanbakhsh, Poczos, Salakhutdinov,
+  and Smola]{zaheer2017deepsets}
+Manzil Zaheer, Satwik Kottur, Siamak Ravanbakhsh, Barnabas Poczos, Russ~R
+  Salakhutdinov, and Alexander~J Smola.
+\newblock Deep sets.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Zhang et~al.(2013)Zhang, Cao, Chen, Liu, and Tang]{Zhang13Style}
+W.~Zhang, C.~Cao, S.~Chen, J.~Liu, and X.~Tang.
+\newblock Style transfer via image component analysis.
+\newblock \emph{IEEE Transactions on Multimedia}, 15\penalty0 (7):\penalty0
+  1594--1601, November 2013.
+\newblock ISSN 1520-9210.
+\newblock \doi{10.1109/TMM.2013.2265675}.
+
+\bibitem[Zheng et~al.(2021)Zheng, Zheng, Wang, Zhao, and Bao]{zheng2021compact}
+Chuankun Zheng, Ruzhang Zheng, Rui Wang, Shuang Zhao, and Hujun Bao.
+\newblock A compact representation of measured brdfs using neural processes.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 41\penalty0 (2):\penalty0
+  1--15, 2021.
+
+\bibitem[Zhong et~al.(2023)Zhong, Fogarty, Hanji, Wu, Sztrajman, Spielberg,
+  Tagliasacchi, Bosilj, and Oztireli]{cnf2023}
+Fangcheng Zhong, Kyle Fogarty, Param Hanji, Tianhao Wu, Alejandro Sztrajman,
+  Andrew Spielberg, Andrea Tagliasacchi, Petra Bosilj, and Cengiz Oztireli.
+\newblock Neural fields with hard constraints of arbitrary differential order.
+\newblock \emph{arXiv preprint arXiv:2306.08943}, 2023.
+
+\bibitem[Zhou and Kalantari(2021)]{zhou2021adversarial}
+Xilong Zhou and Nima~Khademi Kalantari.
+\newblock Adversarial single-image svbrdf estimation with hybrid training.
+\newblock In \emph{Computer Graphics Forum}, volume~40, pages 315--325. Wiley
+  Online Library, 2021.
+
+\bibitem[Zhu and Yu(2018)]{Zhu18Automatic}
+Feida Zhu and Yizhou Yu.
+\newblock Automatic image stylization using deep fully convolutional networks.
+\newblock \emph{CoRR}, abs/1811.10872, 2018.
+
+\end{thebibliography}
