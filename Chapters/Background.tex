@@ -7,6 +7,21 @@ An image is displayed on a computer screen or, in general, a display system, aft
 
 Let's consider the display of a sphere on a computer screen. We apply a grid on the sphere to represent pixels. Some pixels have a constant color of the object, while some are blank. On the other hand, some pixels include different shades of the object color or some are half-overlapped with the sphere. The question here is how to fill the pixels with mixed colors. 
 
+
+\begin{figure}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+
+    \includegraphics[width=\linewidth]{Images/pixelate_image_snowman.png}
+
+   \caption{A pixel, picture element, is the smallest unit of a rendered image. Displaying an image with fewer pixels causes losses in details as one pixel starts covering a larger area in the 3D scene.}
+   \label{fig:color-approximate}
+\end{figure}
+
+
+In a simple case where we only have a single color with a blank background, we can subdivide this pixel into sub-pixels and count the number of pixels that belong to the object and the background. Later, the color of the corresponding pixel can be approximated by taking the weighted average between the background and object color. For instance, Figure \ref{fig:display-grid} shows the display of a sphere with grids symbolizing pixels. The sub-pixels on the right can be counted to compute the color of the corresponding large pixel. The generalized implementation of this approach can be seen in Figure \ref{fig:color-approximate}, where I computed the mean value with a sliding window of different sizes (50, 100 and 200 in order for image size of 3024 x 4032).
+
+
 \begin{figure}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
@@ -15,23 +30,6 @@ Let's consider the display of a sphere on a computer screen. We apply a grid on 
 
    \caption{Need a figure to represent pixel representation of continuous image}
    \label{fig:display-grid}
-\end{figure}
-
-
-
-In a simple case where we only have a single color with a blank background, we can subdivide this pixel into sub-pixels and count the number of pixels that belong to the object and the background. Later, the color of the corresponding pixel can be approximated by taking the weighted average between the background and object color. For instance, Figure \ref{fig:display-grid} shows the display of a sphere with grids symbolizing pixels. The sub-pixels on the right can be counted to compute the color of the corresponding large pixel. The generalized implementation of this approach can be seen in Figure \ref{fig:color-approximate}, where I computed the mean value with a sliding window of different sizes (50, 100 and 200 in order for image size of 3024 x 4032).
-
-
-
-
-\begin{figure}
-  \centering
-  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-
-    \includegraphics[width=0.9\linewidth]{Images/pixelate_image_snowman.png}
-
-   \caption{}
-   \label{fig:color-approximate}
 \end{figure}
 
 
@@ -144,13 +142,23 @@ The visibility problem occurs when some parts of the scene are not visible from 
 % In this section, I will mostly focus on ray tracing as HyperBRDF is designed for such renderers.Photo-realistic rendering aims to project or flatten a 3D scene onto an image plane that lies between the scene and the camera position or the viewpoint. Mimicking our visual system, we first apply perspective projection via similarity formula in geometry and then decide which points are visible from the viewpoint. Some will be indeed occluded by other objects or the front sides. 
 
 \paragraph{Appearance.}
-Perspective projection and visibility only projects the size and shape of the scene realistically without any consideration for appearance, such as the color, texture, brightness, etc. We can only perceive an object if the light bounces off their surface. Therefore, appearance is defined by the light-matter interactions, where the light travels in a ray form in space and gets absorbed or reflected when it interacts with a surface of an object. It can be emitted by different light sources, such as the sun, or light bulbs. After the light bounces off a surface, it continues its journey until it either reaches our eyes where it is converted to electrical signals or another surface where the interaction steps repeat.
+Perspective projection and visibility only projects the size and shape of the scene realistically without any consideration for appearance, such as the color, texture, brightness, etc. We can only perceive an object if the light bounces off its surface. Therefore, appearance is defined by the light-matter interactions, where the light travels in a ray form in space and gets absorbed or reflected when it interacts with the surface of an object. It can be emitted by different light sources, such as the sun, or light bulbs. After the light bounces off a surface, it continues its journey until it either reaches our eyes where it is converted to electrical signals or another surface where the interaction steps repeat.
 
-The color of an object is defined by a mixture of reflected light colors. The light color is a continuous spectrum with the visible light lying between 380 to 700 nanometers in wavelength. For instance, a lemon reflects green and red light, while absorbing the blue. Another example would be a black object that absorbs all visible lights, or white object that reflects them all.
+The color of an object is defined by a mixture of the reflected light colors. The light color is a continuous spectrum with the visible light lying between 380 to 700 nanometers in wavelength. For instance, a leaf reflects green light, while absorbing the remaining visible spectrum. Another example would be a black object that absorbs all visible lights, or a white object that reflects them all.
 
-At the object level, reflection can be considered as a mirror-like look, where the light turns around the normal of the surface at the point of contact. The outgoing direction becomes the reflected version of the incoming one around this normal. On the other hand, microscopic level interactions are more complex with light bouncing off in random directions. This is called scattering. Computing the photon-atom interactions is indeed impractical. Therefore, computer graphics researchers have developed mathematical models to simulate the light-matter interactions at the microscopic level. I will discuss them later in this chapter. Section \ref{} will also compare HyperBRDF with such mathematical formulas. Here I will overview some of the well-known shading and lighting effects:
+\begin{wrapfigure}{l}{8.5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.5\linewidth]{Images/object-color.png}
+   \caption{The reflected light from the surface of an object defines its color. \href{http://www.mstworkbooks.co.za/natural-sciences/gr8/images/gr8ec04-gd-0027.png}{Image source}}
+   \label{fig:object-color}
+\end{wrapfigure}
 
-\textbf{\textit{Reflection}} occurs when light interacts with mirror-like objects that change the direction of light in equal but reverse angle around the point of contact. The incoming light, also known as incident light, turns around the normal and leaves the surface in the reflected direction, outgoing direction (Figure \ref{fig:microfacet} - right). Metals, such as silver or aluminium are considered as materials with high reflectivity. Surface of the water or glass also creates reflection, but their reflectivity is considerably lower than metals.
+
+
+At the object level, reflection can be considered as a mirror-like look, where the light turns around the normal of the surface at the point of contact. The outgoing direction becomes the reflected version of the incoming one around this normal. Microscopic level interactions are more complex with light bouncing off in random directions, known as scattering. Computing the photon-atom interactions is indeed impractical. Therefore, computer graphics researchers have developed mathematical models to simulate the light-matter interactions at the microscopic level. I will discuss them later in this chapter. Section \ref{} will also compare HyperBRDF with such mathematical formulas. Here I will overview some of the well-known shading and lighting effects:
+
+\textbf{\textit{Reflection}} occurs when light interacts with mirror-like objects that change the direction of light in the reverse direction with the same angle around the point of contact. The incoming light, also known as incident light, turns around the normal and leaves the surface in the reflected direction, outgoing direction (Figure \ref{fig:microfacet} - right). Metals, such as silver or aluminium are considered as materials with high reflectivity. Surface of the water or glass also creates reflection, but their reflectivity is considerably lower than metals.
 
 \begin{wrapfigure}{r}{5.5cm}
 \includegraphics[width=0.9\linewidth]{Images/rough_river_surface_reflection.png}
@@ -158,7 +166,8 @@ At the object level, reflection can be considered as a mirror-like look, where t
     
 \end{wrapfigure} 
 
-\textbf{\textit{Specular reflection}} appears when the surface is not perfectly smooth, and its roughness causes lights to bounce off in different directions. Imagine a rough surface at the microscopic level having many microfacets looking in slightly different directions. The complex nature of the material surface then reflects the lights at a microfacet level, each microfacet acting like a mirror (Figure \ref{fig:microfacet}). The overall outgoing light becomes the accumulation of each of these reflections, known as specular or glossy reflection. Most often, these microfacets are not visible to our eyes akin to smooth surface appearance. The deviation of lights from the mirror direction depends on how rough the surface is. Here, roughness and glossiness are used antonymous to describe the specularity of a material. This type of reflection often leads to blurred or deformed image, as shown in Figure \ref{fig:water_reflection}. 
+\textbf{\textit{Specular reflection}} appears when the surface is not perfectly smooth, and its roughness causes lights to bounce off in different directions. Imagine a rough surface at the microscopic level having many microfacets looking in slightly different directions. The complex nature of the material surface then reflects the lights at a microfacet level, each microfacet acting as a mirror (Figure \ref{fig:microfacet}). The overall outgoing light becomes the combination of each of these reflections, known as specular or glossy reflection. Most often, these microfacets are not visible to our eyes akin to smooth surface appearance. The deviation of lights from the mirror direction depends on how rough the surface is, that is, how varied the facet orientations are with respect to a smooth surface. More microfacets with higher variance in orientations will lead to greater divergence from the mirror angle, enlarging the glossy region of the surface. Here, roughness and glossiness are used antonymous to describe the specularity of a material. This type of reflection often leads to blurred or deformed image, as shown in Figure \ref{fig:water_reflection}. 
+
 
 
 \begin{figure}
@@ -177,14 +186,23 @@ At the object level, reflection can be considered as a mirror-like look, where t
 % \end{figure}
 
 
-\textbf{\textit{Diffuse reflection}} is the reflection that we observe when the incident lights are so scattered that they reflect in random directions, equally spread. Diffuse surfaces are either extremely rough or composed of tiny structures where the light gets trapped, reflected and refracted multiple times before leaving the surface. The outgoing direction becomes independent from the incident direction. This randomness results in the brightness of the object appear equal in all viewing directions. 
+\textbf{\textit{Diffuse reflection}} is the reflection that we observe when the incident lights are so scattered that they reflect in random directions, equally spread. Diffuse surfaces are either extremely rough or composed of tiny structures where the light gets trapped, reflected and refracted multiple times before leaving the surface (Figure \ref{fig:diffuse-scattering}). The outgoing direction becomes independent from the incident direction due to the large number of internal reflection underneath the surface. This randomness results in the object appearing equally bright in all viewing directions. 
 
+\begin{wrapfigure}{l}{6.5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.5\linewidth]{Images/shad-diffuse1.png}
+   \caption{Diffuse surfaces often have complex internal structures that cause the light to be reflected multiple times underneath the surface.}
+   \label{fig:diffuse-scattering}
+\end{wrapfigure}
+
+Diffuse surfaces, also known as Lambertian or matte surfaces, differ from specular ones in that diffuse materials are often formed of multiple internal pieces that trap the light, causing the light's outgoing direction to become independent from the viewpoint. Specular ones, on the other hand, are modelled with microfacets that reflect the light rays around the mirror angle, remaining correlated with the incoming direction. As diffuse reflections are view-independent, the brightness of a diffuse surface remains consistent across all viewing angles. This distinction can be observed when looking at real-world materials, observing how their brightness changes when we move around, changing our viewpoint.
 
 
 \begin{figure}[h]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.5\linewidth]{Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-reflections-occur-on.png}
+   \includegraphics[width=0.7\linewidth]{Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-reflections-occur-on.png}
    \caption{Specular vs diffuse reflection. Diffuse surfaces cause rays to scatter randomly, brightening the object equally in all viewing directions. Specular reflection is, on the other hand, view-dependent, reflected rays concentrated around the mirror reflection. Image courtesy of \citeauthor{specfig}.}
    \label{fig:specularvsdiffuse}
 \end{figure}
@@ -205,9 +223,8 @@ The simulation starts with shooting rays from the virtual camera to the light so
 
 
 
-\begin{figure}[h]
+\begin{figure}
   \centering
-  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=0.5\linewidth]{Images/ray-tracing-image-1.jpg}
    \caption{Ray tracing simulate the light's journey to compute the color of each pixel on the rendered image. - Image courtesy of \href{https://commons.wikimedia.org/wiki/File:Ray_trace_diagram.svg}{Henrik, CC BY-SA 4.0}}
    \label{fig:raytracing}
@@ -219,24 +236,27 @@ Ray tracing is a computationally-expensive rendering technique that simulates th
 
 \subsection{Shaders and BRDF}
 
-Shading 
+Shading is the process of computing the color of objects that are seen from the camera viewpoint. Earlier, we discussed that achieving photorealism involves two main steps:  visibility along with perspective projection and shading. If we are to achieve photorealism, then shading should reproduce the appearance of a scene so realistically that our eyes perceive the rendered image same as  the real word. A photorealistic image should look like a photograph of the same scene taken from the same viewpoint. 
 
-If photorealism is the goal, shading is concerned with reproducing the appearance or look of real surfaces with such accuracy that the human eye cannot distinguish between an image of the real world and the real world itself. The goal of Photorealistic Rendering is to produce computer-generated images that look real or resemble photographs. 
+Appearance is, in principle, the by-product of illumination and object properties. As the scene gets more light, objects are likely to appear brighter. Object properties that determine the appearance are reflectivity that defines light-material interactions and the geometric construction, i.e., orientation. The object color we perceive is the mixture of light rays reflected off the surface. Most often, objects do not emit light but lit by light sources emitting rays. This emitted light hits the surface of the object, some of which is later reflected off the surface and reaches our eyes, creating the color of the object. This type of lighting is known as direct lighting as the reflected light directly comes to our eyes after visiting the object. Indirect illumination occurs when an object gets some light reflected off other objects. Light can bounce off multiple surfaces, even infinitely many, before reaching our eyes.
 
-the appearance of objects, which we aim to simulate in photorealistic rendering, is essentially the by-product of two main factors: lighting and the properties of the object.
-
- Generally, the more light there is, the brighter the objects appear. The properties of an object can be broadly categorized into two main types: the geometric properties of objects' surfaces (such as their orientation) and the properties that influence how light and objects interact (such as the object's color)
+Let's return to the discussion on lighting and shading effects we observe in the real world. We mentioned that what differentiates the objects with mirror-like,  specular and diffuse surfaces is the way they reflect the incoming light. A diffuse or Lambertian surface randomly spreads the incident light, looking equally bright in all viewing directions. Mirror-like objects reflect the ray around the point of contact, while specular surfaces distribute the light around the mirror direction. In the case of mirror-like or specular surfaces, the objects wouldn't be visible if our viewing direction is far from the mirror direction. Although we clearly distinguish different types of surfaces in computer graphics, real-world surfaces do not necessarily show only one kind of reflection.
 
 
-\TODO{You should start with rendering. What it actually means. How is that related to image formation or rendering an image of a virtual environment.}
-Rendering aims to reproduce the shape, visibility, and appearance of objects as seen from a given viewpoint. 
+Most real-world objects exhibit diffuse and specular reflections, having both components. This can happen because the object is composed of multiple materials with different reflectivities that are joined together, or it has multiple layers of materials that are added on top of each other as in the skin layers. Putting them together, we can define the overall appearance as the weighted sum of diffuse and specular components: $$I = k_d * I_d + k_s * I_s$$, where $I$ is the total intensity of the light reflected by the surface at the point of contact, $I_d$ and $I_s$  are diffuse and specular intensities, and $k_d$ and $k_s$ are their corresponding coefficients. This is indeed a gross assumption that neglects the interaction between objects and shadows.
 
-the appearance of objects, which we aim to simulate in photorealistic rendering, is essentially the by-product of two main factors: lighting and the properties of the object
 
-Shading
-Even though we haven't detailed how the visibility problem can be solved, let's assume for now that we know how to flatten a 3D scene onto a flat surface using perspective projection and determine which part of the geometry is visible from a certain viewpoint. This is a significant step towards generating a photorealistic image, but what else do we need? Objects are not only defined by their shape but also by their appearance. This includes not just how big they appear on the scene, but in terms of their look, color, texture, and how bright they are. Furthermore, objects are only visible to the human eye because light bounces off their surface. How can we define the appearance of an object? The appearance can be defined by how the material of the object interacts with light. Light is emitted by sources (such as the sun, light bulbs, or the flame of a candle) and travels in a straight line until it contacts an object. Here, it can either be absorbed by the object or reflected into the environment. When light is reflected off an object's surface, it continues traveling (potentially in a different direction) until it either contacts another object (repeating the process) or reaches our eyes (where it is converted into electrical signals sent to the brain).
+\begin{wrapfigure}{r}{7.5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.5\linewidth]{Images/diffuse_angle.png}
+   \caption{need to redraw the figure. From Rafal's slides}
+   \label{fig:diffuse-comp}
+\end{wrapfigure}
 
-Finding the right balance between photorealism and render time is key to effective rendering
+Here, we can compute the diffuse shading based on the angle between the normalized incident light direction $L$ and the normal to the surface $N$:
+$$I_d = I_l \, k_d \cos(\theta) = I_l \, k_d \, (N . L)$$,  where $I_l$ is the intensity of the light source.
+
 
 
 \section{Deep learning}
