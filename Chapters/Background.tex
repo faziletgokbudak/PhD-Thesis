@@ -2,6 +2,9 @@
 
 % \section{Rendering an Image of a 3D Scene}
 \section{Rendering}
+
+This section gives an overview of rendering an image of a 3D scene to connect the image-level appearance with a broader concept of appearance representations in computer graphics.  It starts with the display of images on a screen and elaborates on 3D scene components that are taken into account for photorealistic rendering, mainly focusing on appearance. 
+
 \subsection{Displaying an image}
 An image is displayed on a computer screen or, in general, a display system, after the processing of the stored data in a computer. Here, both the computer and display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces, pixels, for the display of their image. This operation is known as discretization. 
 
@@ -243,21 +246,93 @@ Appearance is, in principle, the by-product of illumination and object propertie
 Let's return to the discussion on lighting and shading effects we observe in the real world. We mentioned that what differentiates the objects with mirror-like,  specular and diffuse surfaces is the way they reflect the incoming light. A diffuse or Lambertian surface randomly spreads the incident light, looking equally bright in all viewing directions. Mirror-like objects reflect the ray around the point of contact, while specular surfaces distribute the light around the mirror direction. In the case of mirror-like or specular surfaces, the objects wouldn't be visible if our viewing direction is far from the mirror direction. Although we clearly distinguish different types of surfaces in computer graphics, real-world surfaces do not necessarily show only one kind of reflection.
 
 
-Most real-world objects exhibit diffuse and specular reflections, having both components. This can happen because the object is composed of multiple materials with different reflectivities that are joined together, or it has multiple layers of materials that are added on top of each other as in the skin layers. Putting them together, we can define the overall appearance as the weighted sum of diffuse and specular components: $$I = k_d * I_d + k_s * I_s$$, where $I$ is the total intensity of the light reflected by the surface at the point of contact, $I_d$ and $I_s$  are diffuse and specular intensities, and $k_d$ and $k_s$ are their corresponding coefficients. This is indeed a gross assumption that neglects the interaction between objects and shadows.
+Most real-world objects exhibit diffuse and specular reflections, having both components. This can happen because the object is composed of multiple materials with different reflectivities that are joined together, or it has multiple layers of materials that are added on top of each other as in the skin layers. Putting them together, we can define the overall appearance as the weighted sum of diffuse and specular components: $$I = k_d * I_d + k_s * I_s$$, where $I$ is the total intensity of the light reflected by the surface at the point of contact, $I_d$ and $I_s$  are diffuse and specular intensities, and $k_d$ and $k_s$ are their corresponding coefficients. Here, we oversimplify the equation for appearance, neglecting shadows and interaction between objects.
 
 
-\begin{wrapfigure}{r}{7.5cm}
+
+\begin{wrapfigure}{l}{7.5cm}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.5\linewidth]{Images/diffuse_angle.png}
-   \caption{need to redraw the figure. From Rafal's slides}
-   \label{fig:diffuse-comp}
+   \includegraphics[width=0.5\linewidth]{Images/specular+diffuse.png}
+   \caption{A material composed of both specular and diffuse components, lit by a point light source. The specular highlight (white circle) is centered around the light source direction. The material is specular-maroon-phenolic from MERL dataset \cite{Matusik2003jul}.}
+   \label{fig:diffuse+spec}
 \end{wrapfigure}
 
+
 Here, we can compute the diffuse shading based on the angle between the normalized incident light direction $L$ and the normal to the surface $N$:
-$$I_d = I_l \, k_d \cos(\theta) = I_l \, k_d \, (N . L)$$,  where $I_l$ is the intensity of the light source.
+$$I_d = I_l \, k_d \cos(\theta) = I_l \, k_d \, (N . L)$$,  where $I_l$ is the intensity of the light source. Note that the lights with different colors can have different $I_l$ and $k_d$. Also, $\cos(\theta) < 0$ indicates that the light remains behind the surface, not contributing to the brightness on the visible side. The effect of $\cos$ term is visible in Figure \ref{fig:diffuse+spec}, where the diffuse intensity gets dimmer as the points on the surface gets further away from the point of contact (specular highlight). 
+
+\begin{figure}[h]
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.5\linewidth]{Images/diffuse+specular+angle.pdf}
+   \caption{Diffuse and specular reflections.. Figures from \href{https://www.cl.cam.ac.uk/teaching/2223/Graphics/Introduction_to_Graphics_1pp.pdf}{Slides by Rafal Mantiuk}}
+   \label{fig:diffuse-spec-angle}
+\end{figure}
+
+The specular term can also be approximated by $$I_s = I_l \, k_s \, \cos^n(\alpha) = I_l \, k_s \, (R . V)^n $$, where $R$ is the mirror reflection, $V$ is the viewing direction, and $n$ is an ad-hoc roughness coefficient (Figure \ref{fig:diffuse-spec-angle}).
 
 
+We mentioned that the consideration of only diffuse and specular reflections ignores indirect lighting, which can be compensated by adding a "cheat" constant term, $I_a * k_a$, known as ambient illumination. The overall shading then becomes:
+
+\begin{equation}
+I = I_a * k_a + \sum_i \, I_i \, k_d \, (N . L) + \sum_i \, I_i \, k_s \, (R_i . V)^n
+\label{eq:Phong-eq}
+\end{equation}
+
+This mathematical model is known as Phong shading model, a well-known shading model used for decades in computer graphics. The simplified specular reflection term is introduced by Phong in 1998 \cite{phong1998illumination}. This model does not take into account the shadows, requiring ray tracing or  shadow mapping for shadows. It also considers the light sources to be infinitely far from the surface, ensuring the lighting direction $L$ remains same across the surface.
+
+Modelling light-material interactions is very complex due to the nature of materials. Hence, computer graphics researchers have developed mathematical models to approximate the function defining the reflectance of a material surface. This function is known as Bidirectional Reflectance Distribution Function (BRDF). Phong shading model is one of the most popular BRDF approximation models due to its simplicity. Some other mathematical models include Cook-Torrance~\cite{cooktorrance1982}, Ward~\cite{ward1992} and GGX~\cite{walter2007microfacet}, with GGX being the most widely used approximation for its realistic results. I will compare HyperBRDF with GGX results in Chapter \ref{ch:HyperBRDF}.
+
+Before going into the details of BRDF, let's examine the effect of the roughness term in the Phong model:
+
+\begin{figure}[h]
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=\linewidth]{Images/Phong-roughness-coeff.pdf}
+   \caption{Phong shading model implementation with decreasing roughness/increasing glossiness from left to right.}
+   \label{fig:phong-roughness}
+\end{figure}
+
+The rougher the material surface is, the more matte the object appears. As we decrease its roughness by increasing the value $n$, the specular highlight becomes a mirror-like reflection around the point of contact. 
+
+
+\paragraph{BRDF.} 
+\begin{wrapfigure}{l}{7.5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=\linewidth]{Images/shad2-brdfdir}
+   \caption{BRDF depends on the incident light and viewing direction.}
+   \label{fig:brdf}
+\end{wrapfigure}
+Looking at Eqn. \ref{eq:Phong-eq}, we observe that the appearance/shading depends on two variables, incoming light direction for diffuse and specular terms and viewing direction for specular only. Therefore, we can generalize this function with two parameters as  $f_R(\omega_o, \omega_i)$, where  $\omega_o$ is the angle between the surface normal and viewing direction and the surface normal and the light direction (Figure \ref{fig:brdf}). This function, known as as BRDF, gives us the amount of light reflected in the viewing direction when the surface is lit in the incoming light direction.
+
+The mathematical formulations, such as Phong or GGX, approximate $BRDF(\omega_o, \omega_i)$s of real-world materials by making simplifying assumptions on their nature. For instance, some models are designed to simulate certain material types (Oren-Nayar model for Moon's BRDF). Some models follow the principle of optics or designed empirically (Phong). Fitting to measured BRDF values is another alternative approach, which recent neural network based models, including HyperBRDF, are built upon.  
+
+Comparing the mathematical approximations to real-world measurements helps us understand how accurate the BRDF model represents a real-world material. $BRDF(\omega_o, \omega_i)$ itself is defined based on the laws of physics and can be physically measured by some specialised hardware, such as gonioreflectometer. Cameras can also be used to measure the BRDF. For instance, MERL dataset \cite{Matusik2003jul} is captured using a CCD camera. However, measuring the specular values can become a challenge with a camera capture due to the requirement of High Dynamic Range support. I will overview these capture systems in Chapter \ref{ch:HyperBRDF}.
+
+The BRDF is essentially a radiometric term with the usage in computer graphics for realistic simulations of light-material interactions. Hence, physically-based BRDFs hold the following properties:
+\begin{itemize}
+  \item positivity $f_R(\omega_o, \omega_i) \geq 0$, BRDF is positive across valid incoming and outgoing directions.
+  \item Helmholtz reciprocity: $f_R(\omega_o, \omega_i) = f_R(\omega_i, \omega_o)$, The surface acts the same if the incoming and outgoing directions are switched.
+  \item energy conservation. Unless the object emits light, the reflected light cannot be larger than the received one.
+\end{itemize}
+
+
+Aiming for BRDF models to show these properties is essential to reproduce appearance realistically. In \citeauthor{Chenliang's paper} \cite{Chenliang's paper}, we discuss how to enforce the neural BRDF models to hold these properties. Rendering based on simulating the light's journey is computationally expensive. Therefore, a fast BRDF computation is another important factor while choosing a model. For instance, Phong is a simple model that requires fewer computations. However, it is not energy-conserving. Recent mathematical models, such as GGX, have replaced Phong due to more accurate representations. Nevertheless, mathematical models still oversimplify the complex real-world BRDFs, constrained with a few parameters to tune. Therefore, recent work has started developing neural network-based approaches, which can offer higher capacity for representations.
+
+Lastly, we defined BRDF as the function of only two parameters, the incoming and outgoing directions. This brings us to the assumption that material properties remain the same across the whole surface. The complex real-world materials are composed of different substances, hence, they can reflect lights differently at different points of contact. This behaviour can be represented with a Spatially Varying Bidirectional Reflectance Distribution Function (SVBRDF) that has an additional location parameter ($f_R(\omega_o, \omega_i,  vec{x})$). Furthermore, we assume that the reflected light leaves the surface at the point of contact, which is unlikely the case for translucent materials where we observe subsurface  scattering. This behaviour can be represented with Bidirectional Surface Scattering Reflectance Distribution Function (BSSRDF) that has both entry and exit locations as additional parameters ($f_R(\omega_o, \vec{x_o}, \omega_i,  \vec{x_i})$). 
+
+\subsection{Rendering Equation}
+
+To conclude the rendering story, let's define the rendering equation that is being used to reproduce the appearance in ray tracing algorithms for the realistic simulation of light-material interactions.:
+\begin{equation}
+L_o(\vec{x}, \omega_o) = L_e(\vec{x}, \omega_o)  +  \int_S^2 L_i(\vec{x}, \omega_i) \, f_{\vec{x}}(\omega_o,  \omega_i) \, \abs{w_i . N} d\omega_i
+\label{eqn:rendering-eqn}
+\end{equation}
+Here, $L_o(\vec{x}, \omega_o) $ is the outgoing light at point $x$ in the direction of $\omega_o$, $L_e(\vec{x}, \omega_o)$ is the emitted light that represents the light sources, $L_i(\vec{x}, \omega_i) $ is the incoming light at point $x$ in the direction of $\omega_i$, $f_{\vec{x}}(\omega_o,  \omega_i)$ is the BRDF, and $\abs{w_i . N} = \cos(\theta_i)$ is the Lambert's cosine term.
+
+The rendering equation gives the outgoing light at point $x$ for a given incident light direction with the known BRDF. Here, we can define the BRDF term in multiple ways, such as with mathematical models discussed earlier, or a neural network outputting the BRDF value when fed with the directions, or physical measurements captured with special instruments. 
 
 \section{Deep learning}
 \subsection{Multilayer Perceptrons}
