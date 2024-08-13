@@ -325,16 +325,46 @@ Lastly, we defined BRDF as the function of only two parameters, the incoming and
 
 \subsection{Rendering Equation}
 
-To conclude the rendering story, let's define the rendering equation that is being used to reproduce the appearance in ray tracing algorithms for the realistic simulation of light-material interactions.:
+To conclude the rendering section, let's define the rendering equation used to reproduce the outgoing light in ray tracing algorithms for the realistic simulation of light-material interactions.:
 \begin{equation}
 L_o(\vec{x}, \omega_o) = L_e(\vec{x}, \omega_o)  +  \int_S^2 L_i(\vec{x}, \omega_i) \, f_{\vec{x}}(\omega_o,  \omega_i) \, \abs{w_i . N} d\omega_i
 \label{eqn:rendering-eqn}
 \end{equation}
 Here, $L_o(\vec{x}, \omega_o) $ is the outgoing light at point $x$ in the direction of $\omega_o$, $L_e(\vec{x}, \omega_o)$ is the emitted light that represents the light sources, $L_i(\vec{x}, \omega_i) $ is the incoming light at point $x$ in the direction of $\omega_i$, $f_{\vec{x}}(\omega_o,  \omega_i)$ is the BRDF, and $\abs{w_i . N} = \cos(\theta_i)$ is the Lambert's cosine term.
 
-The rendering equation gives the outgoing light at point $x$ for a given incident light direction with the known BRDF. Here, we can define the BRDF term in multiple ways, such as with mathematical models discussed earlier, or a neural network outputting the BRDF value when fed with the directions, or physical measurements captured with special instruments. 
+The rendering equation gives the outgoing light at point $x$ for a given incident light direction with the known BRDF. Here, we can define the BRDF term in multiple ways, such as with mathematical models discussed earlier, or a neural network outputting the BRDF values when fed with the directions, or physical measurements captured with special instruments. 
 
-\section{Deep learning}
-\subsection{Multilayer Perceptrons}
-\subsection{Neural representations - Hypernetworks}
-\subsection{Diffusion models}
+\section{Machine learning}
+This section gives an overview of the machine learning techniques I have utilised for the appearance manipulation techniques I propose in the following chapters. Machine learning techniques have become the state-of-the-art approach in most computer vision and graphics tasks due to their promising ability to learn. Especially the advances in the field, such as the introduction of deep learning with the inherent nonlinearity that comes from activation functions, have made these models ideal for tackling such ill-posed image editing tasks that most often have $many$ solutions.
+
+Starting with the learning process, I will first discuss the basics of machine learning, including multilayer perceptrons that will build the baseline for the machine-learning framework I propose in one-shot detail retouching. Later, I will discuss neural representations that offer the storage of the data in a novel neural network-based setup, which is very useful for the processing of visual data that usually lies in a complex high-dimensional space. The hypernetwork model I borrowed for the HyperBRDF model is a neural representation model generalizable to new data for reconstruction. Lastly, I will summarise diffusion models, specifically latent diffusion, for the zero-shot transient attribute.
+
+\subsection{Foundations}
+Machine learning (ML) is a subfield of artificial intelligence (AI) in which machines learn a task from data without explicit programming. ML algorithms, such as linear regression, decision trees or neural networks, define the procedure for the learning process. An ML model is the trained version of the algorithm, used to make predictions or decisions. The model consists of internal variables, parameters, that are learned during the learning process, known as training. The model structure is called architecture that can include tree nodes, neurons, layers, connections, etc.
+
+\paragraph{Types of learning.} The data is the key to the success of any ML algorithm. Supervised learning methods use paired data, each training example including input data and its corresponding output (label). The model learns a mapping between the input and the output. Classification or image-to-image translation can be given as examples. Unsupervised learning approaches, such as clustering or dimensionality reduction, learn patterns from the data without any label. Some methods, semi-supervised methods, combine both labelled and unlabeled data. Lastly, reinforcement models learn the task with a feedback mechanism, including rewards and punishments. The ML algorithms I have utilised for my main approaches are based on supervised learning. Therefore, I will focus on this learning type for the rest of this section.
+
+\paragraph{Training.} During training, the model learns from a dataset, that is, updates its parameters to minimise the errors in predictions. Training is an iterative method and starts with assigning initial values to model parameters. These initial values are, in general, chosen to be random. At each iteration, \textbf{epoch}, the parameters are adjusted with an optimizer, such as gradient descent or Adam, that reduces the errors in predictions. The errors are computed for each training example and averaged over the training dataset for the epoch loss. 
+
+The large amount of data in the dataset can make parameter updates slow and computationally expensive. Therefore, the dataset is often split into subsets, known as \textbf{batches}, and each batch is processed separately at each epoch. The \textbf{batch size} is the number of training examples in one batch. It affects the efficiency and the stability of the model updates as well as the convergence speed. The completion of one epoch means that the model passed through the entire dataset once. The number of batches multiplied by the batch size gives the total number of examples in the training dataset. For instance, if we have a dataset of 100,000 images and choose the batch size as 1000, then we process 100 batches to complete one epoch. 
+
+\begin{wrapfigure}{r}{7.5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=\linewidth]{Images/gradient-descent.png}
+   \caption{Gradient descent steps.}
+   \label{fig:gradient-descent}
+\end{wrapfigure}
+The model parameters can be updated either after the entire dataset is passed through the model (\textbf{batch gradient descent}), or after each batch is processed (\textbf{mini-batch gradient descent}), or for one training example rather than waiting for batch or dataset processing (\textbf{stochastic gradient descent (SGD)}). The formula for the stochastic gradient descent is $\theta = \theta - \eta \, \nabla_{\theta} \mathcal{L}(\theta; x_i, y_i)$, where $\theta$ represents the model parameters, $\eta$ is the learning rate or step size, and $x_i$ and $y_i$ are example input and its label, respectively. The term $\nabla_{\theta} \mathcal{L}(\theta; x_i, y_i)$ is the gradient of the loss function that directs the parameters to the opposite of the the derivative of the loss function. The drawback of using SGD is that the convergence  may be slow and noisy due to high variance in updates. Therefore, Adam optimizer has surged as an alternative to SGD and gained more popularity among the ML research community. SGD keeps the learning rate $\eta$ same for all parameter updates and across all epochs. Adam, on the other hand,  adapts an adaptive learning rate scheme and combines the advantages of two extensions of SGD: Adaptive Gradient Algorithm (AdaGrad) and Root Mean Square Propagation (RMSProp). It updates the learning rate for each parameter based on estimates of first and second moments of the gradients. The adaptive learning rate scheme helps the model converge faster with higher performance. The extra information about Adam optimizer can be found in the main paper \cite{kingma2017adammethodstochasticoptimization}. In all my methods, I utilised the Adam optimizer for the training of the ML models.
+
+
+ 
+
+The training settings, such as batch size, learning rate or number of epochs, indeed change from task to task. These external settings, known as hyperparameters, are set before the training starts and control the flow of the training process. The hyperparameters are not learned from the data, but need to be tuned with some techniques, such as grid search or Bayesian optimization for the best model performance. 
+
+
+During the learning process, known as training, machines 
+\subsection{Deep Neural Networks}
+\subsubsection{Multilayer Perceptrons}
+\subsubsection{Neural representations}
+\subsubsection{Diffusion models}
