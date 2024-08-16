@@ -3,6 +3,7 @@
 
 
 \subsection{Analytic BRDF Models}
+\label{hyperbrdf-RW}
 Analytic models are the most common representation for BRDFs. Classic BRDF models include Phong~\cite{blinn77}, Cook-Torrance~\cite{cooktorrance1982}, Ward~\cite{ward1992} and GGX~\cite{walter2007microfacet}. Following models have increased their reconstruction capabilities by combining analytic formulations with data-driven representations of some or all of their components~\cite{dupuy2015, ashikhmin2007, bagher2016}. Notably, the ABC model~\cite{low2012} has been shown to provide an accurate reconstruction of measured materials, while only requiring the fitting of a handful of tunable parameters. These models are usually fast at evaluation, easily editable, and present a low memory footprint. However, they usually rely on oversimplifications of the reflectance distribution shapes, and thus have a limited capacity for the reconstruction of complex real-world materials~\cite{ngan2005, guarnera2016}. Therefore, recent works have started exploring neural representations to overcome these limitations.
 
 
