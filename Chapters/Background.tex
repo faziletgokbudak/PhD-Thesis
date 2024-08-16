@@ -335,7 +335,7 @@ Here, $L_o(\vec{x}, \omega_o) $ is the outgoing light at point $x$ in the direct
 The rendering equation gives the outgoing light at point $x$ for a given incident light direction with the known BRDF. Here, we can define the BRDF term in multiple ways, such as with mathematical models discussed earlier, or a neural network outputting the BRDF values when fed with the directions, or physical measurements captured with special instruments. 
 
 \section{Machine learning}
-This section gives an overview of the machine learning techniques I have utilised for the appearance manipulation techniques I propose in the following chapters. Machine learning techniques have become the state-of-the-art approach in most computer vision and graphics tasks due to their promising ability to learn. Especially the advances in the field, such as the introduction of deep learning with the inherent nonlinearity that comes from activation functions, have made these models ideal for tackling such ill-posed image editing tasks that most often have $many$ solutions.
+This section gives an overview of the machine learning techniques I have utilised for the appearance manipulation techniques I propose in the following chapters. Machine learning techniques have become the state-of-the-art approach in most computer vision and graphics tasks due to their promising ability to learn. Especially the advances in the field with the introduction of deep learning that offers inherent nonlinearity have made these models ideal for tackling such ill-posed image editing tasks that most often have $many$ solutions.
 
 Starting with the learning process, I will first discuss the basics of machine learning, including multilayer perceptrons that will build the baseline for the machine-learning framework I propose in one-shot detail retouching. Later, I will discuss neural representations that offer the storage of the data in a novel neural network-based setup, which is very useful for the processing of visual data that usually lies in a complex high-dimensional space. The hypernetwork model I borrowed for the HyperBRDF model is a neural representation model generalizable to new data for reconstruction. Lastly, I will summarise diffusion models, specifically latent diffusion, for the zero-shot transient attribute.
 
@@ -344,11 +344,11 @@ Machine learning (ML) is a subfield of artificial intelligence (AI) in which mac
 
 \paragraph{Types of learning.} The data is the key to the success of any ML algorithm. Supervised learning methods use paired data, each training example including input data and its corresponding output (label). The model learns a mapping between the input and the output. Classification or image-to-image translation can be given as examples. Unsupervised learning approaches, such as clustering or dimensionality reduction, learn patterns from the data without any label. Some methods, semi-supervised methods, combine both labelled and unlabeled data. Lastly, reinforcement models learn the task with a feedback mechanism, including rewards and punishments. The ML algorithms I have utilised for my main approaches are based on supervised learning. Therefore, I will focus on this learning type for the rest of this section.
 
-\paragraph{Training.} During training, the model learns from a dataset, that is, updates its parameters to minimise the errors in predictions. Training is an iterative method and starts with assigning initial values to model parameters. These initial values are, in general, chosen to be random. At each iteration, \textbf{epoch}, the parameters are adjusted with an optimizer, such as gradient descent or Adam, that reduces the errors in predictions. The errors are computed for each training example and averaged over the training dataset for the epoch loss. 
+\paragraph{Training.} During training, the model learns from a dataset, that is, updates its parameters to minimise the errors in predictions (loss function). Training is an iterative method and starts with assigning initial values to model parameters. These initial values are, in general, chosen to be random. At each iteration, \textbf{epoch}, the parameters are adjusted with an optimizer, such as gradient descent or Adam, that reduces the errors in predictions. The errors are computed for each training example and averaged over the training dataset for the epoch loss. 
 
 The large amount of data in the dataset can make parameter updates slow and computationally expensive. Therefore, the dataset is often split into subsets, known as \textbf{batches}, and each batch is processed separately at each epoch. The \textbf{batch size} is the number of training examples in one batch. It affects the efficiency and the stability of the model updates as well as the convergence speed. The completion of one epoch means that the model passed through the entire dataset once. The number of batches multiplied by the batch size gives the total number of examples in the training dataset. For instance, if we have a dataset of 100,000 images and choose the batch size as 1000, then we process 100 batches to complete one epoch. 
 
-\begin{wrapfigure}{r}{7.5cm}
+\begin{wrapfigure}{r}{7cm}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=\linewidth]{Images/gradient-descent.png}
@@ -358,13 +358,74 @@ The large amount of data in the dataset can make parameter updates slow and comp
 The model parameters can be updated either after the entire dataset is passed through the model (\textbf{batch gradient descent}), or after each batch is processed (\textbf{mini-batch gradient descent}), or for one training example rather than waiting for batch or dataset processing (\textbf{stochastic gradient descent (SGD)}). The formula for the stochastic gradient descent is $\theta = \theta - \eta \, \nabla_{\theta} \mathcal{L}(\theta; x_i, y_i)$, where $\theta$ represents the model parameters, $\eta$ is the learning rate or step size, and $x_i$ and $y_i$ are example input and its label, respectively. The term $\nabla_{\theta} \mathcal{L}(\theta; x_i, y_i)$ is the gradient of the loss function that directs the parameters to the opposite of the the derivative of the loss function. The drawback of using SGD is that the convergence  may be slow and noisy due to high variance in updates. Therefore, Adam optimizer has surged as an alternative to SGD and gained more popularity among the ML research community. SGD keeps the learning rate $\eta$ same for all parameter updates and across all epochs. Adam, on the other hand,  adapts an adaptive learning rate scheme and combines the advantages of two extensions of SGD: Adaptive Gradient Algorithm (AdaGrad) and Root Mean Square Propagation (RMSProp). It updates the learning rate for each parameter based on estimates of first and second moments of the gradients. The adaptive learning rate scheme helps the model converge faster with higher performance. The extra information about Adam optimizer can be found in the main paper \cite{kingma2017adammethodstochasticoptimization}. In all my methods, I utilised the Adam optimizer for the training of the ML models.
 
 
- 
+The training settings, such as batch size, learning rate or number of epochs, change from task to task. These external settings, known as hyperparameters, are set before the training starts and control the flow of the training process. The hyperparameters are not learned from the data, but need to be tuned with some techniques, such as grid search or Bayesian optimization for the best model performance. The size of the model also depends on the task. For a large-scale project, such as text generation, a model might require millions of parameters for effective results. However, we can also learn a handful of paramaters with the training method described. For instance, fitting the reflectance BRDF measurements to mathematical models only requires learning of 3-5 parameters. In one-shot detail retouching, I also designed trainable transformation matrices of size $9 \times 9$ whose entries are learned during training.
 
-The training settings, such as batch size, learning rate or number of epochs, indeed change from task to task. These external settings, known as hyperparameters, are set before the training starts and control the flow of the training process. The hyperparameters are not learned from the data, but need to be tuned with some techniques, such as grid search or Bayesian optimization for the best model performance. 
+\paragraph{Loss function.} We mentioned that the optimizer tries to minimize the errors in predictions with a loss function. In supervised learning, the loss can be defined as the difference between the output of the model and the label, also known as ground truth. Defining the difference depends on the expectations from the model. Two well-known loss functions are L1 and L2 norm distances. If we define the neural network as a function $f_\theta$, then L1 loss becomes $\mathcal{L}_{1} = \sum_i \,\abs{y_i - f_\theta(x_i)}$, and L2 loss is $\mathcal{L}_{2} = \sum_i \, (y_i - f_\theta(x_i))^2$ (Figure \ref{l1vsl2loss}).  In case the dataset consists of outliers, data points that significantly diverge from the remaining data points, L2 leads to larger errors due to the computation of the squared differences. For instance, details or high frequency components in an image can be considered outliers as these values deviate from the average image. Therefore, L1 loss might be more preferred for enhancing the details. In case the losses are averaged over the dataset, they are called Mean Absolute Error (MAE) and Mean Squared Error (MSE), respectively.
+
+Some tasks might require more sophisticated loss functions. For instance, the difference can be taken on another space by first projecting the paired data onto the target space. VGG loss \ref{johnson2016perceptuallossesrealtimestyle} uses a VGG network to map the input image to their style features, which are then used to compute the L2 loss. In HyperBRDF, I first apply a logarithmic mapping to scale the data for more effective training. Such tricks are, in general, task-specific designed to improve the model performance.
+
+\begin{figure}[ht]
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.4\linewidth]{Images/l1vsl2loss.png}
+   \caption{L1 vs L2 loss values for a single data point. Ground truth $y$ is set to 0.}
+   \label{fig:l1vsl2loss}
+\end{figure}
+
+\paragraph{Regularisation.} Training the model on the entire dataset can lead to overfitting, that is, the model's performance significantly decreases when tested on different data points. It occurs when the learned model becomes highly complex, no longer representing the overall data distribution but fitting to individual training samples instead. For models to generalize well to new data, a regularization term can be added to the loss function. This term helps penalize the highly complex models, preventing overfitting. L1 ($\lambda \, \sum_i \abs{\theta_i}$) and L2 norm ($\lambda \, \sum_i \theta^2_i$) regularizations are the two well-known terms. L1 norm pushes low parameter values to zero, encouraging sparsity. As some parameters become zero, L1 regularisation becomes highly effective in feature selection. L2 regularization reduces model complexity but maintains the features. It manages multicollinearity by distributing the importance among correlated features, and offers smooth solutions. The coefficient $\lambda$ defines the strength of the regularization. If we combine a MSE with L2 regularization, we will have the following loss function:
+
+\begin{equation}
+\mathcal{L}(\theta) = \frac{1}{m} \sum_{i=1}^{m} (y_i - f_\theta(x_i))^2 + \lambda \sum_{j=1}^{n} \theta_j^2
+\label{MSE-with-L2reg}
+\end{equation}
+
+Here, $m$ is the number of training samples, and $n$ indicates the number of parameters. In HyperBRDF, I benefitted from L2 regularization for both latent representations and model parameters to maintain the features while reducing collinearity.
+
+\paragraph{Data augmentation} is the process of producing altered versions of pre-existing data samples with the aim of increasing the diversity in the training dataset. Data augmentation is another strategy to prevent overfitting and make the model more generalizable to new data. It also helps compensate for data-scarce regimes where collecting a large-scale dataset is highly impractical. The augmentation approach depends on the type of data. For images, the types of augmentation can include geometric transformations, such as rotating, scaling, translation, flipping, and cropping, color space transformation, such as brightness, contrast, saturation and hue adjustment, noise injection, applying kernel filters, etc. In one-shot detail retouching, I extracted patches of size $3 \times 3$ with a stride of 1, which led to overlapping patches as a means of data augmentation.
+
+\subsection{Multilayer Perceptrons}
+
+\begin{wrapfigure}{r}{5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=\linewidth]{Images/neuron.png}
+   \caption{Graph representation of a linear equation.}
+   \label{fig:neuron}
+\end{wrapfigure}
+
+Inspired by the biological neural networks, deep neural networks (DNN) are designed as artificial neural networks that consist of layers, neurons, and connections between the neurons. As the ML field has advanced over time, the neural network models have become highly complex with multiple layers that lie between the input and output layers. To understand the basics of DNNs, let's consider a linear equation $y = \sum^n_i\vec{w_i} . \vec{x_i} + b = \vec{w}^T . \vec{x} + b$, where neurons are input data points $x_i$ that are connected to the output neuron $y$ via connections, known as weights $w_i$ (Figure \ref{fig:neuron}), and a bias term $b$. Here, we have the input layer (first layer with input neurons) and the output layer (last layer of the network)  and weights multiplied with input data points to obtain the output. This can be considered as the most basic neural network model. The machine learning bit of neural networks is known as deep learning, a subfield of ML in which the learning process discussed above is used to learn the weights and biases of this equation or the neural network. I mentioned earlier that nonlinearity is an inherent feature of deep learning. This comes from an additional function, known as activation function, applied to the linear equation above ($y = \sigma(\vec{w} ^T. \vec{x} + b)$). The nonlinearity helps bring additional information to the linear system and can constrain the solution space, which, otherwise, would have infinitely many solutions in the linear space. 
 
 
-During the learning process, known as training, machines 
-\subsection{Deep Neural Networks}
-\subsubsection{Multilayer Perceptrons}
-\subsubsection{Neural representations}
-\subsubsection{Diffusion models}
+Assuming a feedforward structure, a neural network can put its neurons into stacks of layers, each layer only depending on the previous layers. This model, a \textbf{multilayer perceptron (MLP)} (Figure \ref{fig:mlp}), is one of the simplest and most widely used neural network model that can be used for multiple applications, such as image classification, regression, and pattern recognition. Extending the equation above, an MLP layer can be expressed in the matrix form as:
+\begin{equation}
+\vec{y} = \sigma \biggl(\mathbf{W}\vec{x} + \vec{b} \biggr)
+\end{equation}
+where $\mathbf{W}$ and $\vec{b}$ are the weight matrix and bias vector of the corresponding MLP layer. We can stack multiple such layers (hidden or intermediate layers) between the input and output layers, which increases the \textbf{depth} of the MLP:
+\begin{equation}
+\vec{y} = \sigma_2 \biggl( \mathbf{W}_1\sigma_1 \biggl(\mathbf{W}_1\vec{x} + \vec{b}_1 \biggr) + \vec{b}_2\biggr) 
+\end{equation}
+Here, each layer has its own weights and biases multiplied with the output of the previous layer. We can compute the total number of parameters by multiplying the number of input and output neurons for each layer and then adding them all together along with the bias terms. 
+
+%For instance, the total number of parameters in the MLP model shown below is $4 \times 5 + 5 \times 3 + 3 \times 2 + 5 + 3 + 2$.
+
+
+\begin{figure}[ht]
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.8\linewidth]{Images/MLP.jpeg}
+   \caption{A basic multilayer perceptron model.}
+   \label{fig:mlp}
+\end{figure}
+
+The passing of the input towards the network to obtain the output is called \textbf{forward pass or forward propagation}. The \textbf{backward pass}, on the other hand, defines the training process of neural networks. Training in deep learning follows the same steps as I have discussed earlier for the ML model training. We compute a loss function based on the output obtained with the forward pass, then take its gradients to update the parameters, weights and biases in this case. As deep neural networks have multiple layers, computing the gradient of the loss with respect to first layers requires applying the chain rule. The gradients propagate back towards the input. That is why backward pass is also called \textbf{backpropagation}. One problem with backpropagation is that the gradients can get extremely small as they backpropagate towards the input layer, known as \textbf{vanishing gradients}. It happens because the gradient with respect to early layers is the product of the gradient with respect to later layers. If  the gradient in the last layers is smaller than one, then their products vanish at a rapid pace. ReLU activation function, batch normalization, skip connections and gradient scaling are some methods to overcome the vanishing gradients problems.
+
+\paragraph{Activation functions.} The choice of activation functions depends on the task and output expectations. The rectified linear function (ReLU) is one of the most commonly used activation functions in computer vision problems due to lack of vanishing gradients and computational efficiency:
+\begin{equation}
+\sigma(x) = max(x, 0)
+\end{equation}
+
+ReLU is also preferred when the output values are not expected to go below zero. For instance, the value range of image pixels is, in general, $[0, 1]$ after the pre-processing, or the BRDF properties suggest that the values should  
+also don't allow negative output values, which 
+
+\subsection{Neural representations}
+\subsection{Diffusion models}
