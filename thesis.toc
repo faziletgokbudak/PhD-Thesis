@@ -1,88 +1,99 @@
 \thispagestyle {empty}
-\contentsline {chapter}{\numberline {1}Introduction}{13}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Research Vision and Motivation}{13}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Contributions}{13}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Relationship to Published Work}{13}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Background}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Rendering}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Displaying an image}{15}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}3D scene components}{18}{subsection.2.1.2}%
-\contentsline {paragraph}{Geometry.}{18}{section*.9}%
-\contentsline {subsection}{\numberline {2.1.3}Photo-realistic rendering}{20}{subsection.2.1.3}%
-\contentsline {paragraph}{Perspective projection and visibility.}{20}{section*.11}%
-\contentsline {paragraph}{Appearance.}{21}{section*.14}%
-\contentsline {paragraph}{Ray tracing - Light transport simulation.}{24}{section*.17}%
-\contentsline {subsection}{\numberline {2.1.4}Shaders and BRDF}{26}{subsection.2.1.4}%
-\contentsline {paragraph}{BRDF.}{28}{section*.21}%
-\contentsline {subsection}{\numberline {2.1.5}Rendering Equation}{30}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}Machine learning}{30}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Foundations}{31}{subsection.2.2.1}%
-\contentsline {paragraph}{Types of learning.}{31}{section*.22}%
-\contentsline {paragraph}{Training.}{31}{section*.23}%
-\contentsline {paragraph}{Loss function.}{33}{section*.24}%
-\contentsline {paragraph}{Regularisation.}{33}{section*.26}%
-\contentsline {paragraph}{Data augmentation}{34}{section*.27}%
-\contentsline {subsection}{\numberline {2.2.2}Multilayer Perceptrons}{34}{subsection.2.2.2}%
-\contentsline {paragraph}{Activation functions.}{36}{section*.29}%
-\contentsline {subsection}{\numberline {2.2.3}Neural implicit representations}{37}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Diffusion models}{38}{subsection.2.2.4}%
-\contentsline {chapter}{\numberline {3}One-shot Detail Retouching}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{39}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Related Work}{41}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Digital Photo Enhancement}{41}{subsection.3.2.1}%
-\contentsline {paragraph}{Global image enhancement.}{41}{section*.32}%
-\contentsline {paragraph}{Local context-aware image enhancement.}{42}{section*.33}%
-\contentsline {paragraph}{Differentiable image processing pipelines.}{42}{section*.34}%
-\contentsline {subsection}{\numberline {3.2.2}Defining Maps between Images}{43}{subsection.3.2.2}%
-\contentsline {paragraph}{Unsupervised methods.}{43}{section*.35}%
-\contentsline {paragraph}{Supervised methods.}{43}{section*.36}%
-\contentsline {section}{\numberline {3.3}Overview and Motivations}{44}{section.3.3}%
-\contentsline {section}{\numberline {3.4}One-shot Retouching}{44}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Frequency Decomposition}{46}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Transformation Blending}{46}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Retouching an Input Image}{47}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Implementation}{47}{subsection.3.4.4}%
-\contentsline {paragraph}{Patch size and stride.}{47}{section*.38}%
-\contentsline {paragraph}{Detail and color modifications.}{47}{section*.39}%
-\contentsline {paragraph}{Evaluation metrics.}{47}{section*.40}%
-\contentsline {paragraph}{Training details.}{47}{section*.41}%
-\contentsline {section}{\numberline {3.5}Results}{48}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Ablation Study}{48}{subsection.3.5.1}%
-\contentsline {paragraph}{Transformation Matrices.}{48}{section*.42}%
-\contentsline {paragraph}{Patch-adaptive Transformation Blending.}{48}{section*.45}%
-\contentsline {paragraph}{Weights visulation.}{49}{section*.46}%
-\contentsline {subsection}{\numberline {3.5.2}Qualitative Results}{51}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Comparison with the state-of-the-art}{53}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Limitations and Future Work}{56}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Conclusions}{57}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Neural Generalizable Material Representation}{59}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Acquisition Systems}{61}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Related Work}{61}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analytic BRDF Models}{61}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Regression-based BRDF Estimation}{62}{subsection.4.3.2}%
-\contentsline {paragraph}{Deep learning for BRDF modeling.}{62}{section*.55}%
-\contentsline {subsection}{\numberline {4.3.3}Efficient BRDF Acquisition}{62}{subsection.4.3.3}%
-\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{63}{section*.56}%
-\contentsline {subsection}{\numberline {4.3.4}Hypernetworks and GNFs}{63}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Methodology}{63}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Pre-processing}{63}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Hypernetwork}{64}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Set Encoder}{65}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Hypernetwork Decoder and Hyponet}{65}{subsubsection.4.4.2.2}%
-\contentsline {subsection}{\numberline {4.4.3}Training}{65}{subsection.4.4.3}%
-\contentsline {paragraph}{Inference:}{66}{section*.58}%
-\contentsline {section}{\numberline {4.5}Experiments}{66}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Datasets and Baselines}{66}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Sparse BRDF Reconstruction}{67}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}Qualitative Comparison}{67}{subsubsection.4.5.2.1}%
-\contentsline {subsubsection}{\numberline {4.5.2.2}Quantitative Evaluation}{70}{subsubsection.4.5.2.2}%
-\contentsline {subsection}{\numberline {4.5.3}Compression}{71}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}BRDF Editing}{72}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Limitations and Future Work}{72}{subsection.4.5.5}%
-\contentsline {paragraph}{Specular components:}{72}{section*.66}%
-\contentsline {paragraph}{BRDF editing:}{72}{section*.67}%
-\contentsline {paragraph}{SVBRDF representations:}{72}{section*.68}%
-\contentsline {section}{\numberline {4.6}Conclusion}{73}{section.4.6}%
-\contentsline {chapter}{Bibliography}{75}{section*.69}%
-\contentsline {chapter}{\numberline {A}Extra Information}{89}{appendix.A}%
+\contentsline {chapter}{\numberline {1}Introduction}{15}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Research Vision and Motivation}{15}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Contributions}{15}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Relationship to Published Work}{15}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Background}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Rendering}{17}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Displaying an image}{17}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}3D scene components}{20}{subsection.2.1.2}%
+\contentsline {paragraph}{Geometry.}{20}{section*.9}%
+\contentsline {subsection}{\numberline {2.1.3}Photo-realistic rendering}{22}{subsection.2.1.3}%
+\contentsline {paragraph}{Perspective projection and visibility.}{22}{section*.11}%
+\contentsline {paragraph}{Appearance.}{23}{section*.14}%
+\contentsline {paragraph}{Ray tracing - Light transport simulation.}{26}{section*.17}%
+\contentsline {subsection}{\numberline {2.1.4}Shaders and BRDF}{28}{subsection.2.1.4}%
+\contentsline {paragraph}{BRDF.}{30}{section*.21}%
+\contentsline {subsection}{\numberline {2.1.5}Rendering Equation}{32}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Machine learning}{32}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Foundations}{33}{subsection.2.2.1}%
+\contentsline {paragraph}{Types of learning.}{33}{section*.22}%
+\contentsline {paragraph}{Training.}{33}{section*.23}%
+\contentsline {paragraph}{Loss function.}{35}{section*.24}%
+\contentsline {paragraph}{Regularisation.}{35}{section*.26}%
+\contentsline {paragraph}{Data augmentation}{36}{section*.27}%
+\contentsline {subsection}{\numberline {2.2.2}Multilayer Perceptrons}{36}{subsection.2.2.2}%
+\contentsline {paragraph}{Activation functions.}{38}{section*.29}%
+\contentsline {subsection}{\numberline {2.2.3}Neural implicit representations}{39}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Diffusion models}{40}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}One-shot Detail Retouching}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{41}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Related Work}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Digital Photo Enhancement}{43}{subsection.3.2.1}%
+\contentsline {paragraph}{Global image enhancement.}{43}{section*.32}%
+\contentsline {paragraph}{Local context-aware image enhancement.}{44}{section*.33}%
+\contentsline {paragraph}{Differentiable image processing pipelines.}{44}{section*.34}%
+\contentsline {subsection}{\numberline {3.2.2}Defining Maps between Images}{45}{subsection.3.2.2}%
+\contentsline {paragraph}{Unsupervised methods.}{45}{section*.35}%
+\contentsline {paragraph}{Supervised methods.}{45}{section*.36}%
+\contentsline {section}{\numberline {3.3}Overview and Motivations}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.4}One-shot Retouching}{46}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Frequency Decomposition}{48}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Transformation Blending}{48}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Retouching an Input Image}{49}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Implementation}{49}{subsection.3.4.4}%
+\contentsline {paragraph}{Patch size and stride.}{49}{section*.38}%
+\contentsline {paragraph}{Detail and color modifications.}{49}{section*.39}%
+\contentsline {paragraph}{Evaluation metrics.}{49}{section*.40}%
+\contentsline {paragraph}{Training details.}{49}{section*.41}%
+\contentsline {section}{\numberline {3.5}Results}{50}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Ablation Study}{50}{subsection.3.5.1}%
+\contentsline {paragraph}{Transformation Matrices.}{50}{section*.42}%
+\contentsline {paragraph}{Patch-adaptive Transformation Blending.}{50}{section*.45}%
+\contentsline {paragraph}{Weights visulation.}{51}{section*.46}%
+\contentsline {subsection}{\numberline {3.5.2}Qualitative Results}{53}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Comparison with the state-of-the-art}{55}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Limitations and Future Work}{58}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Conclusions}{59}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Neural Generalizable Material Representation}{61}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{61}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Acquisition Systems}{63}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Related Work}{63}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analytic BRDF Models}{63}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Regression-based BRDF Estimation}{64}{subsection.4.3.2}%
+\contentsline {paragraph}{Deep learning for BRDF modeling.}{64}{section*.55}%
+\contentsline {subsection}{\numberline {4.3.3}Efficient BRDF Acquisition}{64}{subsection.4.3.3}%
+\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{65}{section*.56}%
+\contentsline {subsection}{\numberline {4.3.4}Hypernetworks and GNFs}{65}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Methodology}{65}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Pre-processing}{65}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Hypernetwork}{66}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Set Encoder}{67}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Hypernetwork Decoder and Hyponet}{67}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Training}{67}{subsection.4.4.3}%
+\contentsline {paragraph}{Inference:}{68}{section*.58}%
+\contentsline {section}{\numberline {4.5}Ablation Studies}{68}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Latent Dimension}{68}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Log Relative Mapping (LRM)}{69}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Cosine Weighting}{69}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Principal Component Analysis (PCA)}{69}{subsection.4.5.4}%
+\contentsline {paragraph}{Number of Principal Components:}{69}{section*.60}%
+\contentsline {subsection}{\numberline {4.5.5}GGX Fittings}{69}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Experiments}{70}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Datasets and Baselines}{70}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Sparse BRDF Reconstruction}{71}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Qualitative Comparison}{72}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}Quantitative Evaluation}{74}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Compression}{75}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}BRDF Editing}{76}{subsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.6.5}Scene Renderings}{76}{subsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.6.6}Limitations and Future Work}{77}{subsection.4.6.6}%
+\contentsline {paragraph}{Specular components:}{77}{section*.73}%
+\contentsline {paragraph}{BRDF editing:}{77}{section*.74}%
+\contentsline {paragraph}{SVBRDF representations:}{77}{section*.75}%
+\contentsline {section}{\numberline {4.7}Conclusion}{78}{section.4.7}%
+\contentsline {chapter}{Bibliography}{79}{section*.76}%
+\contentsline {chapter}{\numberline {A}Extra Information}{93}{appendix.A}%
+\contentsline {section}{\numberline {A.1}HyperBRDF - Additional Results}{93}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Full Reconstruction}{93}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Compression}{93}{subsection.A.1.2}%
