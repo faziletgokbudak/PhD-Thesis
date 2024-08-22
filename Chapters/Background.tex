@@ -20,7 +20,7 @@ An image is displayed on a computer screen or, in general, a display system afte
 
 Let's consider the display of a sphere on a computer screen. We apply a grid on the sphere to represent pixels. Some pixels have a constant colour of the object, while some are blank. On the other hand, some pixels include different shades of the object colour or some are half-overlapped with the sphere. The question here is how to fill the pixels with mixed colours. 
 
-
+hey
 In a simple case where we only have a single colour with a blank background, we can subdivide this pixel into sub-pixels and count the number of pixels that belong to the object and the background. Later, the colour of the corresponding pixel can be approximated by taking the weighted average between the background and object colour. For instance, Figure \ref{fig:display-grid} shows the display of a sphere with grids symbolising pixels. The sub-pixels on the right can be counted to compute the colour of the corresponding large pixel. The generalized implementation of this approach can be seen in Figure \ref{fig:colour-approximate}, where I computed the mean value with a sliding window of different sizes (50, 100 and 200 in order, for image size of 3024 x 4032).
 
 \begin{figure}
