@@ -8,7 +8,7 @@ This section gives an overview of rendering an image of a 3D scene to connect th
 \subsection{Displaying an image}
 An image is displayed on a computer screen or, in general, a display system after the stored data is processed in a computer. Here, the computer and the display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces (pixels) for their display as an image. This operation is known as discretization. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
@@ -111,7 +111,7 @@ The human visual system is inherently an optical system that converges light ray
 
 To achieve foreshortening effect, imagine we have a canvas or an image plane between the eye and the object. By tracing the lines from the eye to the corners of the objects, we can find the location of the projected corners (points) on the image plane (perspective projection). We can then draw the objects' edges on the image plane to complete the look. However, this look is unlikely to be photo-realistic as we haven't figured what edges are visible from the viewpoint. For instance, if it were an opaque cube, then the back sides would remain hidden behind the front sides. Therefore, rendering involves computations for both the visibility problem and the perspective projection. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=0.6\linewidth]{Images/perspective_projection.png}
@@ -122,7 +122,7 @@ To achieve foreshortening effect, imagine we have a canvas or an image plane bet
 
 We can project a 3D scene onto a flat surface in different ways. For instance, in artistic drawing, perspective projection can include multiple focal points (Figure \ref{fig:artistic_drawing}). However, computer graphics generally assumes one-point perspective as it mimics our visual system as well as cameras. In this approach, the line of sight, the line from the eye perpendicular to the canvas, passes through the center of the canvas. The view frustum is the region of the scene projected onto the canvas. The lines passing through the corners of the canvas forms the frustum base (Figure \ref{fig:perspective_projection}). Here, we can change the size of the canvas, which results in the change of the frustum size and, consequently, the visible region of the scene. This resembles the techniques in photography where changing the focal length of the camera lenses adjusts the field of view.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=0.4\linewidth, height=4.5cm]{Images/single_point_perspective.png}
@@ -166,7 +166,7 @@ At the object level, reflection can be considered a mirror-like look, where the 
 
 \begin{figure}
 \includegraphics[width=0.9\linewidth]{Images/diagram_microfacet.png}
-\caption{Reflection on a surface with microfacets vs smooth surface. Image from [Guy and Agopian, 2024]}
+\caption{Reflection on a surface with microfacets vs smooth surface. Image from [Guy and Agopian, 2024]}\label{fig:microfacet}
 \end{figure} 
 
 % \begin{figure}
@@ -189,7 +189,7 @@ At the object level, reflection can be considered a mirror-like look, where the 
 \end{wrapfigure}
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=0.7\linewidth]{Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-reflections-occur-on.png}
@@ -258,7 +258,7 @@ I_d = I_l \, k_d \cos(\theta) = I_l \, k_d \, (N . L)
 \end{equation}
 where $I_l$ is the intensity of the light source. Note that the lights with different colours can have different $I_l$ and $k_d$. Also, $\cos(\theta) < 0$ indicates that the light remains behind the surface, not contributing to the brightness on the visible side. The effect of $\cos$ term is visible in Figure \ref{fig:diffuse+spec}, where the diffuse intensity gets dimmer as the points on the surface gets further away from the point of contact (specular highlight). 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=0.5\linewidth]{Images/diffuse+specular+angle.pdf}
@@ -286,7 +286,7 @@ Modelling light-material interactions is extremely complex due to the nature of 
 
 Before going into the details of BRDF, let's examine the effect of the roughness term in the Phong model:
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=\linewidth]{Images/Phong-roughness-coeff.pdf}
