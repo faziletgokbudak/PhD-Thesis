@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  22 AUG 2024 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  23 AUG 2024 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1001,11 +1001,7 @@ File: Images/perspective_projection.png Graphic file (type png)
 Package pdftex.def Info: Images/perspective_projection.png  used on input line 
 117.
 (pdftex.def)             Requested size: 273.14923pt x 123.63669pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[22]
+ [22]
 <Images/single_point_perspective.png, id=498, 3489.035pt x 3035.34pt>
 File: Images/single_point_perspective.png Graphic file (type png)
 <use Images/single_point_perspective.png>
@@ -1472,184 +1468,7 @@ File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 5.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2479, 598.235pt x 845.1575pt>
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf  used on input l
-ine 47.
-(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf  used on input l
-ine 47.
-(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2482, page=1, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 1>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page1 used on 
-input line 47.
-(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 1>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page1 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 1>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page1 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 1>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page1 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2483, page=2, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 2>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page2 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 2>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page2 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2484, page=3, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 3>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page3 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 3>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page3 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2485, page=4, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 4>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page4 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 4>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page4 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2486, page=5, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 5>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page5 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 5>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page5 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2487, page=6, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 6>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page6 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 6>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page6 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2488, page=7, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 7>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page7 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 7>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page7 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2489, page=8, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 8>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page8 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 8>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page8 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2490, page=9, 598.235pt x 845.1575pt
->
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 9>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page9 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 9>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page9 used on 
-input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2491, page=10, 598.235pt x 845.1575p
-t>
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 10>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page10 used on
- input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 10>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page10 used on
- input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2492, page=11, 598.235pt x 845.1575p
-t>
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 11>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page11 used on
- input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 11>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page11 used on
- input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-<Chapters/hyperbrdf-figs/comp-crop.pdf, id=2493, page=12, 598.235pt x 845.1575p
-t>
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 12>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page12 used on
- input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 12>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page12 used on
- input line 47.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-
-
-./Chapters/Appendix.tex:53: Package hypcap Error: You have forgotten to use \ca
-ption.
-
-See the hypcap package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 \end{figure*}
-                  
-? 
-<Chapters/hyperbrdf-figs/supp_40.pdf, id=2494, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_40.pdf, id=2479, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_40.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_40.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_40.pdf  used on input lin
@@ -1661,9 +1480,10 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 8
 6.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
 
+
 LaTeX Warning: Float too large for page by 55.60735pt on input line 89.
 
-<Chapters/hyperbrdf-figs/supp_160.pdf, id=2495, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_160.pdf, id=2480, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_160.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_160.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_160.pdf  used on input li
@@ -1677,7 +1497,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 9
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 102.
 
-<Chapters/hyperbrdf-figs/supp_400.pdf, id=2496, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_400.pdf, id=2481, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_400.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_400.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_400.pdf  used on input li
@@ -1691,7 +1511,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 115.
 
-<Chapters/hyperbrdf-figs/supp_2000.pdf, id=2497, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_2000.pdf, id=2482, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_2000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_2000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_2000.pdf  used on input l
@@ -1705,7 +1525,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 128.
 
-<Chapters/hyperbrdf-figs/supp_4000.pdf, id=2498, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_4000.pdf, id=2483, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_4000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_4000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_4000.pdf  used on input l
@@ -1719,90 +1539,11 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 140.
 
-)
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 1>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page1 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 2>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page2 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 3>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page3 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 4>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page4 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 5>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page5 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 6>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page6 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 7>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page7 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 8>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page8 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 9>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page9 used on 
-input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 10>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page10 used on
- input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 11>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page11 used on
- input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: Chapters/hyperbrdf-figs/comp-crop.pdf Graphic file (type pdf)
-<use Chapters/hyperbrdf-figs/comp-crop.pdf, page 12>
-Package pdftex.def Info: Chapters/hyperbrdf-figs/comp-crop.pdf , page12 used on
- input line 231.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [95 <./Chapters/hyperbrdf-figs/comp-crop.pdf> <./Chapters/hyperbrdf-figs/comp-
-crop.pdf> <./Chapters/hyperbrdf-figs/comp-crop.pdf> <./Chapters/hyperbrdf-figs/
-comp-crop.pdf> <./Chapters/hyperbrdf-figs/comp-crop.pdf> <./Chapters/hyperbrdf-
-figs/comp-crop.pdf> <./Chapters/hyperbrdf-figs/comp-crop.pdf> <./Chapters/hyper
-brdf-figs/comp-crop.pdf> <./Chapters/hyperbrdf-figs/comp-crop.pdf> <./Chapters/
-hyperbrdf-figs/comp-crop.pdf> <./Chapters/hyperbrdf-figs/comp-crop.pdf> <./Chap
-ters/hyperbrdf-figs/comp-crop.pdf>] [96 <./Chapters/hyperbrdf-figs/qualitative_
-comp_40_all_samples.pdf> <./Chapters/hyperbrdf-figs/vbar.png>] [97
-
-
-
-
-
-
-
-
-
-
-
-
-] [98 <./Chapters/hyperbrdf-figs/supp_40.pdf>] [99 <./Chapters/hyperbrdf-figs/s
-upp_160.pdf>] [100 <./Chapters/hyperbrdf-figs/supp_400.pdf>] [101 <./Chapters/h
-yperbrdf-figs/supp_2000.pdf>] [102 <./Chapters/hyperbrdf-figs/supp_4000.pdf>]
+) [95] [96 <./Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf> <./C
+hapters/hyperbrdf-figs/vbar.png>] [97 <./Chapters/hyperbrdf-figs/supp_40.pdf>]
+[98 <./Chapters/hyperbrdf-figs/supp_160.pdf>] [99 <./Chapters/hyperbrdf-figs/su
+pp_400.pdf>] [100 <./Chapters/hyperbrdf-figs/supp_2000.pdf>] [101 <./Chapters/h
+yperbrdf-figs/supp_4000.pdf>] [102]
 No file thesis.ind.
 
 Package natbib Warning: There were undefined citations.
@@ -1823,13 +1564,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 904BB952805F6B70F86711741EFEC52C;11001.
  ) 
 Here is how much of TeX's memory you used:
- 23669 strings out of 474116
- 407323 string characters out of 5743683
- 1951187 words of memory out of 5000000
- 44869 multiletter control sequences out of 15000+600000
+ 23624 strings out of 474116
+ 404936 string characters out of 5743683
+ 1944187 words of memory out of 5000000
+ 44825 multiletter control sequences out of 15000+600000
  581724 words of font info for 230 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,17n,131p,2400b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,13n,131p,2400b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -1847,10 +1588,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (102 pages, 257620033 bytes).
+Output written on thesis.pdf (102 pages, 232688296 bytes).
 PDF statistics:
- 6235 PDF objects out of 7423 (max. 8388607)
- 3468 compressed objects within 35 object streams
- 408 named destinations out of 1000 (max. 500000)
- 54680 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 5004 PDF objects out of 5155 (max. 8388607)
+ 2860 compressed objects within 29 object streams
+ 407 named destinations out of 1000 (max. 500000)
+ 54605 words of extra memory for PDF output out of 61914 (max. 10000000)
 
