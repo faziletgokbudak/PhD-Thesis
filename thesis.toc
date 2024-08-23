@@ -57,41 +57,41 @@
 \contentsline {section}{\numberline {3.6}Conclusions}{59}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Neural Generalizable Material Representation}{61}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{61}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Acquisition Systems}{63}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Related Work}{63}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analytic BRDF Models}{63}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.2}Motivation and Impact}{63}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Related Work}{64}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analytic BRDF Models}{64}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Regression-based BRDF Estimation}{64}{subsection.4.3.2}%
-\contentsline {paragraph}{Deep learning for BRDF modeling.}{64}{section*.55}%
-\contentsline {subsection}{\numberline {4.3.3}Efficient BRDF Acquisition}{64}{subsection.4.3.3}%
+\contentsline {paragraph}{Deep learning for BRDF modeling.}{65}{section*.55}%
+\contentsline {subsection}{\numberline {4.3.3}Efficient BRDF Acquisition}{65}{subsection.4.3.3}%
 \contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{65}{section*.56}%
-\contentsline {subsection}{\numberline {4.3.4}Hypernetworks and GNFs}{65}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Methodology}{65}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Pre-processing}{65}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Hypernetwork}{66}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Set Encoder}{67}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Hypernetwork Decoder and Hyponet}{67}{subsubsection.4.4.2.2}%
-\contentsline {subsection}{\numberline {4.4.3}Training}{67}{subsection.4.4.3}%
-\contentsline {paragraph}{Inference:}{68}{section*.58}%
-\contentsline {section}{\numberline {4.5}Experiments}{68}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Datasets and Baselines}{68}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Sparse BRDF Reconstruction}{69}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}Qualitative Comparison}{70}{subsubsection.4.5.2.1}%
-\contentsline {subsubsection}{\numberline {4.5.2.2}Quantitative Evaluation}{72}{subsubsection.4.5.2.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.3}Comparison with Casual Capture Setups}{73}{subsubsection.4.5.2.3}%
-\contentsline {subsection}{\numberline {4.5.3}Compression}{74}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.3.4}Hypernetworks and GNFs}{66}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Methodology}{67}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Pre-processing}{67}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Hypernetwork}{67}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Set Encoder}{68}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Hypernetwork Decoder and Hyponet}{68}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Training}{68}{subsection.4.4.3}%
+\contentsline {paragraph}{Inference:}{69}{section*.58}%
+\contentsline {section}{\numberline {4.5}Experiments}{69}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Datasets and Baselines}{69}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Sparse BRDF Reconstruction}{70}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Qualitative Comparison}{71}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}Quantitative Evaluation}{74}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}Comparison with Casual Capture Setups}{74}{subsubsection.4.5.2.3}%
+\contentsline {subsection}{\numberline {4.5.3}Compression}{75}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {4.5.4}BRDF Editing}{75}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Scene Renderings}{75}{subsection.4.5.5}%
-\contentsline {subsection}{\numberline {4.5.6}Ablation Studies}{76}{subsection.4.5.6}%
-\contentsline {subsubsection}{\numberline {4.5.6.1}Latent Dimension}{76}{subsubsection.4.5.6.1}%
-\contentsline {subsubsection}{\numberline {4.5.6.2}Log Relative Mapping (LRM)}{76}{subsubsection.4.5.6.2}%
-\contentsline {subsubsection}{\numberline {4.5.6.3}Cosine Weighting}{76}{subsubsection.4.5.6.3}%
-\contentsline {subsubsection}{\numberline {4.5.6.4}Principal Component Analysis (PCA)}{76}{subsubsection.4.5.6.4}%
-\contentsline {paragraph}{Number of Principal Components:}{76}{section*.70}%
-\contentsline {subsection}{\numberline {4.5.7}Limitations and Future Work}{77}{subsection.4.5.7}%
-\contentsline {paragraph}{Specular components:}{77}{section*.73}%
-\contentsline {paragraph}{BRDF editing:}{77}{section*.74}%
-\contentsline {paragraph}{SVBRDF representations:}{77}{section*.75}%
-\contentsline {section}{\numberline {4.6}Conclusion}{77}{section.4.6}%
+\contentsline {subsection}{\numberline {4.5.5}Scene Renderings}{76}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.6}Ablation Studies}{78}{subsection.4.5.6}%
+\contentsline {subsubsection}{\numberline {4.5.6.1}Latent Dimension}{78}{subsubsection.4.5.6.1}%
+\contentsline {subsubsection}{\numberline {4.5.6.2}Log Relative Mapping (LRM)}{78}{subsubsection.4.5.6.2}%
+\contentsline {subsubsection}{\numberline {4.5.6.3}Cosine Weighting}{78}{subsubsection.4.5.6.3}%
+\contentsline {subsubsection}{\numberline {4.5.6.4}Principal Component Analysis (PCA)}{78}{subsubsection.4.5.6.4}%
+\contentsline {paragraph}{Number of Principal Components:}{79}{section*.70}%
+\contentsline {subsection}{\numberline {4.5.7}Limitations and Future Work}{79}{subsection.4.5.7}%
+\contentsline {paragraph}{Specular components:}{79}{section*.73}%
+\contentsline {paragraph}{BRDF editing:}{79}{section*.74}%
+\contentsline {paragraph}{SVBRDF representations:}{80}{section*.75}%
+\contentsline {section}{\numberline {4.6}Conclusion}{80}{section.4.6}%
 \contentsline {chapter}{Bibliography}{81}{section*.76}%
 \contentsline {chapter}{\numberline {A}Extra Information}{95}{appendix.A}%
 \contentsline {section}{\numberline {A.1}HyperBRDF - Additional Results}{95}{section.A.1}%

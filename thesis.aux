@@ -268,6 +268,9 @@
 \citation{jiang2021cotr}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces A room scene rendered with our reconstructed materials, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and BRDF interpolation (right-most teapot). Scene courtesy of Benedikt Bitterli.}}{62}{figure.caption.54}\protected@file@percent }
 \newlabel{fig:teaser}{{4.1}{62}{A room scene rendered with our reconstructed materials, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and BRDF interpolation (right-most teapot). Scene courtesy of Benedikt Bitterli}{figure.caption.54}{}}
+\citation{Matusik2003jul}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Motivation and Impact}{63}{section.4.2}\protected@file@percent }
+\newlabel{sec:hyperbrdf-mot}{{4.2}{63}{Motivation and Impact}{section.4.2}{}}
 \citation{blinn77}
 \citation{cooktorrance1982}
 \citation{ward1992}
@@ -275,17 +278,16 @@
 \citation{dupuy2015,ashikhmin2007,bagher2016}
 \citation{low2012}
 \citation{ngan2005,guarnera2016}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Acquisition Systems}{63}{section.4.2}\protected@file@percent }
-\newlabel{sec:Acquisition-Systems}{{4.2}{63}{Acquisition Systems}{section.4.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Related Work}{63}{section.4.3}\protected@file@percent }
-\newlabel{sec:relatedwork}{{4.3}{63}{Related Work}{section.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Analytic BRDF Models}{63}{subsection.4.3.1}\protected@file@percent }
-\newlabel{hyperbrdf-RW}{{4.3.1}{63}{Analytic BRDF Models}{subsection.4.3.1}{}}
 \citation{matusik2003data,nielsen2015optimal,serrano2018intuitive}
 \citation{lawrence2004efficient,lawrence2006inverse}
 \citation{sun2007interactive}
 \citation{bilgili2011general,tongbuasirilai2020compact}
 \citation{bagher2016non}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Related Work}{64}{section.4.3}\protected@file@percent }
+\newlabel{sec:relatedwork}{{4.3}{64}{Related Work}{section.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Analytic BRDF Models}{64}{subsection.4.3.1}\protected@file@percent }
+\newlabel{hyperbrdf-RW}{{4.3.1}{64}{Analytic BRDF Models}{subsection.4.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Regression-based BRDF Estimation}{64}{subsection.4.3.2}\protected@file@percent }
 \citation{rainer2019neural,hu2020deepbrdf,sztrajman2021neural,zheng2021compact,maximov2019deep,chen2021invertible,fan2021neural,cnf2023}
 \citation{maximov2019deep}
 \citation{sztrajman2021neural}
@@ -294,114 +296,113 @@
 \citation{zheng2021compact}
 \citation{nielsen2015optimal}
 \citation{liu2023learning}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Regression-based BRDF Estimation}{64}{subsection.4.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Deep learning for BRDF modeling.}{64}{section*.55}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Efficient BRDF Acquisition}{64}{subsection.4.3.3}\protected@file@percent }
 \citation{kang2018efficient,kang2019learning,ma2021free,ma2023opensvbrdf,tunwattanapong2013acquiring}
 \citation{guo2021highlight,hui2017reflectance,deschaintre2018single,deschaintre2019flexible,martin2022materia,zhou2021adversarial,gao2019deep}
+\@writefile{toc}{\contentsline {paragraph}{Deep learning for BRDF modeling.}{65}{section*.55}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Efficient BRDF Acquisition}{65}{subsection.4.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{65}{section*.56}\protected@file@percent }
 \citation{ratzlaff2019hypergan}
 \citation{erkocc2023hyperdiffusion}
 \citation{wang2022attention,yang2023contranerf}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values.}}{66}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:mainfig}{{4.2}{66}{During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values}{figure.caption.57}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Hypernetworks and GNFs}{66}{subsection.4.3.4}\protected@file@percent }
 \citation{nielsen2015optimal}
-\@writefile{toc}{\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{65}{section*.56}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Hypernetworks and GNFs}{65}{subsection.4.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Methodology}{65}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Pre-processing}{65}{subsection.4.4.1}\protected@file@percent }
-\newlabel{sec:pre-proc}{{4.4.1}{65}{Pre-processing}{subsection.4.4.1}{}}
 \citation{sztrajman2021neural}
 \citation{rusinkiewicz1998new}
 \citation{sitzmann2020siren}
 \citation{sitzmann2020metasdf}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values.}}{66}{figure.caption.57}\protected@file@percent }
-\newlabel{fig:mainfig}{{4.2}{66}{During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values}{figure.caption.57}{}}
-\newlabel{eq:preprocess}{{4.1}{66}{Pre-processing}{equation.4.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Hypernetwork}{66}{subsection.4.4.2}\protected@file@percent }
-\newlabel{sec:hypernet}{{4.4.2}{66}{Hypernetwork}{subsection.4.4.2}{}}
 \citation{rusinkiewicz1998new}
 \citation{zaheer2017deepsets}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Methodology}{67}{section.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Pre-processing}{67}{subsection.4.4.1}\protected@file@percent }
+\newlabel{sec:pre-proc}{{4.4.1}{67}{Pre-processing}{subsection.4.4.1}{}}
+\newlabel{eq:preprocess}{{4.1}{67}{Pre-processing}{equation.4.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Hypernetwork}{67}{subsection.4.4.2}\protected@file@percent }
+\newlabel{sec:hypernet}{{4.4.2}{67}{Hypernetwork}{subsection.4.4.2}{}}
 \citation{sztrajman2021neural}
 \citation{ha2017hypernetworks}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.1}Set Encoder}{67}{subsubsection.4.4.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.2}Hypernetwork Decoder and Hyponet}{67}{subsubsection.4.4.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Training}{67}{subsection.4.4.3}\protected@file@percent }
-\newlabel{sec:traindet}{{4.4.3}{67}{Training}{subsection.4.4.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.1}Set Encoder}{68}{subsubsection.4.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.2}Hypernetwork Decoder and Hyponet}{68}{subsubsection.4.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Training}{68}{subsection.4.4.3}\protected@file@percent }
+\newlabel{sec:traindet}{{4.4.3}{68}{Training}{subsection.4.4.3}{}}
+\newlabel{eq:loss}{{4.2}{68}{Training}{equation.4.4.2}{}}
 \citation{ngan2005experimental}
 \citation{Matusik2003jul}
 \citation{dupuy2018adaptive}
 \citation{Matusik2003jul}
 \citation{rusinkiewicz1998new}
-\newlabel{eq:loss}{{4.2}{68}{Training}{equation.4.4.2}{}}
-\newlabel{eq:Lrec}{{4.3}{68}{Training}{equation.4.4.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{Inference:}{68}{section*.58}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Experiments}{68}{section.4.5}\protected@file@percent }
-\newlabel{sec:exp}{{4.5}{68}{Experiments}{section.4.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Datasets and Baselines}{68}{subsection.4.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Sparse BRDF Reconstruction}{69}{subsection.4.5.2}\protected@file@percent }
-\newlabel{sec:brdf_rec}{{4.5.2}{69}{Sparse BRDF Reconstruction}{subsection.4.5.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials).}}{69}{table.caption.59}\protected@file@percent }
-\newlabel{table: ours_large_samples}{{4.1}{69}{Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials)}{table.caption.59}{}}
+\newlabel{eq:Lrec}{{4.3}{69}{Training}{equation.4.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Inference:}{69}{section*.58}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Experiments}{69}{section.4.5}\protected@file@percent }
+\newlabel{sec:exp}{{4.5}{69}{Experiments}{section.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Datasets and Baselines}{69}{subsection.4.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Sparse BRDF Reconstruction}{70}{subsection.4.5.2}\protected@file@percent }
+\newlabel{sec:brdf_rec}{{4.5.2}{70}{Sparse BRDF Reconstruction}{subsection.4.5.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials).}}{70}{table.caption.59}\protected@file@percent }
+\newlabel{table: ours_large_samples}{{4.1}{70}{Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials)}{table.caption.59}{}}
 \citation{sztrajman2021neural}
 \citation{nielsen2015optimal}
 \citation{walter2007microfacet}
 \citation{dupuy2015photorealistic}
 \citation{sztrajman2021neural}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$.}}{70}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:tsne-vis-imputation}{{4.3}{70}{t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$}{figure.caption.60}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2.1}Qualitative Comparison}{70}{subsubsection.4.5.2.1}\protected@file@percent }
-\newlabel{sec:qual_comp}{{4.5.2.1}{70}{Qualitative Comparison}{subsubsection.4.5.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$.}}{71}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:tsne-vis-imputation}{{4.3}{71}{t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$}{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2.1}Qualitative Comparison}{71}{subsubsection.4.5.2.1}\protected@file@percent }
+\newlabel{sec:qual_comp}{{4.5.2.1}{71}{Qualitative Comparison}{subsubsection.4.5.2.1}{}}
 \citation{matusik2003data,ngan2006image}
 \citation{nielsen2015optimal}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that our hypernetwork model learns for material appearance through training, it can accurately estimate the BRDFs of unseen materials and preserve the colors better than the baselines.}}{71}{figure.caption.61}\protected@file@percent }
-\newlabel{fig:imp_comp_upt}{{4.4}{71}{Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that our hypernetwork model learns for material appearance through training, it can accurately estimate the BRDFs of unseen materials and preserve the colors better than the baselines}{figure.caption.61}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Average PSNR, Delta E (CIE 2000), SSIM, MAE, RMSE, and RAE results across different sample sizes. }}{72}{figure.caption.62}\protected@file@percent }
-\newlabel{fig:imp_plots}{{4.5}{72}{Average PSNR, Delta E (CIE 2000), SSIM, MAE, RMSE, and RAE results across different sample sizes}{figure.caption.62}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2.2}Quantitative Evaluation}{72}{subsubsection.4.5.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that our hypernetwork model learns for material appearance through training, it can accurately estimate the BRDFs of unseen materials and preserve the colors better than the baselines.}}{72}{figure.caption.61}\protected@file@percent }
+\newlabel{fig:imp_comp_upt}{{4.4}{72}{Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that our hypernetwork model learns for material appearance through training, it can accurately estimate the BRDFs of unseen materials and preserve the colors better than the baselines}{figure.caption.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Average PSNR, Delta E (CIE 2000), SSIM, MAE, RMSE, and RAE results across different sample sizes. }}{73}{figure.caption.62}\protected@file@percent }
+\newlabel{fig:imp_plots}{{4.5}{73}{Average PSNR, Delta E (CIE 2000), SSIM, MAE, RMSE, and RAE results across different sample sizes}{figure.caption.62}{}}
 \citation{chen2021invertible}
 \citation{chen2021invertible}
 \citation{chen2021invertible}
 \citation{}
 \citation{zheng2021compact}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{73}{table.caption.63}\protected@file@percent }
-\newlabel{table: ours_diff_samples}{{4.2}{73}{Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.63}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2.3}Comparison with Casual Capture Setups}{73}{subsubsection.4.5.2.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Comparison with iBRDF \cite  {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{73}{table.caption.64}\protected@file@percent }
-\newlabel{table: oursvsibrdf}{{4.3}{73}{Comparison with iBRDF \cite {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.64}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Compression}{74}{subsection.4.5.3}\protected@file@percent }
-\newlabel{sec:compression}{{4.5.3}{74}{Compression}{subsection.4.5.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{74}{table.caption.65}\protected@file@percent }
-\newlabel{table: oursvsnps}{{4.4}{74}{Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Reconstruction results for BRDF compression (GT: ground truths).}}{74}{figure.caption.66}\protected@file@percent }
-\newlabel{fig:comp-fig}{{4.6}{74}{Reconstruction results for BRDF compression (GT: ground truths)}{figure.caption.66}{}}
-\citation{resources16}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{74}{table.caption.63}\protected@file@percent }
+\newlabel{table: ours_diff_samples}{{4.2}{74}{Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.63}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2.2}Quantitative Evaluation}{74}{subsubsection.4.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2.3}Comparison with Casual Capture Setups}{74}{subsubsection.4.5.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Comparison with iBRDF \cite  {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{75}{table.caption.64}\protected@file@percent }
+\newlabel{table: oursvsibrdf}{{4.3}{75}{Comparison with iBRDF \cite {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.64}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Compression}{75}{subsection.4.5.3}\protected@file@percent }
+\newlabel{sec:compression}{{4.5.3}{75}{Compression}{subsection.4.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{75}{table.caption.65}\protected@file@percent }
+\newlabel{table: oursvsnps}{{4.4}{75}{Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.65}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}BRDF Editing}{75}{subsection.4.5.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces BRDF editing through linear interpolation between the embeddings of two materials.}}{75}{figure.caption.67}\protected@file@percent }
-\newlabel{fig:interpolation}{{4.7}{75}{BRDF editing through linear interpolation between the embeddings of two materials}{figure.caption.67}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.5}Scene Renderings}{75}{subsection.4.5.5}\protected@file@percent }
+\citation{resources16}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Reconstruction results for BRDF compression (GT: ground truths).}}{76}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:comp-fig}{{4.6}{76}{Reconstruction results for BRDF compression (GT: ground truths)}{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces BRDF editing through linear interpolation between the embeddings of two materials.}}{76}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:interpolation}{{4.7}{76}{BRDF editing through linear interpolation between the embeddings of two materials}{figure.caption.67}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.5}Scene Renderings}{76}{subsection.4.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Scene renderings with our reconstructed materials.}}{77}{figure.caption.68}\protected@file@percent }
+\newlabel{fig:scene-render}{{4.8}{77}{Scene renderings with our reconstructed materials}{figure.caption.68}{}}
 \citation{nielsen2015optimal}
 \citation{ngan2005experimental}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.6}Ablation Studies}{76}{subsection.4.5.6}\protected@file@percent }
-\newlabel{sec:abl}{{4.5.6}{76}{Ablation Studies}{subsection.4.5.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.1}Latent Dimension}{76}{subsubsection.4.5.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.2}Log Relative Mapping (LRM)}{76}{subsubsection.4.5.6.2}\protected@file@percent }
-\newlabel{sec:lrm}{{4.5.6.2}{76}{Log Relative Mapping (LRM)}{subsubsection.4.5.6.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.3}Cosine Weighting}{76}{subsubsection.4.5.6.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Average metric results over the renderings of the test set (20 MERL materials).}}{76}{table.caption.69}\protected@file@percent }
-\newlabel{table: cos_abl}{{4.5}{76}{Average metric results over the renderings of the test set (20 MERL materials)}{table.caption.69}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.4}Principal Component Analysis (PCA)}{76}{subsubsection.4.5.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Number of Principal Components:}{76}{section*.70}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}}{77}{table.caption.72}\protected@file@percent }
-\newlabel{table: z_abl}{{4.6}{77}{Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}{table.caption.72}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.7}Limitations and Future Work}{77}{subsection.4.5.7}\protected@file@percent }
-\newlabel{sec:limits}{{4.5.7}{77}{Limitations and Future Work}{subsection.4.5.7}{}}
-\@writefile{toc}{\contentsline {paragraph}{Specular components:}{77}{section*.73}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{BRDF editing:}{77}{section*.74}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{SVBRDF representations:}{77}{section*.75}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Conclusion}{77}{section.4.6}\protected@file@percent }
-\newlabel{sec:conc}{{4.6}{77}{Conclusion}{section.4.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Scene renderings with our reconstructed materials.}}{79}{figure.caption.68}\protected@file@percent }
-\newlabel{fig:scene-render}{{4.8}{79}{Scene renderings with our reconstructed materials}{figure.caption.68}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces IPCA optimization for the number of principal components.}}{80}{figure.caption.71}\protected@file@percent }
-\newlabel{fig:ipca_opt}{{4.9}{80}{IPCA optimization for the number of principal components}{figure.caption.71}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.6}Ablation Studies}{78}{subsection.4.5.6}\protected@file@percent }
+\newlabel{sec:abl}{{4.5.6}{78}{Ablation Studies}{subsection.4.5.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.1}Latent Dimension}{78}{subsubsection.4.5.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.2}Log Relative Mapping (LRM)}{78}{subsubsection.4.5.6.2}\protected@file@percent }
+\newlabel{sec:lrm}{{4.5.6.2}{78}{Log Relative Mapping (LRM)}{subsubsection.4.5.6.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.3}Cosine Weighting}{78}{subsubsection.4.5.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Average metric results over the renderings of the test set (20 MERL materials).}}{78}{table.caption.69}\protected@file@percent }
+\newlabel{table: cos_abl}{{4.5}{78}{Average metric results over the renderings of the test set (20 MERL materials)}{table.caption.69}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6.4}Principal Component Analysis (PCA)}{78}{subsubsection.4.5.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces IPCA optimization for the number of principal components.}}{79}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:ipca_opt}{{4.9}{79}{IPCA optimization for the number of principal components}{figure.caption.71}{}}
+\@writefile{toc}{\contentsline {paragraph}{Number of Principal Components:}{79}{section*.70}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}}{79}{table.caption.72}\protected@file@percent }
+\newlabel{table: z_abl}{{4.6}{79}{Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}{table.caption.72}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.7}Limitations and Future Work}{79}{subsection.4.5.7}\protected@file@percent }
+\newlabel{sec:limits}{{4.5.7}{79}{Limitations and Future Work}{subsection.4.5.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Specular components:}{79}{section*.73}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{BRDF editing:}{79}{section*.74}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{SVBRDF representations:}{80}{section*.75}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Conclusion}{80}{section.4.6}\protected@file@percent }
+\newlabel{sec:conc}{{4.6}{80}{Conclusion}{section.4.6}{}}
 \bibstyle{plainnat}
 \bibdata{thesis}
 \bibcite{An10User}{{1}{2010}{{An and Pellacini}}{{}}}
@@ -413,8 +414,8 @@
 \bibcite{Besl92AMethod}{{7}{1992}{{Besl and McKay}}{{}}}
 \bibcite{bilgili2011general}{{8}{2011}{{Bilgili et~al.}}{{Bilgili, {\"O}zt{\"u}rk, and Kurt}}}
 \bibcite{blinn77}{{9}{1977}{{Blinn}}{{}}}
-\bibcite{boss2021nerd}{{10}{2021}{{Boss et~al.}}{{Boss, Braun, Jampani, Barron, Liu, and Lensch}}}
 \@writefile{toc}{\contentsline {chapter}{Bibliography}{81}{section*.76}\protected@file@percent }
+\bibcite{boss2021nerd}{{10}{2021}{{Boss et~al.}}{{Boss, Braun, Jampani, Barron, Liu, and Lensch}}}
 \bibcite{Boyadzhiev15Band}{{11}{2015}{{Boyadzhiev et~al.}}{{Boyadzhiev, Bala, Paris, and Adelson}}}
 \bibcite{triangulation}{{12}{2019}{{Broeren et~al.}}{{Broeren, van~de Sande, van~der Wijk, and Herder}}}
 \bibcite{Bychkovsky11Learning}{{13}{2011}{{Bychkovsky et~al.}}{{Bychkovsky, Paris, Chan, and Durand}}}

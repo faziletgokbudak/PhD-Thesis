@@ -37,6 +37,11 @@ In summary, we offer a novel solution for the challenging task of generalizable 
     }
 \end{itemize}
 
+\section{Motivation and Impact}
+\label{sec:hyperbrdf-mot}
 
-\section{Acquisition Systems}
-\label{sec:Acquisition-Systems}
+The representation of measured BRDFs is crucial in computer graphics, especially in physically-based rendering (PBR) for applications such as filmmaking, gaming, virtual and augmented reality, and product design, aiming for immersive realism. PBR provides a more precise portrayal of light-material interactions. However, real-world BRDF models are reconstructed by taking samples with a device, such as a camera or gonioreflectometer and often demand numerous samples, making acquisition, storage, and manipulation costly and challenging. For instance, the MERL dataset \cite{Matusik2003jul}, the main dataset I utilised for experiments, captures 330 high dynamic range images with a CCD camera for each material in roughly four hours. The RGL dataset cite{dupuy2018adaptive}, the secondary dataset included in training, captures samples with a gonioreflectometer that leads to captures times of approximately 2.5 hours for isotropic materials. Therefore, HyperBRDF offers multiple impactful contributions: 
+\begin{itemize}
+ \item can integrate with professional setups where capturing only one material can take hours. HyperBRDF’s superior sparse reconstruction ability can help significantly reduce the manual and heavy workload of material acquisition. I also discuss the related work aligned with this research line in Section \ref{hyperbrdf-RW}.
+ \item Providing BRDF compression with high accuracy and efficiency, encoding over a million samples into a 7D latent vector, saving storage space and increasing transfer speed. 
+ \item Allowing easy material editing through its latent space representation.
