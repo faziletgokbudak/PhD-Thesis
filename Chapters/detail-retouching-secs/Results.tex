@@ -11,13 +11,62 @@
 
 \paragraph{Training details.}\label{train_det} I train different mappings with the same structure, defined in Equation \ref{eq:weightedSum}, for each frequency band of the Laplacian pyramid. Each mapping consists of one MLP block and $K$ number of transformation matrices, which are learned jointly per frequency band from scratch for each before-after pair. The MLP block employed in the experiments consists of three fully-connected layers and non-linearities applied after each layer. The output size of the last layer is the same as the number of transformation matrices.
 
-To normalize the weights, I choose the last activation function to be Softmax, while for the first two layers, i apply Leaky ReLU. Each transformation matrix is randomly initialised with the uniform distribution in the range $[0, 1]$. All experiments use the Adam optimiser with a learning rate of $10^{-2}$, which exponentially decays with a decay rate of $0.96$. I use $l_1$ loss function in all the experiments. Through backpropagation, both the MLP parameters and the entries of the transformation matrices are learned at the same time.
+To normalize the weights, I choose the last activation function to be Softmax, while for the first two layers, I apply Leaky ReLU. Each transformation matrix is randomly initialised with the uniform distribution in the range of $[0, 1]$. All experiments use the Adam optimiser with a learning rate of $10^{-2}$, which exponentially decays with a decay rate of $0.96$. I use $l_1$ loss function in all experiments. Through backpropagation, both the MLP parameters and the entries of the transformation matrices are jointly learned. The pseudocode for both the training and inference procedures are the following:
+
+\begin{algorithm}
+\caption{One-shot Detail Retouching}
+\SetKwFunction{FDetailRetouch}{Train}
+\SetKwFunction{FPyramid}{LaplacianPyramid}
+\SetKwFunction{FMLPBLOCK}{MLPBlock}
+\SetKwFunction{FPatch}{ExtractPatch}
+\SetKwFunction{Fprob}{Backpropagate}
+\SetKwProg{Fn}{Function}{:}{}
+\Fn{\FDetailRetouch{'before' image $X$, 'after' image $Y$}}{
+	\Comment{Decompose images into its Laplacian bands.}\\
+        $X_l \gets \FPyramid(X)$\;
+        $Y_l \gets \FPyramid(Y)$\;
+        
+        \For{$l \gets 0$ \KwTo $n_l$}{
+        \Comment{Extract patches from the images.}\\
+        $x_i \gets \FPatch(X_l)$\;
+        $y_i \gets \FPatch(Y_l)$\;
+        $f_k \gets \FMLPBLOCK(x_i)$\;
+        $y(x_i) \gets \sum^{K}_{k = 0} f_k(x_i) A_k x_i$\;
+        $\mathcal{L} \gets E_{X, Y} \abs{(y(x_i) - y_i)}$\;  
+        $(f_k, A_k) \gets \Fprob(\mathcal{L})$}
+        }
+\end{algorithm}
+
+\begin{algorithm}
+\caption{One-shot Detail Retouching}
+\SetKwFunction{FDetailRetouch}{Inference}
+\SetKwFunction{FPyramid}{LaplacianPyramid}
+\SetKwFunction{FMLPBLOCK}{MLPBlock}
+\SetKwFunction{FPatch}{ExtractPatch}
+\SetKwFunction{Fpatchmerge}{MergePatch}
+\SetKwProg{Fn}{Function}{:}{}
+\Fn{\FDetailRetouch{input image $I$, blending weights $f_k$, transformation matrices $A_k$}}{
+
+        $I_l \gets \FPyramid(I)$\;
+        
+        \For{$l \gets 0$ \KwTo $n_l$}{
+        $i_i \gets \FPatch(I_l)$\;
+        \Comment{Transform input patches $i_i$ with learned weights and matrices.}\\
+        $o_i \gets \sum^{K}_{k = 1} f_k(i_i) A_k i_i$\;
+        	\Comment{Place the patches on the output grid $O_l$.}\\
+        $O_l \gets \Fpatchmerge(o_i)$}
+     
+        \Comment{Sum all output bands with input residual.}\\
+        $O = I_{n_l} + \sum_l O_l$\;
+        \Return $O$}
+        
+\end{algorithm}
 
 \section{Results}
 \label{sec:results}
 
 
-\subsection{Ablation Study}\label{ablation}
+\subsection{Ablation Studies}\label{ablation}
 The success of the learned mappings relies on two key components: patch-adaptive retouching and transformation blending. I thus conduct experiments to illustrate the significance of these.
 
 %Ifirst investigate the effect of the number of transformation matrices, $K$. 
@@ -95,9 +144,9 @@ In summary, the proposed technique efficiently edits such intricate details, due
 \label{sec:Comparisons}
 
 
-Although there are various works related to automatic photo enhancement, to the best of my knowledge, none of them works with a single example pair for detail retouching.I thus compare the results with closely related automatic image-to-image translation methods, namely U-Net \cite{ronneberger2015u}, ASAPNet generator \cite{shaham2021spatially}, and Deep edge-aware filters \cite{xu2015deep}. 
+Although there are various works related to automatic photo enhancement, to the best of our knowledge, none of them works with a single example pair for detail retouching. Therefore, I compare the results with closely related automatic image-to-image translation methods, namely U-Net \cite{ronneberger2015u}, ASAPNet generator \cite{shaham2021spatially}, and Deep edge-aware filters \cite{xu2015deep}. 
 
-I trained each network from scratch with one \textit{before-after} pair. To train the U-Net architecture, I changed the activation function of its last layer to ReLU and used $l_1$ loss function with Adam optimiser (same as ours). Similar to the method, ASAPNet is also a spatially-adaptive network. However, it is instead designed to hallucinate new details. Therefore, I similarly trained their generator model to ours with $l1$ loss, removing the discriminator. I observed that bilinear downsampling in their model causes checkerboard artifacts. Hence, I also removed this operator and learned an MLP per pixel, which caused the model to be highly complex with too many parameters. 
+I trained each network from scratch with one \textit{before-after} pair. To train the U-Net architecture, I changed the activation function of its last layer to ReLU and used $l_1$ loss function with Adam optimiser (same as ours). Similar to the proposed method, ASAPNet is also a spatially-adaptive network. However, it is instead designed to hallucinate new details. Therefore, I trained their generator model in a similar fashion with $l1$ loss, removing the discriminator. After observing that bilinear downsampling in their model causes checkerboard artifacts, I removed this operator and learned an MLP per pixel, which caused the model to be highly complex with too many parameters. 
 
 
 \begin{table*}[th]
@@ -129,33 +178,7 @@ I trained each network from scratch with one \textit{before-after} pair. To trai
 \end{table*}
 
 
-
-
-\begin{figure*}%[th]%[tph]{
-  \centering
-  \includegraphics[width=.9\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf}
-    \caption{Qualitative comparisons with state-of-the-art methods on different types of images. These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).} 
-
-   \label{fig:QualitativeComp}%
-\end{figure*}
-
-\begin{figure*}%[th]%[tph]{
-  \centering
-  \includegraphics[width=.9\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf}
-    \caption{Qualitative comparisons with state-of-the-art methods on different types of images. These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).} 
-
-   \label{fig:QualitativeComp}%
-\end{figure*}
-
-
-\begin{figure*}%[th]%[tph]{
-  \centering
-  \includegraphics[width=.9\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf}
-    \caption{Qualitative comparisons with state-of-the-art methods on different types of images. These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).} 
-
-   \label{fig:QualitativeComp}%
-\end{figure*}
-
+% These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid)
 
 
 For a fair comparison with contemporary methods, I trained each network with the same example pair processed by four algorithmic filters: Gaussian, unsharp masking, Bilateral, and local Laplacian filters (LLF). As LLFs can perform a wide range of edge-aware operations, I apply two different versions of the filter, one for smoothing ($\alpha=2,  \sigma=0.2$) and one for enhancing details ($\alpha=0.5, \sigma=0.1$). Each network is trained from scratch with the same example pair resized to $256 \times 256$ for the corresponding filter. 
@@ -164,12 +187,48 @@ For a fair comparison with contemporary methods, I trained each network with the
 To prove the generalisability of the technique, I tested the models on different types of images, namely face images (100 images that are randomly sampled from MIT-Adobe FiveK \cite{Bychkovsky11Learning}), material images (22 images), room images (30), and landscape images (30). Each type was trained separately with its corresponding example pair. For instance, I trained an example pair of landscape images to test the model on landscape images. I evaluated the models using average PSNR and SSIM values. To generate the ground truths of the input images, I applied the same filter as applied to the before example image to obtain the after image. I trained each model in Y-channel after converting RGB images to their YCbCr versions and evaluated the results for Y-channel images. I duplicated the Y-channel in case the model requires three-channel images. 
 
 
-To obtain the UNet results for each type of images,Iran an additional experiment in which I changed the number of trainable parameters by removing some layers and trained the network from scratch for unsharp masking and bilateral filtering. The number of chosen parameters were 0.1M (with a few convolutional layers), 1.8M, 10M and 30M. For material images, I observed that 10M performed the best in terms of PSNR and SSIM values, while for other types of images 30M performed best. I tested the trained models on the images of the corresponding types and computed average PSNR values. Later, I chose the model with the best-performing parameters for each type of image for the quantitative comparison (Table \ref{tablecomparison}).
+To obtain the UNet results for each type of images, I ran an additional experiment in which I changed the number of trainable parameters by removing some layers and trained the network from scratch for unsharp masking and bilateral filtering. The number of chosen parameters were 0.1M (with a few convolutional layers), 1.8M, 10M and 30M. For material images, I observed that 10M performed the best in terms of PSNR and SSIM values, while for other types of images 30M performed best. I tested the trained models on the images of the corresponding types and computed average PSNR values. Later, I chose the model with the best-performing parameters for each type of image for the quantitative comparison (Table \ref{tablecomparison}).
 
-Overall, the method can outperform all architectures for each considered filter in terms of PSNR values. UNet shows the closest performance, but their network capacity is significantly higher than the proposed framework (0.16M). As the filter becomes more complex, the performance gap increases. For instance, other methods perform fairly well in simple algorithmic filters, such as Gaussian or unsharp masking. However, in spatially-varying filters, namely Bilateral filter or LLFs, this method proves more generalisable thanks to its path-adaptive structure. Figure \ref{fig:QualitativeComp} further demonstrates that compared to the state-of-the-art methods, the technique can preserve and edit intricate details, such as text, texture, or leaves, more effectively without causing much distortion. 
+Overall, our method can outperform all architectures for each considered filter in terms of PSNR values. UNet shows the closest performance, but their network capacity is significantly higher than the proposed framework (0.16M). As the filter becomes more complex, the performance gap increases. For instance, other methods perform fairly well in simple algorithmic filters, such as Gaussian or unsharp masking. However, in spatially-varying filters, namely Bilateral filter or LLFs, this method proves more generalisable thanks to its path-adaptive structure. 
+
+Figures \ref{fig:QualitativeComp_BF}, \ref{fig:QualitativeComp_LLF_a2}, and \ref{fig:QualitativeComp_LLF_a05} further demonstrates that our technique can preserve and edit intricate details, such as text, texture, or leaves, more effectively without causing much distortion. The nonlinear bilateral filter and Local Laplacian filters pose an additional challenge, especially in a one-shot setting. However, the proposed approach can still perform edge-aware filtering with higher accuracy than the baselines. Note that these examples are selected from the results I obtained for the quantitative comparison (Table \ref{tablecomparison}), where I only used the luminance channels and downsampled the images to $256 \times 256$. 
 
 
 
+\begin{figure*}%[th]%[tph]{
+  \centering
+      \includegraphics[width=.82\linewidth]{Chapters/detail-retouching-figs/One-shot-labels.pdf}
+
+  \includegraphics[width=\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf}
+    \caption{Qualitative comparison with baseline approaches on bilateral filtering. Bilateral filter is a nonlinear filter designed for smoothing the surfaces while preserving the edges. Results show that our proposed technique captures the bilateral-filtering effect more effectively, reducing the roughness of the surfaces while maintaining important details.} 
+
+   \label{fig:QualitativeComp_BF}%
+\end{figure*}
+
+    
+ %   These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).
+
+\begin{figure*}%[th]%[tph]{
+  \centering
+      \includegraphics[width=.82\linewidth]{Chapters/detail-retouching-figs/One-shot-labels.pdf}
+  \includegraphics[width=\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf}
+    \caption{Qualitative comparison with baseline approaches on Local Laplacian filter (LLF) ($\alpha=2, \sigma=0.2$). LLF is another edge-aware nonlinear filter designed for multiple tasks, namely edge-preserving smoothing, detail enhancement, tone mapping, and inverse tone mapping. In these examples, the parameters are chosen to have an edge-preserving smoothing effect, similar to bilateral filtering. Results show that ours offer smoother textures.} 
+
+   \label{fig:QualitativeComp_LLF_a2}%
+\end{figure*}
+
+%These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).
+
+\begin{figure*}%[th]%[tph]{
+  \centering
+    \includegraphics[width=.82\linewidth]{Chapters/detail-retouching-figs/One-shot-labels.pdf}
+  \includegraphics[width=\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf}
+    \caption{Qualitative comparison with baseline approaches on Local Laplacian filter (LLF) ($\alpha=0.5, \sigma=0.1$). Here, the parameters are chosen accordingly to enhance the details. Our results highlight edges, such as the transition between the cloud and the sky, the numbers in the clock or the texture on the bed sheet.} 
+
+   \label{fig:QualitativeComp_LLF_a05}%
+\end{figure*}
+
+\newpage
 \subsection{Limitations and Future Work}
 \begin{figure}[th] % "[t!]" placement specifier just for this example
 	\centering

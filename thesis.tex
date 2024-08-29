@@ -23,7 +23,7 @@
 %   backrefs    - add back references in the Bibliography section
 %
 % For more info see `README.md`
-\documentclass[withindex,glossary]{cam-thesis}
+\documentclass[withindex, glossary]{cam-thesis}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 
 % Citations using numbers
@@ -37,10 +37,13 @@
 % Include other packages here, before hyperref.
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{algorithmic}
-\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
 \usepackage{textcomp}
 \usepackage{mathtools,xparse}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{algpseudocode}
 
 \usepackage{stfloats}
 \usepackage{url}
@@ -48,7 +51,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{pdfpages}
-
+\usepackage{glossaries}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
@@ -69,6 +72,7 @@
     pdfpagemode=FullScreen,
     }
 
+\renewcommand{\algorithmiccomment}[1]{$\triangleright$\textit{#1}}
 
 
 \usepackage{lipsum} % Only used to generate random text.
@@ -171,13 +175,37 @@ Appearance Manipulations}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Glossary [optional]:
-%%
-\newglossaryentry{HOL}{
-    name=HOL,
-    description={Higher-order logic}
+\makeglossaries
+
+\newglossaryentry{MLP}{
+    name=MLP,
+    description={Multilayer Perceptron}
 }
 
+\newglossaryentry{LLF}{
+    name=LLF,
+    description={Local Laplacian Filter}
+}
 
+\newglossaryentry{BRDF}{
+    name=BRDF,
+    description={Bidirectional Reflectance Distribution Function}
+}
+\newglossaryentry{HVS}{
+    name=HVS,
+    description={Human Visual System}
+}
+\newglossaryentry{SGD}{
+    name=SGD,
+    description={Stochastic Gradient Descent}
+}
+ \newglossaryentry{computer}
+        {
+          name=computer,
+          description={is a programmable machine that receives input,
+                       stores and manipulates data, and provides
+                       output in a useful format}
+        }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Contents:
@@ -194,6 +222,7 @@ Appearance Manipulations}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Thesis body:
 %%
+\printglossaries
 
 
 \input{Chapters/Introduction}

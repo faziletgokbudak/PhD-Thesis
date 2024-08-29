@@ -6,7 +6,7 @@
 This section gives an overview of rendering an image of a 3D scene to connect the image-level appearance with a broader concept of appearance representations in computer graphics.  It starts with the display of images on a screen and elaborates on 3D scene components that are taken into account for photorealistic rendering, mainly focusing on appearance. 
 
 \subsection{Displaying an image}
-An image is displayed on a computer screen or, in general, a display system after the stored data is processed in a computer. Here, the computer and the display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces (pixels) for their display as an image. This operation is known as discretization. 
+An image is displayed on a computer  computer screen or, in general, a display system after the stored data is processed in a computer. Here, the computer and the display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces (pixels) for their display as an image. This operation is known as discretization. 
 
 \begin{figure}[ht]
   \centering
@@ -400,7 +400,7 @@ Inspired by biological neural networks, deep neural networks (DNN) are designed 
 The machine learning bit of neural networks is known as deep learning, a subfield of ML in which the learning process discussed above is used to learn the weights and biases of this equation or, more generally, the neural network. I mentioned earlier that nonlinearity is an inherent feature of deep learning. This comes from an additional function, known as the activation function, applied to the linear equation above ($y = \sigma(\vec{w} ^T. \vec{x} + b)$). The nonlinearity helps bring additional information to the linear system, which, otherwise, could have infinitely many solutions in the linear space.
 
 
-With the assumption of a feedforward structure, a neural network can put its neurons into stacks of layers, each layer only depending on the previous layers. This model, a \textbf{multilayer perceptron (MLP)} (Figure \ref{fig:mlp}), is one of the simplest and most widely used neural network models that can be employed for multiple applications, such as image classification, regression, and pattern recognition. By extending the equation above, an MLP layer can be expressed in the matrix form as:
+With the assumption of a feedforward structure, a neural network can put its neurons into stacks of layers, each layer only depending on the previous layers. This model, a \textbf{multilayer perceptron (\gls{MLP})} (Figure \ref{fig:mlp}), is one of the simplest and most widely used neural network models that can be employed for multiple applications, such as image classification, regression, and pattern recognition. By extending the equation above, an MLP layer can be expressed in the matrix form as:
 \begin{equation}
 \vec{y} = \sigma \biggl(\mathbf{W}\vec{x} + \vec{b} \biggr)
 \end{equation}
