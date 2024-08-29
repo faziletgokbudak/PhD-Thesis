@@ -225,18 +225,6 @@ Compared to analytic BRDFs that have a fixed number of parameters to tweak, edit
    \label{fig:interpolation}
 \end{figure*}
 
-
-\subsection{Scene Renderings}
-I also rendered multiple scenes \cite{resources16} using HyperBRDF's reconstructed materials, including sparse reconstruction, compression and interpolation. The details about the objects covered with HyperBRDF's reconstructed materials are as follows (Figure \ref{fig:scene-render}): \textbf{\textit{teapot:}} steel. \textbf{\textit{dragons:}} interpolation of delrin and green-metallic-paint, white marble (dragon paint), silver-metallic-paint3 (ground), dark-red-paint (cloth). \textbf{\textit{cars:}} chrome steel, gold metallic paint3, specular-red-phenolic (car paint), exterior car parts (aluminium), inner wheel (alumina-oxide). \textbf{\textit{kitchen:}} cupboards (natural-209), utensils (chrome), handles, pot, microwave and cooker (two-layer-silver), extractor hood (aluminium), pot and kettle handles (black-obsidian), kettle paint (dark-red-paint), tea towel and cushions (yellow-paint), radio and lamp (polyethylene). \textbf{\textit{living room:}} sofa, coffee table, side tables, wall book shelf (pure-rubber), cushions (green-metallic-paint), twigs (natural-209), legs (dark-specular-fabric).
-\textbf{\textit{sofas:}} violet rubber and green latex (sofa cover). 
-
-\begin{figure}[ht]
-  \centering
-  {\includegraphics[width=0.7\linewidth]{Chapters/hyperbrdf-figs/SceneRenderings1.pdf}}
-   \caption{Scene renderings with materials reconstructed by HyperBRDF.}
-   \label{fig:scene-render}
-\end{figure}
-
 \subsection{Ablation Studies}\label{sec:abl}
 \subsubsection{Latent Dimension}
 I experimented with the dimension size of the latent representations $Z$ on the test dataset for the reconstruction with all available samples and observed that 40-dimensional embeddings give the minimum average mean squared error (See the first row of Table \ref{table: z_abl}). Therefore, I chose the latent space size to be 40. However, I also observed that these can change with the number of sparse samples. For consistency, I kept it same for all the reconstruction results. 
@@ -277,7 +265,7 @@ In Section \ref{sec:qual_comp}, I briefly discussed the ablation study I ran to 
 I analyzed the optimal number of principal components by initially choosing the same numbers as we did for the ablation study of the latent dimension. Looking at Table \ref{table: z_abl}, I observe that $N_{PC}$ gives the minimum error for sparse cases, where the number of samples $N$ is 40. I further validated the choice $N_{PC} = 8$ by running IPCA with the number of principal components ranging from 1 to 16 with an incremental change of 1. Figure \ref{fig:ipca_opt} illustrates that $N_{PC} = 8$ still gives the minimum mean squared error (MSE) averaged over the test set.
 
 
-\begin{figure}
+\begin{figure}[ht]
   \centering
 
   {\includegraphics[width=0.5\linewidth]{Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf}}
@@ -302,6 +290,17 @@ I analyzed the optimal number of principal components by initially choosing the 
     \label{table: z_abl}
 \end{table*}
 
+
+\subsection{Scene Renderings}
+I also rendered multiple scenes \cite{resources16} using HyperBRDF's reconstructed materials, including sparse reconstruction, compression and interpolation. The details about the objects covered with HyperBRDF's reconstructed materials are as follows (Figure \ref{fig:scene-render}): \textbf{\textit{teapot:}} steel. \textbf{\textit{dragons:}} interpolation of delrin and green-metallic-paint, white marble (dragon paint), silver-metallic-paint3 (ground), dark-red-paint (cloth). \textbf{\textit{cars:}} chrome steel, gold metallic paint3, specular-red-phenolic (car paint), exterior car parts (aluminium), inner wheel (alumina-oxide). \textbf{\textit{kitchen:}} cupboards (natural-209), utensils (chrome), handles, pot, microwave and cooker (two-layer-silver), extractor hood (aluminium), pot and kettle handles (black-obsidian), kettle paint (dark-red-paint), tea towel and cushions (yellow-paint), radio and lamp (polyethylene). \textbf{\textit{living room:}} sofa, coffee table, side tables, wall book shelf (pure-rubber), cushions (green-metallic-paint), twigs (natural-209), legs (dark-specular-fabric).
+\textbf{\textit{sofas:}} violet rubber and green latex (sofa cover). 
+
+\begin{figure}[ht]
+  \centering
+  {\includegraphics[width=0.7\linewidth]{Chapters/hyperbrdf-figs/SceneRenderings1.pdf}}
+   \caption{Scene renderings with materials reconstructed by HyperBRDF.}
+   \label{fig:scene-render}
+\end{figure}
 
 \subsection{Limitations and Future Work}\label{sec:limits}
 \paragraph{Specular components:} HyperBRDF struggles with the estimation of specular components as shown in Figure~\ref{fig:imp_comp_upt} (last two rows). It is likely because of the high gap between the values of diffuse that are close to zero and the values of specular components that are arbitrarily high. A separate estimation pipeline for each component within the network can help improve the results.
