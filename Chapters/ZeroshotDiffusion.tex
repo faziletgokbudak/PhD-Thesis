@@ -1,0 +1,30 @@
+\chapter{Text-guided Transient Attribute Transfer}\label{zero-shot}
+
+In the previous chapter, I discuss appearance manipulation at the image level through the proposal of a low-level editing framework. This framework is designed to enhance photographs by editing intricate details while refining high-level features, such as lighting or content. Conversely, this chapter focuses on a high-level manipulation task known as transient attribute transfer. In this task, we observe varying changes to the scene, including relighting, content addition or removal, and so on. These edits are still learned implicitly without decomposing images into the 3D scene components.
+
+The appearance of a scene can change dramatically over the course of a day or across seasons. While main elements, such as buildings, lakes, or forests generally remain the same, we often notice illumination changes that alter the appearance of the scene’s contents. Additionally, we might observe content being added or removed between seasons or throughout the day. For example, a scene may be covered with snow in a transient attribute change from 'summer' to 'winter.' These changes are difficult to estimate implicitly due to the entanglement of content, illumination, and reflectance. In this chapter, I explore a conditional generative model for transferring transient attributes based on a target attribute. Specifically, I use variants of pre-trained latent diffusion models conditioned with text prompts indicating the target attribute.
+
+I begin by fine-tuning a stable diffusion model using the v1.5 checkpoint weights \cite{rombach2022high} and ControlNet \cite{zhang2023adding} with the Transient Attribute Dataset \cite{laffont2014transient} of 8,571 images. However, I observe that these highly complex models can easily overfit to a small dataset even in a fine-tuning setting. This challenge leads me to explore a zero-shot setup that does not require an additional dataset, using these pre-trained foundation models as a prior to guide the desired transfer. I evaluate the mentioned techniques qualitatively on the test images from the Transient Attribute Dataset\cite{laffont2014transient} . The zero-shot approach effectively transfers the attributes while preserving high-level content.
+
+\input{Chapters/zero-shot-tat-secs/Introduction}
+
+\input{Chapters/zero-shot-tat-secs/RelatedWork}
+
+
+\input{Chapters/zero-shot-tat-secs/Methodology}
+
+
+\input{Chapters/zero-shot-tat-secs/Results}
+
+
+\section{Conclusions}
+
+% \begin{figure*}%[th]
+%   \centering
+%   \includegraphics[height=0.8\textheight, width=\linewidth,keepaspectratio]{Images/AdditionalResults_op2.pdf}
+%   \caption{
+%            Retouches reproduced by our algorithm based on single before-after pairs. }
+%            \label{fig:AdditionalRes}%
+% \end{figure*}
+
+% \section{Appendices}

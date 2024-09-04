@@ -20,6 +20,8 @@ To normalize the weights, I choose the last activation function to be Softmax, w
 \SetKwFunction{FMLPBLOCK}{MLPBlock}
 \SetKwFunction{FPatch}{ExtractPatch}
 \SetKwFunction{Fprob}{Backpropagate}
+\SetKwFunction{FDetailRetouchInf}{Inference}
+\SetKwFunction{Fpatchmerge}{MergePatch}
 \SetKwProg{Fn}{Function}{:}{}
 \Fn{\FDetailRetouch{'before' image $X$, 'after' image $Y$}}{
 	\Comment{Decompose images into its Laplacian bands.}\\
@@ -35,17 +37,12 @@ To normalize the weights, I choose the last activation function to be Softmax, w
         $\mathcal{L} \gets E_{X, Y} \abs{(y(x_i) - y_i)}$\;  
         $(f_k, A_k) \gets \Fprob(\mathcal{L})$}
         }
-\end{algorithm}
+%\end{algorithm}
 
-\begin{algorithm}
-\caption{One-shot Detail Retouching}
-\SetKwFunction{FDetailRetouch}{Inference}
-\SetKwFunction{FPyramid}{LaplacianPyramid}
-\SetKwFunction{FMLPBLOCK}{MLPBlock}
-\SetKwFunction{FPatch}{ExtractPatch}
-\SetKwFunction{Fpatchmerge}{MergePatch}
-\SetKwProg{Fn}{Function}{:}{}
-\Fn{\FDetailRetouch{input image $I$, blending weights $f_k$, transformation matrices $A_k$}}{
+%\begin{algorithm}
+%\caption{One-shot Detail Retouching}
+
+\Fn{\FDetailRetouchInf{input image $I$, blending weights $f_k$, transformation matrices $A_k$}}{
 
         $I_l \gets \FPyramid(I)$\;
         
