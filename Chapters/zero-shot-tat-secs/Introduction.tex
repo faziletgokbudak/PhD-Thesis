@@ -1,28 +1,28 @@
 \section{Introduction}\label{sec:zero-shot-intro}
 
 
-\begin{figure}
+Attributes are high-level descriptions of visual concepts. In contrast to categories, which broadly classify objects or scenes based on high-level features, attributes often remain continuous or a variable that can change across instances of the same category. For instance, in the "outdoor scene" category, attributes can be associated with seasonal transitions (e.g., winter to spring), weather changes (e.g., rainy, sunny), or time of day (e.g., daylight, sunset, night).  In this work, I focus on such transient attributes that dynamically shape the visual appearance of an outdoor scene.
+
+\begin{figure}[ht]
   \includegraphics[width=\textwidth]{Chapters/zero-shot-tat-figs/tat-teaser.pdf}
-  \caption{Transition of the illumination throughout the day or the weather changes across seasons alter the scene appearance significantly in terms of texture, colour and content. However, some clues, such as the structure, permanent objects, etc. remain unchanged. Transient attribute transfer aims to capture alterations related to such temporal effects. Images from the Transient Attribute Dataset \cite{laffont2014transient}.}
+  \caption{Transition of the illumination throughout the day or the weather changes across seasons alter the scene appearance significantly in terms of colour, tone, texture, and style. However, main content, such as the structure, permanent objects, etc. remains unchanged. Transient attribute transfer aims to capture alterations related to such temporal effects. Images from the Transient Attribute Dataset \cite{laffont2014transient}.}
   \label{fig:zero-shot-teaser}
 \end{figure}
 
+Transient attributes influence our perception of a scene by altering appearance related properties, such as colour, texture, and overall atmosphere, i.e., style and tone. From the slow transition of sunrise to daylight, the accumulation of snow on the ground, to the clearing sky after an overcast day, these attributes define the dynamic and captivating nature of the visual world. Recent works in the computer vision/graphics fields have engaged with the transfer of such attributes either under the umbrella term of high-level image editing or standalone. Capturing such temporal changes plays a crucial role in a range of applications, such as photography, filmmaking, gaming, and virtual and augmented reality for producing photorealistic simulation. However, the accurate transfer of transient attributes is highly challenging due to the requirement of a deep understanding of the scene components as well as maintaining essential content. 
 
-The visual appearance of outdoor scenes is dynamic, continuously shaped by transient attributes such as lighting, weather conditions, and seasonal changes. These attributes play a crucial role in altering how we perceive the world around us, as they influence the color, texture, and overall atmosphere of a scene. From the gradual transition of daylight to dusk, the formation of fog, to the accumulation of snow on tree branches, these transient factors contribute to the captivating and ever-changing nature of our environment.
 
-In recent years, there has been a growing interest in understanding and manipulating these transient scene attributes within the field of computer vision. The ability to transfer or modify such attributes in images holds significant potential for a wide range of applications, including photography enhancement, virtual reality, and the creation of realistic simulations in video games and films. However, accurately transferring transient attributes between scenes poses a complex challenge, as it requires not only a deep understanding of the scene's inherent structure but also the ability to preserve essential content while adapting to the desired attribute change.
+This chapter aims to address these challenges by exploring recent advancements in generative models, more specifically diffusion-based approaches. The observation that fine-tuning these foundation models with a small dataset can lead to overfitting motivates me to leverage the pre-trained models to guide the transfer process in a way that improves the generalisability. Therefore, I focus on a zero-shot approach that eliminates the need for extensive additional datasets, instead utilising the robust priors embedded in foundation models. I evaluate this approach through qualitative comparisons with fine-tuned models and demonstrate its ability to effectively capture the transfers, such as seasonal changes and varying lighting and weather conditions while preserving the scene's core features.
 
-This paper aims to address these challenges by exploring novel methodologies for transient attribute transfer. We build upon recent advancements in generative models and diffusion techniques, leveraging pre-trained models to guide the transfer process in a way that minimizes the risk of overfitting and enhances the generalization capability. Specifically, we focus on developing a zero-shot approach that eliminates the need for extensive additional datasets, instead utilizing the robust priors embedded in foundation models. Our approach is evaluated through a series of qualitative assessments, demonstrating its effectiveness in accurately transferring attributes such as seasonal changes and varying lighting conditions while maintaining the integrity of the scene's core features.
+%By advancing the understanding and manipulation of transient scene attributes, this research contributes to the broader goal of enhancing the realism and flexibility of visual content generation, paving the way for more immersive and contextually adaptive visual experiences.
 
-By advancing the understanding and manipulation of transient scene attributes, this research contributes to the broader goal of enhancing the realism and flexibility of visual content generation, paving the way for more immersive and contextually adaptive visual experiences.
-
-In summary, there are two main contributions of this work: 
+In summary, this chapter contributes to the broader goal of manipulating appearance in a data-efficient manner by: 
 
 %Multiple Transformation Blending
 \begin{itemize}
 
-    \item \textbf{A novel patch-space image map representation} as a weighted blending of transformation matrices with neural fields.
+   \item exploiting a pre-trained diffusion model in a zero-shot setting and requiring only an input image and a text prompt, a single word, describing the target attribute,
     
-	\item \textbf{A one-shot detail retouching algorithm} that allows transfer of edits to details to new images based on a single before-after image pair.
+   \item capturing the ever-changing transitions in an outdoor scene without any explicit decomposition of scene components.
 
 \end{itemize}
