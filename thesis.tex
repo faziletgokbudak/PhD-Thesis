@@ -53,6 +53,8 @@
 \usepackage{pdfpages}
 \usepackage{glossaries}
 
+\usepackage{listings}
+
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
 
@@ -82,6 +84,7 @@
 % The "axessiblity" package can be found at: https://ctan.org/pkg/axessibility?lang=en
 \usepackage[accsupp]{axessibility}  % Improves PDF readability for those with disabilities.
 
+\usepackage{bm}
 
 
 \newcommand{\TODO}[1]{\textbf{\color{cyan}[TODO: #1]}}
@@ -198,6 +201,11 @@ Appearance Manipulations}
 \newglossaryentry{SGD}{
     name=SGD,
     description={Stochastic Gradient Descent}
+}
+
+\newglossaryentry{DDIM}{
+    name=DDIM,
+    description={Denoising Diffusion Implicit Models}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
