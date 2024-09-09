@@ -39,7 +39,7 @@ Sampling starts with pure noise at time step $T$ and gradually approaches $t = 0
 
 \begin{equation}
 \bm{x}_{t -1} = \sqrt{\alpha_{t - 1}}\biggl(\frac{\bm{x}_t - \sqrt{1 - \alpha_t}\epsilon_{\theta}^{(t)}(\bm{x}_t)}{\sqrt{\alpha_t}}\biggl) + \sqrt{1 - \alpha_{t - 1} - \sigma_t^2} \, . \, \epsilon_{\theta}^{(t)}(\bm{x}_t) + \sigma_t \, \epsilon_t
-\ref{eq:ddim-sample}
+\label{eq:ddim-sample}
 \end{equation}
 Here, the first term inside the parenthesis is the "predicted $\bm{x}_0$" multiplied with the noise scheduler, and the second term is the "direction pointing to $\bm{x}_t$". In my experiments, I do not add any additional noise term ($\sigma_t = 0$) to keep the sampling process fully deterministic. That is, samples follow a fixed procedure from $\bm{x}_T$ to $\bm{x}_0$.
 
