@@ -73,7 +73,8 @@
 \contentsline {subsection}{\numberline {4.4.3}Grid search}{71}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{72}{subsection.4.4.4}%
 \contentsline {paragraph}{Baselines.}{72}{section*.67}%
-\contentsline {section}{\numberline {4.5}Conclusions}{73}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Limitations and future work}{73}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Conclusions}{73}{section.4.6}%
 \contentsline {chapter}{\numberline {5}HyperBRDF: Neural Generalizable Material Representation}{75}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction}{75}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Motivation and Impact}{78}{section.5.2}%

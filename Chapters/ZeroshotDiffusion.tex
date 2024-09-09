@@ -16,9 +16,14 @@ I begin by fine-tuning a stable diffusion model using the v1.5 checkpoint weight
 
 \input{Chapters/zero-shot-tat-secs/Results}
 
+\section{Limitations and future work}
+The grid search of the parameters in DDIM inversion is indeed sub-optimal, requiring manual labour for each image. Automatically optimising the parameter values based on a quantitative metric would be the future work of this project. Additionally, transient attributes usually rely on a continuous spectrum with less distinction between attributes as opposed to categories. In the future, I would like to explore the controllability of the transitions between the attributes, such as a slider interpolating appearances between two attributes, as in the HyperBRDF work (BRDF editing, Section \ref{sec:brdf-editing}).
 
 \section{Conclusions}
 
+Transient attributes are the essence of the scene atmosphere, shaping its appearance dramatically in a natural way. Such changes to the appearance include highly complex patterns due to the coupled scene components, i.e., unknown illumination, reflectance, and geometry. In this chapter, I present highly accurate as well as creative transient attribute transfers captured by variants of pre-trained latent diffusion models. The observation that fine-tuning is costly and can overfit to a small dataset motivates me to utilise the pre-trained model as a prior in a zero-shot setting. The DDIM inversion offers a balance between the creation of new content and the preservation of the core features with a tweak of only two parameters (start step and guidance scale). This approach has the potential to advance scene appearance manipulations by eliminating the requirement of additional extensive datasets. 
+
+\TODO{explain fine-tuning GPU usage somewhere please}
 % \begin{figure*}%[th]
 %   \centering
 %   \includegraphics[height=0.8\textheight, width=\linewidth,keepaspectratio]{Images/AdditionalResults_op2.pdf}
