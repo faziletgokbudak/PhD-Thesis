@@ -305,11 +305,26 @@ The rougher the material surface is, the more matte the object appears. As we de
 
 
 \paragraph{BRDF.} 
-Looking at Eqn. \ref{eq:Phong-eq}, we observe that the appearance/shading depends on two variables: incoming light direction for diffuse and specular terms and viewing direction for specular only. Therefore, we can generalise this function as a function with two parameters as  $f_R(\omega_o, \omega_i)$, where  $\omega_o$ is the angle between the surface normal and viewing direction and the surface normal and the light direction (Figure \ref{fig:brdf}). This function, known as BRDF, gives us the amount of light reflected in the viewing direction when the surface is lit in the incoming light direction.
+Looking at Eqn. \ref{eq:Phong-eq}, we observe that the appearance/shading depends on two variables: incoming light direction for diffuse and specular terms and viewing direction for specular only. Therefore, we can generalise this function as a function with two parameters as  $f_R(\omega_o, \omega_i)$, where  $\omega_o$ and $\omega_i$ are the angles between the surface normal and viewing direction and the light direction, respectively (Figure \ref{fig:brdf}). This function, known as BRDF, gives us the amount of light reflected in the viewing direction when the surface is lit in the incoming light direction.
 
 The mathematical formulations, such as Phong or GGX, approximate $BRDF(\omega_o, \omega_i)$s of real-world materials with simplifying assumptions on their nature. For instance, some models are designed to simulate only certain material types (Oren-Nayar model for Moon's BRDF). Some models follow the principle of optics or are designed empirically (Phong). Fitting to measured BRDF values is another alternative approach that recent neural network-based models, including HyperBRDF, are built upon.  
 
-Comparing the mathematical approximations to real-world measurements helps us understand how accurate the BRDF model represents a real-world material. $BRDF(\omega_o, \omega_i)$ itself is defined based on the laws of physics and can be physically measured by some specialised hardware, such as gonioreflectometer. Cameras can also be used to measure the BRDF. For instance, the MERL dataset \cite{Matusik2003jul} is captured using a CCD camera. However, measuring the specular values can become a challenge with a camera capture due to the requirement of High Dynamic Range support. I will discuss such capture systems in Chapter \ref{ch:HyperBRDF}.
+Comparing the mathematical approximations to real-world measurements helps us understand how accurate the BRDF model represents a real-world material. $BRDF(\omega_o, \omega_i)$ itself is defined based on the laws of physics and can be physically measured by some specialised hardware, such as gonioreflectometer. Cameras can also be used to measure the BRDF. For instance, the MERL dataset \cite{Matusik2003jul} is captured using a CCD camera. However, measuring the specular values can become a challenge with a camera capture due to the requirement of High Dynamic Range support. 
+
+
+Real-world BRDF measurements are usually represented as tabulated data where each pair of incoming and outgoing directions corresponds to the brightness of RGB colours. In case the directions are defined in the Cartesian coordinates with $x, y, z$ values, the representation maps a six-dimensional input ($\omega_i, \omega_o$) to a three-dimensional output value (RGB colour). The precise representation of BRDFs requires densely sampled captures, such as more than a million samples in the MERL dataset \cite{Matusik2003jul} Consequently, a specialised hardware system measures the BRDF values at every small increments of the incoming and outgoing angles, covering a large range of possible values. 
+
+It is worth mentioning that different approaches have been proposed to parametrise the BRDF as an alternative to the standard ($\omega_i$, $\omega_o$) parametrisation.  For instance, \citeauthor{rusinkiewicz1998new} \cite{rusinkiewicz1998new} replace ($\omega_i$, $\omega_o$)  with halfangle $bm{h}$ and difference vector $bm{d}$ for more efficient representations based on common BRDF features. In their proposed coordinate system, isotropic BRDFs become independent of halfangle. Furthermore, \citeauthor{dupuy2018adaptive} \cite{dupuy2018adaptive} propose an adaptive parameterisation that automatically adapts to the behaviour of a material. For the HyperBRDF experiments in Chapter \ref{ch:HyperBRDF}, I express the BRDFs using the Rusinkiewicz parametrisation \cite{rusinkiewicz1998new} for the efficiency in isotropic materials.
+
+
+\begin{figure}[ht]
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.8\linewidth]{Images/Rusinkiewicz.png}
+   \caption{Standard (left) vs Rusinkiewicz parametrisation. Figure from [Rusinkiewicz, 1998]}
+   \label{fig:RusinkiewiczvsStandard}
+\end{figure}
+
 
 The BRDF is essentially a radiometric term with the usage in computer graphics for realistic simulations of light-material interactions. Hence, physically-based BRDFs hold the following properties:
 \begin{itemize}
@@ -325,7 +340,7 @@ Rendering based on simulating the light's journey is computationally expensive. 
 
 Lastly, we defined BRDF as the function of only two parameters, the incoming and outgoing directions, for which we assume that material properties remain the same across the whole surface. Complex real-world materials are composed of different substances, which results in showing various reflectivities at different points of contact. The Spatially Varying Bidirectional Reflectance Distribution Function (SVBRDF) can represent this behaviour with an additional location parameter ($f_R(\omega_o, \omega_i,  \vec{x})$). Furthermore, we assume that the reflected light leaves the surface at the point of contact, which unlikely occurs in translucent materials where we observe subsurface scattering. The Bidirectional Surface Scattering Reflectance Distribution Function (BSSRDF) represents such behaviour with additional parameters for both entry and exit locations ($f_R(\omega_o, \vec{x_o}, \omega_i,  \vec{x_i})$). For the rest of this thesis, I will only focus on BRDF representations with the assumptions mentioned here.
 
-\subsection{Rendering Equation}
+\subsection{Rendering equation}
 
 To conclude the rendering section, let's define the rendering equation used to reproduce the outgoing light in ray tracing algorithms for the realistic simulation of light-material interactions.:
 \begin{equation}
@@ -479,3 +494,4 @@ where $b_i$ and $a_i$ are considered as  the Fourier basis frequencies and the c
 The effectiveness of the coordinate-based MLP models with periodic functions either as an activation or a mapping is compelling. However, the drawback of such neural representations is that they are designed for reconstruction of individual signals, causing overfitting. Therefore, I refrain from using such alternatives for the generalizable BRDF representation (HyperBRDF) and maintain a plain MLP model with ReLU activation functions.
 
 \subsection{Diffusion models}
+Diffusion models have emerged as an alternative to generative adversarial networks (GAN) and variational autoencoders (VAE) on the image generation domain and recently surpassed their performance in related computer vision tasks, such as conditional generation and image-to-image translation. 
