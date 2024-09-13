@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  12 SEP 2024 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  13 SEP 2024 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1017,16 +1017,6 @@ No file thesis.gls.
 
 ] (./Chapters/Introduction.tex
 Chapter 1.
-
-Overfull \hbox (1.99655pt too wide) in paragraph at lines 5--5
-[]\OT1/cmr/m/n/12 (-20) Margin
- []
-
-
-Overfull \hbox (1.99655pt too wide) in paragraph at lines 5--5
-[]\OT1/cmr/m/n/12 (-20) Margin
- []
-
 [15
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
@@ -1898,8 +1888,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 318254EAE72902F5439E8DD3D340F7BD;13622.
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 318254EAE72902F5439E8DD3D340F7BD;13622
+(rerunfilecheck)             After:  05BADB93FD990B7F4E86A9C0EF0D0B82;13404.
  )
 (\end occurred inside a group at level 1)
 
@@ -1908,7 +1904,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  26779 strings out of 474116
  457706 string characters out of 5743683
- 1946187 words of memory out of 5000000
+ 1945187 words of memory out of 5000000
  47848 multiletter control sequences out of 15000+600000
  585885 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1956,7 +1952,7 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (118 pages, 283766864 bytes).
+Output written on thesis.pdf (118 pages, 283766558 bytes).
 PDF statistics:
  5605 PDF objects out of 6186 (max. 8388607)
  3270 compressed objects within 33 object streams

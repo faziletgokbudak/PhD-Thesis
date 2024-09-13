@@ -1,8 +1,8 @@
 \thispagestyle {empty}
 \contentsline {chapter}{\numberline {1}Introduction}{15}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Research Vision and Motivation}{15}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Overview}{15}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Contributions}{15}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Relationship to Published Work}{15}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Publications}{15}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Background}{17}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Rendering}{17}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Displaying an image}{17}{subsection.2.1.1}%
