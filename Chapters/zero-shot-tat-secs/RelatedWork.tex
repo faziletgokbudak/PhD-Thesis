@@ -1,29 +1,15 @@
 \section{Related Work}\label{zero-shot-RW}
 This work fall into the broader category of image-to-image translation. Here, I will review the recent works on diffusion-based techniques.
 
-\subsection{Text-to-Image Synthesis.}
+\subsection{Text-to-Image Synthesis}
 
-Recent years have seen significant advancements in text-to-image synthesis from the initial Generative Adversarial Network (GAN)-based approaches \cite{li2020manigan,xu2018attngan, zhang2017stackgan, zhang2018stackgan++} to the latest diffusion \cite{gu2022vector, ho2020denoising,nichol2021improved,ramesh2022hierarchical, rombach2022high, saharia2022photorealistic,song2020denoising,zhang2023adding} and transformer models \cite{ding2022cogview2, esser2021taming, ramesh2021zero, yu2022scaling}. Notably, DALL·E 2 \cite{ramesh2022hierarchical} and Imagen \cite{ho2022imagen} apply diffusion models guided by text prompts. 
-
-
-
- Other approaches [\cite{crowson2022vqgan, ramesh2022hierarchical}] leverage pre-trained CLIP models \cite{radford2021learning} to guide image generation based on textual descriptions. 
- 
- More recently, Stable Diffusion \cite{rombach2022high}, trained on large image-text pairs \cite{schuhmann2021laion}, has been made publicly available and has served as the foundation for numerous image generation and manipulation works. ControlNet \cite{zhang2023adding} proposes to control Stable Diffusion with spatially localized conditions for image synthesis. Different from these works, we aim to introduce a component that can enable pre-trained text-to-image models for mask-free local image editing.
+Recent years have seen significant advancements in text-to-image synthesis from the initial Generative Adversarial Network (GAN)-based approaches \cite{li2020manigan,xu2018attngan, zhang2017stackgan, zhang2018stackgan++} to the latest diffusion \cite{gu2022vector, ho2020denoising,nichol2021improved,ramesh2022hierarchical, rombach2022high, saharia2022photorealistic,song2020denoising,zhang2023adding} and transformer models \cite{ding2022cogview2, esser2021taming, ramesh2021zero, yu2022scaling}. Notably, DALL·E 2 \cite{ramesh2022hierarchical} and Imagen \cite{ho2022imagen} condition the diffusion models with text prompts.  Pre-trained CLIP models \cite{radford2021learning} are also explored for guidance of image generation with text descriptions \cite{crowson2022vqgan, ramesh2022hierarchical}. More recently, Stable Diffusion \cite{rombach2022high}, trained on vast image-text pairs \cite{schuhmann2021laion}, was released to the public and has since become a key tool in the field for both image generation and manipulation. Later, ControlNet \cite{zhang2023adding} includes spatial conditioning controls, such as edges, depth, segmentation, human pose, etc, to Stable Diffusion for image generation. This work utilises the latest advancements on conditional image generation and explore their pre-trained capacity to transfer transient attributes.
 
 \subsection{Text-guided image manipulation}
-Several recent works
-have utilized pre-trained generator models and CLIP \cite{radford2021learning} 
+Pre-trained generator models and CLIP \cite{radford2021learning} have been deployed for text-guided image manipulation with extended applications including video editing and style transfer \cite{bar2022text2live, gal2022stylegan,kwon2022clipstyler, liu2021fusedream, patashnik2021styleclip}. For instance, StyleCLIP \cite{patashnik2021styleclip}, based on the generative model StyleGAN \cite{karras2020analyzing}, modifies input latent vectors with a CLIP-based loss, while VQGAN-CLIP \cite{crowson2022vqgan} guides VQ-GAN \cite{esser2021taming} using CLIP for high-quality image generation and editing. Diffusion models have been extensively studied for text-driven image manipulation \cite{avrahami2022blended, gal2022image, kawar2023imagic, kim2022diffusionclip, liu2023more, meng2021sdedit,nichol2021glide,ruiz2023dreambooth}.
 
-for text-driven image manipulation \cite{bar2022text2live, gal2022stylegan,kwon2022clipstyler, liu2021fusedream, patashnik2021styleclip} [2, 3, 17, 30, 35, 41].
-StyleCLIP \cite{patashnik2021styleclip} combines the generative ability of StyleGAN \cite{karras2020analyzing} with CLIP to control latent codes, enabling a
-wide range of image manipulations. VQGAN-CLIP \cite{crowson2022vqgan}
-uses CLIP \cite{radford2021learning} to guide VQ-GAN \cite{esser2021taming} for high-quality image generation and editing.
 
-There are several approaches [1, 18, 26, 27, 36, 37, 39,
-47, 53] \cite{avrahami2022blended, gal2022image, kawar2023imagic, kim2022diffusionclip, liu2023more, meng2021sdedit,nichol2021glide,ruiz2023dreambooth}
-
-that use diffusion models for text-driven image manipulation. Imagic \cite{kawar2023imagic} can generate textual embeddings
+ Imagic \cite{kawar2023imagic} can generate textual embeddings
 aligning with the input images and editing prompts, and
 fine-tune the diffusion model to perform edits. InstructPix2Pix \cite{brooks2023instructpix2pix} combines GPT-3 \cite{brown2020language} and Stable Diffusion \cite{rombach2022high}
 to edit images with human instructions. Our work is related to the state-of-the-art methods DiffEdit \cite{couairon2022diffedit} and MasaCtrl \cite{cao2023masactrl}. DiffEdit  \cite{couairon2022diffedit}  leverages DDIM inversion \cite{dhariwal2021diffusion, song2020denoising}with
@@ -34,3 +20,4 @@ models. Motivated by the aforementioned works, we also
 utilize diffusion models and CLIP guidance for text-driven
 image manipulation. In contrast to DiffEdit  \cite{couairon2022diffedit}  and MasaCtrl \cite{cao2023masactrl}, whose editing is much more sensitive to the generated mask regions, our proposed method focuses on learning bounding boxes for local editing, which can be more
 flexible in accommodating diverse text prompts.
+

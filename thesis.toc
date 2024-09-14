@@ -59,7 +59,7 @@
 \contentsline {chapter}{\numberline {4}Text-guided Transient Attribute Transfer}{67}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{68}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Related Work}{69}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Text-to-Image Synthesis.}{69}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Text-to-Image Synthesis}{69}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Text-guided image manipulation}{69}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Methodology}{70}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Transient Attribute Dataset}{70}{subsection.4.3.1}%
