@@ -317,39 +317,42 @@
 \citation{avrahami2022blended,gal2022image,kawar2023imagic,kim2022diffusionclip,liu2023more,meng2021sdedit,nichol2021glide,ruiz2023dreambooth}
 \citation{kawar2023imagic}
 \citation{brooks2023instructpix2pix}
-\citation{brown2020language}
 \citation{rombach2022high}
-\citation{couairon2022diffedit}
-\citation{cao2023masactrl}
-\citation{couairon2022diffedit}
-\citation{dhariwal2021diffusion,song2020denoising}
-\citation{cao2023masactrl}
-\citation{couairon2022diffedit}
-\citation{cao2023masactrl}
+\citation{brown2020language}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Related Work}{69}{section.4.2}\protected@file@percent }
 \newlabel{zero-shot-RW}{{4.2}{69}{Related Work}{section.4.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Text-to-Image Synthesis}{69}{subsection.4.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Text-guided image manipulation}{69}{subsection.4.2.2}\protected@file@percent }
+\citation{couairon2022diffedit}
+\citation{cao2023masactrl}
+\citation{yang2023zero}
+\citation{couairon2022diffedit}
+\citation{dhariwal2021diffusion,song2020denoising}
+\citation{cao2023masactrl}
+\citation{yang2023zero}
+\citation{couairon2022diffedit}
+\citation{cao2023masactrl}
+\citation{yang2023zero}
 \citation{rombach2022high}
 \citation{zhang2023adding}
 \citation{laffont2014transient}
 \citation{jacobs2007consistent}
 \citation{lalonde2009webcam}
-\citation{laffont2014transient}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Methodology}{70}{section.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Transient Attribute Dataset}{70}{subsection.4.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Attribute labels.}{70}{section*.63}\protected@file@percent }
+\citation{laffont2014transient}
 \citation{song2020denoising}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Transient Attribute Transfer}{71}{subsection.4.3.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Fine-tuning.}{71}{section*.64}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{DDIM inversion.}{71}{section*.65}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{DDIM sampling.}{71}{section*.67}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point.}}{72}{figure.caption.66}\protected@file@percent }
 \newlabel{fig:ddim-inversion}{{4.2}{72}{In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point}{figure.caption.66}{}}
+\@writefile{toc}{\contentsline {paragraph}{DDIM sampling.}{72}{section*.67}\protected@file@percent }
 \newlabel{eq:ddim-sample}{{4.2}{72}{DDIM sampling}{equation.4.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Experiments}{72}{section.4.4}\protected@file@percent }
-\newlabel{zero-shot-exp}{{4.4}{72}{Experiments}{section.4.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Fine-tuning}{72}{subsection.4.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Experiments}{73}{section.4.4}\protected@file@percent }
+\newlabel{zero-shot-exp}{{4.4}{73}{Experiments}{section.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Fine-tuning}{73}{subsection.4.4.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Samples from the training examples guided with the associated text prompts. Rows shows input images, target images and the model outputs in order. The subtitles indicate the attributes guiding the training.}}{73}{figure.caption.68}\protected@file@percent }
 \newlabel{fig:controlnet-train}{{4.3}{73}{Samples from the training examples guided with the associated text prompts. Rows shows input images, target images and the model outputs in order. The subtitles indicate the attributes guiding the training}{figure.caption.68}{}}
 \citation{laffont2014transient}
@@ -358,17 +361,17 @@
 \citation{laffont2014transient}
 \citation{laffont2014transient}
 \citation{brooks2023instructpix2pix}
-\citation{laffont2014transient}
-\citation{laffont2014transient}
-\citation{laffont2014transient}
-\citation{laffont2014transient}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Zero-shot latent diffusion}{74}{subsection.4.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Grid search}{74}{subsection.4.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{74}{subsection.4.4.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Baselines.}{74}{section*.70}\protected@file@percent }
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset".}}{75}{figure.caption.69}\protected@file@percent }
 \newlabel{fig:zero-shot-grid-search}{{4.4}{75}{Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset"}{figure.caption.69}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Limitations and future work}{75}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Limitations and future work}{76}{section.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4.6}Conclusions}{76}{section.4.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite  {laffont2014transient}. Additional results can be found in Section \ref {zero-shot-additional}.}}{77}{figure.caption.71}\protected@file@percent }
 \newlabel{fig:zero-shot-comparison}{{4.5}{77}{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite {laffont2014transient}. Additional results can be found in Section \ref {zero-shot-additional}}{figure.caption.71}{}}

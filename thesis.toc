@@ -67,14 +67,14 @@
 \contentsline {subsection}{\numberline {4.3.2}Transient Attribute Transfer}{71}{subsection.4.3.2}%
 \contentsline {paragraph}{Fine-tuning.}{71}{section*.64}%
 \contentsline {paragraph}{DDIM inversion.}{71}{section*.65}%
-\contentsline {paragraph}{DDIM sampling.}{71}{section*.67}%
-\contentsline {section}{\numberline {4.4}Experiments}{72}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Fine-tuning}{72}{subsection.4.4.1}%
+\contentsline {paragraph}{DDIM sampling.}{72}{section*.67}%
+\contentsline {section}{\numberline {4.4}Experiments}{73}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Fine-tuning}{73}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Zero-shot latent diffusion}{74}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Grid search}{74}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{74}{subsection.4.4.4}%
 \contentsline {paragraph}{Baselines.}{74}{section*.70}%
-\contentsline {section}{\numberline {4.5}Limitations and future work}{75}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Limitations and future work}{76}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Conclusions}{76}{section.4.6}%
 \contentsline {chapter}{\numberline {5}HyperBRDF: Neural Generalizable Material Representation}{79}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction}{80}{section.5.1}%
