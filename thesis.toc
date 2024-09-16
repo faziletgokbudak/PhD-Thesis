@@ -1,8 +1,11 @@
 \thispagestyle {empty}
 \contentsline {chapter}{\numberline {1}Introduction}{15}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Overview}{15}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Contributions}{19}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Publications}{19}{section.1.3}%
+\contentsline {subsection}{\numberline {1.1.1}One-shot Detail Retouching}{17}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Transient Attribute Transfer}{17}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Generalisable Neural BRDF Representation}{17}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Contributions}{17}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Publications}{17}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Background}{21}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Rendering}{21}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Displaying an image}{21}{subsection.2.1.1}%

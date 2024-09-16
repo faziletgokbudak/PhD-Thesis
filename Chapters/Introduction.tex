@@ -8,48 +8,17 @@
 
 \section{Overview} 
 
-The appearance of a 3D scene refers to the visual characteristics that result from the interaction of light with materials, textures, and geometry, determining how objects are perceived in terms of colour, shading, and surface detail. It is influenced by factors such as lighting conditions, material properties, and environmental effects, which together define the realism and aesthetic quality of the rendered scene.
+The appearance of a 3D scene comprises the visual features that are shaped by the interaction of light with materials, textures, and geometry, defining how we perceive objects in terms of colour, shading, and surface detail. Many factors, including lighting conditions, material properties, and environmental effects, affect appearance. Lighting, the type, location, intensity and colour of light sources, define how objects are illuminated, generating shadows, highlights, and overall contrast. Materials describe the optical properties of objects, such as base colour, transparency, reflectivity, and surface roughness. Textures are 2D images or procedural patterns applied to 3D surfaces, providing detailed surface information, such as colour, bumpiness, or imperfections. The 3D models' geometric detail and surface topology affect how light interacts with objects. Atmospheric conditions such as fog, reflections, and global illumination contribute to the overall appearance by simulating real-world environmental factors. The position and properties of the virtual camera, including focal length and field of view, influence the composition, perspective, and the visual hierarchy of objects in the scene. Overall, appearance is a result of the interplay between light, material properties, surface detail, and environmental factors, all of which contribute to the perceptual qualities and realism of the rendered image.
+
+Appearance manipulations refer to the edits of the aforementioned visual features, ranging from retouching intricate details to transforming entire scenes. Appearance manipulation techniques are instrumental in the success of multiple fields with real-world applications. In filmmaking, it helps create realistic special effects or offers subtle changes to lighting, costumes, and even an actor’s appearance during post-production. In social media and advertising, it allows users to benefit from filters, face-tuning, and other aesthetic tools. In augmented and virtual reality (AR/VR) platforms, it enables embodying human avatars that improve immersive realism, including changing hairstyles, outfits or body types. In fashion and e-commerce, users can trustfully shop clothes or accessories online through virtual try-ons. Even the fact that Richard Linklater had filmed the movie "Boyhood" (2014) over 12 years to capture the natural aging of the actors shows the necessity and importance of precise appearance manipulation techniques across disciplines. Therefore, this thesis is dedicated to tackle the challenging task of appearance manipulations with learning-based techniques with the hope that the proposed approaches can alleviate some of the difficulties that editors come across, such as accuracy, the scarcity of data, etc. This thesis investigates the three distinct perspectives of appearance (fine details, transient attributes, reflectance representations) and presents data-efficient machine learning approaches for accurate and visually-pleasing manipulations.
+
+Earlier approaches to manipulate scene appearance involve traditional image processing/computer graphics techniques and extensive manual editing in dedicated software platforms, such as Photoshop, Lightroom, Blender or Unreal Engine. These traditional editing approaches require significant time and skill due to the complexity and scale of the transformations involved. On the other hand, recent advancements in machine learning techniques starting with convolutional neural networks and reaching the current state of generative models have paved the way for precise and natural-looking appearance transfers that maintain the photorealism of the rendered scene. For instance, we can now instruct programs to edit images in only a few seconds thanks to the developing field of generative AI. Furthermore, the deep learning models have allowed us to represent naturally continuous signals as continuous neural functions, which were before bounded to the discrete representations. Consequently, machine learning techniques have revolutionised appearance manipulation by generating high-quality, realistic renderings from data inputs. However, the main bottleneck in these approaches is the scarcity of the training data that can drastically reduce the performance of the ML models. For instance, the number of pixels that belong to details is significantly lower than those belonging to low-frequency components, or obtaining the real "summer" - "winter" image pair can require us to wait for months. Furthermore, capturing the real-world reflectance measurements of even relatively simple materials takes hours in a professional capture setup. For these reasons, this thesis specifically focuses on generalisable approaches that can manipulate appearance with data efficiency.
 
 
-The appearance of a 3D scene refers to the visual characteristics and perception of objects within the scene, shaped by their interaction with light and surface properties. In the field of computer graphics and 3D rendering, the appearance is determined by several critical factors:
-
-Lighting: The type, placement, intensity, and color of light sources define how objects are illuminated, generating shadows, highlights, and overall contrast. These lighting conditions significantly influence depth, mood, and the spatial relationships between objects.
-
-Materials and Shaders: Materials describe the optical properties of objects, such as color, transparency, reflectivity, and surface roughness. Shaders are algorithms used to simulate these properties and determine how light interacts with the material, impacting the realism and visual complexity of the scene.
-
-Textures: Textures are 2D images or procedural patterns applied to 3D surfaces, providing detailed surface information, such as color, bumpiness, or imperfections. They play a crucial role in simulating real-world surfaces and adding visual complexity.
-
-Geometry and Shape: The 3D models' geometric detail and surface topology affect how light interacts with objects. More complex geometries produce varied lighting effects, such as shadows and reflections, impacting the overall visual fidelity of the scene.
-
-Environmental Effects: Atmospheric conditions such as fog, reflections, and global illumination contribute to the overall appearance by simulating real-world environmental factors. These effects add depth and realism, influencing how the scene's objects are perceived.
-
-Camera and Viewpoint: The position and properties of the virtual camera, including focal length and field of view, influence the composition, perspective, and the visual hierarchy of objects in the scene.
-
-In summary, the appearance of a 3D scene is a result of the interplay between light, material properties, surface detail, and environmental factors, all of which contribute to the perceptual qualities and realism of the rendered image.
+Appearance manipulation has become an indispensable tool in modern visual culture, driving innovation in entertainment, healthcare, and beyond. AI's involvement enhances the accuracy, scalability, and creativity of appearance modifications, pushing the boundaries of what is visually possible and enabling more seamless and engaging user experiences across industries.
 
 
-
-Appearance manipulation refers to the modification of visual features in images or videos, such as changing facial expressions, altering physical attributes, or transforming entire scenes. The motivations behind appearance manipulation are varied, ranging from artistic expression to functional applications. In creative industries, altering visual aesthetics allows artists, designers, and filmmakers to bring new, imaginative ideas to life. In entertainment, it enables actors to take on diverse roles or experience transformations without the need for physical makeup or prosthetics. Social media users often employ these techniques to enhance their appearance, explore identity, or simply engage in self-expression.
-
-Applications
-
-Appearance manipulations have wide-ranging applications across multiple fields:
-
-Entertainment and Media: In films, video games, and virtual reality, appearance manipulation helps create convincing special effects, digitally age or de-age actors, or generate entire digital characters. In post-production, filmmakers can make subtle changes to lighting, costumes, and even an actor’s appearance to fit the tone or story.
-
-Augmented and Virtual Reality (AR/VR): In AR/VR platforms, manipulating appearances allows users to embody avatars that differ from their real-world identities, enhancing the immersive experience. This can include changing hairstyles, outfits, or even body types.
-
-Social Media and Advertising: Filters, face-tuning, and other aesthetic tools are now common in social media apps, allowing users to modify their appearances to align with social or aesthetic trends. In advertising, brands use manipulated visuals to create idealized product images and promotional material.
-
-Healthcare and Surgery: In medicine, appearance manipulation helps simulate cosmetic or reconstructive surgery outcomes. Patients can see what they might look like post-procedure, aiding them in making informed decisions.
-
-Fashion and E-commerce: Virtual try-ons for clothing and accessories allow customers to visualize how products will look on them, revolutionizing online shopping by reducing uncertainties around fit and style.
-
-Cultural and Heritage Preservation: Digitally restoring or manipulating historical figures or scenes can bring history to life in documentaries or museums, helping people experience the past in a visually engaging manner.
-
-One famous example from filmmaking where producers had to wait an extended period to capture a specific scene is from the movie "Boyhood" (2014), directed by Richard Linklater.
-
-The movie was filmed over 12 years, from 2002 to 2013, as it follows the life of a young boy, Mason, from childhood to adulthood. Instead of using makeup, aging effects, or casting different actors for different stages of the character’s life, Linklater and his team waited for the actors to age naturally. Every year, the cast and crew would reunite to shoot scenes reflecting the characters' development over time.
+\subsection{One-shot Detail Retouching}
 
 \begin{figure}[ht]
   \centering
@@ -71,7 +40,7 @@ The movie was filmed over 12 years, from 2002 to 2013, as it follows the life of
    \label{fig:neuron}
 \end{wrapfigure}
 
-
+\subsection{Transient Attribute Transfer}
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
@@ -82,7 +51,7 @@ The movie was filmed over 12 years, from 2002 to 2013, as it follows the life of
    \label{fig:colour-approximate}
 \end{figure}
 
-
+\subsection{Generalisable Neural BRDF Representation}
 
 \begin{figure}[ht]
   \centering
@@ -93,23 +62,6 @@ The movie was filmed over 12 years, from 2002 to 2013, as it follows the life of
    \caption{Photorealistic rendering can be achieved through extensive ray tracing for which reflectance should be accurately measured and represented.}
    \label{fig:colour-approximate}
 \end{figure}
-
-Necessity of AI in Appearance Manipulation
-
-AI plays a crucial role in advancing appearance manipulation due to the complexity and scale of the transformations involved. Traditional editing tools require significant time and skill, but AI-driven techniques streamline the process by automating and enhancing image and video manipulation tasks. AI algorithms can analyze and modify appearances in real time, understanding facial structures, lighting, textures, and motion.
-
-Key contributions of AI include:
-
-Deep Learning: Techniques such as Generative Adversarial Networks (GANs) have revolutionized appearance manipulation by generating high-quality, realistic images from data inputs. For example, GANs can create entirely new faces, alter facial expressions, or simulate aging with stunning accuracy.
-
-Real-Time Adjustments: AI-driven filters on social media can make immediate alterations to a user’s appearance, such as changing hair color or smoothing skin, without needing manual intervention.
-
-Customization and Scalability: AI allows for highly personalized manipulations, from altering subtle features like eye shape to transforming entire body proportions. Additionally, AI can handle large volumes of data, making it possible to apply these manipulations to millions of users simultaneously in applications like social media or AR.
-
-Conclusion
-
-Appearance manipulation has become an indispensable tool in modern visual culture, driving innovation in entertainment, healthcare, and beyond. AI's involvement enhances the accuracy, scalability, and creativity of appearance modifications, pushing the boundaries of what is visually possible and enabling more seamless and engaging user experiences across industries.
-
 
 
 

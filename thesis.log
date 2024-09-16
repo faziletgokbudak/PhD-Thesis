@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  15 SEP 2024 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  16 SEP 2024 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -971,7 +971,7 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \cam@logorightnudge=\skip101
 \cam@logo=\box82
-<CollegeShields/CUni.pdf, id=337, 330.23375pt x 69.25874pt>
+<CollegeShields/CUni.pdf, id=349, 330.23375pt x 69.25874pt>
 File: CollegeShields/CUni.pdf Graphic file (type pdf)
 <use CollegeShields/CUni.pdf>
 Package pdftex.def Info: CollegeShields/CUni.pdf  used on input line 219.
@@ -995,7 +995,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 \cam@collegeshieldbox=\box84
-<CollegeShields/Queens.pdf, id=338, 240.42578pt x 284.52756pt>
+<CollegeShields/Queens.pdf, id=350, 240.42578pt x 284.52756pt>
 File: CollegeShields/Queens.pdf Graphic file (type pdf)
 <use CollegeShields/Queens.pdf>
 Package pdftex.def Info: CollegeShields/Queens.pdf  used on input line 219.
@@ -1031,67 +1031,85 @@ No file thesis.gls.
 Chapter 1.
 [15
 
-] [16]
+]
 <Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image courtes
-y- Produzioni Europee Associati .jpg, id=511, 1405.25pt x 790.955pt>
+y- Produzioni Europee Associati .jpg, id=522, 1405.25pt x 790.955pt>
 File: Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image co
 urtesy- Produzioni Europee Associati .jpg Graphic file (type jpg)
 <use Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image cou
 rtesy- Produzioni Europee Associati .jpg>
 Package pdftex.def Info: Images/A scene from ‘The Good, the Bad and the Ugly�
 �� (1966). Image courtesy- Produzioni Europee Associati .jpg  used on input lin
-e 58.
+e 27.
 (pdftex.def)             Requested size: 455.24411pt x 256.23663pt.
-<Images/byRickJones .jpg, id=512, 1336.995pt x 903.375pt>
+<Images/byRickJones .jpg, id=523, 1336.995pt x 903.375pt>
 File: Images/byRickJones .jpg Graphic file (type jpg)
 <use Images/byRickJones .jpg>
-Package pdftex.def Info: Images/byRickJones .jpg  used on input line 68.
+Package pdftex.def Info: Images/byRickJones .jpg  used on input line 37.
 (pdftex.def)             Requested size: 142.26378pt x 96.11844pt.
-<Images/seasonchanges.png, id=513, 199.4652pt x 132.2541pt>
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 43
+.
+
+<Images/seasonchanges.png, id=524, 199.4652pt x 132.2541pt>
 File: Images/seasonchanges.png Graphic file (type png)
 <use Images/seasonchanges.png>
-Package pdftex.def Info: Images/seasonchanges.png  used on input line 79.
+Package pdftex.def Info: Images/seasonchanges.png  used on input line 48.
 (pdftex.def)             Requested size: 455.24411pt x 301.88754pt.
-<Images/StarWars-RayTracing.jpeg, id=514, 1541.76pt x 867.24pt>
+[16]
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 54
+.
+
+<Images/StarWars-RayTracing.jpeg, id=529, 1541.76pt x 867.24pt>
 File: Images/StarWars-RayTracing.jpeg Graphic file (type jpg)
 <use Images/StarWars-RayTracing.jpeg>
-Package pdftex.def Info: Images/StarWars-RayTracing.jpeg  used on input line 91
+Package pdftex.def Info: Images/StarWars-RayTracing.jpeg  used on input line 60
 .
 (pdftex.def)             Requested size: 455.24411pt x 256.07178pt.
- [17 <./Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image 
-courtesy- Produzioni Europee Associati .jpg> <./Images/byRickJones .jpg>] [18 <
-./Images/seasonchanges.png>] [19{/usr/local/texlive/2024/texmf-dist/fonts/enc/d
-vips/cm-super/cm-super-ts1.enc} <./Images/StarWars-RayTracing.jpeg>])
-(./Chapters/Background.tex [20]
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 68
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 69
+.
+
+[17{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
+c} <./Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image co
+urtesy- Produzioni Europee Associati .jpg> <./Images/byRickJones .jpg>])
+(./Chapters/Background.tex [18 <./Images/seasonchanges.png>] [19 <./Images/Star
+Wars-RayTracing.jpeg>] [20
+
+]
 Chapter 2.
-<Images/pixelate_image_snowman.png, id=538, 1134.639pt x 287.6346pt>
+<Images/pixelate_image_snowman.png, id=553, 1134.639pt x 287.6346pt>
 File: Images/pixelate_image_snowman.png Graphic file (type png)
 <use Images/pixelate_image_snowman.png>
 Package pdftex.def Info: Images/pixelate_image_snowman.png  used on input line 
 15.
 (pdftex.def)             Requested size: 455.24411pt x 115.40291pt.
-[21
-
- <./Images/pixelate_image_snowman.png>]
-<Images/grid_circle.png, id=548, 342.5598pt x 259.4493pt>
+[21 <./Images/pixelate_image_snowman.png>]
+<Images/grid_circle.png, id=563, 342.5598pt x 259.4493pt>
 File: Images/grid_circle.png Graphic file (type png)
 <use Images/grid_circle.png>
 Package pdftex.def Info: Images/grid_circle.png  used on input line 29.
 (pdftex.def)             Requested size: 182.09486pt x 137.91917pt.
-<Images/merged_grid_circle2-crop.pdf, id=549, 343.2825pt x 259.97125pt>
+<Images/merged_grid_circle2-crop.pdf, id=564, 343.2825pt x 259.97125pt>
 File: Images/merged_grid_circle2-crop.pdf Graphic file (type pdf)
 <use Images/merged_grid_circle2-crop.pdf>
 Package pdftex.def Info: Images/merged_grid_circle2-crop.pdf  used on input lin
 e 30.
 (pdftex.def)             Requested size: 182.09486pt x 137.89914pt.
-<Images/colourspace.png, id=550, 663.47874pt x 681.54625pt>
+<Images/colourspace.png, id=565, 663.47874pt x 681.54625pt>
 File: Images/colourspace.png Graphic file (type png)
 <use Images/colourspace.png>
 Package pdftex.def Info: Images/colourspace.png  used on input line 38.
 (pdftex.def)             Requested size: 217.6621pt x 223.59021pt.
  [22 <./Images/grid_circle.png> <./Images/merged_grid_circle2-crop.pdf> <./Imag
 es/colourspace.png (PNG copy)>]
-<Images/colour_quantization.png, id=567, 1133.9163pt x 346.896pt>
+<Images/colour_quantization.png, id=582, 1133.9163pt x 346.896pt>
 File: Images/colour_quantization.png Graphic file (type png)
 <use Images/colour_quantization.png>
 Package pdftex.def Info: Images/colour_quantization.png  used on input line 63.
@@ -1099,14 +1117,14 @@ Package pdftex.def Info: Images/colour_quantization.png  used on input line 63.
 (pdftex.def)             Requested size: 409.71692pt x 125.34296pt.
 
 [23 <./Images/colour_quantization.png>]
-<Images/scene_with_camera.jpg, id=576, 766.865pt x 580.1675pt>
+<Images/scene_with_camera.jpg, id=591, 766.865pt x 580.1675pt>
 File: Images/scene_with_camera.jpg Graphic file (type jpg)
 <use Images/scene_with_camera.jpg>
 Package pdftex.def Info: Images/scene_with_camera.jpg  used on input line 78.
 (pdftex.def)             Requested size: 318.66948pt x 241.09256pt.
  [24 <./Images/scene_with_camera.jpg>]
 <Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere-can-
-be-approximated.png, id=584, 853.1875pt x 215.80624pt>
+be-approximated.png, id=599, 853.1875pt x 215.80624pt>
 File: Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere
 -can-be-approximated.png Graphic file (type png)
 <use Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere-
@@ -1117,20 +1135,20 @@ Package pdftex.def Info: Images/Triangulation-of-surfaces-Any-curved-surface-in
 
 [25 <./Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-spher
 e-can-be-approximated.png>]
-<Images/perspective_projection.png, id=593, 3785.14125pt x 1713.40125pt>
+<Images/perspective_projection.png, id=608, 3785.14125pt x 1713.40125pt>
 File: Images/perspective_projection.png Graphic file (type png)
 <use Images/perspective_projection.png>
 Package pdftex.def Info: Images/perspective_projection.png  used on input line 
 117.
 (pdftex.def)             Requested size: 273.14923pt x 123.63669pt.
  [26]
-<Images/single_point_perspective.png, id=602, 3489.035pt x 3035.34pt>
+<Images/single_point_perspective.png, id=617, 3489.035pt x 3035.34pt>
 File: Images/single_point_perspective.png Graphic file (type png)
 <use Images/single_point_perspective.png>
 Package pdftex.def Info: Images/single_point_perspective.png  used on input lin
 e 128.
 (pdftex.def)             Requested size: 182.07504pt x 128.01604pt.
-<Images/two_points_perspective.png, id=603, 4047.12pt x 3035.34pt>
+<Images/two_points_perspective.png, id=618, 4047.12pt x 3035.34pt>
 File: Images/two_points_perspective.png Graphic file (type png)
 <use Images/two_points_perspective.png>
 Package pdftex.def Info: Images/two_points_perspective.png  used on input line 
@@ -1138,12 +1156,12 @@ Package pdftex.def Info: Images/two_points_perspective.png  used on input line
 (pdftex.def)             Requested size: 182.05078pt x 128.01604pt.
  [27 <./Images/perspective_projection.png> <./Images/single_point_perspective.p
 ng> <./Images/two_points_perspective.png>]
-<Images/object-colour.png, id=610, 120.45pt x 86.4831pt>
+<Images/object-colour.png, id=625, 120.45pt x 86.4831pt>
 File: Images/object-colour.png Graphic file (type png)
 <use Images/object-colour.png>
 Package pdftex.def Info: Images/object-colour.png  used on input line 147.
 (pdftex.def)             Requested size: 136.5733pt x 98.06915pt.
-<Images/rough_river_surface_reflection.png, id=615, 2901.84125pt x 3869.45625pt
+<Images/rough_river_surface_reflection.png, id=630, 2901.84125pt x 3869.45625pt
 >
 File: Images/rough_river_surface_reflection.png Graphic file (type png)
 <use Images/rough_river_surface_reflection.png>
@@ -1152,19 +1170,19 @@ ut line 157.
 (pdftex.def)             Requested size: 136.5733pt x 182.08884pt.
 
 [28 <./Images/object-colour.png> <./Images/rough_river_surface_reflection.png>]
-<Images/diagram_microfacet.png, id=628, 2006.49625pt x 606.265pt>
+<Images/diagram_microfacet.png, id=644, 2006.49625pt x 606.265pt>
 File: Images/diagram_microfacet.png Graphic file (type png)
 <use Images/diagram_microfacet.png>
 Package pdftex.def Info: Images/diagram_microfacet.png  used on input line 168.
 
 (pdftex.def)             Requested size: 409.71692pt x 123.79483pt.
-<Images/shad-diffuse1.png, id=630, 301.125pt x 288.07625pt>
+<Images/shad-diffuse1.png, id=646, 301.125pt x 288.07625pt>
 File: Images/shad-diffuse1.png Graphic file (type png)
 <use Images/shad-diffuse1.png>
 Package pdftex.def Info: Images/shad-diffuse1.png  used on input line 186.
 (pdftex.def)             Requested size: 92.47145pt x 88.46313pt.
 <Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-refl
-ections-occur-on.png, id=631, 853.1875pt x 282.05376pt>
+ections-occur-on.png, id=647, 853.1875pt x 282.05376pt>
 File: Images/Differences-between-the-specular-and-diffuse-reflections-specuclar
 -reflections-occur-on.png Graphic file (type png)
 <use Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-
@@ -1175,14 +1193,14 @@ flections-specuclar-reflections-occur-on.png  used on input line 195.
 [29 <./Images/diagram_microfacet.png> <./Images/Differences-between-the-specula
 r-and-diffuse-reflections-specuclar-reflections-occur-on.png> <./Images/shad-di
 ffuse1.png>] [30]
-<Images/ray-tracing-image-1.jpg, id=649, 1066.98625pt x 701.62125pt>
+<Images/ray-tracing-image-1.jpg, id=664, 1066.98625pt x 701.62125pt>
 File: Images/ray-tracing-image-1.jpg Graphic file (type jpg)
 <use Images/ray-tracing-image-1.jpg>
 Package pdftex.def Info: Images/ray-tracing-image-1.jpg  used on input line 220
 .
 (pdftex.def)             Requested size: 227.62206pt x 149.67868pt.
  [31 <./Images/ray-tracing-image-1.jpg>] [32]
-<Images/specular+diffuse.png, id=662, 513.92pt x 513.92pt>
+<Images/specular+diffuse.png, id=677, 513.92pt x 513.92pt>
 File: Images/specular+diffuse.png Graphic file (type png)
 <use Images/specular+diffuse.png>
 Package pdftex.def Info: Images/specular+diffuse.png  used on input line 249.
@@ -1192,7 +1210,7 @@ Package pdftex.def Info: Images/specular+diffuse.png  used on input line 249.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./I
 mages/diffuse+specular+angle.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.6> allowed
-<Images/diffuse+specular+angle.pdf, id=666, 726.715pt x 202.7575pt>
+<Images/diffuse+specular+angle.pdf, id=681, 726.715pt x 202.7575pt>
 File: Images/diffuse+specular+angle.pdf Graphic file (type pdf)
 <use Images/diffuse+specular+angle.pdf>
 Package pdftex.def Info: Images/diffuse+specular+angle.pdf  used on input line 
@@ -1207,19 +1225,19 @@ n input line 283.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./I
 mages/Phong-roughness-coeff.pdf): PDF inclusion: found PDF version <1.7>, but a
 t most version <1.6> allowed
-<Images/Phong-roughness-coeff.pdf, id=692, 728.7225pt x 145.54375pt>
+<Images/Phong-roughness-coeff.pdf, id=707, 728.7225pt x 145.54375pt>
 File: Images/Phong-roughness-coeff.pdf Graphic file (type pdf)
 <use Images/Phong-roughness-coeff.pdf>
 Package pdftex.def Info: Images/Phong-roughness-coeff.pdf  used on input line 2
 92.
 (pdftex.def)             Requested size: 455.24411pt x 90.92241pt.
-<Images/shad2-brdfdir.png, id=693, 301.125pt x 158.5925pt>
+<Images/shad2-brdfdir.png, id=708, 301.125pt x 158.5925pt>
 File: Images/shad2-brdfdir.png Graphic file (type png)
 <use Images/shad2-brdfdir.png>
 Package pdftex.def Info: Images/shad2-brdfdir.png  used on input line 300.
 (pdftex.def)             Requested size: 170.71652pt x 89.91466pt.
 [34 <./Images/Phong-roughness-coeff.pdf> <./Images/shad2-brdfdir.png>]
-<Images/Rusinkiewicz.png, id=732, 988.69376pt x 360.34625pt>
+<Images/Rusinkiewicz.png, id=747, 988.69376pt x 360.34625pt>
 File: Images/Rusinkiewicz.png Graphic file (type png)
 <use Images/Rusinkiewicz.png>
 Package pdftex.def Info: Images/Rusinkiewicz.png  used on input line 323.
@@ -1234,7 +1252,7 @@ Package natbib Warning: Citation `Chenliang's paper' on page 36 undefined on in
 put line 337.
 
 [36] [37]
-<Images/gradient-descent.png, id=753, 358.4592pt x 411.6981pt>
+<Images/gradient-descent.png, id=768, 358.4592pt x 411.6981pt>
 File: Images/gradient-descent.png Graphic file (type png)
 <use Images/gradient-descent.png>
 Package pdftex.def Info: Images/gradient-descent.png  used on input line 371.
@@ -1249,19 +1267,19 @@ Package natbib Warning: Citation `kingma2014adam' on page 38 undefined on input
 Package natbib Warning: Citation `johnson2016perceptuallossesrealtimestyle' on 
 page 40 undefined on input line 381.
 
-<Images/l1vsl2loss.png, id=771, 409.7709pt x 312.2064pt>
+<Images/l1vsl2loss.png, id=786, 409.7709pt x 312.2064pt>
 File: Images/l1vsl2loss.png Graphic file (type png)
 <use Images/l1vsl2loss.png>
 Package pdftex.def Info: Images/l1vsl2loss.png  used on input line 387.
 (pdftex.def)             Requested size: 182.09486pt x 138.73846pt.
 [40 <./Images/l1vsl2loss.png>]
-<Images/neuron.png, id=780, 545.03625pt x 521.95pt>
+<Images/neuron.png, id=796, 545.03625pt x 521.95pt>
 File: Images/neuron.png Graphic file (type png)
 <use Images/neuron.png>
 Package pdftex.def Info: Images/neuron.png  used on input line 410.
 (pdftex.def)             Requested size: 142.26378pt x 136.2374pt.
  [41 <./Images/neuron.png>]
-<Images/MLP.jpeg, id=791, 853.1875pt x 456.70625pt>
+<Images/MLP.jpeg, id=807, 853.1875pt x 456.70625pt>
 File: Images/MLP.jpeg Graphic file (type jpg)
 <use Images/MLP.jpeg>
 Package pdftex.def Info: Images/MLP.jpeg  used on input line 434.
@@ -1288,13 +1306,13 @@ input line 476.
 Package natbib Warning: Citation `rahimi2007random' on page 44 undefined on inp
 ut line 476.
 
-<Images/FFN.png, id=816, 1358.676pt x 222.5916pt>
+<Images/FFN.png, id=831, 1358.676pt x 222.5916pt>
 File: Images/FFN.png Graphic file (type png)
 <use Images/FFN.png>
 Package pdftex.def Info: Images/FFN.png  used on input line 489.
 (pdftex.def)             Requested size: 455.24411pt x 74.58307pt.
 [44]
-<Images/conditioning-mechs.png, id=829, 1068.99374pt x 271.0125pt>
+<Images/conditioning-mechs.png, id=844, 1068.99374pt x 271.0125pt>
 File: Images/conditioning-mechs.png Graphic file (type png)
 <use Images/conditioning-mechs.png>
 Package pdftex.def Info: Images/conditioning-mechs.png  used on input line 503.
@@ -1303,7 +1321,7 @@ Package pdftex.def Info: Images/conditioning-mechs.png  used on input line 503.
 ) (./Chapters/DetailRetouching.tex [45 <./Images/FFN.png>] [46 <./Images/condit
 ioning-mechs.png>]
 Chapter 3.
-<Chapters/detail-retouching-figs/teaser_CVMP.pdf, id=848, 956.57375pt x 432.616
+<Chapters/detail-retouching-figs/teaser_CVMP.pdf, id=863, 956.57375pt x 432.616
 26pt>
 File: Chapters/detail-retouching-figs/teaser_CVMP.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/teaser_CVMP.pdf>
@@ -1318,7 +1336,7 @@ on input line 8.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/PS1.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/PS1.pdf, id=1051, 963.6pt x 542.025pt>
+<Chapters/detail-retouching-figs/PS1.pdf, id=1066, 963.6pt x 542.025pt>
 File: Chapters/detail-retouching-figs/PS1.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/PS1.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/PS1.pdf  used on input
@@ -1329,7 +1347,7 @@ Package pdftex.def Info: Chapters/detail-retouching-figs/PS1.pdf  used on input
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/PS3.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/PS3.pdf, id=1052, 963.6pt x 542.025pt>
+<Chapters/detail-retouching-figs/PS3.pdf, id=1067, 963.6pt x 542.025pt>
 File: Chapters/detail-retouching-figs/PS3.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/PS3.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/PS3.pdf  used on input
@@ -1340,7 +1358,7 @@ Package pdftex.def Info: Chapters/detail-retouching-figs/PS3.pdf  used on input
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/PS2.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/PS2.pdf, id=1053, 963.6pt x 542.025pt>
+<Chapters/detail-retouching-figs/PS2.pdf, id=1068, 963.6pt x 542.025pt>
 File: Chapters/detail-retouching-figs/PS2.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/PS2.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/PS2.pdf  used on input
@@ -1357,7 +1375,7 @@ hapters/detail-retouching-figs/PS3.pdf): PDF inclusion: multiple pdfs with page
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/MainFig.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/MainFig.pdf, id=1093, 1616.9208pt x 337.26pt>
+<Chapters/detail-retouching-figs/MainFig.pdf, id=1109, 1616.9208pt x 337.26pt>
 File: Chapters/detail-retouching-figs/MainFig.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/MainFig.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/MainFig.pdf  used on i
@@ -1374,7 +1392,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [58]
-<Chapters/detail-retouching-figs/ablation_matrices.png, id=1190, 406.33807pt x 
+<Chapters/detail-retouching-figs/ablation_matrices.png, id=1205, 406.33807pt x 
 312.2064pt>
 File: Chapters/detail-retouching-figs/ablation_matrices.png Graphic file (type 
 png)
@@ -1382,7 +1400,7 @@ png)
 Package pdftex.def Info: Chapters/detail-retouching-figs/ablation_matrices.png 
  used on input line 77.
 (pdftex.def)             Requested size: 227.62206pt x 174.89156pt.
-<Chapters/detail-retouching-figs/AblationStudy_K.pdf, id=1191, 697.60625pt x 52
+<Chapters/detail-retouching-figs/AblationStudy_K.pdf, id=1206, 697.60625pt x 52
 6.96875pt>
 File: Chapters/detail-retouching-figs/AblationStudy_K.pdf Graphic file (type pd
 f)
@@ -1392,7 +1410,7 @@ sed on input line 86.
 (pdftex.def)             Requested size: 364.19667pt x 275.11084pt.
  [59 <./Chapters/detail-retouching-figs/ablation_matrices.png>] [60 <./Chapters
 /detail-retouching-figs/AblationStudy_K.pdf>]
-<Chapters/detail-retouching-figs/weight_visualise.pdf, id=1233, 896.34875pt x 5
+<Chapters/detail-retouching-figs/weight_visualise.pdf, id=1249, 896.34875pt x 5
 25.965pt>
 File: Chapters/detail-retouching-figs/weight_visualise.pdf Graphic file (type p
 df)
@@ -1400,7 +1418,7 @@ df)
 Package pdftex.def Info: Chapters/detail-retouching-figs/weight_visualise.pdf  
 used on input line 99.
 (pdftex.def)             Requested size: 364.19667pt x 213.70485pt.
-<Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf, id=1235, 382.42876p
+<Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf, id=1251, 382.42876p
 t x 394.47375pt>
 File: Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf Graphic file (t
 ype pdf)
@@ -1408,7 +1426,7 @@ ype pdf)
 Package pdftex.def Info: Chapters/detail-retouching-figs/res_diff_light_2_cvmp.
 pdf  used on input line 110.
 (pdftex.def)             Requested size: 364.19667pt x 375.68692pt.
-<Chapters/detail-retouching-figs/MaterialResults.pdf, id=1239, 477.785pt x 442.
+<Chapters/detail-retouching-figs/MaterialResults.pdf, id=1255, 477.785pt x 442.
 65375pt>
 File: Chapters/detail-retouching-figs/MaterialResults.pdf Graphic file (type pd
 f)
@@ -1416,7 +1434,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/MaterialResults.pdf  u
 sed on input line 119.
 (pdftex.def)             Requested size: 364.19667pt x 337.41322pt.
-<Chapters/detail-retouching-figs/Nuances.pdf, id=1245, 807.015pt x 765.86125pt>
+<Chapters/detail-retouching-figs/Nuances.pdf, id=1261, 807.015pt x 765.86125pt>
 
 File: Chapters/detail-retouching-figs/Nuances.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/Nuances.pdf>
@@ -1431,7 +1449,7 @@ tail-retouching-figs/Nuances.pdf>]
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/One-shot-labels.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/One-shot-labels.pdf, id=1352, 287.0725pt x 9.0
+<Chapters/detail-retouching-figs/One-shot-labels.pdf, id=1367, 287.0725pt x 9.0
 3375pt>
 File: Chapters/detail-retouching-figs/One-shot-labels.pdf Graphic file (type pd
 f)
@@ -1439,7 +1457,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/One-shot-labels.pdf  u
 sed on input line 197.
 (pdftex.def)             Requested size: 373.3035pt x 11.74756pt.
-<Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf, id=1353, 349.29698p
+<Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf, id=1368, 349.29698p
 t x 346.89601pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf Graphic file (t
 ype pdf)
@@ -1453,7 +1471,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/One-shot-labels.pdf  u
 sed on input line 210.
 (pdftex.def)             Requested size: 373.3035pt x 11.74756pt.
-<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf, id=1354, 34
+<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf, id=1369, 34
 9.29698pt x 346.89601pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf Graphic
  file (type pdf)
@@ -1467,7 +1485,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/One-shot-labels.pdf  u
 sed on input line 221.
 (pdftex.def)             Requested size: 373.3035pt x 11.74756pt.
-<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf, id=1355, 3
+<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf, id=1370, 3
 49.29698pt x 346.89601pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf Graphi
 c file (type pdf)
@@ -1479,7 +1497,7 @@ _a05_s01.pdf  used on input line 222.
 tail-retouching-figs/Qualitative_zoomed_BF.pdf>] [67 <./Chapters/detail-retouch
 ing-figs/Qualitative_zoomed_LLF_a2_s02.pdf>] [68 <./Chapters/detail-retouching-
 figs/Qualitative_zoomed_LLF_a05_s01.pdf>]
-<Chapters/detail-retouching-figs/Limitations.pdf, id=1584, 377.41pt x 260.975pt
+<Chapters/detail-retouching-figs/Limitations.pdf, id=1599, 377.41pt x 260.975pt
 >
 File: Chapters/detail-retouching-figs/Limitations.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/Limitations.pdf>
@@ -1512,7 +1530,7 @@ Package natbib Warning: Citation `laffont2014transient' on page 71 undefined on
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/zero-shot-tat-figs/tat-teaser.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.6> allowed
-<Chapters/zero-shot-tat-figs/tat-teaser.pdf, id=1623, 930.47626pt x 290.08376pt
+<Chapters/zero-shot-tat-figs/tat-teaser.pdf, id=1638, 930.47626pt x 290.08376pt
 >
 File: Chapters/zero-shot-tat-figs/tat-teaser.pdf Graphic file (type pdf)
 <use Chapters/zero-shot-tat-figs/tat-teaser.pdf>
@@ -1784,7 +1802,7 @@ put line 6.
 Package natbib Warning: Citation `laffont2014transient' on page 75 undefined on
  input line 13.
 
-<Chapters/zero-shot-tat-figs/DDIM_forward.png, id=1658, 1128.1347pt x 221.1462p
+<Chapters/zero-shot-tat-figs/DDIM_forward.png, id=1673, 1128.1347pt x 221.1462p
 t>
 File: Chapters/zero-shot-tat-figs/DDIM_forward.png Graphic file (type png)
 <use Chapters/zero-shot-tat-figs/DDIM_forward.png>
@@ -1797,7 +1815,7 @@ put line 31.
 
 [75]) (./Chapters/zero-shot-tat-secs/Results.tex [76 <./Chapters/zero-shot-tat-
 figs/DDIM_forward.png>]
-<Chapters/zero-shot-tat-figs/Controlnet2.png, id=1676, 444.17628pt x 331.30518p
+<Chapters/zero-shot-tat-figs/Controlnet2.png, id=1691, 444.17628pt x 331.30518p
 t>
 File: Chapters/zero-shot-tat-figs/Controlnet2.png Graphic file (type png)
 <use Chapters/zero-shot-tat-figs/Controlnet2.png>
@@ -1805,7 +1823,7 @@ Package pdftex.def Info: Chapters/zero-shot-tat-figs/Controlnet2.png  used on i
 nput line 7.
 (pdftex.def)             Requested size: 455.24411pt x 339.57483pt.
  [77 <./Chapters/zero-shot-tat-figs/Controlnet2.png>]
-<Chapters/zero-shot-tat-figs/grid-search.png, id=1686, 575.99461pt x 460.68741p
+<Chapters/zero-shot-tat-figs/grid-search.png, id=1701, 575.99461pt x 460.68741p
 t>
 File: Chapters/zero-shot-tat-figs/grid-search.png Graphic file (type png)
 <use Chapters/zero-shot-tat-figs/grid-search.png>
@@ -1838,7 +1856,7 @@ Package natbib Warning: Citation `brooks2023instructpix2pix' on page 78 undefin
 ed on input line 35.
 
 [78]
-<Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf, id=1694, 248
+<Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf, id=1709, 248
 4.28125pt x 2760.3125pt>
 File: Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf Graphic 
 file (type pdf)
@@ -1878,7 +1896,7 @@ ated_titles_removed.pdf>] [82
 ]
 Chapter 5.
 (./Chapters/hyperbrdf-sec/1_introduction.tex [83]
-<Chapters/hyperbrdf-figs/teaser_cropped.png, id=1880, 1284.8pt x 604.2575pt>
+<Chapters/hyperbrdf-figs/teaser_cropped.png, id=1895, 1284.8pt x 604.2575pt>
 File: Chapters/hyperbrdf-figs/teaser_cropped.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/teaser_cropped.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/teaser_cropped.png  used on in
@@ -1887,7 +1905,7 @@ put line 16.
  [84] [85 <./Chapters/hyperbrdf-figs/teaser_cropped.png>]) (./Chapters/hyperbrd
 f-sec/2_relatedWork.tex
 [86] [87]) (./Chapters/hyperbrdf-sec/3_method.tex
-<Chapters/hyperbrdf-figs/MainFig_13_11.pdf, id=1994, 706.64pt x 266.9975pt>
+<Chapters/hyperbrdf-figs/MainFig_13_11.pdf, id=2009, 706.64pt x 266.9975pt>
 File: Chapters/hyperbrdf-figs/MainFig_13_11.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/MainFig_13_11.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/MainFig_13_11.pdf  used on inp
@@ -1900,7 +1918,7 @@ rbrdf-sec/4_experiments.tex
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf, id=2091, 1320.202
+<Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf, id=2106, 1320.202
 29pt x 1086.45903pt>
 File: Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf Graphic file 
 (type pdf)
@@ -1908,7 +1926,7 @@ File: Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf Graphic file
 Package pdftex.def Info: Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compresse
 d.pdf  used on input line 24.
 (pdftex.def)             Requested size: 364.19667pt x 299.7138pt.
-<Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf, id=2092, 1187.43625pt x 1117.1737
+<Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf, id=2107, 1187.43625pt x 1117.1737
 5pt>
 File: Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf>
@@ -1930,49 +1948,49 @@ nput line 57.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/N_labels2.pdf): PDF inclusion: found PDF version <1.7>, 
 but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/N_labels2.pdf, id=2093, 461.725pt x 10.0375pt>
+<Chapters/hyperbrdf-figs/N_labels2.pdf, id=2108, 461.725pt x 10.0375pt>
 File: Chapters/hyperbrdf-figs/N_labels2.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/N_labels2.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/N_labels2.pdf  used on input l
 ine 60.
 (pdftex.def)             Requested size: 332.32625pt x 7.22453pt.
-<Chapters/hyperbrdf-figs/legend.png, id=2094, 511.6716pt x 31.43745pt>
+<Chapters/hyperbrdf-figs/legend.png, id=2109, 511.6716pt x 31.43745pt>
 File: Chapters/hyperbrdf-figs/legend.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/legend.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/legend.png  used on input line
  68.
 (pdftex.def)             Requested size: 159.33821pt x 9.78963pt.
-<Chapters/hyperbrdf-figs/PSNR_ggx.pdf, id=2095, 424.43379pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/PSNR_ggx.pdf, id=2110, 424.43379pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/PSNR_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/PSNR_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/PSNR_ggx.pdf  used on input li
 ne 69.
 (pdftex.def)             Requested size: 145.68503pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/DeltaE_ggx.pdf, id=2096, 430.174pt x 330.41133pt>
+<Chapters/hyperbrdf-figs/DeltaE_ggx.pdf, id=2111, 430.174pt x 330.41133pt>
 File: Chapters/hyperbrdf-figs/DeltaE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/DeltaE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/DeltaE_ggx.pdf  used on input 
 line 70.
 (pdftex.def)             Requested size: 145.6796pt x 96.73946pt.
-<Chapters/hyperbrdf-figs/MAE_ggx.pdf, id=2097, 424.43379pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/MAE_ggx.pdf, id=2112, 424.43379pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/MAE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/MAE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/MAE_ggx.pdf  used on input lin
 e 71.
 (pdftex.def)             Requested size: 145.68503pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/RMSE_ggx.pdf, id=2098, 441.67006pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/RMSE_ggx.pdf, id=2113, 441.67006pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/RMSE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/RMSE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/RMSE_ggx.pdf  used on input li
 ne 72.
 (pdftex.def)             Requested size: 145.68417pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/RAE_ggx.pdf, id=2099, 453.16614pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/RAE_ggx.pdf, id=2114, 453.16614pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/RAE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/RAE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/RAE_ggx.pdf  used on input lin
 e 73.
 (pdftex.def)             Requested size: 145.67993pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/SSIM_ggx.pdf, id=2100, 441.67006pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/SSIM_ggx.pdf, id=2115, 441.67006pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/SSIM_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/SSIM_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/SSIM_ggx.pdf  used on input li
@@ -1992,7 +2010,7 @@ yperbrdf-figs/RAE_ggx.pdf> <./Chapters/hyperbrdf-figs/SSIM_ggx.pdf>] [96]
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/compression_comp1.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/compression_comp1.pdf, id=2726, 596.2275pt x 245.91875
+<Chapters/hyperbrdf-figs/compression_comp1.pdf, id=2742, 596.2275pt x 245.91875
 pt>
 File: Chapters/hyperbrdf-figs/compression_comp1.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/compression_comp1.pdf>
@@ -2004,7 +2022,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/compression_comp1.pdf  used on
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/interpolation_extended.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/interpolation_extended.pdf, id=2803, 1210.11093pt x 48
+<Chapters/hyperbrdf-figs/interpolation_extended.pdf, id=2818, 1210.11093pt x 48
 5.00197pt>
 File: Chapters/hyperbrdf-figs/interpolation_extended.pdf Graphic file (type pdf
 )
@@ -2013,7 +2031,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/interpolation_extended.pdf  us
 ed on input line 222.
 (pdftex.def)             Requested size: 409.71692pt x 164.21024pt.
 [98 <./Chapters/hyperbrdf-figs/interpolation_extended.pdf>]
-<Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf, id=2912, 430.67586pt x 319.
+<Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf, id=2927, 430.67586pt x 319.
 80052pt>
 File: Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf Graphic file (type pdf)
 
@@ -2031,7 +2049,7 @@ ne 295.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/SceneRenderings1.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/SceneRenderings1.pdf, id=2956, 508.90125pt x 752.8125p
+<Chapters/hyperbrdf-figs/SceneRenderings1.pdf, id=2972, 508.90125pt x 752.8125p
 t>
 File: Chapters/hyperbrdf-figs/SceneRenderings1.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/SceneRenderings1.pdf>
@@ -2049,7 +2067,7 @@ input line 300.
 ]
 Appendix A.
 (./Chapters/Appendix.tex
-<Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf, id=3085, 1347.032
+<Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf, id=3100, 1347.032
 5pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf Graphic file 
 (type pdf)
@@ -2057,13 +2075,13 @@ File: Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf Graphic file
 Package pdftex.def Info: Chapters/hyperbrdf-figs/qualitative_comp_40_all_sample
 s.pdf  used on input line 14.
 (pdftex.def)             Requested size: 300.46277pt x 543.37831pt.
-<Chapters/hyperbrdf-figs/vbar.png, id=3086, 57.816pt x 320.1561pt>
+<Chapters/hyperbrdf-figs/vbar.png, id=3101, 57.816pt x 320.1561pt>
 File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/vbar.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 5.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/supp_40.pdf, id=3088, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_40.pdf, id=3103, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_40.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_40.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_40.pdf  used on input lin
@@ -2078,7 +2096,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 8
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 89.
 
-<Chapters/hyperbrdf-figs/supp_160.pdf, id=3089, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_160.pdf, id=3104, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_160.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_160.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_160.pdf  used on input li
@@ -2092,7 +2110,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 9
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 102.
 
-<Chapters/hyperbrdf-figs/supp_400.pdf, id=3090, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_400.pdf, id=3105, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_400.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_400.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_400.pdf  used on input li
@@ -2106,7 +2124,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 115.
 
-<Chapters/hyperbrdf-figs/supp_2000.pdf, id=3091, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_2000.pdf, id=3106, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_2000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_2000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_2000.pdf  used on input l
@@ -2120,7 +2138,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 128.
 
-<Chapters/hyperbrdf-figs/supp_4000.pdf, id=3092, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_4000.pdf, id=3107, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_4000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_4000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_4000.pdf  used on input l
@@ -2156,18 +2174,18 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 034302312E11C516F12C92762E9F0B7F;13278.
+(rerunfilecheck)             Checksum: 15610FA67C6FEBBB97F0981BB0A459CB;13955.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 59 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26822 strings out of 474116
- 459408 string characters out of 5743683
+ 26830 strings out of 474116
+ 459528 string characters out of 5743683
  1949187 words of memory out of 5000000
- 47877 multiletter control sequences out of 15000+600000
- 586003 words of font info for 249 fonts, out of 8000000 for 9000
+ 47880 multiletter control sequences out of 15000+600000
+ 586062 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,16n,131p,2400b,825s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2213,10 +2231,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (124 pages, 285713723 bytes).
+Output written on thesis.pdf (124 pages, 285711760 bytes).
 PDF statistics:
- 5640 PDF objects out of 6186 (max. 8388607)
- 3295 compressed objects within 33 object streams
- 499 named destinations out of 1000 (max. 500000)
- 55834 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 5656 PDF objects out of 6186 (max. 8388607)
+ 3310 compressed objects within 34 object streams
+ 502 named destinations out of 1000 (max. 500000)
+ 55858 words of extra memory for PDF output out of 61914 (max. 10000000)
 
