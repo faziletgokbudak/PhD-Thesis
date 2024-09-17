@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  17 SEP 2024 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  17 SEP 2024 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1048,15 +1048,15 @@ File: Images/seasonchanges.png Graphic file (type png)
 <use Images/seasonchanges.png>
 Package pdftex.def Info: Images/seasonchanges.png  used on input line 60.
 (pdftex.def)             Requested size: 273.14923pt x 181.13252pt.
-<Images/StarWars-RayTracing.jpeg, id=538, 1541.76pt x 867.24pt>
+ [18 <./Images/purple-emperor.jpg> <./Images/seasonchanges.png>]
+<Images/StarWars-RayTracing.jpeg, id=543, 1541.76pt x 867.24pt>
 File: Images/StarWars-RayTracing.jpeg Graphic file (type jpg)
 <use Images/StarWars-RayTracing.jpeg>
 Package pdftex.def Info: Images/StarWars-RayTracing.jpeg  used on input line 73
 .
 (pdftex.def)             Requested size: 455.24411pt x 256.07178pt.
- [18 <./Images/purple-emperor.jpg> <./Images/seasonchanges.png>] [19{/usr/local
-/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/S
-tarWars-RayTracing.jpeg>]) (./Chapters/Background.tex [20]
+ [19{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.e
+nc} <./Images/StarWars-RayTracing.jpeg>]) (./Chapters/Background.tex [20]
 Chapter 2.
 <Images/pixelate_image_snowman.png, id=555, 1134.639pt x 287.6346pt>
 File: Images/pixelate_image_snowman.png Graphic file (type png)
@@ -2211,7 +2211,7 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (126 pages, 285963664 bytes).
+Output written on thesis.pdf (126 pages, 285964992 bytes).
 PDF statistics:
  5667 PDF objects out of 6186 (max. 8388607)
  3318 compressed objects within 34 object streams
