@@ -18,44 +18,53 @@ Earlier approaches to manipulate scene appearance involve traditional image proc
 
 Consequently, machine learning techniques have revolutionised appearance manipulation by generating high-quality, realistic renderings from data inputs. However, the main bottleneck in these approaches is the scarcity of the training data that can drastically reduce the performance of the ML models. For instance, the number of pixels that belong to details is significantly lower than those belonging to low-frequency components, or obtaining the real "summer" - "winter" image pair can require us to wait for months. Furthermore, capturing the real-world reflectance measurements of even relatively simple materials takes hours in a professional capture setup. For these reasons, this thesis specifically focuses on generalisable learning-based approaches that can manipulate appearance with data efficiency.
 
-
-Appearance manipulation has become an indispensable tool in modern visual culture, driving innovation in entertainment, healthcare, and beyond. AI's involvement enhances the accuracy, scalability, and creativity of appearance modifications, pushing the boundaries of what is visually possible and enabling more seamless and engaging user experiences across industries.
-
+This dissertation studies appearance in a broader aspect, going beyond the 2D image representation of appearance and discussing its physics-based meaning in real-world 3D scenes. Therefore, I first begin with a background on rendering, providing essential information about the display of an image, 3D scene components, appearance representations and the rendering equation, bridging the appearance in a rendered image to reflectance and illumination in the 3D scene. I also provide details about the learning-based techniques I have deployed, starting with the basics of machine learning. Appearance in a 2D image involves low-level features that usually focus on pixel-level details with basic and simple visual elements and high-level features that represent more abstract, semantic information about the image. 
 
 \subsection{One-shot Detail Retouching}
+ First, I introduce a machine learning framework designed to manipulate such low-level features, including edge, corners, and textures, learned from only one example \textit{before - after} pair.  The framework can transfer the desired styles embodied in high-frequency components, while remaining generalisable across faces under different lighting conditions or with different skin tones. It can also be used as an edge-aware neural image processing filter, where the texture is smoothed out and the edges are preserved. These applications can be most useful when details convey crucial information and consequently dominate the entire scene, such as in close-up shots (Figures \ref{fig:close-up1} and \ref{fig:close-up2}). 
+
+
+%Appearance manipulation has become an indispensable tool in modern visual culture, driving innovation in entertainment, healthcare, and beyond. AI's involvement enhances the accuracy, scalability, and creativity of appearance modifications, pushing the boundaries of what is visually possible and enabling more seamless and engaging user experiences across industries.
+
+
+%\subsection{One-shot Detail Retouching}
 
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
-    \includegraphics[width=\linewidth]{Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image courtesy- Produzioni Europee Associati .jpg}
+    \includegraphics[width=0.8\linewidth]{Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image courtesy- Produzioni Europee Associati .jpg}
 
-   \caption{A pixel, a picture element, is the smallest unit of a rendered image. Displaying an image with fewer pixels causes losses in details as one pixel starts covering a larger area in the 3D scene.}
-   \label{fig:colour-approximate}
+   \caption{A close-up scene from the movie ‘The Good, the Bad and the Ugly’ (1966). Here, the details, such as the wrinkles or the orientation of eye brows can hint at the character's age or emotions. Image courtesy of [Produzioni Europee Associati].}
+   \label{fig:close-up1}
 \end{figure}
 
 
-\begin{wrapfigure}{r}{5cm}
+\begin{figure}%{r}{5cm}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=\linewidth]{Images/byRickJones .jpg}
+   \includegraphics[width=0.5\linewidth]{Images/purple-emperor.jpg}
    
-   \caption{Graph representation of a linear equation. Figure from [Issac, 2018].}
-   \label{fig:neuron}
-\end{wrapfigure}
+   \caption{Another close-up shot example. In photography, captivating details contribute to the aesthetics, shaping the identity of the subject. Image courtesy of [Andrew Fusek Peters].}
+   \label{fig:close-up2}
+\end{figure}
 
-\subsection{Transient Attribute Transfer}
+\newpage
+\subsection{Text-guided Transient Attribute Transfer} 
+Second, I explore the transitions between transient attributes, which cover manipulations on high-level features with global illumination changes, colour transfers, object addition/removal, and so on. Borrowing the pre-trained text-guided diffusion models, I investigate their tuning-free capacity for transferring transient attributes.
+
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
-    \includegraphics[width=\linewidth]{Images/seasonchanges.png}
+    \includegraphics[width=0.6\linewidth]{Images/seasonchanges.png}
 
-   \caption{A pixel, a picture element, is the smallest unit of a rendered image. Displaying an image with fewer pixels causes losses in details as one pixel starts covering a larger area in the 3D scene. Image from [Michael Melford/Getty Images]}
+   \caption{Seasonal transitions of a tree throughout the year. Image from [Michael Melford/Getty Images]}
    \label{fig:colour-approximate}
 \end{figure}
 
 \subsection{Generalisable Neural BRDF Representation}
+Lastly, I introduce HyperBRDF, a novel material appearance representation method to reconstruct 
 
 \begin{figure}[ht]
   \centering
