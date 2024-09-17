@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  16 SEP 2024 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  17 SEP 2024 11:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1040,40 +1040,40 @@ urtesy- Produzioni Europee Associati .jpg Graphic file (type jpg)
 rtesy- Produzioni Europee Associati .jpg>
 Package pdftex.def Info: Images/A scene from â€˜The Good, the Bad and the Uglyâ
 €™ (1966). Image courtesy- Produzioni Europee Associati .jpg  used on input lin
-e 27.
+e 31.
 (pdftex.def)             Requested size: 455.24411pt x 256.23663pt.
-<Images/byRickJones .jpg, id=523, 1336.995pt x 903.375pt>
+ [16]
+<Images/byRickJones .jpg, id=527, 1336.995pt x 903.375pt>
 File: Images/byRickJones .jpg Graphic file (type jpg)
 <use Images/byRickJones .jpg>
-Package pdftex.def Info: Images/byRickJones .jpg  used on input line 37.
+Package pdftex.def Info: Images/byRickJones .jpg  used on input line 41.
 (pdftex.def)             Requested size: 142.26378pt x 96.11844pt.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 43
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 47
 .
 
-<Images/seasonchanges.png, id=524, 199.4652pt x 132.2541pt>
+<Images/seasonchanges.png, id=528, 199.4652pt x 132.2541pt>
 File: Images/seasonchanges.png Graphic file (type png)
 <use Images/seasonchanges.png>
-Package pdftex.def Info: Images/seasonchanges.png  used on input line 48.
+Package pdftex.def Info: Images/seasonchanges.png  used on input line 52.
 (pdftex.def)             Requested size: 455.24411pt x 301.88754pt.
-[16]
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 54
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 58
 .
 
 <Images/StarWars-RayTracing.jpeg, id=529, 1541.76pt x 867.24pt>
 File: Images/StarWars-RayTracing.jpeg Graphic file (type jpg)
 <use Images/StarWars-RayTracing.jpeg>
-Package pdftex.def Info: Images/StarWars-RayTracing.jpeg  used on input line 60
+Package pdftex.def Info: Images/StarWars-RayTracing.jpeg  used on input line 64
 .
 (pdftex.def)             Requested size: 455.24411pt x 256.07178pt.
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 68
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 72
 .
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 69
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 73
 .
 
 [17{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
@@ -1095,13 +1095,13 @@ Package pdftex.def Info: Images/pixelate_image_snowman.png  used on input line
 File: Images/grid_circle.png Graphic file (type png)
 <use Images/grid_circle.png>
 Package pdftex.def Info: Images/grid_circle.png  used on input line 29.
-(pdftex.def)             Requested size: 182.09486pt x 137.91917pt.
+(pdftex.def)             Requested size: 204.85846pt x 155.16006pt.
 <Images/merged_grid_circle2-crop.pdf, id=564, 343.2825pt x 259.97125pt>
 File: Images/merged_grid_circle2-crop.pdf Graphic file (type pdf)
 <use Images/merged_grid_circle2-crop.pdf>
 Package pdftex.def Info: Images/merged_grid_circle2-crop.pdf  used on input lin
 e 30.
-(pdftex.def)             Requested size: 182.09486pt x 137.89914pt.
+(pdftex.def)             Requested size: 204.85846pt x 155.139pt.
 <Images/colourspace.png, id=565, 663.47874pt x 681.54625pt>
 File: Images/colourspace.png Graphic file (type png)
 <use Images/colourspace.png>
@@ -1114,14 +1114,14 @@ File: Images/colour_quantization.png Graphic file (type png)
 <use Images/colour_quantization.png>
 Package pdftex.def Info: Images/colour_quantization.png  used on input line 63.
 
-(pdftex.def)             Requested size: 409.71692pt x 125.34296pt.
+(pdftex.def)             Requested size: 455.24411pt x 139.26938pt.
 
 [23 <./Images/colour_quantization.png>]
 <Images/scene_with_camera.jpg, id=591, 766.865pt x 580.1675pt>
 File: Images/scene_with_camera.jpg Graphic file (type jpg)
 <use Images/scene_with_camera.jpg>
 Package pdftex.def Info: Images/scene_with_camera.jpg  used on input line 78.
-(pdftex.def)             Requested size: 318.66948pt x 241.09256pt.
+(pdftex.def)             Requested size: 364.19667pt x 275.5293pt.
  [24 <./Images/scene_with_camera.jpg>]
 <Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere-can-
 be-approximated.png, id=599, 853.1875pt x 215.80624pt>
@@ -1131,7 +1131,7 @@ File: Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere
 can-be-approximated.png>
 Package pdftex.def Info: Images/Triangulation-of-surfaces-Any-curved-surface-in
 -this-case-a-sphere-can-be-approximated.png  used on input line 92.
-(pdftex.def)             Requested size: 318.66948pt x 80.60443pt.
+(pdftex.def)             Requested size: 455.24411pt x 115.15388pt.
 
 [25 <./Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-spher
 e-can-be-approximated.png>]
@@ -1140,28 +1140,28 @@ File: Images/perspective_projection.png Graphic file (type png)
 <use Images/perspective_projection.png>
 Package pdftex.def Info: Images/perspective_projection.png  used on input line 
 117.
-(pdftex.def)             Requested size: 273.14923pt x 123.63669pt.
+(pdftex.def)             Requested size: 341.43307pt x 154.53934pt.
  [26]
-<Images/single_point_perspective.png, id=617, 3489.035pt x 3035.34pt>
+<Images/single_point_perspective.png, id=616, 3489.035pt x 3035.34pt>
 File: Images/single_point_perspective.png Graphic file (type png)
 <use Images/single_point_perspective.png>
 Package pdftex.def Info: Images/single_point_perspective.png  used on input lin
 e 128.
-(pdftex.def)             Requested size: 182.07504pt x 128.01604pt.
-<Images/two_points_perspective.png, id=618, 4047.12pt x 3035.34pt>
+(pdftex.def)             Requested size: 204.80782pt x 128.01604pt.
+<Images/two_points_perspective.png, id=617, 4047.12pt x 3035.34pt>
 File: Images/two_points_perspective.png Graphic file (type png)
 <use Images/two_points_perspective.png>
 Package pdftex.def Info: Images/two_points_perspective.png  used on input line 
 129.
-(pdftex.def)             Requested size: 182.05078pt x 128.01604pt.
+(pdftex.def)             Requested size: 204.83801pt x 128.01604pt.
  [27 <./Images/perspective_projection.png> <./Images/single_point_perspective.p
 ng> <./Images/two_points_perspective.png>]
-<Images/object-colour.png, id=625, 120.45pt x 86.4831pt>
+<Images/object-colour.png, id=624, 120.45pt x 86.4831pt>
 File: Images/object-colour.png Graphic file (type png)
 <use Images/object-colour.png>
 Package pdftex.def Info: Images/object-colour.png  used on input line 147.
 (pdftex.def)             Requested size: 136.5733pt x 98.06915pt.
-<Images/rough_river_surface_reflection.png, id=630, 2901.84125pt x 3869.45625pt
+<Images/rough_river_surface_reflection.png, id=629, 2901.84125pt x 3869.45625pt
 >
 File: Images/rough_river_surface_reflection.png Graphic file (type png)
 <use Images/rough_river_surface_reflection.png>
@@ -1175,7 +1175,7 @@ File: Images/diagram_microfacet.png Graphic file (type png)
 <use Images/diagram_microfacet.png>
 Package pdftex.def Info: Images/diagram_microfacet.png  used on input line 168.
 
-(pdftex.def)             Requested size: 409.71692pt x 123.79483pt.
+(pdftex.def)             Requested size: 455.24411pt x 137.55084pt.
 <Images/shad-diffuse1.png, id=646, 301.125pt x 288.07625pt>
 File: Images/shad-diffuse1.png Graphic file (type png)
 <use Images/shad-diffuse1.png>
@@ -1189,18 +1189,18 @@ File: Images/Differences-between-the-specular-and-diffuse-reflections-specuclar
 reflections-occur-on.png>
 Package pdftex.def Info: Images/Differences-between-the-specular-and-diffuse-re
 flections-specuclar-reflections-occur-on.png  used on input line 195.
-(pdftex.def)             Requested size: 318.66948pt x 105.34811pt.
-[29 <./Images/diagram_microfacet.png> <./Images/Differences-between-the-specula
-r-and-diffuse-reflections-specuclar-reflections-occur-on.png> <./Images/shad-di
-ffuse1.png>] [30]
-<Images/ray-tracing-image-1.jpg, id=664, 1066.98625pt x 701.62125pt>
+(pdftex.def)             Requested size: 455.24411pt x 150.50346pt.
+[29 <./Images/diagram_microfacet.png> <./Images/shad-diffuse1.png>] [30 <./Imag
+es/Differences-between-the-specular-and-diffuse-reflections-specuclar-reflectio
+ns-occur-on.png>]
+<Images/ray-tracing-image-1.jpg, id=663, 1066.98625pt x 701.62125pt>
 File: Images/ray-tracing-image-1.jpg Graphic file (type jpg)
 <use Images/ray-tracing-image-1.jpg>
 Package pdftex.def Info: Images/ray-tracing-image-1.jpg  used on input line 220
 .
-(pdftex.def)             Requested size: 227.62206pt x 149.67868pt.
- [31 <./Images/ray-tracing-image-1.jpg>] [32]
-<Images/specular+diffuse.png, id=677, 513.92pt x 513.92pt>
+(pdftex.def)             Requested size: 341.43307pt x 224.51266pt.
+ [31] [32 <./Images/ray-tracing-image-1.jpg>]
+<Images/specular+diffuse.png, id=675, 513.92pt x 513.92pt>
 File: Images/specular+diffuse.png Graphic file (type png)
 <use Images/specular+diffuse.png>
 Package pdftex.def Info: Images/specular+diffuse.png  used on input line 249.
@@ -1210,86 +1210,87 @@ Package pdftex.def Info: Images/specular+diffuse.png  used on input line 249.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./I
 mages/diffuse+specular+angle.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.6> allowed
-<Images/diffuse+specular+angle.pdf, id=681, 726.715pt x 202.7575pt>
+<Images/diffuse+specular+angle.pdf, id=679, 726.715pt x 202.7575pt>
 File: Images/diffuse+specular+angle.pdf Graphic file (type pdf)
 <use Images/diffuse+specular+angle.pdf>
 Package pdftex.def Info: Images/diffuse+specular+angle.pdf  used on input line 
 264.
-(pdftex.def)             Requested size: 227.62206pt x 63.50697pt.
+(pdftex.def)             Requested size: 341.43307pt x 95.262pt.
+[33 <./Images/specular+diffuse.png>]
 
-Package natbib Warning: Citation `phong1998illumination' on page 33 undefined o
+Package natbib Warning: Citation `phong1998illumination' on page 34 undefined o
 n input line 283.
 
-[33 <./Images/specular+diffuse.png> <./Images/diffuse+specular+angle.pdf>]
+
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./I
 mages/Phong-roughness-coeff.pdf): PDF inclusion: found PDF version <1.7>, but a
 t most version <1.6> allowed
-<Images/Phong-roughness-coeff.pdf, id=707, 728.7225pt x 145.54375pt>
+<Images/Phong-roughness-coeff.pdf, id=696, 728.7225pt x 145.54375pt>
 File: Images/Phong-roughness-coeff.pdf Graphic file (type pdf)
 <use Images/Phong-roughness-coeff.pdf>
 Package pdftex.def Info: Images/Phong-roughness-coeff.pdf  used on input line 2
 92.
 (pdftex.def)             Requested size: 455.24411pt x 90.92241pt.
-<Images/shad2-brdfdir.png, id=708, 301.125pt x 158.5925pt>
+<Images/shad2-brdfdir.png, id=697, 301.125pt x 158.5925pt>
 File: Images/shad2-brdfdir.png Graphic file (type png)
 <use Images/shad2-brdfdir.png>
 Package pdftex.def Info: Images/shad2-brdfdir.png  used on input line 300.
 (pdftex.def)             Requested size: 170.71652pt x 89.91466pt.
-[34 <./Images/Phong-roughness-coeff.pdf> <./Images/shad2-brdfdir.png>]
-<Images/Rusinkiewicz.png, id=747, 988.69376pt x 360.34625pt>
+[34 <./Images/diffuse+specular+angle.pdf> <./Images/shad2-brdfdir.png>]
+[35 <./Images/Phong-roughness-coeff.pdf>]
+<Images/Rusinkiewicz.png, id=752, 988.69376pt x 360.34625pt>
 File: Images/Rusinkiewicz.png Graphic file (type png)
 <use Images/Rusinkiewicz.png>
 Package pdftex.def Info: Images/Rusinkiewicz.png  used on input line 323.
 (pdftex.def)             Requested size: 364.19667pt x 132.73769pt.
- [35 <./Images/Rusinkiewicz.png>]
-
-Package natbib Warning: Citation `Chenliang's paper' on page 36 undefined on in
-put line 337.
 
 
 Package natbib Warning: Citation `Chenliang's paper' on page 36 undefined on in
 put line 337.
 
-[36] [37]
-<Images/gradient-descent.png, id=768, 358.4592pt x 411.6981pt>
+
+Package natbib Warning: Citation `Chenliang's paper' on page 36 undefined on in
+put line 337.
+
+[36 <./Images/Rusinkiewicz.png>] [37] [38]
+<Images/gradient-descent.png, id=774, 358.4592pt x 411.6981pt>
 File: Images/gradient-descent.png Graphic file (type png)
 <use Images/gradient-descent.png>
 Package pdftex.def Info: Images/gradient-descent.png  used on input line 371.
 (pdftex.def)             Requested size: 199.16928pt x 228.7527pt.
 
 
-Package natbib Warning: Citation `kingma2014adam' on page 38 undefined on input
+Package natbib Warning: Citation `kingma2014adam' on page 39 undefined on input
  line 375.
 
-[38 <./Images/gradient-descent.png>] [39]
+[39 <./Images/gradient-descent.png>]
 
 Package natbib Warning: Citation `johnson2016perceptuallossesrealtimestyle' on 
 page 40 undefined on input line 381.
 
-<Images/l1vsl2loss.png, id=786, 409.7709pt x 312.2064pt>
+<Images/l1vsl2loss.png, id=785, 409.7709pt x 312.2064pt>
 File: Images/l1vsl2loss.png Graphic file (type png)
 <use Images/l1vsl2loss.png>
 Package pdftex.def Info: Images/l1vsl2loss.png  used on input line 387.
 (pdftex.def)             Requested size: 182.09486pt x 138.73846pt.
-[40 <./Images/l1vsl2loss.png>]
-<Images/neuron.png, id=796, 545.03625pt x 521.95pt>
+[40] [41 <./Images/l1vsl2loss.png>]
+<Images/neuron.png, id=802, 545.03625pt x 521.95pt>
 File: Images/neuron.png Graphic file (type png)
 <use Images/neuron.png>
 Package pdftex.def Info: Images/neuron.png  used on input line 410.
 (pdftex.def)             Requested size: 142.26378pt x 136.2374pt.
- [41 <./Images/neuron.png>]
-<Images/MLP.jpeg, id=807, 853.1875pt x 456.70625pt>
+ [42 <./Images/neuron.png>]
+<Images/MLP.jpeg, id=814, 853.1875pt x 456.70625pt>
 File: Images/MLP.jpeg Graphic file (type jpg)
 <use Images/MLP.jpeg>
 Package pdftex.def Info: Images/MLP.jpeg  used on input line 434.
 (pdftex.def)             Requested size: 364.19667pt x 194.95822pt.
- [42 <./Images/MLP.jpeg>]
+ [43 <./Images/MLP.jpeg>]
 
-Package natbib Warning: Citation `cybenko1989approximation' on page 43 undefine
+Package natbib Warning: Citation `cybenko1989approximation' on page 44 undefine
 d on input line 472.
 
-[43]
 
 Package natbib Warning: Citation `nguyen2015deep' on page 44 undefined on input
  line 474.
@@ -1298,101 +1299,104 @@ Package natbib Warning: Citation `nguyen2015deep' on page 44 undefined on input
 Package natbib Warning: Citation `mildenhall2021nerf' on page 44 undefined on i
 nput line 474.
 
+[44]
 
-Package natbib Warning: Citation `rahaman2019spectral' on page 44 undefined on 
+Package natbib Warning: Citation `rahaman2019spectral' on page 45 undefined on 
 input line 476.
 
 
-Package natbib Warning: Citation `rahimi2007random' on page 44 undefined on inp
+Package natbib Warning: Citation `rahimi2007random' on page 45 undefined on inp
 ut line 476.
 
-<Images/FFN.png, id=831, 1358.676pt x 222.5916pt>
+<Images/FFN.png, id=836, 1358.676pt x 222.5916pt>
 File: Images/FFN.png Graphic file (type png)
 <use Images/FFN.png>
 Package pdftex.def Info: Images/FFN.png  used on input line 489.
 (pdftex.def)             Requested size: 455.24411pt x 74.58307pt.
-[44]
-<Images/conditioning-mechs.png, id=844, 1068.99374pt x 271.0125pt>
+[45 <./Images/FFN.png>]
+<Images/conditioning-mechs.png, id=852, 1068.99374pt x 271.0125pt>
 File: Images/conditioning-mechs.png Graphic file (type png)
 <use Images/conditioning-mechs.png>
 Package pdftex.def Info: Images/conditioning-mechs.png  used on input line 503.
 
 (pdftex.def)             Requested size: 455.24411pt x 115.41243pt.
-) (./Chapters/DetailRetouching.tex [45 <./Images/FFN.png>] [46 <./Images/condit
-ioning-mechs.png>]
+) (./Chapters/DetailRetouching.tex [46 <./Images/conditioning-mechs.png>] [47] 
+[48
+
+]
 Chapter 3.
-<Chapters/detail-retouching-figs/teaser_CVMP.pdf, id=863, 956.57375pt x 432.616
+<Chapters/detail-retouching-figs/teaser_CVMP.pdf, id=872, 956.57375pt x 432.616
 26pt>
 File: Chapters/detail-retouching-figs/teaser_CVMP.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/teaser_CVMP.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/teaser_CVMP.pdf  used 
 on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 205.88432pt.
-(./Chapters/detail-retouching-secs/Introduction.tex [47
-
-] [48 <./Chapters/detail-retouching-figs/teaser_CVMP.pdf>])
-(./Chapters/detail-retouching-secs/RelatedWork.tex [49] [50] [51] [52]
+(./Chapters/detail-retouching-secs/Introduction.tex [49] [50 <./Chapters/detail
+-retouching-figs/teaser_CVMP.pdf>])
+(./Chapters/detail-retouching-secs/RelatedWork.tex [51] [52] [53] [54]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/PS1.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/PS1.pdf, id=1066, 963.6pt x 542.025pt>
+<Chapters/detail-retouching-figs/PS1.pdf, id=1075, 963.6pt x 542.025pt>
 File: Chapters/detail-retouching-figs/PS1.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/PS1.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/PS1.pdf  used on input
  line 52.
-(pdftex.def)             Requested size: 250.38564pt x 140.84047pt.
+(pdftex.def)             Requested size: 341.43307pt x 192.05217pt.
 
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/PS3.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/PS3.pdf, id=1067, 963.6pt x 542.025pt>
+<Chapters/detail-retouching-figs/PS3.pdf, id=1076, 963.6pt x 542.025pt>
 File: Chapters/detail-retouching-figs/PS3.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/PS3.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/PS3.pdf  used on input
  line 61.
-(pdftex.def)             Requested size: 250.38564pt x 140.84047pt.
-
-
-pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
-hapters/detail-retouching-figs/PS2.pdf): PDF inclusion: found PDF version <1.7>
-, but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/PS2.pdf, id=1068, 963.6pt x 542.025pt>
-File: Chapters/detail-retouching-figs/PS2.pdf Graphic file (type pdf)
-<use Chapters/detail-retouching-figs/PS2.pdf>
-Package pdftex.def Info: Chapters/detail-retouching-figs/PS2.pdf  used on input
- line 71.
-(pdftex.def)             Requested size: 250.38564pt x 140.84047pt.
-) (./Chapters/detail-retouching-secs/Methodology.tex [53 <./Chapters/detail-ret
-ouching-figs/PS1.pdf> <./Chapters/detail-retouching-figs/PS3.pdf
+(pdftex.def)             Requested size: 341.43307pt x 192.05217pt.
+[55 <./Chapters/detail-retouching-figs/PS1.pdf> <./Chapters/detail-retouching-f
+igs/PS3.pdf
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/PS3.pdf): PDF inclusion: multiple pdfs with page
  group included in a single page
->] [54 <./Chapters/detail-retouching-figs/PS2.pdf>]
+>]
+
+pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
+hapters/detail-retouching-figs/PS2.pdf): PDF inclusion: found PDF version <1.7>
+, but at most version <1.6> allowed
+<Chapters/detail-retouching-figs/PS2.pdf, id=1103, 963.6pt x 542.025pt>
+File: Chapters/detail-retouching-figs/PS2.pdf Graphic file (type pdf)
+<use Chapters/detail-retouching-figs/PS2.pdf>
+Package pdftex.def Info: Chapters/detail-retouching-figs/PS2.pdf  used on input
+ line 71.
+(pdftex.def)             Requested size: 341.43307pt x 192.05217pt.
+) (./Chapters/detail-retouching-secs/Methodology.tex [56 <./Chapters/detail-ret
+ouching-figs/PS2.pdf>]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/MainFig.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/MainFig.pdf, id=1109, 1616.9208pt x 337.26pt>
+<Chapters/detail-retouching-figs/MainFig.pdf, id=1119, 1616.9208pt x 337.26pt>
 File: Chapters/detail-retouching-figs/MainFig.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/MainFig.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/MainFig.pdf  used on i
 nput line 4.
 (pdftex.def)             Requested size: 682.86617pt x 142.4356pt.
-[55
+[57
 
- <./Chapters/detail-retouching-figs/MainFig.pdf>] [56
+ <./Chapters/detail-retouching-figs/MainFig.pdf>] [58
 
 ])
-(./Chapters/detail-retouching-secs/Results.tex [57]
+(./Chapters/detail-retouching-secs/Results.tex [59]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [58]
-<Chapters/detail-retouching-figs/ablation_matrices.png, id=1205, 406.33807pt x 
+ [60]
+<Chapters/detail-retouching-figs/ablation_matrices.png, id=1214, 406.33807pt x 
 312.2064pt>
 File: Chapters/detail-retouching-figs/ablation_matrices.png Graphic file (type 
 png)
@@ -1400,7 +1404,7 @@ png)
 Package pdftex.def Info: Chapters/detail-retouching-figs/ablation_matrices.png 
  used on input line 77.
 (pdftex.def)             Requested size: 227.62206pt x 174.89156pt.
-<Chapters/detail-retouching-figs/AblationStudy_K.pdf, id=1206, 697.60625pt x 52
+<Chapters/detail-retouching-figs/AblationStudy_K.pdf, id=1215, 697.60625pt x 52
 6.96875pt>
 File: Chapters/detail-retouching-figs/AblationStudy_K.pdf Graphic file (type pd
 f)
@@ -1408,9 +1412,9 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/AblationStudy_K.pdf  u
 sed on input line 86.
 (pdftex.def)             Requested size: 364.19667pt x 275.11084pt.
- [59 <./Chapters/detail-retouching-figs/ablation_matrices.png>] [60 <./Chapters
+ [61 <./Chapters/detail-retouching-figs/ablation_matrices.png>] [62 <./Chapters
 /detail-retouching-figs/AblationStudy_K.pdf>]
-<Chapters/detail-retouching-figs/weight_visualise.pdf, id=1249, 896.34875pt x 5
+<Chapters/detail-retouching-figs/weight_visualise.pdf, id=1259, 896.34875pt x 5
 25.965pt>
 File: Chapters/detail-retouching-figs/weight_visualise.pdf Graphic file (type p
 df)
@@ -1418,7 +1422,7 @@ df)
 Package pdftex.def Info: Chapters/detail-retouching-figs/weight_visualise.pdf  
 used on input line 99.
 (pdftex.def)             Requested size: 364.19667pt x 213.70485pt.
-<Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf, id=1251, 382.42876p
+<Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf, id=1261, 382.42876p
 t x 394.47375pt>
 File: Chapters/detail-retouching-figs/res_diff_light_2_cvmp.pdf Graphic file (t
 ype pdf)
@@ -1426,7 +1430,7 @@ ype pdf)
 Package pdftex.def Info: Chapters/detail-retouching-figs/res_diff_light_2_cvmp.
 pdf  used on input line 110.
 (pdftex.def)             Requested size: 364.19667pt x 375.68692pt.
-<Chapters/detail-retouching-figs/MaterialResults.pdf, id=1255, 477.785pt x 442.
+<Chapters/detail-retouching-figs/MaterialResults.pdf, id=1265, 477.785pt x 442.
 65375pt>
 File: Chapters/detail-retouching-figs/MaterialResults.pdf Graphic file (type pd
 f)
@@ -1434,22 +1438,22 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/MaterialResults.pdf  u
 sed on input line 119.
 (pdftex.def)             Requested size: 364.19667pt x 337.41322pt.
-<Chapters/detail-retouching-figs/Nuances.pdf, id=1261, 807.015pt x 765.86125pt>
+<Chapters/detail-retouching-figs/Nuances.pdf, id=1271, 807.015pt x 765.86125pt>
 
 File: Chapters/detail-retouching-figs/Nuances.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/Nuances.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/Nuances.pdf  used on i
 nput line 128.
 (pdftex.def)             Requested size: 364.19667pt x 345.62769pt.
- [61 <./Chapters/detail-retouching-figs/weight_visualise.pdf>] [62 <./Chapters/
+ [63 <./Chapters/detail-retouching-figs/weight_visualise.pdf>] [64 <./Chapters/
 detail-retouching-figs/res_diff_light_2_cvmp.pdf>]
-[63 <./Chapters/detail-retouching-figs/MaterialResults.pdf>] [64 <./Chapters/de
+[65 <./Chapters/detail-retouching-figs/MaterialResults.pdf>] [66 <./Chapters/de
 tail-retouching-figs/Nuances.pdf>]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/detail-retouching-figs/One-shot-labels.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.6> allowed
-<Chapters/detail-retouching-figs/One-shot-labels.pdf, id=1367, 287.0725pt x 9.0
+<Chapters/detail-retouching-figs/One-shot-labels.pdf, id=1376, 287.0725pt x 9.0
 3375pt>
 File: Chapters/detail-retouching-figs/One-shot-labels.pdf Graphic file (type pd
 f)
@@ -1457,7 +1461,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/One-shot-labels.pdf  u
 sed on input line 197.
 (pdftex.def)             Requested size: 373.3035pt x 11.74756pt.
-<Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf, id=1368, 349.29698p
+<Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf, id=1377, 349.29698p
 t x 346.89601pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf Graphic file (t
 ype pdf)
@@ -1471,7 +1475,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/One-shot-labels.pdf  u
 sed on input line 210.
 (pdftex.def)             Requested size: 373.3035pt x 11.74756pt.
-<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf, id=1369, 34
+<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf, id=1378, 34
 9.29698pt x 346.89601pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf Graphic
  file (type pdf)
@@ -1485,7 +1489,7 @@ f)
 Package pdftex.def Info: Chapters/detail-retouching-figs/One-shot-labels.pdf  u
 sed on input line 221.
 (pdftex.def)             Requested size: 373.3035pt x 11.74756pt.
-<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf, id=1370, 3
+<Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf, id=1379, 3
 49.29698pt x 346.89601pt>
 File: Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf Graphi
 c file (type pdf)
@@ -1493,44 +1497,44 @@ c file (type pdf)
 Package pdftex.def Info: Chapters/detail-retouching-figs/Qualitative_zoomed_LLF
 _a05_s01.pdf  used on input line 222.
 (pdftex.def)             Requested size: 455.24411pt x 452.12926pt.
-[65] [66 <./Chapters/detail-retouching-figs/One-shot-labels.pdf> <./Chapters/de
-tail-retouching-figs/Qualitative_zoomed_BF.pdf>] [67 <./Chapters/detail-retouch
-ing-figs/Qualitative_zoomed_LLF_a2_s02.pdf>] [68 <./Chapters/detail-retouching-
+[67] [68 <./Chapters/detail-retouching-figs/One-shot-labels.pdf> <./Chapters/de
+tail-retouching-figs/Qualitative_zoomed_BF.pdf>] [69 <./Chapters/detail-retouch
+ing-figs/Qualitative_zoomed_LLF_a2_s02.pdf>] [70 <./Chapters/detail-retouching-
 figs/Qualitative_zoomed_LLF_a05_s01.pdf>]
-<Chapters/detail-retouching-figs/Limitations.pdf, id=1599, 377.41pt x 260.975pt
+<Chapters/detail-retouching-figs/Limitations.pdf, id=1609, 377.41pt x 260.975pt
 >
 File: Chapters/detail-retouching-figs/Limitations.pdf Graphic file (type pdf)
 <use Chapters/detail-retouching-figs/Limitations.pdf>
 Package pdftex.def Info: Chapters/detail-retouching-figs/Limitations.pdf  used 
 on input line 232.
 (pdftex.def)             Requested size: 364.19667pt x 251.8393pt.
-) [69 <./Chapters/detail-retouching-figs/Limitations.pdf>]) (./Chapters/Zerosho
-tDiffusion.tex [70]
+) [71 <./Chapters/detail-retouching-figs/Limitations.pdf>]) (./Chapters/Zerosho
+tDiffusion.tex [72]
 Chapter 4.
 
-Package natbib Warning: Citation `rombach2022high' on page 71 undefined on inpu
+Package natbib Warning: Citation `rombach2022high' on page 73 undefined on inpu
 t line 7.
 
 
-Package natbib Warning: Citation `zhang2023adding' on page 71 undefined on inpu
+Package natbib Warning: Citation `zhang2023adding' on page 73 undefined on inpu
 t line 7.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 71 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 73 undefined on
  input line 7.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 71 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 73 undefined on
  input line 7.
 
-(./Chapters/zero-shot-tat-secs/Introduction.tex [71
+(./Chapters/zero-shot-tat-secs/Introduction.tex [73
 
 ]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/zero-shot-tat-figs/tat-teaser.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.6> allowed
-<Chapters/zero-shot-tat-figs/tat-teaser.pdf, id=1638, 930.47626pt x 290.08376pt
+<Chapters/zero-shot-tat-figs/tat-teaser.pdf, id=1648, 930.47626pt x 290.08376pt
 >
 File: Chapters/zero-shot-tat-figs/tat-teaser.pdf Graphic file (type pdf)
 <use Chapters/zero-shot-tat-figs/tat-teaser.pdf>
@@ -1538,271 +1542,271 @@ Package pdftex.def Info: Chapters/zero-shot-tat-figs/tat-teaser.pdf  used on in
 put line 7.
 (pdftex.def)             Requested size: 455.24411pt x 141.92538pt.
 
-Package natbib Warning: Citation `laffont2014transient' on page 72 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 74 undefined on
  input line 8.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 72 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 74 undefined on
  input line 8.
 
-[72 <./Chapters/zero-shot-tat-figs/tat-teaser.pdf>])
+[74 <./Chapters/zero-shot-tat-figs/tat-teaser.pdf>])
 (./Chapters/zero-shot-tat-secs/RelatedWork.tex
 
-Package natbib Warning: Citation `li2020manigan' on page 73 undefined on input 
+Package natbib Warning: Citation `li2020manigan' on page 75 undefined on input 
 line 6.
 
 
-Package natbib Warning: Citation `xu2018attngan' on page 73 undefined on input 
+Package natbib Warning: Citation `xu2018attngan' on page 75 undefined on input 
 line 6.
 
 
-Package natbib Warning: Citation `zhang2017stackgan' on page 73 undefined on in
+Package natbib Warning: Citation `zhang2017stackgan' on page 75 undefined on in
 put line 6.
 
 
-Package natbib Warning: Citation `zhang2018stackgan++' on page 73 undefined on 
+Package natbib Warning: Citation `zhang2018stackgan++' on page 75 undefined on 
 input line 6.
 
 
-Package natbib Warning: Citation `gu2022vector' on page 73 undefined on input l
+Package natbib Warning: Citation `gu2022vector' on page 75 undefined on input l
 ine 6.
 
 
-Package natbib Warning: Citation `ho2020denoising' on page 73 undefined on inpu
+Package natbib Warning: Citation `ho2020denoising' on page 75 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `nichol2021improved' on page 73 undefined on i
+Package natbib Warning: Citation `nichol2021improved' on page 75 undefined on i
 nput line 6.
 
 
-Package natbib Warning: Citation `ramesh2022hierarchical' on page 73 undefined 
+Package natbib Warning: Citation `ramesh2022hierarchical' on page 75 undefined 
 on input line 6.
 
 
-Package natbib Warning: Citation `rombach2022high' on page 73 undefined on inpu
+Package natbib Warning: Citation `rombach2022high' on page 75 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `saharia2022photorealistic' on page 73 undefin
+Package natbib Warning: Citation `saharia2022photorealistic' on page 75 undefin
 ed on input line 6.
 
 
-Package natbib Warning: Citation `song2020denoising' on page 73 undefined on in
+Package natbib Warning: Citation `song2020denoising' on page 75 undefined on in
 put line 6.
 
 
-Package natbib Warning: Citation `zhang2023adding' on page 73 undefined on inpu
+Package natbib Warning: Citation `zhang2023adding' on page 75 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `ding2022cogview2' on page 73 undefined on inp
+Package natbib Warning: Citation `ding2022cogview2' on page 75 undefined on inp
 ut line 6.
 
 
-Package natbib Warning: Citation `esser2021taming' on page 73 undefined on inpu
+Package natbib Warning: Citation `esser2021taming' on page 75 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `ramesh2021zero' on page 73 undefined on input
+Package natbib Warning: Citation `ramesh2021zero' on page 75 undefined on input
  line 6.
 
 
-Package natbib Warning: Citation `yu2022scaling' on page 73 undefined on input 
+Package natbib Warning: Citation `yu2022scaling' on page 75 undefined on input 
 line 6.
 
 
-Package natbib Warning: Citation `ramesh2022hierarchical' on page 73 undefined 
+Package natbib Warning: Citation `ramesh2022hierarchical' on page 75 undefined 
 on input line 6.
 
 
-Package natbib Warning: Citation `ho2022imagen' on page 73 undefined on input l
+Package natbib Warning: Citation `ho2022imagen' on page 75 undefined on input l
 ine 6.
 
 
-Package natbib Warning: Citation `radford2021learning' on page 73 undefined on 
+Package natbib Warning: Citation `radford2021learning' on page 75 undefined on 
 input line 6.
 
 
-Package natbib Warning: Citation `crowson2022vqgan' on page 73 undefined on inp
+Package natbib Warning: Citation `crowson2022vqgan' on page 75 undefined on inp
 ut line 6.
 
 
-Package natbib Warning: Citation `ramesh2022hierarchical' on page 73 undefined 
+Package natbib Warning: Citation `ramesh2022hierarchical' on page 75 undefined 
 on input line 6.
 
 
-Package natbib Warning: Citation `rombach2022high' on page 73 undefined on inpu
+Package natbib Warning: Citation `rombach2022high' on page 75 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `schuhmann2021laion' on page 73 undefined on i
+Package natbib Warning: Citation `schuhmann2021laion' on page 75 undefined on i
 nput line 6.
 
 
-Package natbib Warning: Citation `zhang2023adding' on page 73 undefined on inpu
+Package natbib Warning: Citation `zhang2023adding' on page 75 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `radford2021learning' on page 73 undefined on 
+Package natbib Warning: Citation `radford2021learning' on page 75 undefined on 
 input line 9.
 
 
-Package natbib Warning: Citation `bar2022text2live' on page 73 undefined on inp
+Package natbib Warning: Citation `bar2022text2live' on page 75 undefined on inp
 ut line 9.
 
 
-Package natbib Warning: Citation `gal2022stylegan' on page 73 undefined on inpu
+Package natbib Warning: Citation `gal2022stylegan' on page 75 undefined on inpu
 t line 9.
 
 
-Package natbib Warning: Citation `kwon2022clipstyler' on page 73 undefined on i
+Package natbib Warning: Citation `kwon2022clipstyler' on page 75 undefined on i
 nput line 9.
 
 
-Package natbib Warning: Citation `liu2021fusedream' on page 73 undefined on inp
+Package natbib Warning: Citation `liu2021fusedream' on page 75 undefined on inp
 ut line 9.
 
 
-Package natbib Warning: Citation `patashnik2021styleclip' on page 73 undefined 
+Package natbib Warning: Citation `patashnik2021styleclip' on page 75 undefined 
 on input line 9.
 
 
-Package natbib Warning: Citation `patashnik2021styleclip' on page 73 undefined 
+Package natbib Warning: Citation `patashnik2021styleclip' on page 75 undefined 
 on input line 9.
 
 
-Package natbib Warning: Citation `karras2020analyzing' on page 73 undefined on 
+Package natbib Warning: Citation `karras2020analyzing' on page 75 undefined on 
 input line 9.
 
 
-Package natbib Warning: Citation `crowson2022vqgan' on page 73 undefined on inp
+Package natbib Warning: Citation `crowson2022vqgan' on page 75 undefined on inp
 ut line 9.
 
 
-Package natbib Warning: Citation `esser2021taming' on page 73 undefined on inpu
+Package natbib Warning: Citation `esser2021taming' on page 75 undefined on inpu
 t line 9.
 
 
-Package natbib Warning: Citation `avrahami2022blended' on page 73 undefined on 
+Package natbib Warning: Citation `avrahami2022blended' on page 75 undefined on 
 input line 9.
 
 
-Package natbib Warning: Citation `gal2022image' on page 73 undefined on input l
+Package natbib Warning: Citation `gal2022image' on page 75 undefined on input l
 ine 9.
 
 
-Package natbib Warning: Citation `kawar2023imagic' on page 73 undefined on inpu
+Package natbib Warning: Citation `kawar2023imagic' on page 75 undefined on inpu
 t line 9.
 
 
-Package natbib Warning: Citation `kim2022diffusionclip' on page 73 undefined on
+Package natbib Warning: Citation `kim2022diffusionclip' on page 75 undefined on
  input line 9.
 
 
-Package natbib Warning: Citation `liu2023more' on page 73 undefined on input li
+Package natbib Warning: Citation `liu2023more' on page 75 undefined on input li
 ne 9.
 
 
-Package natbib Warning: Citation `meng2021sdedit' on page 73 undefined on input
+Package natbib Warning: Citation `meng2021sdedit' on page 75 undefined on input
  line 9.
 
 
-Package natbib Warning: Citation `nichol2021glide' on page 73 undefined on inpu
+Package natbib Warning: Citation `nichol2021glide' on page 75 undefined on inpu
 t line 9.
 
 
-Package natbib Warning: Citation `ruiz2023dreambooth' on page 73 undefined on i
+Package natbib Warning: Citation `ruiz2023dreambooth' on page 75 undefined on i
 nput line 9.
 
 
-Package natbib Warning: Citation `kawar2023imagic' on page 73 undefined on inpu
+Package natbib Warning: Citation `kawar2023imagic' on page 75 undefined on inpu
 t line 9.
 
 
-Package natbib Warning: Citation `brooks2023instructpix2pix' on page 73 undefin
+Package natbib Warning: Citation `brooks2023instructpix2pix' on page 75 undefin
 ed on input line 9.
 
 
-Package natbib Warning: Citation `rombach2022high' on page 73 undefined on inpu
+Package natbib Warning: Citation `rombach2022high' on page 75 undefined on inpu
 t line 9.
 
 
-Package natbib Warning: Citation `brown2020language' on page 73 undefined on in
+Package natbib Warning: Citation `brown2020language' on page 75 undefined on in
 put line 9.
 
-[73]
+[75]
 
-Package natbib Warning: Citation `couairon2022diffedit' on page 74 undefined on
+Package natbib Warning: Citation `couairon2022diffedit' on page 76 undefined on
  input line 11.
 
 
-Package natbib Warning: Citation `cao2023masactrl' on page 74 undefined on inpu
+Package natbib Warning: Citation `cao2023masactrl' on page 76 undefined on inpu
 t line 11.
 
 
-Package natbib Warning: Citation `yang2023zero' on page 74 undefined on input l
+Package natbib Warning: Citation `yang2023zero' on page 76 undefined on input l
 ine 11.
 
 
-Package natbib Warning: Citation `couairon2022diffedit' on page 74 undefined on
+Package natbib Warning: Citation `couairon2022diffedit' on page 76 undefined on
  input line 11.
 
 
-Package natbib Warning: Citation `dhariwal2021diffusion' on page 74 undefined o
+Package natbib Warning: Citation `dhariwal2021diffusion' on page 76 undefined o
 n input line 11.
 
 
-Package natbib Warning: Citation `song2020denoising' on page 74 undefined on in
+Package natbib Warning: Citation `song2020denoising' on page 76 undefined on in
 put line 11.
 
 
-Package natbib Warning: Citation `cao2023masactrl' on page 74 undefined on inpu
+Package natbib Warning: Citation `cao2023masactrl' on page 76 undefined on inpu
 t line 11.
 
 
-Package natbib Warning: Citation `yang2023zero' on page 74 undefined on input l
+Package natbib Warning: Citation `yang2023zero' on page 76 undefined on input l
 ine 11.
 
 
-Package natbib Warning: Citation `couairon2022diffedit' on page 74 undefined on
+Package natbib Warning: Citation `couairon2022diffedit' on page 76 undefined on
  input line 11.
 
 
-Package natbib Warning: Citation `cao2023masactrl' on page 74 undefined on inpu
+Package natbib Warning: Citation `cao2023masactrl' on page 76 undefined on inpu
 t line 11.
 
 
-Package natbib Warning: Citation `yang2023zero' on page 74 undefined on input l
+Package natbib Warning: Citation `yang2023zero' on page 76 undefined on input l
 ine 11.
 
 ) (./Chapters/zero-shot-tat-secs/Methodology.tex
 
-Package natbib Warning: Citation `rombach2022high' on page 74 undefined on inpu
+Package natbib Warning: Citation `rombach2022high' on page 76 undefined on inpu
 t line 2.
 
 
-Package natbib Warning: Citation `zhang2023adding' on page 74 undefined on inpu
+Package natbib Warning: Citation `zhang2023adding' on page 76 undefined on inpu
 t line 2.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 74 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 76 undefined on
  input line 2.
 
 
-Package natbib Warning: Citation `jacobs2007consistent' on page 74 undefined on
+Package natbib Warning: Citation `jacobs2007consistent' on page 76 undefined on
  input line 6.
 
 
-Package natbib Warning: Citation `lalonde2009webcam' on page 74 undefined on in
+Package natbib Warning: Citation `lalonde2009webcam' on page 76 undefined on in
 put line 6.
 
-[74]
+[76]
 
-Package natbib Warning: Citation `laffont2014transient' on page 75 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 77 undefined on
  input line 13.
 
-<Chapters/zero-shot-tat-figs/DDIM_forward.png, id=1673, 1128.1347pt x 221.1462p
+<Chapters/zero-shot-tat-figs/DDIM_forward.png, id=1682, 1128.1347pt x 221.1462p
 t>
 File: Chapters/zero-shot-tat-figs/DDIM_forward.png Graphic file (type png)
 <use Chapters/zero-shot-tat-figs/DDIM_forward.png>
@@ -1810,20 +1814,20 @@ Package pdftex.def Info: Chapters/zero-shot-tat-figs/DDIM_forward.png  used on
 input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 89.23976pt.
 
-Package natbib Warning: Citation `song2020denoising' on page 75 undefined on in
+Package natbib Warning: Citation `song2020denoising' on page 77 undefined on in
 put line 31.
 
-[75]) (./Chapters/zero-shot-tat-secs/Results.tex [76 <./Chapters/zero-shot-tat-
+[77]) (./Chapters/zero-shot-tat-secs/Results.tex [78 <./Chapters/zero-shot-tat-
 figs/DDIM_forward.png>]
-<Chapters/zero-shot-tat-figs/Controlnet2.png, id=1691, 444.17628pt x 331.30518p
+<Chapters/zero-shot-tat-figs/Controlnet2.png, id=1700, 444.17628pt x 331.30518p
 t>
 File: Chapters/zero-shot-tat-figs/Controlnet2.png Graphic file (type png)
 <use Chapters/zero-shot-tat-figs/Controlnet2.png>
 Package pdftex.def Info: Chapters/zero-shot-tat-figs/Controlnet2.png  used on i
 nput line 7.
 (pdftex.def)             Requested size: 455.24411pt x 339.57483pt.
- [77 <./Chapters/zero-shot-tat-figs/Controlnet2.png>]
-<Chapters/zero-shot-tat-figs/grid-search.png, id=1701, 575.99461pt x 460.68741p
+ [79 <./Chapters/zero-shot-tat-figs/Controlnet2.png>]
+<Chapters/zero-shot-tat-figs/grid-search.png, id=1711, 575.99461pt x 460.68741p
 t>
 File: Chapters/zero-shot-tat-figs/grid-search.png Graphic file (type png)
 <use Chapters/zero-shot-tat-figs/grid-search.png>
@@ -1832,31 +1836,31 @@ nput line 26.
 (pdftex.def)             Requested size: 455.24411pt x 364.12183pt.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 78 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 80 undefined on
  input line 35.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 78 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 80 undefined on
  input line 35.
 
 
-Package natbib Warning: Citation `brooks2023instructpix2pix' on page 78 undefin
+Package natbib Warning: Citation `brooks2023instructpix2pix' on page 80 undefin
 ed on input line 35.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 78 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 80 undefined on
  input line 35.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 78 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 80 undefined on
  input line 35.
 
 
-Package natbib Warning: Citation `brooks2023instructpix2pix' on page 78 undefin
+Package natbib Warning: Citation `brooks2023instructpix2pix' on page 80 undefin
 ed on input line 35.
 
-[78]
-<Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf, id=1709, 248
+[80]
+<Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf, id=1719, 248
 4.28125pt x 2760.3125pt>
 File: Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf Graphic 
 file (type pdf)
@@ -1866,59 +1870,59 @@ emoved.pdf  used on input line 38.
 (pdftex.def)             Requested size: 455.24411pt x 505.80615pt.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 79 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 81 undefined on
  input line 39.
 
 
-LaTeX Warning: Reference `zero-shot-additional' on page 79 undefined on input l
+LaTeX Warning: Reference `zero-shot-additional' on page 81 undefined on input l
 ine 39.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 79 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 81 undefined on
  input line 39.
 
 
-LaTeX Warning: Reference `zero-shot-additional' on page 79 undefined on input l
+LaTeX Warning: Reference `zero-shot-additional' on page 81 undefined on input l
 ine 39.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 79 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 81 undefined on
  input line 43.
 
 
-Package natbib Warning: Citation `laffont2014transient' on page 79 undefined on
+Package natbib Warning: Citation `laffont2014transient' on page 81 undefined on
  input line 43.
 
-) [79 <./Chapters/zero-shot-tat-figs/grid-search.png>])
-(./Chapters/HyperBRDF.tex [80] [81 <./Chapters/zero-shot-tat-figs/test_ours_upd
-ated_titles_removed.pdf>] [82
+) [81 <./Chapters/zero-shot-tat-figs/grid-search.png>])
+(./Chapters/HyperBRDF.tex [82] [83 <./Chapters/zero-shot-tat-figs/test_ours_upd
+ated_titles_removed.pdf>] [84
 
 ]
 Chapter 5.
-(./Chapters/hyperbrdf-sec/1_introduction.tex [83]
-<Chapters/hyperbrdf-figs/teaser_cropped.png, id=1895, 1284.8pt x 604.2575pt>
+(./Chapters/hyperbrdf-sec/1_introduction.tex [85]
+<Chapters/hyperbrdf-figs/teaser_cropped.png, id=1905, 1284.8pt x 604.2575pt>
 File: Chapters/hyperbrdf-figs/teaser_cropped.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/teaser_cropped.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/teaser_cropped.png  used on in
 put line 16.
 (pdftex.def)             Requested size: 455.24411pt x 214.10262pt.
- [84] [85 <./Chapters/hyperbrdf-figs/teaser_cropped.png>]) (./Chapters/hyperbrd
+ [86] [87 <./Chapters/hyperbrdf-figs/teaser_cropped.png>]) (./Chapters/hyperbrd
 f-sec/2_relatedWork.tex
-[86] [87]) (./Chapters/hyperbrdf-sec/3_method.tex
-<Chapters/hyperbrdf-figs/MainFig_13_11.pdf, id=2009, 706.64pt x 266.9975pt>
+[88] [89]) (./Chapters/hyperbrdf-sec/3_method.tex
+<Chapters/hyperbrdf-figs/MainFig_13_11.pdf, id=2018, 706.64pt x 266.9975pt>
 File: Chapters/hyperbrdf-figs/MainFig_13_11.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/MainFig_13_11.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/MainFig_13_11.pdf  used on inp
 ut line 6.
 (pdftex.def)             Requested size: 455.24411pt x 172.01038pt.
- [88] [89 <./Chapters/hyperbrdf-figs/MainFig_13_11.pdf>] [90]) (./Chapters/hype
+ [90] [91 <./Chapters/hyperbrdf-figs/MainFig_13_11.pdf>] [92]) (./Chapters/hype
 rbrdf-sec/4_experiments.tex
-[91]
+[93]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf, id=2106, 1320.202
+<Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf, id=2115, 1320.202
 29pt x 1086.45903pt>
 File: Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf Graphic file 
 (type pdf)
@@ -1926,7 +1930,7 @@ File: Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf Graphic file
 Package pdftex.def Info: Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compresse
 d.pdf  used on input line 24.
 (pdftex.def)             Requested size: 364.19667pt x 299.7138pt.
-<Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf, id=2107, 1187.43625pt x 1117.1737
+<Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf, id=2116, 1187.43625pt x 1117.1737
 5pt>
 File: Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf>
@@ -1948,81 +1952,81 @@ nput line 57.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/N_labels2.pdf): PDF inclusion: found PDF version <1.7>, 
 but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/N_labels2.pdf, id=2108, 461.725pt x 10.0375pt>
+<Chapters/hyperbrdf-figs/N_labels2.pdf, id=2117, 461.725pt x 10.0375pt>
 File: Chapters/hyperbrdf-figs/N_labels2.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/N_labels2.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/N_labels2.pdf  used on input l
 ine 60.
 (pdftex.def)             Requested size: 332.32625pt x 7.22453pt.
-<Chapters/hyperbrdf-figs/legend.png, id=2109, 511.6716pt x 31.43745pt>
+<Chapters/hyperbrdf-figs/legend.png, id=2118, 511.6716pt x 31.43745pt>
 File: Chapters/hyperbrdf-figs/legend.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/legend.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/legend.png  used on input line
  68.
 (pdftex.def)             Requested size: 159.33821pt x 9.78963pt.
-<Chapters/hyperbrdf-figs/PSNR_ggx.pdf, id=2110, 424.43379pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/PSNR_ggx.pdf, id=2119, 424.43379pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/PSNR_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/PSNR_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/PSNR_ggx.pdf  used on input li
 ne 69.
 (pdftex.def)             Requested size: 145.68503pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/DeltaE_ggx.pdf, id=2111, 430.174pt x 330.41133pt>
+<Chapters/hyperbrdf-figs/DeltaE_ggx.pdf, id=2120, 430.174pt x 330.41133pt>
 File: Chapters/hyperbrdf-figs/DeltaE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/DeltaE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/DeltaE_ggx.pdf  used on input 
 line 70.
 (pdftex.def)             Requested size: 145.6796pt x 96.73946pt.
-<Chapters/hyperbrdf-figs/MAE_ggx.pdf, id=2112, 424.43379pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/MAE_ggx.pdf, id=2121, 424.43379pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/MAE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/MAE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/MAE_ggx.pdf  used on input lin
 e 71.
 (pdftex.def)             Requested size: 145.68503pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/RMSE_ggx.pdf, id=2113, 441.67006pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/RMSE_ggx.pdf, id=2122, 441.67006pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/RMSE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/RMSE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/RMSE_ggx.pdf  used on input li
 ne 72.
 (pdftex.def)             Requested size: 145.68417pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/RAE_ggx.pdf, id=2114, 453.16614pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/RAE_ggx.pdf, id=2123, 453.16614pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/RAE_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/RAE_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/RAE_ggx.pdf  used on input lin
 e 73.
 (pdftex.def)             Requested size: 145.67993pt x 96.7362pt.
-<Chapters/hyperbrdf-figs/SSIM_ggx.pdf, id=2115, 441.67006pt x 328.15987pt>
+<Chapters/hyperbrdf-figs/SSIM_ggx.pdf, id=2124, 441.67006pt x 328.15987pt>
 File: Chapters/hyperbrdf-figs/SSIM_ggx.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/SSIM_ggx.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/SSIM_ggx.pdf  used on input li
 ne 74.
 (pdftex.def)             Requested size: 145.68417pt x 96.7362pt.
 
-Package natbib Warning: Citation `dupuy2015photorealistic' on page 92 undefined
+Package natbib Warning: Citation `dupuy2015photorealistic' on page 94 undefined
  on input line 85.
 
-[92] [93 <./Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf>]
-[94 <./Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf> <./Chapters/hyperbrdf-figs/
-N_labels2.pdf>] [95 <./Chapters/hyperbrdf-figs/legend.png> <./Chapters/hyperbrd
+[94] [95 <./Chapters/hyperbrdf-figs/tsne6_2_den1-cropped-compressed.pdf>]
+[96 <./Chapters/hyperbrdf-figs/qual_comp_ggx_2.pdf> <./Chapters/hyperbrdf-figs/
+N_labels2.pdf>] [97 <./Chapters/hyperbrdf-figs/legend.png> <./Chapters/hyperbrd
 f-figs/PSNR_ggx.pdf> <./Chapters/hyperbrdf-figs/DeltaE_ggx.pdf> <./Chapters/hyp
 erbrdf-figs/MAE_ggx.pdf> <./Chapters/hyperbrdf-figs/RMSE_ggx.pdf> <./Chapters/h
-yperbrdf-figs/RAE_ggx.pdf> <./Chapters/hyperbrdf-figs/SSIM_ggx.pdf>] [96]
+yperbrdf-figs/RAE_ggx.pdf> <./Chapters/hyperbrdf-figs/SSIM_ggx.pdf>] [98]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/compression_comp1.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/compression_comp1.pdf, id=2742, 596.2275pt x 245.91875
+<Chapters/hyperbrdf-figs/compression_comp1.pdf, id=2752, 596.2275pt x 245.91875
 pt>
 File: Chapters/hyperbrdf-figs/compression_comp1.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/compression_comp1.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/compression_comp1.pdf  used on
  input line 208.
 (pdftex.def)             Requested size: 409.71692pt x 168.98991pt.
-[97 <./Chapters/hyperbrdf-figs/compression_comp1.pdf>]
+[99 <./Chapters/hyperbrdf-figs/compression_comp1.pdf>]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/interpolation_extended.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/interpolation_extended.pdf, id=2818, 1210.11093pt x 48
+<Chapters/hyperbrdf-figs/interpolation_extended.pdf, id=2827, 1210.11093pt x 48
 5.00197pt>
 File: Chapters/hyperbrdf-figs/interpolation_extended.pdf Graphic file (type pdf
 )
@@ -2030,8 +2034,8 @@ File: Chapters/hyperbrdf-figs/interpolation_extended.pdf Graphic file (type pdf
 Package pdftex.def Info: Chapters/hyperbrdf-figs/interpolation_extended.pdf  us
 ed on input line 222.
 (pdftex.def)             Requested size: 409.71692pt x 164.21024pt.
-[98 <./Chapters/hyperbrdf-figs/interpolation_extended.pdf>]
-<Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf, id=2927, 430.67586pt x 319.
+[100 <./Chapters/hyperbrdf-figs/interpolation_extended.pdf>]
+<Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf, id=2936, 430.67586pt x 319.
 80052pt>
 File: Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf Graphic file (type pdf)
 
@@ -2041,33 +2045,33 @@ d on input line 271.
 (pdftex.def)             Requested size: 227.62206pt x 169.02013pt.
 
 
-Package natbib Warning: Citation `resources16' on page 99 undefined on input li
-ne 295.
+Package natbib Warning: Citation `resources16' on page 101 undefined on input l
+ine 295.
 
-[99 <./Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf>]
+[101 <./Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf>]
 
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/hyperbrdf-figs/SceneRenderings1.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.6> allowed
-<Chapters/hyperbrdf-figs/SceneRenderings1.pdf, id=2972, 508.90125pt x 752.8125p
+<Chapters/hyperbrdf-figs/SceneRenderings1.pdf, id=2981, 508.90125pt x 752.8125p
 t>
 File: Chapters/hyperbrdf-figs/SceneRenderings1.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/SceneRenderings1.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/SceneRenderings1.pdf  used on 
 input line 300.
 (pdftex.def)             Requested size: 318.66948pt x 471.42561pt.
-) (./Chapters/hyperbrdf-sec/5_conclusion.tex [100])) (./Chapters/Conclusion.tex
-) [101] [102 <./Chapters/hyperbrdf-figs/SceneRenderings1.pdf>] (./thesis.bbl
-[103
+) (./Chapters/hyperbrdf-sec/5_conclusion.tex [102])) (./Chapters/Conclusion.tex
+) [103] [104 <./Chapters/hyperbrdf-figs/SceneRenderings1.pdf>] (./thesis.bbl
+[105
 
 
-] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114])
-[115] [116
+] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116])
+[117] [118
 
 ]
 Appendix A.
 (./Chapters/Appendix.tex
-<Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf, id=3100, 1347.032
+<Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf, id=3109, 1347.032
 5pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf Graphic file 
 (type pdf)
@@ -2075,13 +2079,13 @@ File: Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf Graphic file
 Package pdftex.def Info: Chapters/hyperbrdf-figs/qualitative_comp_40_all_sample
 s.pdf  used on input line 14.
 (pdftex.def)             Requested size: 300.46277pt x 543.37831pt.
-<Chapters/hyperbrdf-figs/vbar.png, id=3101, 57.816pt x 320.1561pt>
+<Chapters/hyperbrdf-figs/vbar.png, id=3110, 57.816pt x 320.1561pt>
 File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/vbar.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 5.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/supp_40.pdf, id=3103, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_40.pdf, id=3112, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_40.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_40.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_40.pdf  used on input lin
@@ -2096,7 +2100,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 8
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 89.
 
-<Chapters/hyperbrdf-figs/supp_160.pdf, id=3104, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_160.pdf, id=3113, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_160.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_160.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_160.pdf  used on input li
@@ -2110,7 +2114,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 9
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 102.
 
-<Chapters/hyperbrdf-figs/supp_400.pdf, id=3105, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_400.pdf, id=3114, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_400.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_400.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_400.pdf  used on input li
@@ -2124,7 +2128,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 115.
 
-<Chapters/hyperbrdf-figs/supp_2000.pdf, id=3106, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_2000.pdf, id=3115, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_2000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_2000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_2000.pdf  used on input l
@@ -2138,7 +2142,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 128.
 
-<Chapters/hyperbrdf-figs/supp_4000.pdf, id=3107, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_4000.pdf, id=3116, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_4000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_4000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_4000.pdf  used on input l
@@ -2152,11 +2156,11 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 
 LaTeX Warning: Float too large for page by 55.60735pt on input line 140.
 
-) [117] [118 <./Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf> <.
-/Chapters/hyperbrdf-figs/vbar.png>] [119 <./Chapters/hyperbrdf-figs/supp_40.pdf
->] [120 <./Chapters/hyperbrdf-figs/supp_160.pdf>] [121 <./Chapters/hyperbrdf-fi
-gs/supp_400.pdf>] [122 <./Chapters/hyperbrdf-figs/supp_2000.pdf>] [123 <./Chapt
-ers/hyperbrdf-figs/supp_4000.pdf>] [124]
+) [119] [120 <./Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf> <.
+/Chapters/hyperbrdf-figs/vbar.png>] [121 <./Chapters/hyperbrdf-figs/supp_40.pdf
+>] [122 <./Chapters/hyperbrdf-figs/supp_160.pdf>] [123 <./Chapters/hyperbrdf-fi
+gs/supp_400.pdf>] [124 <./Chapters/hyperbrdf-figs/supp_2000.pdf>] [125 <./Chapt
+ers/hyperbrdf-figs/supp_4000.pdf>] [126]
 No file thesis.ind.
 
 Package natbib Warning: There were undefined citations.
@@ -2181,8 +2185,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 ### simple group (level 1) entered at line 59 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26830 strings out of 474116
- 459528 string characters out of 5743683
+ 26832 strings out of 474116
+ 459544 string characters out of 5743683
  1949187 words of memory out of 5000000
  47880 multiletter control sequences out of 15000+600000
  586062 words of font info for 250 fonts, out of 8000000 for 9000
@@ -2231,10 +2235,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (124 pages, 285711760 bytes).
+Output written on thesis.pdf (126 pages, 285712811 bytes).
 PDF statistics:
- 5656 PDF objects out of 6186 (max. 8388607)
- 3310 compressed objects within 34 object streams
- 502 named destinations out of 1000 (max. 500000)
+ 5665 PDF objects out of 6186 (max. 8388607)
+ 3316 compressed objects within 34 object streams
+ 504 named destinations out of 1000 (max. 500000)
  55858 words of extra memory for PDF output out of 61914 (max. 10000000)
 

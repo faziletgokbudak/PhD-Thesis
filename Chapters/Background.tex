@@ -26,8 +26,8 @@ In a simple case where we only have a single colour with a blank background, we 
 \begin{figure}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.4\linewidth]{Images/grid_circle.png}
-    \includegraphics[width=0.4\linewidth]{Images/merged_grid_circle2-crop.pdf}
+   \includegraphics[width=0.45\linewidth]{Images/grid_circle.png}
+    \includegraphics[width=0.45\linewidth]{Images/merged_grid_circle2-crop.pdf}
 
    \caption{To compute the colour of a pixel with variations, it is common to divide the pixel into sub-pixels and take the weighted average of each sub-pixel.}
    \label{fig:display-grid}
@@ -60,7 +60,7 @@ Another problem to consider is aliasing, which occurs when the sampling frequenc
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.9\linewidth]{Images/colour_quantization.png}
+    \includegraphics[width=\linewidth]{Images/colour_quantization.png}
 
     \caption{When a colour is represented with too few bits, the transition between colours appears as discrete steps, known as colour banding (right).}\label{fig:colour-band}
 \end{figure} 
@@ -75,7 +75,7 @@ A 3D scene consists of objects of different sizes, shapes, and appearances. To r
 \begin{figure}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.7\linewidth]{Images/scene_with_camera.jpg}
+   \includegraphics[width=0.8\linewidth]{Images/scene_with_camera.jpg}
    \caption{Rendering an image of a 3D scene requires lighting, viewpoint (camera) and geometry. Image from [Boss et al., 2021].}
    \label{fig:teaser}
 \end{figure}
@@ -89,7 +89,7 @@ In general, the shape of an object is represented with 3D points in computers' m
 \begin{figure}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.7\linewidth]{Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere-can-be-approximated.png}
+   \includegraphics[width=\linewidth]{Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere-can-be-approximated.png}
    \caption{Triangulation of surfaces is a commonly used method in computer graphics to define the shape of objects. It allows the creation of complex shapes. Increasing the number of triangles also increases the resolution of the shape that leads to smoother surface representations. Image taken from [Broeren et al., 2019].}
    \label{fig:triangulation}
 \end{figure}
@@ -114,7 +114,7 @@ To achieve foreshortening effect, imagine we have a canvas or an image plane bet
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.6\linewidth]{Images/perspective_projection.png}
+   \includegraphics[width=0.75\linewidth]{Images/perspective_projection.png}
    \caption{Perspective projection mimics the foreshortening effect our visual system creates while observing a scene. The image plane/canvas includes the 2D projections of the visible objects within the view frustum.}
    \label{fig:perspective_projection}
 \end{figure}
@@ -125,8 +125,8 @@ We can project a 3D scene onto a flat surface in different ways. For instance, i
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.4\linewidth, height=4.5cm]{Images/single_point_perspective.png}
-    \includegraphics[width=0.4\linewidth, height=4.5cm]{Images/two_points_perspective.png}
+   \includegraphics[width=0.45\linewidth, height=4.5cm]{Images/single_point_perspective.png}
+    \includegraphics[width=0.45\linewidth, height=4.5cm]{Images/two_points_perspective.png}
 
    \caption{Single-point vs two-point perspective. Computer graphics mimics our visual system, focusing on single-point projection. However, multi-point perspective is widely explored in artistic drawing.}
    \label{fig:artistic_drawing}
@@ -165,7 +165,7 @@ At the object level, reflection can be considered a mirror-like look, where the 
 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{Images/diagram_microfacet.png}
+\includegraphics[width=\linewidth]{Images/diagram_microfacet.png}
 \caption{Reflection on a surface with microfacets vs smooth surface. Image from [Guy and Agopian, 2024]}\label{fig:microfacet}
 \end{figure} 
 
@@ -192,7 +192,7 @@ At the object level, reflection can be considered a mirror-like look, where the 
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.7\linewidth]{Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-reflections-occur-on.png}
+   \includegraphics[width=\linewidth]{Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-reflections-occur-on.png}
    \caption{Specular vs diffuse reflection. Diffuse surfaces cause rays to scatter randomly, brightening the object equally in all viewing directions. Specular reflection is, on the other hand, view-dependent, reflected rays concentrated around the mirror reflection. Image from [Park and Baek, 2021].}
    \label{fig:specularvsdiffuse}
 \end{figure}
@@ -217,7 +217,7 @@ The simulation starts with shooting rays from the virtual camera to the light so
 
 \begin{figure}
   \centering
-   \includegraphics[width=0.5\linewidth]{Images/ray-tracing-image-1.jpg}
+   \includegraphics[width=0.75\linewidth]{Images/ray-tracing-image-1.jpg}
    \caption{Ray tracing simulate the light's journey to compute the colour of each pixel on the rendered image.Image from [Henrik, 2008].}
    \label{fig:raytracing}
 \end{figure}
@@ -261,7 +261,7 @@ where $I_l$ is the intensity of the light source. Note that the lights with diff
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.5\linewidth]{Images/diffuse+specular+angle.pdf}
+   \includegraphics[width=0.75\linewidth]{Images/diffuse+specular+angle.pdf}
    \caption{Diffuse and specular reflections.. Figures from [Mantiuk, 2022]}
    \label{fig:diffuse-spec-angle}
 \end{figure}
