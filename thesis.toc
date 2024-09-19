@@ -117,7 +117,8 @@
 \contentsline {paragraph}{SVBRDF representations:}{102}{section*.98}%
 \contentsline {section}{\numberline {5.6}Conclusion}{103}{section.5.6}%
 \contentsline {chapter}{Bibliography}{105}{section*.99}%
-\contentsline {chapter}{\numberline {A}Extra Information}{119}{appendix.A}%
-\contentsline {section}{\numberline {A.1}HyperBRDF - Additional Results}{119}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Full Reconstruction}{119}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Compression}{119}{subsection.A.1.2}%
+\contentsline {chapter}{\numberline {A}One-shot Detail Retouching}{119}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Transient Attribute Transfer - Additional Results}{121}{appendix.B}%
+\contentsline {chapter}{\numberline {C}HyperBRDF - Additional Results}{125}{appendix.C}%
+\contentsline {subsection}{\numberline {C.0.1}Full Reconstruction}{125}{subsection.C.0.1}%
+\contentsline {subsection}{\numberline {C.0.2}Compression}{125}{subsection.C.0.2}%

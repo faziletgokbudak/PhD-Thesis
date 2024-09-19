@@ -35,7 +35,7 @@ I ran an additional grid search on both parameters to find a balance between the
 \paragraph{Baselines.} I also compare the fine-tuning and the zero-shot results with \citeauthor{laffont2014transient} \cite{laffont2014transient} and Instructpix2pix \cite{brooks2023instructpix2pix} qualitatively. \citeauthor{laffont2014transient} \cite{laffont2014transient} learns the transforms from a pair of $Match - Target$ images, as shown in the second and third columns. It has the disadvantage of requiring two additional images. On the other hand, Instructpix2pix \cite{brooks2023instructpix2pix} is a diffusion-based model designed to edit images according to instructions. It is fine-tuned with a large dataset of image-target pairs along with their associated instructions. To adapt their model to our task, I convert the attributes to instructions by adding "make it" to the front of the adjective version of the attribute. For instance, if the prompt is initially "summer", then the Instructpix2pix input becomes "make it sunny". Without this adjustment, I observed  little to no changes in the input images.
  
  \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Chapters/zero-shot-tat-figs/test_ours_updated_titles_removed.pdf}
+  \includegraphics[width=\textwidth]{Chapters/zero-shot-tat-figs/zeros-shot-qual-comp-updated.pdf}
   \caption{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite{laffont2014transient}. Additional results can be found in Section \ref{zero-shot-additional}.}
   \label{fig:zero-shot-comparison}
 \end{figure}

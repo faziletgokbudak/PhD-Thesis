@@ -8,8 +8,8 @@
 
 \section{Overview} 
 
-The appearance of a 3D scene comprises the visual features that are shaped by the interaction of light with materials, textures, and geometry, defining how we perceive objects in terms of colour, shading, and surface detail. Many factors, including lighting conditions, material properties, and environmental effects, affect appearance. Lighting, the type, location, intensity and colour of light sources, define how objects are illuminated, generating shadows, highlights, and overall contrast. Materials describe the optical properties of objects, such as base colour, transparency, reflectivity, and surface roughness. Textures are 2D images or procedural patterns applied to 3D surfaces, providing detailed surface information, such as colour, bumpiness, or imperfections. The 3D models' geometric detail and surface topology affect how light interacts with objects. Atmospheric conditions such as fog, reflections, and global illumination contribute to the overall appearance by simulating real-world environmental factors. The position and properties of the virtual camera, including focal length and field of view, influence the composition, perspective, and the visual hierarchy of objects in the scene. Overall, appearance is a result of the interplay between light, material properties, surface detail, and environmental factors, all of which contribute to the perceptual qualities and realism of the rendered image.
-
+The appearance of a 3D scene comprises the visual features that are defined by the interaction of light with materials, textures, and geometry, defining how we perceive objects in terms of colour, shading, and surface detail. Many factors, including lighting conditions, material properties, and environmental effects, affect appearance. For instance, lighting defines the illumination of objects with its type, location, intensity and colour, generating shadows, highlights, and the contrast. Materials describe the optical/reflectance properties, such as roughness, transparency, and base colour. Textures are the patterns that reveal details about a surface, such as bumpiness, or imperfections.The geometric detail and surface orientation affect the interaction of light with the object. Atmospheric conditions such as clouds, reflections, and global illumination also contribute to the appearance of a scene. Overall, appearance is the product of light-material interactions shaped by both surface detail, geometry and texture and weather conditions. 
+ 
 Appearance manipulations refer to the edits of the aforementioned visual features, ranging from retouching intricate details to transforming entire scenes. Appearance manipulation techniques are instrumental in the success of multiple fields with real-world applications. In filmmaking, it helps create realistic special effects or offers subtle changes to lighting, costumes, and even an actor’s appearance during post-production. In social media and advertising, it allows users to benefit from filters, face-tuning, and other aesthetic tools. In augmented and virtual reality (AR/VR) platforms, it enables embodying human avatars that improve immersive realism, including changing hairstyles, outfits or body types. In fashion and e-commerce, users can faithfully shop clothes or accessories online through virtual try-ons. 
 
 Even the fact that Richard Linklater had filmed the movie "Boyhood" (2014) over 12 years to capture the natural aging of the actors shows the necessity and importance of precise appearance manipulation techniques across disciplines. Therefore, this thesis is dedicated to tackle the challenging task of appearance manipulations with learning-based techniques with the hope that the proposed approaches can alleviate some of the difficulties that editors come across, such as accuracy, the scarcity of data, etc. This thesis investigates the three distinct perspectives of appearance (fine details, transient attributes, reflectance representations) and presents data-efficient machine learning approaches for accurate and visually-pleasing manipulations.
@@ -35,7 +35,7 @@ First, I introduce a machine learning framework designed to manipulate such low-
 
     \includegraphics[width=0.78\linewidth]{Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image courtesy- Produzioni Europee Associati .jpg}
 
-   \caption{A close-up scene from the movie ‘The Good, the Bad and the Ugly’ (1966). The details, such as the wrinkles or the orientation of eye brows can hint at the character's age or emotions. Image courtesy of [Produzioni Europee Associati].}
+   \caption{A close-up scene from the movie ‘The Good, the Bad and the Ugly’ (1966). Details can convey valuable information about a scene, such as wrinkles hinting at the character's age in this shot. Image courtesy of [Produzioni Europee Associati].}
    \label{fig:close-up1}
 \end{figure}
 
@@ -43,9 +43,9 @@ First, I introduce a machine learning framework designed to manipulate such low-
 \begin{figure}%{r}{5cm}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.76\linewidth]{Images/butterfly.png}
+   \includegraphics[width=0.75\linewidth]{Images/flower-closeup.JPG}
    
-   \caption{Another close-up shot example. In photography, captivating details contribute to the aesthetics, shaping the identity of the subject. Image courtesy of [Andrew Cooper, Butterfly Conservation].}
+   \caption{Another close-up shot example. In photography, captivating details contribute to aesthetics, highlighting the identity of the subject.}
    \label{fig:close-up2}
 \end{figure}
 
@@ -59,7 +59,7 @@ Second, I explore the transitions between transient attributes, which cover mani
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
-    \includegraphics[width=0.76\linewidth]{Images/seasonchanges.png}
+    \includegraphics[width=0.75\linewidth]{Images/seasonchanges.png}
 
    \caption{Seasonal transitions of a tree throughout the year. Image from [Michael Melford/Getty Images]}
    \label{fig:colour-approximate}
@@ -89,7 +89,7 @@ The following works are produced throughout my doctoral studies and contributed 
 
 \item \textbf{Fazilet Gokbudak}, Alejandro Sztrajman, Chenliang Zhou,  Fangcheng Zhong, Rafal Mantiuk, and Cengiz Oztireli. Hypernetworks for Generalizable BRDF Representation. \textit{ECCV 2024}
 
-\textit{Contribution:} Designed and implemented a novel neural BRDF representation model that can be used for sparse reconstruction, compression and editing, and integrated into physically-based renderers.
+\textit{Contribution:} Designed and implemented a novel neural BRDF representation model that can be used for sparse reconstruction, compression and editing, integrated into physically-based renderers.
 
 \item \textbf{Fazilet Gokbudak} and Cengiz Oztireli. Text-guided Transient Attribute Transfer. \textit{Under review}.
 
