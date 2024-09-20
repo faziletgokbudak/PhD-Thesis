@@ -116,10 +116,11 @@
 \contentsline {paragraph}{BRDF editing:}{102}{section*.94}%
 \contentsline {paragraph}{SVBRDF representations:}{103}{section*.95}%
 \contentsline {section}{\numberline {5.6}Summary}{103}{section.5.6}%
-\contentsline {chapter}{Bibliography}{105}{section*.96}%
-\contentsline {chapter}{\numberline {A}One-shot Detail Retouching}{119}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{125}{appendix.B}%
-\contentsline {chapter}{\numberline {C}HyperBRDF}{127}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Full reconstruction}{127}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Sparse reconstruction}{128}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Compression}{128}{section.C.3}%
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{105}{chapter.6}%
+\contentsline {chapter}{Bibliography}{107}{section*.96}%
+\contentsline {chapter}{\numberline {A}One-shot Detail Retouching}{121}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{127}{appendix.B}%
+\contentsline {chapter}{\numberline {C}HyperBRDF}{129}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Full reconstruction}{129}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Sparse reconstruction}{130}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Compression}{130}{section.C.3}%

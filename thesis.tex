@@ -155,13 +155,13 @@ Appearance Manipulations}
 %% Abstract:
 %%
 \abstract{%
-  Recent works on appearance manipulation leverage deep learning techniques to achieve high-quality edits. However, such methods often rely on large amounts of data, making them undesirable in data-scarce regimes. In this thesis, I explore neural appearance manipulation techniques specifically designed for data-limited environments. More specifically, I aim to constrain the solution space of editing tasks with limited data through priors that are either imposed or learned through training.
-  
-    I first begin with exploring implicit appearance manipulations that work directly in the image domain without explicit information about the appearance, such as reflectance or illumination. Focusing on a low-level detail retouching task, I propose a machine learning framework that learns the style from only a single image pair. This is achieved by leveraging the priors observed in how photographers manually edit photos. Continuing within the image domain, I later explore a more complex appearance manipulation task, transient attribute transfer, utilising a diffusion model in a zero-shot setting.
+Recent works on appearance manipulation leverage deep learning techniques to achieve high-quality edits. However, such methods often rely on large amounts of data, making them undesirable in data-scarce regimes. In this thesis, I explore neural appearance manipulation techniques specifically designed for data-limited environments. More specifically, I aim to constrain the solution space of editing tasks with limited data through priors that are either imposed or learned through training.
 
-    Despite their effectiveness and efficiency, working in the image domain presents challenges regarding controllability over appearance. For instance, editing each material individually within an image is complicated, requiring an additional segmentation algorithm to separate the materials \cite{}. Furthermore, patch-space information is intertwined with illumination, which is difficult to estimate \cite{}. Therefore, as an alternative to implicit editing, I explore explicit appearance modelling that aim for sparse reconstruction with real-world applications in physically-based rendering systems. I propose a neural material representation model that excels in generalising to new materials, editing existing appearances, and compressing them. This model can be integrated into either a rendering or a capture system. While rendering offers finer control capabilities in scene editing, capture systems serve as the engine for such rendering processes.
+I begin by exploring implicit appearance manipulations that work directly in the image domain without explicit information about the appearance, such as reflectance or illumination. Focusing on a low-level detail retouching task, I propose a machine learning framework that learns the style from only a single image pair. This is achieved by leveraging priors observed in how photographers manually edit photos. Continuing within the image domain, I later explore a more complex appearance manipulation task: transient attribute transfer, utilising a diffusion model in a zero-shot setting.
 
-    In summary, my thesis focuses on neural network-based appearance editing suitable for data-scarce problem spaces. Here, I explore scene manipulation in two distinct aspects: 1) image-based implicit editing, encompassing both low-level and high-level editing, and 2) explicit appearance modelling with a neural Bidirectional Reflectance Distribution Function (BRDF) estimation. These approaches have the potential to significantly advance research in efficient and realistic appearance editing, offering valuable contributions to the research community working on similar subjects.
+Despite their effectiveness and efficiency, working in the image domain presents challenges regarding controllability over appearance. For instance, editing each material individually within an image is complicated, requiring an additional segmentation algorithm to separate the materials \cite{}. Furthermore, patch-space information is intertwined with illumination, which is difficult to estimate \cite{}. Therefore, as an alternative to implicit editing, I explore explicit appearance modelling that aims for sparse reconstruction with real-world applications in physically-based rendering systems. I propose a neural material representation model that excels in generalising to new materials, editing existing appearances, and compressing them. This model can be integrated into either a rendering or capture system. While rendering offers finer control capabilities in scene editing, capture systems serve as the engine for such rendering processes.
+
+In summary, my thesis focuses on neural network-based appearance editing suitable for data-scarce problem spaces. Here, I explore scene manipulation in two distinct aspects: 1) image-based implicit editing, encompassing both low-level and high-level editing, and 2) explicit appearance modelling with a neural Bidirectional Reflectance Distribution Function (BRDF) estimation. These approaches have the potential to significantly advance research in efficient and realistic appearance editing, offering valuable contributions to the research community working on similar subjects.
 
 }
 
@@ -230,7 +230,9 @@ Appearance Manipulations}
 \input{Chapters/DetailRetouching}
 \input{Chapters/ZeroshotDiffusion}
 \input{Chapters/HyperBRDF}
-\input{Chapters/Conclusion}
+
+
+\chapter{Conclusion and Future Work}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
