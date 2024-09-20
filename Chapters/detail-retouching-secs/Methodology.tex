@@ -1,14 +1,26 @@
-\begin{landscape}
-\begin{figure*}[th] % "[t!]" placement specifier just for this example
-	\centering
-	\includegraphics[width=1.5\textwidth]{Chapters/detail-retouching-figs/MainFig.pdf}
+\begin{landscape}\centering
+\vspace*{\fill}
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=1.5\textwidth]{Chapters/detail-retouching-figs/MainFig.pdf}
+  \caption{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf{x}_i$, $\mathbf{y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}
+\end{figure}
+\vfill
+\end{landscape}
+
+
+%\begin{landscape}
+%\centering
+%\begin{figure*}[th] % "[t!]" placement specifier just for this example
+%	\centering
+%	\includegraphics[width=1.5\textwidth]{Chapters/detail-retouching-figs/MainFig.pdf}
     % \includesvg[width=\textwidth]{myfig.svg}
   % \hfill
-    \caption{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf{x}_i$, $\mathbf{y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}
+ %   \caption{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf{x}_i$, $\mathbf{y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}
 
-\label{fig:modelT}
-\end{figure*}
- \end{landscape}
+%\label{fig:modelT}
+%\end{figure*}
+% \end{landscape}
 
 \section{One-shot Retouching}
 \label{sec:Methodology}

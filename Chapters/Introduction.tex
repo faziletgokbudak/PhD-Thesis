@@ -33,7 +33,7 @@ First, I introduce a machine learning framework designed to manipulate such low-
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
-    \includegraphics[width=0.78\linewidth]{Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image courtesy- Produzioni Europee Associati .jpg}
+    \includegraphics[width=\linewidth]{Images/A scene from ‘The Good, the Bad and the Ugly’ (1966). Image courtesy- Produzioni Europee Associati .jpg}
 
    \caption{A close-up scene from the movie ‘The Good, the Bad and the Ugly’ (1966). Details can convey valuable information about a scene, such as wrinkles hinting at the character's age in this shot. Image courtesy of [Produzioni Europee Associati].}
    \label{fig:close-up1}
@@ -43,7 +43,7 @@ First, I introduce a machine learning framework designed to manipulate such low-
 \begin{figure}%{r}{5cm}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.75\linewidth]{Images/flower-closeup.JPG}
+   \includegraphics[width=\linewidth]{Images/flower-closeup.JPG}
    
    \caption{Another close-up shot example. In photography, captivating details contribute to aesthetics, highlighting the identity of the subject.}
    \label{fig:close-up2}
@@ -51,20 +51,20 @@ First, I introduce a machine learning framework designed to manipulate such low-
 
 %[Andrew Fusek Peters].
 
-\newpage
+%\newpage
 \subsection{Text-guided Transient Attribute Transfer} 
-Second, I explore the transitions between transient attributes, which cover manipulations on high-level features with global illumination changes, colour transfers, object addition/removal, and so on. Borrowing the pre-trained text-guided diffusion models, I investigate their tuning-free capacity for transferring transient attributes.
 
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
-    \includegraphics[width=0.75\linewidth]{Images/seasonchanges.png}
+    \includegraphics[width=\linewidth]{Images/seasonchanges.png}
 
    \caption{Seasonal transitions of a tree throughout the year. Image from [Michael Melford/Getty Images]}
    \label{fig:colour-approximate}
 \end{figure}
 
+Second, I explore the transitions between transient attributes, which cover manipulations on high-level features with global illumination changes, colour transfers, object addition/removal, and so on. Borrowing the pre-trained text-guided diffusion models, I investigate their tuning-free capacity for transferring transient attributes.
 \subsection{Generalisable Neural BRDF Representation}
 Lastly, I introduce HyperBRDF, a novel neural material appearance representation method that can generalise well to new materials, offering state-of-the-art results in sparse reconstruction and compression. HyperBRDF is the first of its kind, introducing a generalisable neural field for bidirectional reflectance distribution function (BRDF) representation. BRDF defines the ratio between the incident and outgoing light intensities for a specific material and can be used to compute the shading of materials in physics based rendering (PBR) pipelines. PBR characterises light-material interactions more accurately, hence offering realistic renderings that are comparable with photographs (Figure \ref{fig:brdf-intro}). BRDF modelling is of crucial importance to the computer graphics community studying material/appearance models. However, the current methods usually rely on analytic models that approximate the highly complex BRDFs with only a few parameters, reducing the quality of the photorealism in rendered scenes. Another approach would be to incorporate the real-world measurements into PBR pipelines, defining BRDF as the sample values for corresponding incoming/outgoing light directions. Although real-world measurements offer precise representations of the reflectance, capturing these samples is highly costly and time consuming, requiring professional capture systems with heavy manual workload. Therefore, I design and implement a neural network based BRDF model that can reconstruct new materials with only a sparse set of samples.I demonstrate several applications of HyperBRDF, namely sparse reconstruction, compression, and editing, with outstanding performance. 
 
@@ -72,7 +72,7 @@ Lastly, I introduce HyperBRDF, a novel neural material appearance representation
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
 
-    \includegraphics[width=0.78\linewidth]{Images/StarWars-RayTracing.jpeg}
+    \includegraphics[width=\linewidth]{Images/StarWars-RayTracing.jpeg}
 
    \caption{Photorealistic rendering can be achieved through extensive ray tracing for which reflectance should be accurately measured and represented. Image from [Star Wars Real-Time Ray Tracing Demo by Epic Games, NVIDIA, and ILMxLAB].}
    \label{fig:brdf-intro}

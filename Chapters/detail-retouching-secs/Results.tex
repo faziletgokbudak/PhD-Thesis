@@ -74,7 +74,7 @@ As the complexity of a retouching style depends on multiple factors, such as art
 
 \begin{figure}[th] % "[t!]" placement specifier just for this example
     \centering
-	\includegraphics[width=0.5\columnwidth]{Chapters/detail-retouching-figs/ablation_matrices.png}
+	\includegraphics[width=0.6\columnwidth]{Chapters/detail-retouching-figs/ablation_matrices.png}
 
     \caption{The higher the complexity of the learned algorithm, the more transformation matrices the technique requires to capture the effects on local regions accurately. While $K=1$ can be sufficient for the model to capture unsharp masking, it requires more matrices to represent bilateral filtering precisely.}
 
@@ -96,7 +96,7 @@ As the complexity of a retouching style depends on multiple factors, such as art
 
 \begin{figure}%[H]
 \centering
-\includegraphics[width=0.8\columnwidth]{Chapters/detail-retouching-figs/weight_visualise.pdf}
+\includegraphics[width=\columnwidth]{Chapters/detail-retouching-figs/weight_visualise.pdf}
     \caption{Visualisation of the reconstructed patch-adaptive weights of the model trained with example images in the teaser. Here, the input to the model is shown on top, and each row shows the weights in the corresponding Laplacian band, indicated on the left.}
 
 \label{fig:weight-vis}
@@ -125,7 +125,7 @@ The example pairs in Figures~\ref{fig:teaser}, ~\ref{fig:newdataset_ex}  and ~\r
 
 \begin{figure}[th] % "[t!]" placement specifier just for this example
     \centering
-	\includegraphics[width=0.8\columnwidth]{Chapters/detail-retouching-figs/Nuances.pdf}
+	\includegraphics[width=\columnwidth]{Chapters/detail-retouching-figs/Nuances.pdf}
   % \hfill
     \caption{Our patch-adaptive technique can accurately capture the nuances between different
     retouching styles as given by the examples (top row).}
@@ -191,41 +191,6 @@ Overall, our method can outperform all architectures for each considered filter 
 Figures \ref{fig:QualitativeComp_BF}, \ref{fig:QualitativeComp_LLF_a2}, and \ref{fig:QualitativeComp_LLF_a05} further demonstrates that our technique can preserve and edit intricate details, such as text, texture, or leaves, more effectively without causing much distortion. The nonlinear bilateral filter and Local Laplacian filters pose an additional challenge, especially in a one-shot setting. However, the proposed approach can still perform edge-aware filtering with higher accuracy than the baselines. Note that these examples are selected from the results I obtained for the quantitative comparison (Table \ref{tablecomparison}), where I only used the luminance channels and downsampled the images to $256 \times 256$. 
 
 
-
-\begin{figure*}%[th]%[tph]{
-  \centering
-      \includegraphics[width=.82\linewidth]{Chapters/detail-retouching-figs/One-shot-labels.pdf}
-
-  \includegraphics[width=\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_BF.pdf}
-    \caption{Qualitative comparison with baseline approaches on bilateral filtering. Bilateral filter is a nonlinear filter designed for smoothing the surfaces while preserving the edges. Results show that our proposed technique captures the bilateral-filtering effect more effectively, reducing the roughness of the surfaces while maintaining important details.} 
-
-   \label{fig:QualitativeComp_BF}%
-\end{figure*}
-
-    
- %   These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).
-
-\begin{figure*}%[th]%[tph]{
-  \centering
-      \includegraphics[width=.82\linewidth]{Chapters/detail-retouching-figs/One-shot-labels.pdf}
-  \includegraphics[width=\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a2_s02.pdf}
-    \caption{Qualitative comparison with baseline approaches on Local Laplacian filter (LLF) ($\alpha=2, \sigma=0.2$). LLF is another edge-aware nonlinear filter designed for multiple tasks, namely edge-preserving smoothing, detail enhancement, tone mapping, and inverse tone mapping. In these examples, the parameters are chosen to have an edge-preserving smoothing effect, similar to bilateral filtering. Results show that ours offer smoother textures.} 
-
-   \label{fig:QualitativeComp_LLF_a2}%
-\end{figure*}
-
-%These results are included in Table 1 for the filter types indicated in rows. The training strategy for the state-of-the-art methods is summarised in Section \ref{sec:Comparisons}. Before-after pairs along with additional results can be found in the supplementary material. Image courtesy of Arnaud Rougetet (landscape) and virtualhorizonstudio (alarm clock). (CC-BY and PixelSquid).
-
-\begin{figure*}%[th]%[tph]{
-  \centering
-    \includegraphics[width=.82\linewidth]{Chapters/detail-retouching-figs/One-shot-labels.pdf}
-  \includegraphics[width=\linewidth]{Chapters/detail-retouching-figs/Qualitative_zoomed_LLF_a05_s01.pdf}
-    \caption{Qualitative comparison with baseline approaches on Local Laplacian filter (LLF) ($\alpha=0.5, \sigma=0.1$). Here, the parameters are chosen accordingly to enhance the details. Our results highlight edges, such as the transition between the cloud and the sky, the numbers in the clock or the texture on the bed sheet.} 
-
-   \label{fig:QualitativeComp_LLF_a05}%
-\end{figure*}
-
-\newpage
 \subsection{Limitations and Future Work}
 \begin{figure}[th] % "[t!]" placement specifier just for this example
 	\centering

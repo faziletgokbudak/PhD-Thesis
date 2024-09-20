@@ -26,8 +26,8 @@ In a simple case where we only have a single colour with a blank background, we 
 \begin{figure}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.45\linewidth]{Images/grid_circle.png}
-    \includegraphics[width=0.45\linewidth]{Images/merged_grid_circle2-crop.pdf}
+   \includegraphics[width=0.48\linewidth]{Images/grid_circle.png}
+    \includegraphics[width=0.48\linewidth]{Images/merged_grid_circle2-crop.pdf}
 
    \caption{To compute the colour of a pixel with variations, it is common to divide the pixel into sub-pixels and take the weighted average of each sub-pixel.}
    \label{fig:display-grid}
@@ -35,7 +35,7 @@ In a simple case where we only have a single colour with a blank background, we 
 
 
 \begin{wrapfigure}{l}{8.5cm}
-\includegraphics[width=0.9\linewidth]{Images/colourspace.png}
+\includegraphics[width=\linewidth]{Images/colourspace.png}
 \caption{Comparison of different colour gamuts. Image from [Schewe and Fraser, 2007].}\label{fig:colour-gamut}
     
 \end{wrapfigure} 
@@ -75,7 +75,7 @@ A 3D scene consists of objects of different sizes, shapes, and appearances. To r
 \begin{figure}
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.8\linewidth]{Images/scene_with_camera.jpg}
+   \includegraphics[width=\linewidth]{Images/scene_with_camera.jpg}
    \caption{Rendering an image of a 3D scene requires lighting, viewpoint (camera) and geometry. Image from [Boss et al., 2021].}
    \label{fig:teaser}
 \end{figure}
@@ -114,7 +114,7 @@ To achieve foreshortening effect, imagine we have a canvas or an image plane bet
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.75\linewidth]{Images/perspective_projection.png}
+   \includegraphics[width=\linewidth]{Images/perspective_projection.png}
    \caption{Perspective projection mimics the foreshortening effect our visual system creates while observing a scene. The image plane/canvas includes the 2D projections of the visible objects within the view frustum.}
    \label{fig:perspective_projection}
 \end{figure}
@@ -125,8 +125,8 @@ We can project a 3D scene onto a flat surface in different ways. For instance, i
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.45\linewidth, height=4.5cm]{Images/single_point_perspective.png}
-    \includegraphics[width=0.45\linewidth, height=4.5cm]{Images/two_points_perspective.png}
+   \includegraphics[width=0.48\linewidth, height=4.5cm]{Images/single_point_perspective.png}
+    \includegraphics[width=0.48\linewidth, height=4.5cm]{Images/two_points_perspective.png}
 
    \caption{Single-point vs two-point perspective. Computer graphics mimics our visual system, focusing on single-point projection. However, multi-point perspective is widely explored in artistic drawing.}
    \label{fig:artistic_drawing}
@@ -217,7 +217,7 @@ The simulation starts with shooting rays from the virtual camera to the light so
 
 \begin{figure}
   \centering
-   \includegraphics[width=0.75\linewidth]{Images/ray-tracing-image-1.jpg}
+   \includegraphics[width=\linewidth]{Images/ray-tracing-image-1.jpg}
    \caption{Ray tracing simulate the light's journey to compute the colour of each pixel on the rendered image.Image from [Henrik, 2008].}
    \label{fig:raytracing}
 \end{figure}
@@ -261,7 +261,7 @@ where $I_l$ is the intensity of the light source. Note that the lights with diff
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.75\linewidth]{Images/diffuse+specular+angle.pdf}
+   \includegraphics[width=\linewidth]{Images/diffuse+specular+angle.pdf}
    \caption{Diffuse and specular reflections.. Figures from [Mantiuk, 2022]}
    \label{fig:diffuse-spec-angle}
 \end{figure}
@@ -320,7 +320,7 @@ It is worth mentioning that different approaches have been proposed to parametri
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.8\linewidth]{Images/Rusinkiewicz.png}
+   \includegraphics[width=\linewidth]{Images/Rusinkiewicz.png}
    \caption{Standard (left) vs Rusinkiewicz parametrisation. Figure from [Rusinkiewicz, 1998]}
    \label{fig:RusinkiewiczvsStandard}
 \end{figure}
@@ -384,7 +384,7 @@ Some tasks might require more sophisticated loss functions. For instance, we can
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.4\linewidth]{Images/l1vsl2loss.png}
+   \includegraphics[width=0.6\linewidth]{Images/l1vsl2loss.png}
    \caption{L1 vs L2 loss values for a single data point. Ground truth $y$ is set to 0.}
    \label{fig:l1vsl2loss}
 \end{figure}
@@ -431,7 +431,7 @@ Here, each layer has its own weights and biases, weights multiplied by the outpu
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.8\linewidth]{Images/MLP.jpeg}
+   \includegraphics[width=\linewidth]{Images/MLP.jpeg}
    \caption{A basic multilayer perceptron model. Figure from [Kishore NG, 2023].}
    \label{fig:mlp}
 \end{figure}

@@ -49,7 +49,7 @@ The motivation behind designing such a map representation with frequency decompo
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.75\columnwidth]{Chapters/detail-retouching-figs/PS1.pdf}
+\includegraphics[width=\columnwidth]{Chapters/detail-retouching-figs/PS1.pdf}
     \caption{Frequency decomposition allows artists to have a higher control over different frequency components of an image. Here, the layer shown in the top-left corner is obtained by high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022].}
 
 \label{fig:PS-high-pass}
@@ -58,7 +58,7 @@ The motivation behind designing such a map representation with frequency decompo
 \item Second, image patches of similar content, e.g. skin or hair, are retouched similarly. This means similar patches in the patch space translate into similar edits. The proposed representation leads to a different transformation for patches of differing content. Local filters can offer such edits, where similar contents, such as pores, transform into a similar content, such as a smooth texture:
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.75\columnwidth]{Chapters/detail-retouching-figs/PS3.pdf}
+\includegraphics[width=\columnwidth]{Chapters/detail-retouching-figs/PS3.pdf}
     \caption{Local filters, such as brushes, help smoothing the skin by removing the undesired pores on the face. However, it is a tedious task for artists, requiring them to go through each of the visible pores.}
 
 \label{fig:PS-brush}
@@ -68,7 +68,7 @@ The motivation behind designing such a map representation with frequency decompo
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.75\columnwidth]{Chapters/detail-retouching-figs/PS2.pdf}
+\includegraphics[width=\columnwidth]{Chapters/detail-retouching-figs/PS2.pdf}
     \caption{Artists usually work on separate layers, adjusting varying properties, such as texture, colour, etc. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers.}
 
 \label{fig:PS-all-together}
