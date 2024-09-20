@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  19 SEP 2024 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  20 SEP 2024 13:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -875,6 +875,18 @@ LaTeX Warning: Label `fig:teaser' multiply defined.
 
 
 LaTeX Warning: Label `fig:teaser' multiply defined.
+
+
+LaTeX Warning: Label `fig:appendix-tat1' multiply defined.
+
+
+LaTeX Warning: Label `fig:appendix-tat2' multiply defined.
+
+
+LaTeX Warning: Label `fig:appendix-tat1' multiply defined.
+
+
+LaTeX Warning: Label `fig:appendix-tat2' multiply defined.
 
 
 LaTeX Warning: Label `fig:full-comp' multiply defined.
@@ -2049,11 +2061,49 @@ input line 300.
 
 ]
 Appendix A.
-) (./Chapters/Appendix-TAT.tex [119] [120
+<Chapters/appendix-figs/face.pdf, id=3109, 741.77126pt x 1225.57875pt>
+File: Chapters/appendix-figs/face.pdf Graphic file (type pdf)
+<use Chapters/appendix-figs/face.pdf>
+Package pdftex.def Info: Chapters/appendix-figs/face.pdf  used on input line 9.
+
+(pdftex.def)             Requested size: 409.71692pt x 676.95033pt.
+
+LaTeX Warning: Float too large for page by 10.04814pt on input line 13.
+
+<Chapters/appendix-figs/room.pdf, id=3110, 741.77126pt x 1225.57875pt>
+File: Chapters/appendix-figs/room.pdf Graphic file (type pdf)
+<use Chapters/appendix-figs/room.pdf>
+Package pdftex.def Info: Chapters/appendix-figs/room.pdf  used on input line 20
+.
+(pdftex.def)             Requested size: 409.71692pt x 676.95033pt.
+
+LaTeX Warning: Float too large for page by 10.04814pt on input line 24.
+
+<Chapters/appendix-figs/material.pdf, id=3111, 741.77126pt x 1225.57875pt>
+File: Chapters/appendix-figs/material.pdf Graphic file (type pdf)
+<use Chapters/appendix-figs/material.pdf>
+Package pdftex.def Info: Chapters/appendix-figs/material.pdf  used on input lin
+e 31.
+(pdftex.def)             Requested size: 409.71692pt x 676.95033pt.
+
+LaTeX Warning: Float too large for page by 10.04814pt on input line 35.
+
+<Chapters/appendix-figs/landscape.pdf, id=3112, 741.77126pt x 1225.57875pt>
+File: Chapters/appendix-figs/landscape.pdf Graphic file (type pdf)
+<use Chapters/appendix-figs/landscape.pdf>
+Package pdftex.def Info: Chapters/appendix-figs/landscape.pdf  used on input li
+ne 42.
+(pdftex.def)             Requested size: 409.71692pt x 676.95033pt.
+
+LaTeX Warning: Float too large for page by 10.04814pt on input line 46.
+
+) (./Chapters/Appendix-TAT.tex [119] [120 <./Chapters/appendix-figs/face.pdf>]
+[121 <./Chapters/appendix-figs/room.pdf>] [122 <./Chapters/appendix-figs/materi
+al.pdf>] [123 <./Chapters/appendix-figs/landscape.pdf>] [124
 
 ]
 Appendix B.
-<Chapters/appendix-figs/TAT.pdf, id=3117, 750.805pt x 1955.305pt>
+<Chapters/appendix-figs/TAT.pdf, id=3667, 750.805pt x 1955.305pt>
 File: Chapters/appendix-figs/TAT.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/TAT.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/TAT.pdf  used on input line 9.
@@ -2066,10 +2116,10 @@ Package pdftex.def Info: Chapters/appendix-figs/TAT.pdf  used on input line 20.
 
 LaTeX Warning: Float too large for page by 25.79109pt on input line 24.
 
-) (./Chapters/Appendix-HyperBRDF.tex [121 <./Chapters/appendix-figs/TAT.pdf>]
-[122]
+) (./Chapters/Appendix-HyperBRDF.tex [125 <./Chapters/appendix-figs/TAT.pdf>]
+[126]
 Appendix C.
-<Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf, id=3486, 1347.032
+<Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf, id=4035, 1347.032
 5pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf Graphic file 
 (type pdf)
@@ -2077,16 +2127,16 @@ File: Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf Graphic file
 Package pdftex.def Info: Chapters/hyperbrdf-figs/qualitative_comp_40_all_sample
 s.pdf  used on input line 34.
 (pdftex.def)             Requested size: 300.46277pt x 543.37831pt.
-<Chapters/hyperbrdf-figs/vbar.png, id=3487, 57.816pt x 320.1561pt>
+<Chapters/hyperbrdf-figs/vbar.png, id=4036, 57.816pt x 320.1561pt>
 File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/vbar.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 3
 5.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-[123
+[127
 
 ]
-<Chapters/hyperbrdf-figs/supp_40.pdf, id=3492, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_40.pdf, id=4042, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_40.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_40.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_40.pdf  used on input lin
@@ -2097,7 +2147,7 @@ File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 5
 3.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/supp_160.pdf, id=3493, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_160.pdf, id=4043, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_160.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_160.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_160.pdf  used on input li
@@ -2108,7 +2158,7 @@ File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 6
 6.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/supp_400.pdf, id=3494, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_400.pdf, id=4044, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_400.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_400.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_400.pdf  used on input li
@@ -2119,7 +2169,7 @@ File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 7
 9.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/supp_2000.pdf, id=3495, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_2000.pdf, id=4045, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_2000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_2000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_2000.pdf  used on input l
@@ -2130,7 +2180,7 @@ File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 9
 2.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/hyperbrdf-figs/supp_4000.pdf, id=3496, 1105.12875pt x 2436.10126pt>
+<Chapters/hyperbrdf-figs/supp_4000.pdf, id=4046, 1105.12875pt x 2436.10126pt>
 File: Chapters/hyperbrdf-figs/supp_4000.pdf Graphic file (type pdf)
 <use Chapters/hyperbrdf-figs/supp_4000.pdf>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/supp_4000.pdf  used on input l
@@ -2141,14 +2191,14 @@ File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 04.
 (pdftex.def)             Requested size: 9.10683pt x 50.42485pt.
-<Chapters/appendix-figs/Compression.pdf, id=3497, 1137.24875pt x 12120.28125pt>
+<Chapters/appendix-figs/Compression.pdf, id=4047, 1137.24875pt x 12120.28125pt>
 
 File: Chapters/appendix-figs/Compression.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/Compression.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/Compression.pdf  used on input 
 line 114.
 (pdftex.def)             Requested size: 386.96027pt x 4123.98523pt.
- [124]
+ [128]
 File: Chapters/appendix-figs/Compression.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/Compression.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/Compression.pdf  used on input 
@@ -2159,12 +2209,12 @@ File: Chapters/appendix-figs/Compression.pdf Graphic file (type pdf)
 Package pdftex.def Info: Chapters/appendix-figs/Compression.pdf  used on input 
 line 134.
 (pdftex.def)             Requested size: 386.96027pt x 4123.98523pt.
-) [125 <./Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf> <./Chapt
-ers/hyperbrdf-figs/vbar.png>] [126 <./Chapters/hyperbrdf-figs/supp_40.pdf>] [12
-7 <./Chapters/hyperbrdf-figs/supp_160.pdf>] [128 <./Chapters/hyperbrdf-figs/sup
-p_400.pdf>] [129 <./Chapters/hyperbrdf-figs/supp_2000.pdf>] [130 <./Chapters/hy
-perbrdf-figs/supp_4000.pdf>] [131 <./Chapters/appendix-figs/Compression.pdf>] [
-132] [133] [134
+) [129 <./Chapters/hyperbrdf-figs/qualitative_comp_40_all_samples.pdf> <./Chapt
+ers/hyperbrdf-figs/vbar.png>] [130 <./Chapters/hyperbrdf-figs/supp_40.pdf>] [13
+1 <./Chapters/hyperbrdf-figs/supp_160.pdf>] [132 <./Chapters/hyperbrdf-figs/sup
+p_400.pdf>] [133 <./Chapters/hyperbrdf-figs/supp_2000.pdf>] [134 <./Chapters/hy
+perbrdf-figs/supp_4000.pdf>] [135 <./Chapters/appendix-figs/Compression.pdf>] [
+136] [137] [138
 
 ]
 No file thesis.ind.
@@ -2187,10 +2237,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 07E7CB1F2C7126CA6AF40A382F68CA14;14374.
  ) 
 Here is how much of TeX's memory you used:
- 26882 strings out of 474116
- 460988 string characters out of 5743683
+ 26919 strings out of 474116
+ 462325 string characters out of 5743683
  1949187 words of memory out of 5000000
- 47912 multiletter control sequences out of 15000+600000
+ 47941 multiletter control sequences out of 15000+600000
  586003 words of font info for 249 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,16n,131p,2400b,825s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2237,10 +2287,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (134 pages, 331395306 bytes).
+Output written on thesis.pdf (138 pages, 336267302 bytes).
 PDF statistics:
- 7890 PDF objects out of 8907 (max. 8388607)
- 4444 compressed objects within 45 object streams
- 518 named destinations out of 1000 (max. 500000)
- 55876 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 8440 PDF objects out of 8907 (max. 8388607)
+ 4732 compressed objects within 48 object streams
+ 526 named destinations out of 1000 (max. 500000)
+ 55896 words of extra memory for PDF output out of 61914 (max. 10000000)
 
