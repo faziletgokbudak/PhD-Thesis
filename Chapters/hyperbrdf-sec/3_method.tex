@@ -32,14 +32,14 @@ Figure~\ref{fig:mainfig} shows the diagram of the hypernetwork model~\cite{sitzm
 and 3) a neural field controlled by the decoder that represents the BRDFs of the material, which I refer to as a hyponet, following the convention of prior work~\cite{sitzmann2020metasdf}.
 
 
-\subsubsection{Set Encoder} %add number of layers
+\subsubsection{Set encoder} %add number of layers
 
 The set encoder takes as input an arbitrary set of samples, $n=1..N$, taken from a BRDF measurement. Each measurement consists of directional coordinates ${H_n, D_n}$, given in the Rusinkiewicz parameterization~\cite{rusinkiewicz1998new}, and their corresponding BRDF values $f_r(H_n,D_n)$. The set encoder is composed of four fully-connected layers with two hidden layers of feature size 128 for each. The input is the concatenation of BRDF values $(N, 3)$ and coordinates $(N, 6)$. The activation function applied after each layer is ReLU. Each sample is encoded into a 40-dimensional embedding, and the sample set is reduced to a single embedding by applying a symmetric operation (averaging).
 % \FZ{Permutation invariant operations are common in point set networks. Consider referring to the literature to motivate our design over alternatives.}
 The use of a set encoder, which is commonly adopted in point set networks \cite{zaheer2017deepsets}, ensures permutation invariance and provides a high degree of flexibility in terms of the input, enabling the encoding of BRDFs with an arbitrary number of data-points, irregularly sampled, and in no pre-defined order.
 
 
-\subsubsection{Hypernetwork Decoder and Hyponet} %add number of layers and type
+\subsubsection{Hypernetwork decoder and hyponet} %add number of layers and type
 The hypernetwork decoder converts the embeddings from the set encoder into the weights of the hyponet that represents the BRDFs of a single material. The hypernetwork decoder is composed of 10 blocks of a fully-connected neural network with three layers. Each block outputs the corresponding weights and biases of hyponet. The hyponet consists of five fully-connected layers with input layer of size 6 for coordinates, three hidden layers of size 60 for each, output layer of size 3 for BRDF values. The neural representation of materials, hyponet, follows the structure of NBRDF~\cite{sztrajman2021neural}, but replaces the exponential activation in the last layer with a ReLU activation due to BRDF properties ($\rho \ge 0$). This network provides a continuous representation of a BRDF, and has been shown to provide state-of-the-art reconstructions of measured BRDFs, with performances competitive with the fastest analytic BRDF models.
 
 

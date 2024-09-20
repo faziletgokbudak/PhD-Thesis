@@ -1,7 +1,7 @@
 \section{Methodology}
 I first fine-tune two pre-trained models,  a stable diffusion model with the v1.5 checkpoint weights \cite{rombach2022high} and ControlNet \cite{zhang2023adding} on the Transient Attribute Dataset \cite{laffont2014transient}. 
 
-\subsection{Transient Attribute Dataset} 
+\subsection{Transient attribute dataset} 
 
 The dataset consists of  8571 images captured from 101 webcams, all annotated with 40 attribute labels. In order to capture static viewpoints over long periods, the authors choose a group of outdoor webcams from the following existing sources: the Archive of Many Outdoor Scenes \cite{jacobs2007consistent} and the Webcam Clip Art Dataset \cite{lalonde2009webcam}. The dataset includes images of scenes with large variations, ranging from  mountainous views to urban areas with resolutions varying between $640 \times 360$ and $4000 \times 3000$. Images captured from the same webcam are also manually aligned to a reference frame with a warping method.
 \paragraph{Attribute labels.} are selected with crowdsourcing from an initial list of 92 scene attributes. In the a crowdsourced experiment on Amazon Mechanical Turk, the authors observe that some properties rarely occur or do not vary across scenes, while weather-, lighting-, or emotion-related properties can change dramatically across the images of the same scene. This leads  to a reduced number of attributes (40) in five categories (lighting, weather, seasons, subjective impressions, additional attributes).
@@ -12,7 +12,7 @@ The attributes are as follows: \textit{dirty, daylight, night, sunrise sunset, d
 
 Each image is later annotated with the corresponding attributes by the workers on Amazon Mechanical Turk. As attributes lie on a continuous spectrum, the workers are asked to answer "totally / a little / not at all" to the question "how much each image exhibits this attribute". These answers are later assigned to label values 1 / 0.5 / 0, and aggregated scores ranging from 0 (attribute not present) to 1 (attribute present) are estimated with a two-stage estimator. More details about the workers' performance and the estimation approach can be found in Section 3.2 in the main paper \cite{laffont2014transient}.
 
-\subsection{Transient Attribute Transfer}
+\subsection{Transient attribute transfer}
 \paragraph{Fine-tuning.} Following their convention for the attributes list, I select the annotations with scores$ > 0.8$ to generate the associated text prompts of the images. In cases where images have multiple annotations with high scores, I merge them with a comma split. For example, if an image has high scores for both the 'sunny' and 'daylight' annotations, then the text prompt is 'daylight, sunny'. I fine-tune the models with  8571 images conditioned with the text prompts (attribute labels). For the fine-tuning of the models, I reform the dataset following the instructions given in the models' official GitHub repository. I only fine-tune the U-net parameters, freezing the parameters of all other components (encoders and decoders). 
 \TODO{GPU info and how long you trained}
 

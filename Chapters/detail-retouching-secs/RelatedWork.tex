@@ -1,8 +1,8 @@
-\section{Related Work}
+\section{Related work}
 
 Photo retouching has been explored in image processing and computer vision communities under different domains, such as photo enhancement and image-to-image translation. Below, we first discuss recent methods on photo enhancement and then image-to-image map definitions with the main focus on learning-based methods.
 
-\subsection{Digital Photo Enhancement}
+\subsection{Digital photo enhancement}
 % \myworries{Check Rafals' paper -- is it global tone mapping, where to put it in the related work}
 \paragraph{Global image enhancement.} Colour and tone transfer has been considered a very effective technique to improve the perceptual quality of photos with pre-defined rules or examples \cite{Faridul14ASurvey, mustafa2022distilling}. 
 
@@ -21,7 +21,7 @@ Local color and tone adjustments might still be insufficient to capture intricat
 To have more flexibility and control over the rendering process, methods based on image signal processors (ISP)s have been proposed to enhance photos. In both \cite{tseng2019hyperparameter, yu2021reconfigisp}, hyperparameters of an ISP are optimized. Different from \cite{tseng2019hyperparameter}, which only applies to a fixed pipeline, \citeauthor{yu2021reconfigisp} \cite{yu2021reconfigisp} can explore different ISP architectures. Furthermore, \citeauthor{tseng2022neural} \cite{tseng2022neural} model a commercial raw processing pipeline with a series of neural networks to render sRGB images from raw inputs. As we assume example and input images to be processed RGB images rather than raw data, I refrain from comparing our method with such ISP-based methods.
 
 
-\subsection{Defining Maps between Images}
+\subsection{Defining maps between images}
 
 \paragraph{Unsupervised methods.} Some learning-based techniques only require one or more examples of retouched photos without their before examples to learn the transfer. Such unsupervised methods capture a certain style by decomposing images into a reflection map and an illumination map~\cite{ma2021retinexgan},
 extracting and recomposing band representations of training images~\cite{yang2020fidelity}, regularizing unpaired training using information extracted from the input~\cite{9334429}, segmenting the image into semantic regions~\cite{Liu16Makeup}, adaptive image regions~\cite{Frigo16Split}, learning semantic and global features~\cite{Chen18Deep}, progressively translating image from coarse to fine via pyramids of generative models \cite{lin2020tuigan}, or utilizing artistic principles and pre-defined filters~\cite{Zhang13Style,Hu18Exposure}. These methods transfer pre-defined elements of the desired style, or global color and tone. Defining the desired style and the content of the input image that is to remain is challenging. Hence, these methods typically assume prior knowledge of the type of desired adjustments. Even then, capturing the retouching edits in details remains out of scope since these methods are mainly designed for domain transfer, working on high level features of images. % TuiGAN: compare with our work, discuss how bady they perform in details although they work as single-shot --
@@ -34,7 +34,7 @@ For a conceivable representation, many supervised transfer methods require a lar
 
 Convolutional neural networks (CNNs) are the de-facto model for image processing with supervised learning methods. While CNNs present state-of-the-art results in computer vision tasks, they are not required \cite{tolstikhin2021mlp}. MLP-based architectures have recently gained popularity in image classification and image-to-image translation. \citeauthor{cazenavette2021mixergan} \cite{cazenavette2021mixergan} propose the MLP-Mixer architecture that only uses simple MLP blocks to learn image classification. \citeauthor{cazenavette2021mixergan} \cite{cazenavette2021mixergan} also show an application of an MLP-based architecture for image synthesis. They adapt the MLP-Mixer architecture \cite{tolstikhin2021mlp} to perform unpaired image-to-image translation. The fact that MLP-based architectures attain competitive results in challenging vision tasks motivated me to explore the use of an MLP block as an alternative to CNNs in the context of photo retouching.
 
-\section{Overview and Motivations}
+\section{Overview and motivations}
 \label{chap:motivations}
 
 Given a pair of example images $X$ and $Y$, the aim is to learn a map $M$ such that $Y = M(X)$. The learned map can then be applied to a new input image $I$ to obtain the retouched output $O = M(I)$. 

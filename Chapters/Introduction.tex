@@ -20,7 +20,7 @@ Consequently, machine learning techniques have revolutionised appearance manipul
 
 This dissertation studies appearance in a broader aspect, going beyond the 2D image representation of appearance and discussing its physics-based meaning in real-world 3D scenes. Therefore, I first begin with a background on rendering, providing essential information about the display of an image, 3D scene components, appearance representations and the rendering equation, bridging the appearance in a rendered image to reflectance and illumination in the 3D scene. I also provide details about the learning-based techniques I have deployed, starting with the basics of machine learning. Appearance in a 2D image involves low-level features that usually focus on pixel-level details with basic and simple visual elements and high-level features that represent more abstract, semantic information about the image. 
 
-\subsection{One-shot Detail Retouching}
+\subsection{One-shot detail retouching}
 First, I introduce a machine learning framework designed to manipulate such low-level features, including edge, corners, and textures, learned from only one example \textit{before - after} pair. The framework can transfer the desired styles embodied in high-frequency components, while remaining generalisable across faces under different lighting conditions or with different skin tones. Working on the luminance channel, it utilises multi-spectral image decomposition, a Laplacian pyramid, to maintain control over high-frequency components at different scales. The weight assignment to image patches through a multilayer perceptron also allows similar patches to lie on the same transform space. This allows the model to be used as an edge-aware neural image processing filter, where the texture, such as skin, is smoothed out, and the edges are preserved. The transformations are defined as learnable matrices, where the matrices are multiplied with patches using the dot product. This mapping representation can be considered as a general form of convolution, in which the entries are learned during training. One-shot detail retouching can accurately transform the fine details into a desired form defined by the style in the example pair. Its applications can be most useful when details convey crucial information and consequently dominate the entire scene, such as in close-up shots (Figures \ref{fig:close-up1} and \ref{fig:close-up2}). 
 
 
@@ -52,7 +52,7 @@ First, I introduce a machine learning framework designed to manipulate such low-
 %[Andrew Fusek Peters].
 
 %\newpage
-\subsection{Text-guided Transient Attribute Transfer} 
+\subsection{Text-guided transient attribute transfer} 
 
 \begin{figure}[ht]
   \centering
@@ -81,7 +81,7 @@ Lastly, I introduce HyperBRDF, a novel neural material appearance representation
 
 
 %\section{Contributions}
-\section{Contributions and Publications}
+\section{Contributions and publications}
 
 The following works are produced throughout my doctoral studies and contributed to main chapters of this dissertation:
 

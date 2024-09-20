@@ -63,7 +63,7 @@ To normalize the weights, I choose the last activation function to be Softmax, w
 \label{sec:results}
 
 
-\subsection{Ablation Studies}\label{ablation}
+\subsection{Ablation studies}\label{ablation}
 The success of the learned mappings relies on two key components: patch-adaptive retouching and transformation blending. I thus conduct experiments to illustrate the significance of these.
 
 %Ifirst investigate the effect of the number of transformation matrices, $K$. 
@@ -102,7 +102,7 @@ As the complexity of a retouching style depends on multiple factors, such as art
 \label{fig:weight-vis}
 \end{figure}
 
-\subsection{Qualitative Results}
+\subsection{Qualitative results}
 I tested the proposed technique on a diverse range of before-after pairs, including face images from the \textbf{FFHQ} dataset \cite{karras2019style}.I focus on human portraits and face retouching in the experiments as they are arguably the most common and prioritised types of photos for retouching.I also illustrate that the technique provides visually pleasing results in different types of images, such as materials or rooms, and accurately captures image processing filters.
 
 \begin{figure}[th] % "[t!]" placement specifier just for this example
@@ -191,7 +191,7 @@ Overall, our method can outperform all architectures for each considered filter 
 Figures \ref{fig:QualitativeComp_BF}, \ref{fig:QualitativeComp_LLF_a2}, and \ref{fig:QualitativeComp_LLF_a05} further demonstrates that our technique can preserve and edit intricate details, such as text, texture, or leaves, more effectively without causing much distortion. The nonlinear bilateral filter and Local Laplacian filters pose an additional challenge, especially in a one-shot setting. However, the proposed approach can still perform edge-aware filtering with higher accuracy than the baselines. Note that these examples are selected from the results I obtained for the quantitative comparison (Table \ref{tablecomparison}), where I only used the luminance channels and downsampled the images to $256 \times 256$. 
 
 
-\subsection{Limitations and Future Work}
+\subsection{Limitations and future work}
 \begin{figure}[th] % "[t!]" placement specifier just for this example
 	\centering
 	\includegraphics[width=0.8\columnwidth]{Chapters/detail-retouching-figs/Limitations.pdf}

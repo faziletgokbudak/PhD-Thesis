@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  20 SEP 2024 15:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  20 SEP 2024 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2206,7 +2206,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DB168C03354404A0D195149F2AB8F0F8;14374.
+(rerunfilecheck)             Checksum: 8D8670D4E18D266A907AFC8D1D4F1D0F;14245.
  ) 
 Here is how much of TeX's memory you used:
  26888 strings out of 474116
@@ -2259,7 +2259,7 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (138 pages, 331750666 bytes).
+Output written on thesis.pdf (138 pages, 331750542 bytes).
 PDF statistics:
  8221 PDF objects out of 8907 (max. 8388607)
  4616 compressed objects within 47 object streams
