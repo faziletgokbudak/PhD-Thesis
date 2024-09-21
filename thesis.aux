@@ -153,8 +153,8 @@
 \citation{moran2020deeplpf}
 \citation{Gharbi17Deep}
 \citation{yan2016automatic}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The one-shot technique automatically transfers retouching edits to new images by learning the desired edits from one example \textit  {before-after} pair (insets). The transferred edits accurately capture intricate details such as wrinkles, dark spots, strands of hair, or eyelashes, as shown in the input (top) and retouched (bottom) pairs. Images from [Jenavieve (top-left), Logan ProPro (top-left, inset), Marissa Oosterlee (top-middle). (CC-BY)].}}{50}{figure.caption.38}\protected@file@percent }
-\newlabel{fig:teaser}{{3.1}{50}{The one-shot technique automatically transfers retouching edits to new images by learning the desired edits from one example \textit {before-after} pair (insets). The transferred edits accurately capture intricate details such as wrinkles, dark spots, strands of hair, or eyelashes, as shown in the input (top) and retouched (bottom) pairs. Images from [Jenavieve (top-left), Logan ProPro (top-left, inset), Marissa Oosterlee (top-middle). (CC-BY)]}{figure.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The one-shot technique automatically transfers retouching edits to new images by learning the desired edits from one example \textit  {before-after} pair (insets). The transferred edits accurately shape intricate details such as wrinkles, dark spots, strands of hair, or eyelashes, as shown in the input (top) and retouched (bottom) pairs. Images from [Jenavieve (top-left), Logan ProPro (top-left, inset), Marissa Oosterlee (top-middle). (CC-BY)].}}{50}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:teaser}{{3.1}{50}{The one-shot technique automatically transfers retouching edits to new images by learning the desired edits from one example \textit {before-after} pair (insets). The transferred edits accurately shape intricate details such as wrinkles, dark spots, strands of hair, or eyelashes, as shown in the input (top) and retouched (bottom) pairs. Images from [Jenavieve (top-left), Logan ProPro (top-left, inset), Marissa Oosterlee (top-middle). (CC-BY)]}{figure.caption.38}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{50}{section.3.1}\protected@file@percent }
 \newlabel{sec:introduction}{{3.1}{50}{Introduction}{section.3.1}{}}
 \citation{Faridul14ASurvey,mustafa2022distilling}
@@ -191,7 +191,11 @@
 \citation{HaCohen11Nonrigid}
 \citation{Shih14Style}
 \citation{Shih14Style}
-\citation{tseng2019hyperparameter,yu2021reconfigisp}
+\citation{tseng2019hyperparameter}
+\citation{tseng2019hyperparameter}
+\citation{yu2021reconfigisp}
+\citation{yu2021reconfigisp}
+\citation{tseng2019hyperparameter}
 \citation{tseng2019hyperparameter}
 \citation{yu2021reconfigisp}
 \citation{yu2021reconfigisp}
@@ -222,25 +226,26 @@
 \@writefile{toc}{\contentsline {paragraph}{Supervised methods.}{54}{section*.43}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Overview and motivations}{54}{section.3.3}\protected@file@percent }
 \newlabel{chap:motivations}{{3.3}{54}{Overview and motivations}{section.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Frequency decomposition allows artists greater control over the different frequency components of an image. In this context, the layer shown in the top-left corner is obtained through high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022].}}{55}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:PS-high-pass}{{3.2}{55}{Frequency decomposition allows artists greater control over the different frequency components of an image. In this context, the layer shown in the top-left corner is obtained through high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022]}{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Frequency decomposition allows artists to have a better control over the different frequency components. Here, the layer in the top-left corner is obtained through high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022].}}{55}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:PS-high-pass}{{3.2}{55}{Frequency decomposition allows artists to have a better control over the different frequency components. Here, the layer in the top-left corner is obtained through high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022]}{figure.caption.44}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Local filters, such as brushes, help smooth the skin by removing undesired pores from the face. However, it is a tedious task for artists, as it requires them to address each visible pore individually.}}{56}{figure.caption.45}\protected@file@percent }
 \newlabel{fig:PS-brush}{{3.3}{56}{Local filters, such as brushes, help smooth the skin by removing undesired pores from the face. However, it is a tedious task for artists, as it requires them to address each visible pore individually}{figure.caption.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Artists typically work on separate layers, adjusting various properties, such as texture, colour, and so on. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers.}}{57}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:PS-all-together}{{3.4}{57}{Artists typically work on separate layers, adjusting various properties, such as texture, colour, and so on. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers}{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf  {x}_i$, $\mathbf  {y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}}{58}{figure.caption.47}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}One-shot retouching}{59}{section.3.4}\protected@file@percent }
-\newlabel{sec:Methodology}{{3.4}{59}{One-shot retouching}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Frequency decomposition}{59}{subsection.3.4.1}\protected@file@percent }
-\newlabel{sec:thePatchMap}{{3.4.1}{59}{Frequency decomposition}{subsection.3.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Transformation blending}{59}{subsection.3.4.2}\protected@file@percent }
-\newlabel{sec:Blending}{{3.4.2}{59}{Transformation blending}{subsection.3.4.2}{}}
-\newlabel{eq:weightedSum}{{3.2}{59}{Transformation blending}{equation.3.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Artists typically work on separate layers, adjusting various properties, such as texture, colour, and so on. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers.}}{56}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:PS-all-together}{{3.4}{56}{Artists typically work on separate layers, adjusting various properties, such as texture, colour, and so on. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers}{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}One-shot retouching}{57}{section.3.4}\protected@file@percent }
+\newlabel{sec:Methodology}{{3.4}{57}{One-shot retouching}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Frequency decomposition}{57}{subsection.3.4.1}\protected@file@percent }
+\newlabel{sec:thePatchMap}{{3.4.1}{57}{Frequency decomposition}{subsection.3.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Transformation blending}{57}{subsection.3.4.2}\protected@file@percent }
+\newlabel{sec:Blending}{{3.4.2}{57}{Transformation blending}{subsection.3.4.2}{}}
+\newlabel{eq:weightedSum}{{3.2}{58}{Transformation blending}{equation.3.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Retouching an input image}{58}{subsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Implementation}{58}{subsection.3.4.4}\protected@file@percent }
+\newlabel{sec:Implementation}{{3.4.4}{58}{Implementation}{subsection.3.4.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Patch size and stride.}{58}{section*.47}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf  {x}_i$, $\mathbf  {y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}}{59}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:modelT}{{3.5}{59}{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf {x}_i$, $\mathbf {y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair}{figure.caption.48}{}}
 \citation{Boyadzhiev15Band}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Retouching an input image}{60}{subsection.3.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Implementation}{60}{subsection.3.4.4}\protected@file@percent }
-\newlabel{sec:Implementation}{{3.4.4}{60}{Implementation}{subsection.3.4.4}{}}
-\@writefile{toc}{\contentsline {paragraph}{Patch size and stride.}{60}{section*.48}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Detail and colour modifications.}{60}{section*.49}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Evaluation metrics.}{60}{section*.50}\protected@file@percent }
 \newlabel{train_det}{{3.4.4}{60}{Training details}{section*.51}{}}

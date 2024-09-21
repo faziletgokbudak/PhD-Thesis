@@ -39,12 +39,12 @@
 \contentsline {paragraph}{Unsupervised methods.}{53}{section*.42}%
 \contentsline {paragraph}{Supervised methods.}{54}{section*.43}%
 \contentsline {section}{\numberline {3.3}Overview and motivations}{54}{section.3.3}%
-\contentsline {section}{\numberline {3.4}One-shot retouching}{59}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Frequency decomposition}{59}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Transformation blending}{59}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Retouching an input image}{60}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Implementation}{60}{subsection.3.4.4}%
-\contentsline {paragraph}{Patch size and stride.}{60}{section*.48}%
+\contentsline {section}{\numberline {3.4}One-shot retouching}{57}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Frequency decomposition}{57}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Transformation blending}{57}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Retouching an input image}{58}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Implementation}{58}{subsection.3.4.4}%
+\contentsline {paragraph}{Patch size and stride.}{58}{section*.47}%
 \contentsline {paragraph}{Detail and colour modifications.}{60}{section*.49}%
 \contentsline {paragraph}{Evaluation metrics.}{60}{section*.50}%
 \contentsline {paragraph}{Training details.}{60}{section*.51}%

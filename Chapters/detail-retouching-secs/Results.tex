@@ -3,6 +3,19 @@
 \label{sec:Implementation}
 
  \paragraph{Patch size and stride.} In order to capture each frequency band at the right level of detail, I do not upsample the images $L_l(X)$ and use a small $3 \times 3$ patch size (with stride $1$). I experimented with larger patch sizes; however, this turned out to be counterproductive for the level of detail targeted, as details are blurred in larger patches. They also led to overfitting and were, in general, harder to optimise for. I used a stride of $1$, and hence patches overlap on the image plane. The overlapping patches are averaged while reconstructing the image.
+ 
+ \begin{landscape}\centering
+\vspace*{\fill}
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=1.5\textwidth]{Chapters/detail-retouching-figs/MainFig.pdf}
+  \caption{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf{x}_i$, $\mathbf{y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}
+ \label{fig:modelT}
+
+\end{figure}
+\vfill
+\end{landscape}
+
 
 \paragraph{Detail and colour modifications.} This work aims to capture intricate details present in highly detailed retouches and a wide range of image-processing operators. Based on the observation that various operators can edit materials in the image space using the luminance component~\cite{Boyadzhiev15Band}, I focus on learning changes in luminance while preserving the input chrominance channels.
 
@@ -59,6 +72,7 @@ To normalise the weights, I choose Softmax as the last activation function, whil
         
 \end{algorithm}
 
+\newpage
 \section{Results}
 \label{sec:results}
 
