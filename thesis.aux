@@ -215,4 +215,508 @@
 \citation{visual_attribute}
 \citation{visual_attribute}
 \citation{Hertzmann01Image}
-\citation{kim2021representat
+\citation{kim2021representative,wang2019underexposed}
+\citation{10.1145/2790296}
+\citation{tolstikhin2021mlp}
+\citation{cazenavette2021mixergan}
+\citation{cazenavette2021mixergan}
+\citation{cazenavette2021mixergan}
+\citation{cazenavette2021mixergan}
+\citation{tolstikhin2021mlp}
+\@writefile{toc}{\contentsline {paragraph}{Supervised methods.}{54}{section*.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Overview and motivations}{54}{section.3.3}\protected@file@percent }
+\newlabel{chap:motivations}{{3.3}{54}{Overview and motivations}{section.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Frequency decomposition allows artists greater control over the different frequency components of an image. In this context, the layer shown in the top-left corner is obtained through high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022].}}{55}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:PS-high-pass}{{3.2}{55}{Frequency decomposition allows artists greater control over the different frequency components of an image. In this context, the layer shown in the top-left corner is obtained through high-pass filtering of the portrait in the background. Screenshots from [Eustace Kanyanda, 2022]}{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Local filters, such as brushes, help smooth the skin by removing undesired pores from the face. However, it is a tedious task for artists, as it requires them to address each visible pore individually.}}{56}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:PS-brush}{{3.3}{56}{Local filters, such as brushes, help smooth the skin by removing undesired pores from the face. However, it is a tedious task for artists, as it requires them to address each visible pore individually}{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Artists typically work on separate layers, adjusting various properties, such as texture, colour, and so on. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers.}}{57}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:PS-all-together}{{3.4}{57}{Artists typically work on separate layers, adjusting various properties, such as texture, colour, and so on. Later, these layers are blended together with their corresponding "opacity" values, shown in the box above the layers}{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf  {x}_i$, $\mathbf  {y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}}{58}{figure.caption.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}One-shot retouching}{59}{section.3.4}\protected@file@percent }
+\newlabel{sec:Methodology}{{3.4}{59}{One-shot retouching}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Frequency decomposition}{59}{subsection.3.4.1}\protected@file@percent }
+\newlabel{sec:thePatchMap}{{3.4.1}{59}{Frequency decomposition}{subsection.3.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Transformation blending}{59}{subsection.3.4.2}\protected@file@percent }
+\newlabel{sec:Blending}{{3.4.2}{59}{Transformation blending}{subsection.3.4.2}{}}
+\newlabel{eq:weightedSum}{{3.2}{59}{Transformation blending}{equation.3.4.2}{}}
+\citation{Boyadzhiev15Band}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Retouching an input image}{60}{subsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Implementation}{60}{subsection.3.4.4}\protected@file@percent }
+\newlabel{sec:Implementation}{{3.4.4}{60}{Implementation}{subsection.3.4.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Patch size and stride.}{60}{section*.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Detail and colour modifications.}{60}{section*.49}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Evaluation metrics.}{60}{section*.50}\protected@file@percent }
+\newlabel{train_det}{{3.4.4}{60}{Training details}{section*.51}{}}
+\@writefile{toc}{\contentsline {paragraph}{Training details.}{60}{section*.51}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces One-shot Detail Retouching}}{61}{algocf.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Results}{62}{section.3.5}\protected@file@percent }
+\newlabel{sec:results}{{3.5}{62}{Results}{section.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Ablation studies}{62}{subsection.3.5.1}\protected@file@percent }
+\newlabel{ablation}{{3.5.1}{62}{Ablation studies}{subsection.3.5.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Transformation Matrices.}{62}{section*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Patch-adaptive Transformation Blending.}{62}{section*.55}\protected@file@percent }
+\citation{karras2019style}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces The greater the complexity of the learned algorithm, the more transformation matrices the technique requires to accurately capture the effects on local regions. While $K=1$ can be sufficient for the model to capture unsharp masking, more matrices are required to accurately represent bilateral filtering.}}{63}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:ablation_K}{{3.6}{63}{The greater the complexity of the learned algorithm, the more transformation matrices the technique requires to accurately capture the effects on local regions. While $K=1$ can be sufficient for the model to capture unsharp masking, more matrices are required to accurately represent bilateral filtering}{figure.caption.53}{}}
+\@writefile{toc}{\contentsline {paragraph}{Weights visualisation.}{63}{section*.56}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Qualitative results}{63}{subsection.3.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces An MLP regressor cannot effectively capture local edits, leading to inaccurate retouching results, such as blurring on the skin or around the eyes.}}{64}{figure.caption.54}\protected@file@percent }
+\newlabel{fig:ablation_MLP}{{3.7}{64}{An MLP regressor cannot effectively capture local edits, leading to inaccurate retouching results, such as blurring on the skin or around the eyes}{figure.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Visualisation of the reconstructed patch-adaptive weights from the model trained with the example images in the teaser. The input to the model is displayed at the top, and each row presents the weights corresponding to the indicated Laplacian band on the left.}}{64}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:weight-vis}{{3.8}{64}{Visualisation of the reconstructed patch-adaptive weights from the model trained with the example images in the teaser. The input to the model is displayed at the top, and each row presents the weights corresponding to the indicated Laplacian band on the left}{figure.caption.57}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces The reproduced retouching style from the example pair (inset) improves skin texture without affecting fine details, such as the eyes and hair, resulting in a visually improved portrait. Moreover, the technique generalises well to faces with different lighting conditions and accurately reproduces the example retouching style.}}{65}{figure.caption.58}\protected@file@percent }
+\newlabel{fig:newdataset_ex}{{3.9}{65}{The reproduced retouching style from the example pair (inset) improves skin texture without affecting fine details, such as the eyes and hair, resulting in a visually improved portrait. Moreover, the technique generalises well to faces with different lighting conditions and accurately reproduces the example retouching style}{figure.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Material editing results on photos (left), and rendered images (right), based on the before-after pair (inset). The details, such as scratches or lines, are emphasised, and materials become shinier. Image courtesy of royalmix (top and bottom-inset), tsmdunn (bottom). (PixelSquid).}}{66}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:material_res}{{3.10}{66}{Material editing results on photos (left), and rendered images (right), based on the before-after pair (inset). The details, such as scratches or lines, are emphasised, and materials become shinier. Image courtesy of royalmix (top and bottom-inset), tsmdunn (bottom). (PixelSquid)}{figure.caption.59}{}}
+\citation{ronneberger2015u}
+\citation{shaham2021spatially}
+\citation{xu2015deep}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Our patch-adaptive technique can accurately capture the nuances between different retouching styles as given by the examples (top row).}}{67}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:retouchingstyles}{{3.11}{67}{Our patch-adaptive technique can accurately capture the nuances between different retouching styles as given by the examples (top row)}{figure.caption.60}{}}
+\citation{Bychkovsky11Learning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Comparison with the state-of-the-art}{68}{subsection.3.5.3}\protected@file@percent }
+\newlabel{sec:Comparisons}{{3.5.3}{68}{Comparison with the state-of-the-art}{subsection.3.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Quantitative performance comparison for the reproduction of various image processing filters. Average PSNR and SSIM values are computed over 182 images of different types, including faces, landscapes, materials, and rooms. Qualitative results can be found in the supplementary material. We highlight the \colorbox {blue!25}{best PSNR} and \colorbox {orange!25}{best SSIM} results.}}{68}{table.caption.61}\protected@file@percent }
+\newlabel{tablecomparison}{{3.1}{68}{Quantitative performance comparison for the reproduction of various image processing filters. Average PSNR and SSIM values are computed over 182 images of different types, including faces, landscapes, materials, and rooms. Qualitative results can be found in the supplementary material. We highlight the \colorbox {blue!25}{best PSNR} and \colorbox {orange!25}{best SSIM} results}{table.caption.61}{}}
+\citation{Shih14Style}
+\citation{Yan14Automatic}
+\citation{Besl92AMethod}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Limitations and future work}{69}{subsection.3.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces  The proposed technique cannot accurately handle extreme non-repeating local effects, such as tattoos (top), and situations where the example and input images have very different semantics (bottom). Image courtesy of bgaj23 (coin). (PixelSquid).}}{70}{figure.caption.62}\protected@file@percent }
+\newlabel{fig:limitations}{{3.12}{70}{The proposed technique cannot accurately handle extreme non-repeating local effects, such as tattoos (top), and situations where the example and input images have very different semantics (bottom). Image courtesy of bgaj23 (coin). (PixelSquid)}{figure.caption.62}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Summary}{70}{section.3.6}\protected@file@percent }
+\citation{rombach2022high}
+\citation{zhang2023adding}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Text-guided Transient Attribute Transfer}{71}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{zero-shot}{{4}{71}{Text-guided Transient Attribute Transfer}{chapter.4}{}}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{72}{section.4.1}\protected@file@percent }
+\newlabel{sec:zero-shot-intro}{{4.1}{72}{Introduction}{section.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Transition of the illumination throughout the day or the weather changes across seasons alter the scene appearance significantly in terms of colour, tone, texture, and style. However, main content, such as the structure, permanent objects, etc. remains unchanged. Transient attribute transfer aims to capture alterations related to such temporal effects. Images from the Transient Attribute Dataset \cite  {laffont2014transient}.}}{72}{figure.caption.63}\protected@file@percent }
+\newlabel{fig:zero-shot-teaser}{{4.1}{72}{Transition of the illumination throughout the day or the weather changes across seasons alter the scene appearance significantly in terms of colour, tone, texture, and style. However, main content, such as the structure, permanent objects, etc. remains unchanged. Transient attribute transfer aims to capture alterations related to such temporal effects. Images from the Transient Attribute Dataset \cite {laffont2014transient}}{figure.caption.63}{}}
+\citation{li2020manigan,xu2018attngan,zhang2017stackgan,zhang2018stackgan++}
+\citation{gu2022vector,ho2020denoising,nichol2021improved,ramesh2022hierarchical,rombach2022high,saharia2022photorealistic,song2020denoising,zhang2023adding}
+\citation{ding2022cogview2,esser2021taming,ramesh2021zero,yu2022scaling}
+\citation{ramesh2022hierarchical}
+\citation{ho2022imagen}
+\citation{radford2021learning}
+\citation{crowson2022vqgan,ramesh2022hierarchical}
+\citation{rombach2022high}
+\citation{schuhmann2021laion}
+\citation{zhang2023adding}
+\citation{radford2021learning}
+\citation{bar2022text2live,gal2022stylegan,kwon2022clipstyler,liu2021fusedream,patashnik2021styleclip}
+\citation{patashnik2021styleclip}
+\citation{karras2020analyzing}
+\citation{crowson2022vqgan}
+\citation{esser2021taming}
+\citation{avrahami2022blended,gal2022image,kawar2023imagic,kim2022diffusionclip,liu2023more,meng2021sdedit,nichol2021glide,ruiz2023dreambooth}
+\citation{kawar2023imagic}
+\citation{brooks2023instructpix2pix}
+\citation{rombach2022high}
+\citation{brown2020language}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Related work}{73}{section.4.2}\protected@file@percent }
+\newlabel{zero-shot-RW}{{4.2}{73}{Related work}{section.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Text-to-image synthesis}{73}{subsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Text-guided image manipulation}{73}{subsection.4.2.2}\protected@file@percent }
+\citation{couairon2022diffedit}
+\citation{cao2023masactrl}
+\citation{yang2023zero}
+\citation{couairon2022diffedit}
+\citation{dhariwal2021diffusion,song2020denoising}
+\citation{cao2023masactrl}
+\citation{yang2023zero}
+\citation{couairon2022diffedit}
+\citation{cao2023masactrl}
+\citation{yang2023zero}
+\citation{rombach2022high}
+\citation{zhang2023adding}
+\citation{laffont2014transient}
+\citation{jacobs2007consistent}
+\citation{lalonde2009webcam}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Methodology}{74}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Transient attribute dataset}{74}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Attribute labels.}{74}{section*.64}\protected@file@percent }
+\citation{laffont2014transient}
+\citation{song2020denoising}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Transient attribute transfer}{75}{subsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Fine-tuning.}{75}{section*.65}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{DDIM inversion.}{75}{section*.66}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point.}}{76}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:ddim-inversion}{{4.2}{76}{In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point}{figure.caption.67}{}}
+\@writefile{toc}{\contentsline {paragraph}{DDIM sampling.}{76}{section*.68}\protected@file@percent }
+\newlabel{eq:ddim-sample}{{4.2}{76}{DDIM sampling}{equation.4.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Experiments}{77}{section.4.4}\protected@file@percent }
+\newlabel{zero-shot-exp}{{4.4}{77}{Experiments}{section.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Fine-tuning}{77}{subsection.4.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Samples from the training examples guided with the associated text prompts. Rows shows input images, target images and the model outputs in order. The subtitles indicate the attributes guiding the training.}}{77}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:controlnet-train}{{4.3}{77}{Samples from the training examples guided with the associated text prompts. Rows shows input images, target images and the model outputs in order. The subtitles indicate the attributes guiding the training}{figure.caption.69}{}}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{brooks2023instructpix2pix}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{brooks2023instructpix2pix}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Zero-shot latent diffusion}{78}{subsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Grid search}{78}{subsection.4.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{78}{subsection.4.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Baselines.}{78}{section*.71}\protected@file@percent }
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset".}}{79}{figure.caption.70}\protected@file@percent }
+\newlabel{fig:zero-shot-grid-search}{{4.4}{79}{Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset"}{figure.caption.70}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Limitations and future work}{80}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Conclusions}{80}{section.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite  {laffont2014transient}. Additional results can be found in Section \ref {zero-shot-additional}.}}{81}{figure.caption.72}\protected@file@percent }
+\newlabel{fig:zero-shot-comparison}{{4.5}{81}{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite {laffont2014transient}. Additional results can be found in Section \ref {zero-shot-additional}}{figure.caption.72}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}HyperBRDF: Neural Generalizable Material Representation}{83}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{ch:HyperBRDF}{{5}{83}{HyperBRDF: Neural Generalizable Material Representation}{chapter.5}{}}
+\citation{ngan2005}
+\citation{dupuy2015,guarnera2016}
+\citation{nielsen2015optimal}
+\citation{sitzmann2020siren,ffn,cnf2023}
+\citation{sztrajman2021neural,cnf2023}
+\citation{rebain2022attention}
+\citation{park2019deepsdf}
+\citation{ha2017hypernetworks}
+\citation{jiang2021cotr}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{84}{section.5.1}\protected@file@percent }
+\newlabel{sec:intro}{{5.1}{84}{Introduction}{section.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and BRDF interpolation (right-most teapot). Scene courtesy of Benedikt Bitterli.}}{85}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:teaser}{{5.1}{85}{A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and BRDF interpolation (right-most teapot). Scene courtesy of Benedikt Bitterli}{figure.caption.73}{}}
+\citation{Matusik2003jul}
+\citation{dupuy2018adaptive}
+\citation{blinn77}
+\citation{cooktorrance1982}
+\citation{ward1992}
+\citation{walter2007microfacet}
+\citation{dupuy2015,ashikhmin2007,bagher2016}
+\citation{low2012}
+\citation{ngan2005,guarnera2016}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Motivation and impact}{86}{section.5.2}\protected@file@percent }
+\newlabel{sec:hyperbrdf-mot}{{5.2}{86}{Motivation and impact}{section.5.2}{}}
+\citation{matusik2003data,nielsen2015optimal,serrano2018intuitive}
+\citation{lawrence2004efficient,lawrence2006inverse}
+\citation{sun2007interactive}
+\citation{bilgili2011general,tongbuasirilai2020compact}
+\citation{bagher2016non}
+\citation{rainer2019neural,hu2020deepbrdf,sztrajman2021neural,zheng2021compact,maximov2019deep,chen2021invertible,fan2021neural,cnf2023}
+\citation{maximov2019deep}
+\citation{sztrajman2021neural}
+\citation{cnf2023}
+\citation{hu2020deepbrdf}
+\citation{zheng2021compact}
+\citation{nielsen2015optimal}
+\citation{liu2023learning}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Related work}{87}{section.5.3}\protected@file@percent }
+\newlabel{sec:relatedwork}{{5.3}{87}{Related work}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Analytic BRDF models}{87}{subsection.5.3.1}\protected@file@percent }
+\newlabel{hyperbrdf-RW}{{5.3.1}{87}{Analytic BRDF models}{subsection.5.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Regression-based BRDF estimation}{87}{subsection.5.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Deep learning for BRDF modeling.}{87}{section*.74}\protected@file@percent }
+\citation{kang2018efficient,kang2019learning,ma2021free,ma2023opensvbrdf,tunwattanapong2013acquiring}
+\citation{guo2021highlight,hui2017reflectance,deschaintre2018single,deschaintre2019flexible,martin2022materia,zhou2021adversarial,gao2019deep}
+\citation{ratzlaff2019hypergan}
+\citation{erkocc2023hyperdiffusion}
+\citation{wang2022attention,yang2023contranerf}
+\citation{nielsen2015optimal}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Efficient BRDF acquisition}{88}{subsection.5.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{88}{section*.75}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Hypernetworks and GNFs}{88}{subsection.5.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Methodology}{88}{section.5.4}\protected@file@percent }
+\citation{sztrajman2021neural}
+\citation{rusinkiewicz1998new}
+\citation{sitzmann2020siren}
+\citation{sitzmann2020metasdf}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values.}}{89}{figure.caption.76}\protected@file@percent }
+\newlabel{fig:mainfig}{{5.2}{89}{During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values}{figure.caption.76}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Pre-processing}{89}{subsection.5.4.1}\protected@file@percent }
+\newlabel{sec:pre-proc}{{5.4.1}{89}{Pre-processing}{subsection.5.4.1}{}}
+\newlabel{eq:preprocess}{{5.1}{89}{Pre-processing}{equation.5.4.1}{}}
+\citation{rusinkiewicz1998new}
+\citation{zaheer2017deepsets}
+\citation{sztrajman2021neural}
+\citation{ha2017hypernetworks}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Hypernetwork}{90}{subsection.5.4.2}\protected@file@percent }
+\newlabel{sec:hypernet}{{5.4.2}{90}{Hypernetwork}{subsection.5.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.1}Set encoder}{90}{subsubsection.5.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.2}Hypernetwork decoder and hyponet}{90}{subsubsection.5.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Training}{90}{subsection.5.4.3}\protected@file@percent }
+\newlabel{sec:traindet}{{5.4.3}{90}{Training}{subsection.5.4.3}{}}
+\citation{ngan2005experimental}
+\citation{Matusik2003jul}
+\citation{dupuy2018adaptive}
+\citation{Matusik2003jul}
+\citation{rusinkiewicz1998new}
+\newlabel{eq:loss}{{5.2}{91}{Training}{equation.5.4.2}{}}
+\newlabel{eq:Lrec}{{5.3}{91}{Training}{equation.5.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Inference:}{91}{section*.77}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Experiments}{91}{section.5.5}\protected@file@percent }
+\newlabel{sec:exp}{{5.5}{91}{Experiments}{section.5.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Datasets and baselines}{91}{subsection.5.5.1}\protected@file@percent }
+\citation{walter2007microfacet}
+\citation{sztrajman2021neural}
+\citation{nielsen2015optimal}
+\citation{dupuy2015photorealistic}
+\citation{sztrajman2021neural}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Sparse BRDF reconstruction}{92}{subsection.5.5.2}\protected@file@percent }
+\newlabel{sec:brdf_rec}{{5.5.2}{92}{Sparse BRDF reconstruction}{subsection.5.5.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.1}Qualitative comparison}{92}{subsubsection.5.5.2.1}\protected@file@percent }
+\newlabel{sec:qual_comp}{{5.5.2.1}{92}{Qualitative comparison}{subsubsection.5.5.2.1}{}}
+\citation{matusik2003data,ngan2006image}
+\citation{nielsen2015optimal}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$.}}{93}{figure.caption.78}\protected@file@percent }
+\newlabel{fig:tsne-vis-imputation}{{5.3}{93}{t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$}{figure.caption.78}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that the hypernetwork model learns for material appearance through training, it can accurately estimate the BRDFs of unseen materials and preserve the colours better than the baselines.}}{94}{figure.caption.79}\protected@file@percent }
+\newlabel{fig:imp_comp_upt}{{5.4}{94}{Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that the hypernetwork model learns for material appearance through training, it can accurately estimate the BRDFs of unseen materials and preserve the colours better than the baselines}{figure.caption.79}{}}
+\citation{chen2021invertible}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Average PSNR, Delta E (CIE 2000), SSIM, MAE, RMSE, and RAE results across different sample sizes. }}{95}{figure.caption.80}\protected@file@percent }
+\newlabel{fig:imp_plots}{{5.5}{95}{Average PSNR, Delta E (CIE 2000), SSIM, MAE, RMSE, and RAE results across different sample sizes}{figure.caption.80}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.2}Quantitative evaluation}{95}{subsubsection.5.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sparse and full reconstruction results:}{95}{table.caption.83}\protected@file@percent }
+\citation{chen2021invertible}
+\citation{chen2021invertible}
+\citation{}
+\citation{zheng2021compact}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{96}{table.caption.81}\protected@file@percent }
+\newlabel{table: ours_diff_samples}{{5.1}{96}{Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.81}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials).}}{96}{table.caption.83}\protected@file@percent }
+\newlabel{table: ours_large_samples}{{5.2}{96}{Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials)}{table.caption.83}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.3}Comparison with casual capture setups}{96}{subsubsection.5.5.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison with iBRDF \cite  {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{96}{table.caption.84}\protected@file@percent }
+\newlabel{table: oursvsibrdf}{{5.3}{96}{Comparison with iBRDF \cite {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.84}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Compression}{97}{subsection.5.5.3}\protected@file@percent }
+\newlabel{sec:compression}{{5.5.3}{97}{Compression}{subsection.5.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{97}{table.caption.85}\protected@file@percent }
+\newlabel{table: oursvsnps}{{5.4}{97}{Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.85}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Reconstruction results for BRDF compression (GT: ground truths).}}{97}{figure.caption.86}\protected@file@percent }
+\newlabel{fig:comp-fig}{{5.6}{97}{Reconstruction results for BRDF compression (GT: ground truths)}{figure.caption.86}{}}
+\citation{nielsen2015optimal}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.4}BRDF editing}{98}{subsection.5.5.4}\protected@file@percent }
+\newlabel{sec:brdf-editing}{{5.5.4}{98}{BRDF editing}{subsection.5.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces BRDF editing through linear interpolation between the embeddings of two materials.}}{98}{figure.caption.87}\protected@file@percent }
+\newlabel{fig:interpolation}{{5.7}{98}{BRDF editing through linear interpolation between the embeddings of two materials}{figure.caption.87}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.5}Ablation studies}{98}{subsection.5.5.5}\protected@file@percent }
+\newlabel{sec:abl}{{5.5.5}{98}{Ablation studies}{subsection.5.5.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.1}Latent dimension}{98}{subsubsection.5.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.2}Log relative mapping (LRM)}{98}{subsubsection.5.5.5.2}\protected@file@percent }
+\newlabel{sec:lrm}{{5.5.5.2}{98}{Log relative mapping (LRM)}{subsubsection.5.5.5.2}{}}
+\citation{ngan2005experimental}
+\citation{resources16}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.3}Cosine weighting}{99}{subsubsection.5.5.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric results over the renderings of the test set (20 MERL materials).}}{99}{table.caption.88}\protected@file@percent }
+\newlabel{table: cos_abl}{{5.5}{99}{Average metric results over the renderings of the test set (20 MERL materials)}{table.caption.88}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.4}Principal component analysis (PCA)}{99}{subsubsection.5.5.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Number of Principal Components:}{99}{section*.89}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}}{99}{table.caption.91}\protected@file@percent }
+\newlabel{table: z_abl}{{5.6}{99}{Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}{table.caption.91}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces IPCA optimization for the number of principal components.}}{100}{figure.caption.90}\protected@file@percent }
+\newlabel{fig:ipca_opt}{{5.8}{100}{IPCA optimization for the number of principal components}{figure.caption.90}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.6}Scene renderings}{100}{subsection.5.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.7}Limitations and future work}{100}{subsection.5.5.7}\protected@file@percent }
+\newlabel{sec:limits}{{5.5.7}{100}{Limitations and future work}{subsection.5.5.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Specular components:}{100}{section*.93}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{BRDF editing:}{100}{section*.94}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{SVBRDF representations:}{101}{section*.95}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Summary}{101}{section.5.6}\protected@file@percent }
+\newlabel{sec:conc}{{5.6}{101}{Summary}{section.5.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Scene renderings with materials reconstructed by HyperBRDF.}}{102}{figure.caption.92}\protected@file@percent }
+\newlabel{fig:scene-render}{{5.9}{102}{Scene renderings with materials reconstructed by HyperBRDF}{figure.caption.92}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{103}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\bibstyle{plainnat}
+\bibdata{thesis}
+\bibcite{An10User}{{1}{2010}{{An and Pellacini}}{{}}}
+\bibcite{ashikhmin2007}{{2}{2007}{{Ashikhmin and Premoze}}{{}}}
+\bibcite{Bae06Two}{{3}{2006}{{Bae et~al.}}{{Bae, Paris, and Durand}}}
+\bibcite{bagher2016}{{4}{2016{}}{{Bagher et~al.}}{{Bagher, Snyder, and Nowrouzezahrai}}}
+\bibcite{bagher2016non}{{5}{2016{}}{{Bagher et~al.}}{{Bagher, Snyder, and Nowrouzezahrai}}}
+\bibcite{Berthouzoz11AFramework}{{6}{2011}{{Berthouzoz et~al.}}{{Berthouzoz, Li, Dontcheva, and Agrawala}}}
+\bibcite{Besl92AMethod}{{7}{1992}{{Besl and McKay}}{{}}}
+\bibcite{bilgili2011general}{{8}{2011}{{Bilgili et~al.}}{{Bilgili, {\"O}zt{\"u}rk, and Kurt}}}
+\bibcite{blinn77}{{9}{1977}{{Blinn}}{{}}}
+\bibcite{boss2021nerd}{{10}{2021}{{Boss et~al.}}{{Boss, Braun, Jampani, Barron, Liu, and Lensch}}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{105}{section*.96}\protected@file@percent }
+\bibcite{Boyadzhiev15Band}{{11}{2015}{{Boyadzhiev et~al.}}{{Boyadzhiev, Bala, Paris, and Adelson}}}
+\bibcite{triangulation}{{12}{2019}{{Broeren et~al.}}{{Broeren, van~de Sande, van~der Wijk, and Herder}}}
+\bibcite{Bychkovsky11Learning}{{13}{2011}{{Bychkovsky et~al.}}{{Bychkovsky, Paris, Chan, and Durand}}}
+\bibcite{cazenavette2021mixergan}{{14}{2021}{{Cazenavette and De~Guevara}}{{}}}
+\bibcite{chen2016bilateral}{{15}{2016}{{Chen et~al.}}{{Chen, Adams, Wadhwa, and Hasinoff}}}
+\bibcite{chen2017fast}{{16}{2017}{{Chen et~al.}}{{Chen, Xu, and Koltun}}}
+\bibcite{Chen18Deep}{{17}{2018{}}{{Chen et~al.}}{{Chen, Wang, Kao, and Chuang}}}
+\bibcite{chen2018deep}{{18}{2018{}}{{Chen et~al.}}{{Chen, Wang, Kao, and Chuang}}}
+\bibcite{chen2021invertible}{{19}{2021}{{Chen et~al.}}{{Chen, Nobuhara, and Nishino}}}
+\bibcite{CohenOr06Color}{{20}{2006}{{Cohen-Or et~al.}}{{Cohen-Or, Sorkine, Gal, Leyvand, and Xu}}}
+\bibcite{cooktorrance1982}{{21}{1982}{{Cook and Torrance}}{{}}}
+\bibcite{deschaintre2018single}{{22}{2018}{{Deschaintre et~al.}}{{Deschaintre, Aittala, Durand, Drettakis, and Bousseau}}}
+\bibcite{deschaintre2019flexible}{{23}{2019}{{Deschaintre et~al.}}{{Deschaintre, Aittala, Durand, Drettakis, and Bousseau}}}
+\bibcite{dupuy2018adaptive}{{24}{2018}{{Dupuy and Jakob}}{{}}}
+\bibcite{dupuy2015}{{25}{2015}{{Dupuy et~al.}}{{Dupuy, Heitz, Iehl, Poulin, and Ostromoukhov}}}
+\bibcite{erkocc2023hyperdiffusion}{{26}{2023}{{Erko{\c {c}} et~al.}}{{Erko{\c {c}}, Ma, Shan, Nie{\ss }ner, and Dai}}}
+\bibcite{fan2021neural}{{27}{2021}{{Fan et~al.}}{{Fan, Wang, Ha{\v {s}}an, Yang, and Yan}}}
+\bibcite{Faridul14ASurvey}{{28}{2014}{{Faridul et~al.}}{{Faridul, Pouli, Chamaret, Stauder, Tremeau, and Reinhard}}}
+\bibcite{Frigo16Split}{{29}{2016}{{Frigo et~al.}}{{Frigo, Sabater, Delon, and Hellier}}}
+\bibcite{gao2019deep}{{30}{2019}{{Gao et~al.}}{{Gao, Li, Dong, Peers, Xu, and Tong}}}
+\bibcite{Gharbi17Deep}{{31}{2017}{{Gharbi et~al.}}{{Gharbi, Chen, Barron, Hasinoff, and Durand}}}
+\bibcite{guarnera2016}{{32}{2016}{{Guarnera et~al.}}{{Guarnera, Guarnera, Ghosh, Denk, and Glencross}}}
+\bibcite{guo2021highlight}{{33}{2021}{{Guo et~al.}}{{Guo, Lai, Tao, Cai, Wang, Guo, and Yan}}}
+\bibcite{googlePhysicallyBased}{{34}{}{{Guy and Agopian}}{{}}}
+\bibcite{ha2017hypernetworks}{{35}{2017}{{Ha et~al.}}{{Ha, Dai, and Le}}}
+\bibcite{HaCohen11Nonrigid}{{36}{2011}{{HaCohen et~al.}}{{HaCohen, Shechtman, Goldman, and Lischinski}}}
+\bibcite{he2020conditional}{{37}{2020}{{He et~al.}}{{He, Liu, Qiao, and Dong}}}
+\bibcite{Hertzmann01Image}{{38}{2001}{{Hertzmann et~al.}}{{Hertzmann, Jacobs, Oliver, Curless, and Salesin}}}
+\bibcite{hu2020deepbrdf}{{39}{2020}{{Hu et~al.}}{{Hu, Guo, Chen, Li, and Guo}}}
+\bibcite{Hu18Exposure}{{40}{2018}{{Hu et~al.}}{{Hu, He, Xu, Wang, and Lin}}}
+\bibcite{Huang14Parametric}{{41}{2014}{{Huang et~al.}}{{Huang, Zhang, Lai, Kopf, Cohen-Or, and Hu}}}
+\bibcite{hui2017reflectance}{{42}{2017}{{Hui et~al.}}{{Hui, Sunkavalli, Lee, Hadap, Wang, and Sankaranarayanan}}}
+\bibcite{Hwang12Context}{{43}{2012}{{Hwang et~al.}}{{Hwang, Kapoor, and Kang}}}
+\bibcite{jiang2021cotr}{{44}{2021{}}{{Jiang et~al.}}{{Jiang, Trulls, Hosang, Tagliasacchi, and Yi}}}
+\bibcite{9334429}{{45}{2021{}}{{Jiang et~al.}}{{Jiang, Gong, Liu, Cheng, Fang, Shen, Yang, Zhou, and Wang}}}
+\bibcite{Kagarlitsky09Piecewise}{{46}{2009}{{Kagarlitsky et~al.}}{{Kagarlitsky, Moses, and Hel-Or}}}
+\bibcite{kang2018efficient}{{47}{2018}{{Kang et~al.}}{{}}}
+\bibcite{kang2019learning}{{48}{2019}{{Kang et~al.}}{{}}}
+\bibcite{karras2019style}{{49}{2021}{{Karras et~al.}}{{Karras, Laine, and Aila}}}
+\bibcite{Kaufman12Content}{{50}{2012}{{Kaufman et~al.}}{{Kaufman, Lischinski, and Werman}}}
+\bibcite{kim2021representative}{{51}{2021}{{Kim et~al.}}{{Kim, Choi, Kim, and Koh}}}
+\bibcite{Laffont14Transient}{{52}{2014}{{Laffont et~al.}}{{Laffont, Ren, Tao, Qian, and Hays}}}
+\bibcite{lawrence2004efficient}{{53}{2004}{{Lawrence et~al.}}{{Lawrence, Rusinkiewicz, and Ramamoorthi}}}
+\bibcite{lawrence2006inverse}{{54}{2006}{{Lawrence et~al.}}{{Lawrence, Ben-Artzi, DeCoro, Matusik, Pfister, Ramamoorthi, and Rusinkiewicz}}}
+\bibcite{li2020lapar}{{55}{2020}{{Li et~al.}}{{Li, Zhou, Qi, Jiang, Lu, and Jia}}}
+\bibcite{visual_attribute}{{56}{2017}{{Liao et~al.}}{{Liao, Yao, Yuan, Hua, and Kang}}}
+\bibcite{lin2020tuigan}{{57}{2020}{{Lin et~al.}}{{Lin, Pang, Xia, Chen, and Luo}}}
+\bibcite{liu2023learning}{{58}{2023}{{Liu et~al.}}{{Liu, Fischer, and Ritschel}}}
+\bibcite{Liu16Makeup}{{59}{2016}{{Liu et~al.}}{{Liu, Ou, Qian, Wang, and Cao}}}
+\bibcite{low2012}{{60}{2012}{{L{\"{o}}w et~al.}}{{L{\"{o}}w, Kronander, Ynnerman, and Unger}}}
+\bibcite{ma2021retinexgan}{{61}{2021{}}{{Ma et~al.}}{{Ma, Guo, Yu, Chen, Ren, Xi, Li, and Zhou}}}
+\bibcite{ma2021free}{{62}{2021{}}{{Ma et~al.}}{{}}}
+\bibcite{ma2023opensvbrdf}{{63}{2023}{{Ma et~al.}}{{Ma, Xu, Zhang, Zhou, and Wu}}}
+\bibcite{martin2022materia}{{64}{2022}{{Martin et~al.}}{{Martin, Roullier, Rouffet, Kaiser, and Boubekeur}}}
+\bibcite{Matusik2003jul}{{65}{2003}{{Matusik et~al.}}{{Matusik, Pfister, Brand, and McMillan}}}
+\bibcite{matusik2003data}{{66}{2003}{{Matusik}}{{}}}
+\bibcite{maximov2019deep}{{67}{2019}{{Maximov et~al.}}{{Maximov, Leal-Taix{\'e}, Fritz, and Ritschel}}}
+\bibcite{moran2020deeplpf}{{68}{2020}{{Moran et~al.}}{{Moran, Marza, McDonagh, Parisot, and Slabaugh}}}
+\bibcite{mustafa2022distilling}{{69}{2022}{{Mustafa et~al.}}{{Mustafa, Hanji, and Mantiuk}}}
+\bibcite{Nam17Deep}{{70}{2017}{{Nam and Kim}}{{}}}
+\bibcite{ngan2005experimental}{{71}{2005{}}{{Ngan et~al.}}{{Ngan, Durand, and Matusik}}}
+\bibcite{ngan2005}{{72}{2005{}}{{Ngan et~al.}}{{Ngan, Durand, and Matusik}}}
+\bibcite{ngan2006image}{{73}{2006}{{Ngan et~al.}}{{Ngan, Durand, and Matusik}}}
+\bibcite{nielsen2015optimal}{{74}{2015}{{Nielsen et~al.}}{{Nielsen, Jensen, and Ramamoorthi}}}
+\bibcite{Omiya18Learning}{{75}{2018}{{Omiya et~al.}}{{Omiya, Simo-Serra, Iizuka, and Ishikawa}}}
+\bibcite{park2019deepsdf}{{76}{2019}{{Park et~al.}}{{Park, Florence, Straub, Newcombe, and Lovegrove}}}
+\bibcite{park2018distort}{{77}{2018}{{Park et~al.}}{{Park, Lee, Yoo, and Kweon}}}
+\bibcite{specfig}{{78}{2021}{{Park and Baek}}{{}}}
+\bibcite{Pitie05NDimensional}{{79}{2005}{{Pitie et~al.}}{{Pitie, Kokaram, and Dahyot}}}
+\bibcite{Pitie07Automated}{{80}{2007}{{Piti{\'e} et~al.}}{{Piti{\'e}, Kokaram, and Dahyot}}}
+\bibcite{Pouli11Progressive}{{81}{2011}{{Pouli and Reinhard}}{{}}}
+\bibcite{rainer2019neural}{{82}{2019}{{Rainer et~al.}}{{Rainer, Jakob, Ghosh, and Weyrich}}}
+\bibcite{ratzlaff2019hypergan}{{83}{2019}{{Ratzlaff and Fuxin}}{{}}}
+\bibcite{rebain2022attention}{{84}{2022}{{Rebain et~al.}}{{Rebain, Matthews, Yi, Sharma, Lagun, and Tagliasacchi}}}
+\bibcite{Reinhard01Color}{{85}{2001}{{Reinhard et~al.}}{{Reinhard, Ashikhmin, Gooch, and Shirley}}}
+\bibcite{ronneberger2015u}{{86}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
+\bibcite{rusinkiewicz1998new}{{87}{1998}{{Rusinkiewicz}}{{}}}
+\bibcite{Saeedi18Multimodal}{{88}{2018}{{Saeedi et~al.}}{{Saeedi, Hoffman, DiVerdi, Ghandeharioun, Johnson, and Adams}}}
+\bibcite{schewe2007color}{{89}{2007}{{Schewe and Fraser}}{{}}}
+\bibcite{serrano2018intuitive}{{90}{2018}{{Serrano et~al.}}{{Serrano, Gutierrez, Myszkowski, Seidel, and Masia}}}
+\bibcite{shaham2021spatially}{{91}{2021}{{Shaham et~al.}}{{Shaham, Gharbi, Zhang, Shechtman, and Michaeli}}}
+\bibcite{Shapira13Image}{{92}{2013}{{Shapira et~al.}}{{Shapira, Avidan, and Hel-Or}}}
+\bibcite{Shih13Data}{{93}{2013}{{Shih et~al.}}{{Shih, Paris, Durand, and Freeman}}}
+\bibcite{Shih14Style}{{94}{2014}{{Shih et~al.}}{{Shih, Paris, Barnes, Freeman, and Durand}}}
+\bibcite{sitzmann2020metasdf}{{95}{2020{}}{{Sitzmann et~al.}}{{Sitzmann, Chan, Tucker, Snavely, and Wetzstein}}}
+\bibcite{sitzmann2020siren}{{96}{2020{}}{{Sitzmann et~al.}}{{Sitzmann, Martel, Bergman, Lindell, and Wetzstein}}}
+\bibcite{sun2007interactive}{{97}{2007}{{Sun et~al.}}{{Sun, Zhou, Chen, Lin, Shi, and Guo}}}
+\bibcite{Sunkavalli10Multi}{{98}{2010}{{Sunkavalli et~al.}}{{Sunkavalli, Johnson, Matusik, and Pfister}}}
+\bibcite{sztrajman2021neural}{{99}{2021}{{Sztrajman et~al.}}{{Sztrajman, Rainer, Ritschel, and Weyrich}}}
+\bibcite{Tai07Soft}{{100}{2007}{{Tai et~al.}}{{Tai, Jia, and Tang}}}
+\bibcite{Tai05Local}{{101}{2005}{{Tai et~al.}}{{Tai, Jia, and Tang}}}
+\bibcite{ffn}{{102}{2020}{{Tancik et~al.}}{{Tancik, Srinivasan, Mildenhall, Fridovich-Keil, Raghavan, Singhal, Ramamoorthi, Barron, and Ng}}}
+\bibcite{tolstikhin2021mlp}{{103}{2021}{{Tolstikhin et~al.}}{{Tolstikhin, Houlsby, Kolesnikov, Beyer, Zhai, Unterthiner, Yung, Steiner, Keysers, Uszkoreit, et~al.}}}
+\bibcite{tongbuasirilai2020compact}{{104}{2020}{{Tongbuasirilai et~al.}}{{Tongbuasirilai, Unger, Kronander, and Kurt}}}
+\bibcite{tseng2019hyperparameter}{{105}{2019}{{Tseng et~al.}}{{Tseng, Yu, Yang, Mannan, Arnaud, Nowrouzezahrai, Lalonde, and Heide}}}
+\bibcite{tseng2022neural}{{106}{2022}{{Tseng et~al.}}{{Tseng, Zhang, Jebe, Zhang, Xia, Fan, Heide, and Chen}}}
+\bibcite{tunwattanapong2013acquiring}{{107}{2013}{{Tunwattanapong et~al.}}{{Tunwattanapong, Fyffe, Graham, Busch, Yu, Ghosh, and Debevec}}}
+\bibcite{walter2007microfacet}{{108}{2007}{{Walter et~al.}}{{Walter, Marschner, Li, and Torrance}}}
+\bibcite{wang2022attention}{{109}{2022}{{Wang et~al.}}{{Wang, Chen, Chen, Venugopalan, Wang, et~al.}}}
+\bibcite{wang2019underexposed}{{110}{2019}{{Wang et~al.}}{{Wang, Zhang, Fu, Shen, Zheng, and Jia}}}
+\bibcite{ward1992}{{111}{1992}{{Ward}}{{}}}
+\bibcite{xu2015deep}{{112}{2015}{{Xu et~al.}}{{Xu, Ren, Yan, Liao, and Jia}}}
+\bibcite{Yan14Automatic}{{113}{2014}{{Yan et~al.}}{{Yan, Zhang, Wang, Paris, and Yu}}}
+\bibcite{10.1145/2790296}{{114}{2016{}}{{Yan et~al.}}{{Yan, Zhang, Wang, Paris, and Yu}}}
+\bibcite{yan2016automatic}{{115}{2016{}}{{Yan et~al.}}{{Yan, Zhang, Wang, Paris, and Yu}}}
+\bibcite{yang2023contranerf}{{116}{2023}{{Yang et~al.}}{{Yang, Hong, Li, Hu, Li, Lee, and Wang}}}
+\bibcite{yang2020fidelity}{{117}{2020}{{Yang et~al.}}{{Yang, Wang, Fang, Wang, and Liu}}}
+\bibcite{yu2021reconfigisp}{{118}{2021}{{Yu et~al.}}{{Yu, Li, Peng, Loy, and Gu}}}
+\bibcite{zaheer2017deepsets}{{119}{2017}{{Zaheer et~al.}}{{Zaheer, Kottur, Ravanbakhsh, Poczos, Salakhutdinov, and Smola}}}
+\bibcite{Zhang13Style}{{120}{2013}{{Zhang et~al.}}{{Zhang, Cao, Chen, Liu, and Tang}}}
+\bibcite{zheng2021compact}{{121}{2021}{{Zheng et~al.}}{{Zheng, Zheng, Wang, Zhao, and Bao}}}
+\bibcite{cnf2023}{{122}{2023}{{Zhong et~al.}}{{Zhong, Fogarty, Hanji, Wu, Sztrajman, Spielberg, Tagliasacchi, Bosilj, and Oztireli}}}
+\bibcite{zhou2021adversarial}{{123}{2021}{{Zhou and Kalantari}}{{}}}
+\bibcite{Zhu18Automatic}{{124}{2018}{{Zhu and Yu}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}One-shot Detail Retouching}{119}{appendix.A}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{one-shot-add}{{A}{119}{One-shot Detail Retouching}{appendix.A}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Qualitative comparison - Additional results.}}{120}{figure.caption.98}\protected@file@percent }
+\newlabel{fig:appendix-tat1}{{A.1}{120}{Qualitative comparison - Additional results}{figure.caption.98}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Qualitative comparison - Additional results.}}{121}{figure.caption.99}\protected@file@percent }
+\newlabel{fig:appendix-tat2}{{A.2}{121}{Qualitative comparison - Additional results}{figure.caption.99}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Qualitative comparison - Additional results.}}{122}{figure.caption.100}\protected@file@percent }
+\newlabel{fig:appendix-tat1}{{A.3}{122}{Qualitative comparison - Additional results}{figure.caption.100}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Qualitative comparison - Additional results.}}{123}{figure.caption.101}\protected@file@percent }
+\newlabel{fig:appendix-tat2}{{A.4}{123}{Qualitative comparison - Additional results}{figure.caption.101}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{125}{appendix.B}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{TAT:add_res}{{B}{125}{Transient Attribute Transfer}{appendix.B}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Qualitative comparison - Additional results.}}{125}{figure.caption.102}\protected@file@percent }
+\newlabel{fig:appendix-tat1}{{B.1}{125}{Qualitative comparison - Additional results}{figure.caption.102}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Qualitative comparison - Additional results.}}{126}{figure.caption.103}\protected@file@percent }
+\newlabel{fig:appendix-tat2}{{B.2}{126}{Qualitative comparison - Additional results}{figure.caption.103}{}}
+\citation{sztrajman2021neural}
+\citation{nielsen2015optimal}
+\citation{sztrajman2021neural}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}HyperBRDF}{127}{appendix.C}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{hyperbrdf:add_res}{{C}{127}{HyperBRDF}{appendix.C}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.1}Full reconstruction}{127}{section.C.1}\protected@file@percent }
+\newlabel{sec:full_rec}{{C.1}{127}{Full reconstruction}{section.C.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Quantitative comparison results for full reconstruction over the renderings of the test set.}}{127}{table.caption.104}\protected@file@percent }
+\newlabel{table: comparison results}{{C.1}{127}{Quantitative comparison results for full reconstruction over the renderings of the test set}{table.caption.104}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.2}Sparse reconstruction}{128}{section.C.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.3}Compression}{128}{section.C.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Qualitative comparison for full reconstruction capacity on the test dataset.}}{129}{figure.caption.105}\protected@file@percent }
+\newlabel{fig:qual_comp}{{C.1}{129}{Qualitative comparison for full reconstruction capacity on the test dataset}{figure.caption.105}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Sparse reconstruction results, $N = 40$.}}{130}{figure.caption.106}\protected@file@percent }
+\newlabel{fig:40}{{C.2}{130}{Sparse reconstruction results, $N = 40$}{figure.caption.106}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Sparse reconstruction results, $N = 160$.}}{131}{figure.caption.107}\protected@file@percent }
+\newlabel{fig:160}{{C.3}{131}{Sparse reconstruction results, $N = 160$}{figure.caption.107}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Sparse reconstruction results, $N = 400$.}}{132}{figure.caption.108}\protected@file@percent }
+\newlabel{fig:400}{{C.4}{132}{Sparse reconstruction results, $N = 400$}{figure.caption.108}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Sparse reconstruction results, $N = 2000$.}}{133}{figure.caption.109}\protected@file@percent }
+\newlabel{fig:2000}{{C.5}{133}{Sparse reconstruction results, $N = 2000$}{figure.caption.109}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.6}{\ignorespaces Sparse reconstruction results, $N = 4000$.}}{134}{figure.caption.110}\protected@file@percent }
+\newlabel{fig:4000}{{C.6}{134}{Sparse reconstruction results, $N = 4000$}{figure.caption.110}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.7}{\ignorespaces Compression - Additional results - 1}}{135}{figure.caption.111}\protected@file@percent }
+\newlabel{fig:full-comp}{{C.7}{135}{Compression - Additional results - 1}{figure.caption.111}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.8}{\ignorespaces Compression - Additional results - 2}}{136}{figure.caption.112}\protected@file@percent }
+\newlabel{fig:full-comp}{{C.8}{136}{Compression - Additional results - 2}{figure.caption.112}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.9}{\ignorespaces Compression - Additional results - 3}}{137}{figure.caption.113}\protected@file@percent }
+\newlabel{fig:full-comp}{{C.9}{137}{Compression - Additional results - 3}{figure.caption.113}{}}
+\gdef \@abspage@last{138}
