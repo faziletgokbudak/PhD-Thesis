@@ -28,7 +28,7 @@
 \subsection{Frequency decomposition}\label{sec:thePatchMap}
 % \myworries{Modify equations in the box - transpose is unnecessary}
 
-I first decompose example and input images into different frequency bands by constructing a Laplacian pyramid to capture details at multiple scales. In principle, it is possible to utilize any multiscale image decomposition method. However, I observed that a basic Laplacian pyramid helped in capturing more accurate and generalizable results compared to a guided or bilateral pyramid. Therefore, I decompose images by
+I first decompose example and input images into different frequency bands by constructing a Laplacian pyramid to capture details at multiple scales. In principle, it is possible to utilise any multiscale image decomposition method. However, I observed that a basic Laplacian pyramid helped in capturing more accurate and generalisable results compared to a guided or bilateral pyramid. Therefore, I decompose images by
 
 \begin{equation} 
 	X_l = L_l(X) = 
@@ -38,7 +38,7 @@ I first decompose example and input images into different frequency bands by con
        \end{aligned}
  \right.
 \end{equation}
-where $G(\sigma)$ is the normalized Gaussian kernel, and $\ast$ denotes convolution. I also store the low-pass filtered image $S(X)$ such that $X = S(X) + \sum_{l=0}^{n_L} L_l(X)$. I then downsample each $L_l(X)$ and $S(X)$ according to the maximum frequency present at that band. This allows me to use small $3 \times 3$ patches at each band. In the experiments, I used $n_L = 5$ bands for the Laplacian pyramid.
+where $G(\sigma)$ is the normalised Gaussian kernel, and $\ast$ denotes convolution. I also store the low-pass filtered image $S(X)$ such that $X = S(X) + \sum_{l=0}^{n_L} L_l(X)$. I then downsample each $L_l(X)$ and $S(X)$ according to the maximum frequency present at that band. This allows me to use small $3 \times 3$ patches at each band. In the experiments, I used $n_L = 5$ bands for the Laplacian pyramid.
 
 
 Since each band is processed independently, I explain the steps of our technique below for two generic images $X$ and $Y$.
@@ -65,7 +65,7 @@ Each $\mathbf{A}_k$ corresponds to a different type of transformation and the $f
 
 \subsection{Retouching an input image}
 
-I process the input image $I$ the same way as the before-after pair. First, I decompose the input into its Laplacian layers and then extract its patches per layer. After applying the learned mappings $M_l$ to the patches of the corresponding layers $L_{l}(I)$ independently, I then reconstruct the Laplacian bands of the output image $O_l$ by placing the patches at their spatial locations and averaging over the overlapping regions. Later, I obtain the final output image $O$ by summing the outputs $O_l$ and the residual of the input image:
+I process the input image $I$ the same way as the before-after pair. First, I decompose the input into its Laplacian layers and then extract patches for each layer. After applying the learned mappings $M_l$ to the patches of the corresponding layers $L_{l}(I)$ independently, I then reconstruct the Laplacian bands of the output image $O_l$ by placing the patches in their spatial locations and averaging over the overlapping regions. Later, I obtain the final output image $O$ by summing the outputs $O_l$ and the residual of the input image:
 \begin{equation}
     O = S(I) + \sum_{l=0}^{n_L} M_l(L_l(I))\,.
 \end{equation}
