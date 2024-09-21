@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  21 SEP 2024 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  21 SEP 2024 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1168,28 +1168,28 @@ File: Images/rough_river_surface_reflection.png Graphic file (type png)
 Package pdftex.def Info: Images/rough_river_surface_reflection.png  used on inp
 ut line 166.
 (pdftex.def)             Requested size: 153.6447pt x 204.82042pt.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-181.
-
-<Images/shad-diffuse1.png, id=683, 301.125pt x 288.07625pt>
-File: Images/shad-diffuse1.png Graphic file (type png)
-<use Images/shad-diffuse1.png>
-Package pdftex.def Info: Images/shad-diffuse1.png  used on input line 184.
-(pdftex.def)             Requested size: 92.47145pt x 88.46313pt.
 <Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-refl
-ections-occur-on.png, id=684, 853.1875pt x 282.05376pt>
+ections-occur-on.png, id=683, 853.1875pt x 282.05376pt>
 File: Images/Differences-between-the-specular-and-diffuse-reflections-specuclar
 -reflections-occur-on.png Graphic file (type png)
 <use Images/Differences-between-the-specular-and-diffuse-reflections-specuclar-
 reflections-occur-on.png>
 Package pdftex.def Info: Images/Differences-between-the-specular-and-diffuse-re
-flections-specuclar-reflections-occur-on.png  used on input line 193.
+flections-specuclar-reflections-occur-on.png  used on input line 184.
 (pdftex.def)             Requested size: 455.24411pt x 150.50346pt.
 
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+189.
+
+<Images/shad-diffuse1.png, id=684, 301.125pt x 288.07625pt>
+File: Images/shad-diffuse1.png Graphic file (type png)
+<use Images/shad-diffuse1.png>
+Package pdftex.def Info: Images/shad-diffuse1.png  used on input line 192.
+(pdftex.def)             Requested size: 92.47145pt x 88.46313pt.
+
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
-8.
+7.
 
 [31 <./Images/diagram_microfacet.png> <./Images/rough_river_surface_reflection.
 png>] [32 <./Images/Differences-between-the-specular-and-diffuse-reflections-sp
@@ -1197,14 +1197,14 @@ ecuclar-reflections-occur-on.png> <./Images/shad-diffuse1.png>]
 <Images/ray-tracing-image-1.jpg, id=703, 1066.98625pt x 701.62125pt>
 File: Images/ray-tracing-image-1.jpg Graphic file (type jpg)
 <use Images/ray-tracing-image-1.jpg>
-Package pdftex.def Info: Images/ray-tracing-image-1.jpg  used on input line 218
+Package pdftex.def Info: Images/ray-tracing-image-1.jpg  used on input line 217
 .
 (pdftex.def)             Requested size: 455.24411pt x 299.35738pt.
  [33] [34 <./Images/ray-tracing-image-1.jpg>]
 <Images/specular+diffuse.png, id=714, 513.92pt x 513.92pt>
 File: Images/specular+diffuse.png Graphic file (type png)
 <use Images/specular+diffuse.png>
-Package pdftex.def Info: Images/specular+diffuse.png  used on input line 247.
+Package pdftex.def Info: Images/specular+diffuse.png  used on input line 246.
 (pdftex.def)             Requested size: 106.69783pt x 106.69522pt.
  [35 <./Images/specular+diffuse.png>]
 
@@ -1215,11 +1215,11 @@ at most version <1.6> allowed
 File: Images/diffuse+specular+angle.pdf Graphic file (type pdf)
 <use Images/diffuse+specular+angle.pdf>
 Package pdftex.def Info: Images/diffuse+specular+angle.pdf  used on input line 
-262.
+261.
 (pdftex.def)             Requested size: 455.24411pt x 127.01703pt.
 
 Package natbib Warning: Citation `phong1998illumination' on page 36 undefined o
-n input line 281.
+n input line 280.
 
 [36 <./Images/diffuse+specular+angle.pdf>]
 
@@ -1230,93 +1230,93 @@ t most version <1.6> allowed
 File: Images/Phong-roughness-coeff.pdf Graphic file (type pdf)
 <use Images/Phong-roughness-coeff.pdf>
 Package pdftex.def Info: Images/Phong-roughness-coeff.pdf  used on input line 2
-90.
+89.
 (pdftex.def)             Requested size: 455.24411pt x 90.92241pt.
 <Images/shad2-brdfdir.png, id=755, 301.125pt x 158.5925pt>
 File: Images/shad2-brdfdir.png Graphic file (type png)
 <use Images/shad2-brdfdir.png>
-Package pdftex.def Info: Images/shad2-brdfdir.png  used on input line 298.
+Package pdftex.def Info: Images/shad2-brdfdir.png  used on input line 297.
 (pdftex.def)             Requested size: 170.71652pt x 89.91466pt.
 [37 <./Images/Phong-roughness-coeff.pdf> <./Images/shad2-brdfdir.png>]
 <Images/Rusinkiewicz.png, id=791, 988.69376pt x 360.34625pt>
 File: Images/Rusinkiewicz.png Graphic file (type png)
 <use Images/Rusinkiewicz.png>
-Package pdftex.def Info: Images/Rusinkiewicz.png  used on input line 321.
+Package pdftex.def Info: Images/Rusinkiewicz.png  used on input line 320.
 (pdftex.def)             Requested size: 455.24411pt x 165.92073pt.
 
 
 Package natbib Warning: Citation `Chenliang's paper' on page 38 undefined on in
-put line 335.
+put line 334.
 
 
 Package natbib Warning: Citation `Chenliang's paper' on page 38 undefined on in
-put line 335.
+put line 334.
 
 [38 <./Images/Rusinkiewicz.png>] [39] [40]
 <Images/gradient-descent.png, id=813, 358.4592pt x 411.6981pt>
 File: Images/gradient-descent.png Graphic file (type png)
 <use Images/gradient-descent.png>
-Package pdftex.def Info: Images/gradient-descent.png  used on input line 369.
+Package pdftex.def Info: Images/gradient-descent.png  used on input line 368.
 (pdftex.def)             Requested size: 199.16928pt x 228.7527pt.
 
 
 Package natbib Warning: Citation `kingma2014adam' on page 41 undefined on input
- line 373.
+ line 372.
 
 [41 <./Images/gradient-descent.png>]
 
 Package natbib Warning: Citation `johnson2016perceptuallossesrealtimestyle' on 
-page 42 undefined on input line 379.
+page 42 undefined on input line 378.
 
 <Images/l1vsl2loss.png, id=824, 409.7709pt x 312.2064pt>
 File: Images/l1vsl2loss.png Graphic file (type png)
 <use Images/l1vsl2loss.png>
-Package pdftex.def Info: Images/l1vsl2loss.png  used on input line 385.
+Package pdftex.def Info: Images/l1vsl2loss.png  used on input line 384.
 (pdftex.def)             Requested size: 273.14923pt x 208.11961pt.
 [42] [43 <./Images/l1vsl2loss.png>]
 <Images/neuron.png, id=841, 545.03625pt x 521.95pt>
 File: Images/neuron.png Graphic file (type png)
 <use Images/neuron.png>
-Package pdftex.def Info: Images/neuron.png  used on input line 408.
+Package pdftex.def Info: Images/neuron.png  used on input line 407.
 (pdftex.def)             Requested size: 142.26378pt x 136.2374pt.
  [44 <./Images/neuron.png>]
 <Images/MLP.jpeg, id=852, 853.1875pt x 456.70625pt>
 File: Images/MLP.jpeg Graphic file (type jpg)
 <use Images/MLP.jpeg>
-Package pdftex.def Info: Images/MLP.jpeg  used on input line 432.
+Package pdftex.def Info: Images/MLP.jpeg  used on input line 431.
 (pdftex.def)             Requested size: 455.24411pt x 243.69778pt.
  [45 <./Images/MLP.jpeg>]
 
 Package natbib Warning: Citation `cybenko1989approximation' on page 46 undefine
-d on input line 470.
+d on input line 469.
 
 [46]
 
 Package natbib Warning: Citation `nguyen2015deep' on page 47 undefined on input
- line 472.
+ line 471.
 
 
 Package natbib Warning: Citation `mildenhall2021nerf' on page 47 undefined on i
-nput line 472.
+nput line 471.
 
 
 Package natbib Warning: Citation `rahaman2019spectral' on page 47 undefined on 
-input line 474.
+input line 473.
 
 
 Package natbib Warning: Citation `rahimi2007random' on page 47 undefined on inp
-ut line 474.
+ut line 473.
 
 <Images/FFN.png, id=874, 1358.676pt x 222.5916pt>
 File: Images/FFN.png Graphic file (type png)
 <use Images/FFN.png>
-Package pdftex.def Info: Images/FFN.png  used on input line 487.
+Package pdftex.def Info: Images/FFN.png  used on input line 486.
 (pdftex.def)             Requested size: 455.24411pt x 74.58307pt.
 [47]
 <Images/conditioning-mechs.png, id=888, 1068.99374pt x 271.0125pt>
 File: Images/conditioning-mechs.png Graphic file (type png)
 <use Images/conditioning-mechs.png>
-Package pdftex.def Info: Images/conditioning-mechs.png  used on input line 501.
+Package pdftex.def Info: Images/conditioning-mechs.png  used on input line 500.
 
 (pdftex.def)             Requested size: 455.24411pt x 115.41243pt.
 ) (./Chapters/DetailRetouching.tex [48 <./Images/FFN.png>] [49 <./Images/condit
@@ -2244,7 +2244,7 @@ pdfTeX warning (dest): name{glo:SGD} has been referenced but does not exist, re
 placed by a fixed one
 
 
-pdfTeX warning (dest): name{figure.2.10} has been referenced but does not exist
+pdfTeX warning (dest): name{figure.2.12} has been referenced but does not exist
 , replaced by a fixed one
 
 

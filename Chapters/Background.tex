@@ -178,15 +178,6 @@ At the object level, reflection can be considered a mirror-like look, where the 
 
 \textbf{\textit{Diffuse reflection}} is the reflection that we observe when the incident lights are so scattered that they reflect in random directions, equally spread. Diffuse surfaces are either extremely rough or composed of tiny structures where the light gets trapped, reflected and refracted multiple times before leaving the surface (Figure \ref{fig:diffuse-scattering}). The outgoing direction becomes independent from the incident direction due to the large number of internal reflections underneath the surface. This randomness results in the object appearing equally bright in all viewing directions. 
 
-\begin{wrapfigure}{l}{6.5cm}
-  \centering
-  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
-   \includegraphics[width=0.5\linewidth]{Images/shad-diffuse1.png}
-   \caption{Diffuse surfaces often have complex internal structures that cause the light to be reflected multiple times underneath the surface.}
-   \label{fig:diffuse-scattering}
-\end{wrapfigure}
-
-
 \begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
@@ -194,6 +185,14 @@ At the object level, reflection can be considered a mirror-like look, where the 
    \caption{Specular vs diffuse reflection. Diffuse surfaces cause rays to scatter randomly, brightening the object equally in all viewing directions. Specular reflection is, on the other hand, view-dependent, reflected rays concentrated around the mirror reflection. Image from [Park and Baek, 2021].}
    \label{fig:specularvsdiffuse}
 \end{figure}
+
+\begin{wrapfigure}{l}{6.5cm}
+  \centering
+  % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+   \includegraphics[width=0.5\linewidth]{Images/shad-diffuse1.png}
+   \caption{Diffuse surfaces often have complex internal structures that cause the light to be reflected multiple times underneath the surface.}
+   \label{fig:diffuse-scattering}
+\end{wrapfigure}
 
 Diffuse surfaces, also known as Lambertian or matte surfaces, differ from specular ones in that diffuse materials are often formed of multiple internal pieces that trap the light, causing the light's outgoing direction to become independent from the viewpoint. Specular ones, on the other hand, are modelled with microfacets that reflect the light rays around the mirror angle, remaining correlated with the incoming direction. As diffuse reflections are view-independent, the brightness of a diffuse surface remains consistent across all viewing angles (Figure \ref{fig:specularvsdiffuse}). This distinction can be observed when looking at real-world materials, observing how their brightness changes when we move around, changing our viewpoint.
 
