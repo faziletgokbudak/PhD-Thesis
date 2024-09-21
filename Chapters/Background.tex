@@ -6,7 +6,7 @@
 This section gives an overview of rendering an image of a 3D scene to connect the image-level appearance with a broader concept of appearance representations in computer graphics.  It starts with the display of images on a screen and elaborates on 3D scene components that are taken into account for photorealistic rendering, mainly focusing on appearance. 
 
 \subsection{Displaying an image}
-An image is displayed on a computer screen or, in general, a display system after the stored data is processed in a computer. Here, the computer and the display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces (pixels) for their display as an image. This operation is known as discretization. 
+An image is displayed on a computer screen or, in general, a display system after the stored data is processed in a computer. Here, the computer and the display system operate with discrete data, known as bits and pixels. Considering real-world objects as continuous structures, the object shapes need to be broken down into discrete surfaces (pixels) for their display as an image. This operation is known as discretisation. 
 
 \begin{figure}[ht]
   \centering
@@ -14,14 +14,13 @@ An image is displayed on a computer screen or, in general, a display system afte
 
     \includegraphics[width=\linewidth]{Images/pixelate_image_snowman.png}
 
-   \caption{A pixel, a picture element, is the smallest unit of a rendered image. Displaying an image with fewer pixels causes losses in details as one pixel starts covering a larger area in the 3D scene.}
+   \caption{A pixel, or picture element, is the smallest unit of a rendered image. Displaying an image with fewer pixels results in a loss of detail, as each pixel begins to cover a larger area in the 3D scene.}
    \label{fig:colour-approximate}
 \end{figure}
 
 Let's consider the display of a sphere on a computer screen. We apply a grid on the sphere to represent pixels. Some pixels have a constant colour of the object, while some are blank. On the other hand, some pixels include different shades of the object colour or some are half-overlapped with the sphere. The question here is how to fill the pixels with mixed colours. 
 
-hey
-In a simple case where we only have a single colour with a blank background, we can subdivide this pixel into sub-pixels and count the number of pixels that belong to the object and the background. Later, the colour of the corresponding pixel can be approximated by taking the weighted average between the background and object colour. For instance, Figure \ref{fig:display-grid} shows the display of a sphere with grids symbolising pixels. The sub-pixels on the right can be counted to compute the colour of the corresponding large pixel. The generalized implementation of this approach can be seen in Figure \ref{fig:colour-approximate}, where I computed the mean value with a sliding window of different sizes (50, 100 and 200 in order, for image size of 3024 x 4032).
+In a simple case where we only have a single colour with a blank background, we can subdivide this pixel into sub-pixels and count the number of pixels that belong to the object and the background. Later, the colour of the corresponding pixel can be approximated by taking the weighted average between the background and object colour. For instance, Figure \ref{fig:display-grid} shows the display of a sphere with grids symbolising pixels. The sub-pixels on the right can be counted to compute the colour of the corresponding large pixel. The generalised implementation of this approach can be seen in Figure \ref{fig:colour-approximate}, where I computed the mean value with a sliding window of different sizes (50, 100 and 200 in order, for image size of 3024 x 4032).
 
 \begin{figure}
   \centering
@@ -29,20 +28,20 @@ In a simple case where we only have a single colour with a blank background, we 
    \includegraphics[width=0.48\linewidth]{Images/grid_circle.png}
     \includegraphics[width=0.48\linewidth]{Images/merged_grid_circle2-crop.pdf}
 
-   \caption{To compute the colour of a pixel with variations, it is common to divide the pixel into sub-pixels and take the weighted average of each sub-pixel.}
+   \caption{To compute the colour of a pixel with variations, it is common practice to divide the pixel into sub-pixels and take the weighted average of each sub-pixel.}
    \label{fig:display-grid}
 \end{figure}
 
 
-\begin{wrapfigure}{l}{8.5cm}
+\begin{wrapfigure}{l}{6cm}
 \includegraphics[width=\linewidth]{Images/colourspace.png}
 \caption{Comparison of different colour gamuts. Image from [Schewe and Fraser, 2007].}\label{fig:colour-gamut}
     
 \end{wrapfigure} 
 
-Another approach would be to increase the resolution of an image, defined by the number of pixels per image. Nonetheless, this improvement is constrained by the screen’s resolution. As we endeavour to simulate the real world, the discretization process remains a part of this virtual representation. Furthermore, it is not merely the surface of objects that requires discretization; the colour of each pixel must also be pieced into bits for digital storage. In other words, the number of colours we can display is restricted by the number of bits used for colour encoding. 
+Another approach would be to increase the resolution of an image, defined by the number of pixels per image. Nonetheless, this improvement is constrained by the screen’s resolution. As we endeavour to simulate the real world, the discretisation process remains a part of this virtual representation. Furthermore, it is not merely the surface of objects that requires discretisation; the colour of each pixel must also be pieced into bits for digital storage. In other words, the number of colours we can display is restricted by the number of bits used for colour encoding. 
 
-In the developing stages of computing, the brightness of each pixel was represented by a single bit: a value of one for white and zero for black. These days, one of the most commonly used colour spaces, standard RGB space (sRGB), encodes each colour with 8 bits, requiring $8 * 3 = 24$ bits per pixel. Figure \ref{fig:colour-gamut} compares different colour spaces for the range of available colours in their space, known as colour gamut. Here, the question about pixel colour computation changes to how we can display a colour that is unavailable in a colour space. This problem is known as colour quantisation. The solution would be again approximating the desired colour with the closest matching colour available in the space/palette.
+In the developing stages of computing, the brightness of each pixel was represented by a single bit: a value of one for white and zero for black. These days, one of the most commonly used colour spaces, standard RGB space (\gls{sRGB}), encodes each colour with 8 bits, requiring $8 * 3 = 24$ bits per pixel. Figure \ref{fig:colour-gamut} compares different colour spaces for the range of available colours in their space, known as colour gamut. Here, the question about pixel colour computation changes to how we can display a colour that is unavailable in a colour space. This problem is known as colour quantisation. The solution would be again approximating the desired colour with the closest matching colour available in the space/palette.
 
 % \begin{figure}
 %   \centering
@@ -52,9 +51,9 @@ In the developing stages of computing, the brightness of each pixel was represen
 % %-----------------
 
 
-The issue with colour quantization is that few colour samples might not accurately represent the continuous colour spectrum, causing discrete steps, bands, between the colour samples (see Figure \ref{fig:colour-band}). Luckily, the current image formats allow 24 (sRGB) / 32 (RGBA) bits to encode colours, displaying more than 16 million distinct colours, reducing the colour banding effect significantly. Nevertheless, the representation of continuous signals in the virtual environment remains limited due to the discretization of the data with bits for storage in a computer.
+The issue with colour quantisation is that few colour samples might not accurately represent the continuous colour spectrum, causing discrete steps, bands, between the colour samples (Figure \ref{fig:colour-band}). Luckily, the current image formats allow 24 (\gls{sRGB}) / 32 (\gls{RGBA}) bits to encode colours, displaying more than 16 million distinct colours, reducing the colour banding effect significantly. Nevertheless, the representation of continuous signals in the virtual environment remains limited due to the discretisation of the data with bits for storage in a computer.
 
-Another problem to consider is aliasing, which occurs when the sampling frequency for discretization is lower than twice the continuous signal bandwidth (Nyquist Theorem). The range of frequencies you can capture in a scene depends on the image resolution or pixel size. For instance, if an object is too far from the image plane, its projection can become smaller than the pixel size, for which we end up seeing the object as a dot.
+Another problem to consider is aliasing, which occurs when the sampling frequency for discretisation is lower than twice the continuous signal bandwidth (Nyquist Theorem). The range of frequencies you can capture in a scene depends on the image resolution or pixel size. For instance, if an object is too far from the image plane, its projection can become smaller than the pixel size, for which we end up seeing the object as a dot.
 
 
 
@@ -66,13 +65,13 @@ Another problem to consider is aliasing, which occurs when the sampling frequenc
 \end{figure} 
 
 
-Note that the pixel-based display discussed above is called raster graphics or raster display. It lays the image onto a two-dimensional array of pixels with a grid of x and y coordinates on a display space. Here, zoom-in does not bring any additional details due to limitations of the image and screen resolution. On the other hand, vector graphics stores the shape of objects with mathematical expressions instead of pixel values, offering flexibility with the resolution as the shape of the objects is computed based on the desired resolution.
+Note that the pixel-based display discussed above is called raster graphics or raster display. It lays the image onto a two-dimensional array of pixels with a grid of $x$ and $y$ coordinates on a display space. Here, zoom-in does not bring any additional details due to limitations of the image and screen resolution. On the other hand, vector graphics stores the shape of objects with mathematical expressions instead of pixel values, offering flexibility with the resolution as the shape of the objects is computed based on the desired resolution.
 
 \subsection{3D scene components}
 
-A 3D scene consists of objects of different sizes, shapes, and appearances. To render an image of a scene, we first need a viewpoint represented by a camera. This mimics the case in the human visual system (\gls{HVS}), where we look at a scene from a certain point, and the image of the scene appears in our retina. Without any light, all scene components appear dark. Therefore, light is a crucial aspect of the scene description. Another aspect is geometry, which defines the shape of the objects. Geometry, camera and light are three essential components of a 3D scene. While rendering a scene in a 3D software platform, such as Blender or Maya, a scene file contains all this information along with material/texture details. The light-material interaction defines the appearance, which this thesis focuses on. Before delving into the details of what appearance is in computer graphics, I will briefly review geometry as it builds up a baseline for appearance representations.
+A 3D scene consists of objects of different sizes, shapes, and appearances. To render an image of a scene, we first need a viewpoint represented by a camera. This mimics the case in the human visual system (\gls{HVS}), where we look at a scene from a certain point, and the image of the scene appears in our retina. Without any light, all scene components appear dark. Therefore, light is a crucial aspect of the scene description. Another aspect is geometry, which defines the shape of the objects. Geometry, camera and light are three essential components of a 3D scene. While rendering a scene in a 3D software platform, such as Blender or Maya, a scene file contains all this information along with material/texture details. The light-material interaction defines the appearance, which this thesis focuses on. Before delving into the details of what appearance means in computer graphics, I will briefly review geometry as it builds up a baseline for appearance representations.
 
-\begin{figure}
+\begin{figure}[ht]
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=\linewidth]{Images/scene_with_camera.jpg}
@@ -90,26 +89,26 @@ In general, the shape of an object is represented with 3D points in computers' m
   \centering
   % \fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
    \includegraphics[width=\linewidth]{Images/Triangulation-of-surfaces-Any-curved-surface-in-this-case-a-sphere-can-be-approximated.png}
-   \caption{Triangulation of surfaces is a commonly used method in computer graphics to define the shape of objects. It allows the creation of complex shapes. Increasing the number of triangles also increases the resolution of the shape that leads to smoother surface representations. Image taken from [Broeren et al., 2019].}
+   \caption{Triangulation of surfaces is a commonly used method in computer graphics to define the shape of objects. It enables the creation of complex shapes by breaking them down into smaller triangles. Increasing the number of triangles enhances the resolution of the shape, leading to smoother and more detailed surface representations. Image from [Broeren et al., 2019].}
    \label{fig:triangulation}
 \end{figure}
 
-One might wonder how triangulation handles the reconstruction of smooth surfaces. It is indeed not not optimal solution. However, considering a smooth curve, we can approximate it by taking a few points (samples) on the curve and connecting them with straight lines (segments). To enhance the resolution, we can take more samples, that is, reduce the size of the segments. By applying this to smooth surfaces, we can increase the number of triangles (Figure \ref{fig:triangulation}) that will eventually increase the rendering time. Converting a smooth surface to triangular mesh is known as tesselation.
+One might wonder how triangulation handles the reconstruction of smooth surfaces. It is indeed not an optimal solution. However, considering a smooth curve, we can approximate it by taking a few points (samples) on the curve and connecting them with straight lines (segments). To enhance the resolution, we can take more samples, that is, reduce the size of the segments. By applying this to smooth surfaces, we can increase the number of triangles (Figure \ref{fig:triangulation}) that will eventually increase the rendering time. Converting a smooth surface to triangular mesh is known as tessellation.
 
-Returning to the early discussion on discretization, computer graphics only approximates the shape of real-world continuous objects with discrete data. Since the ultimate goal is to display these shapes on a screen that also operates with discrete data, one well-known approach to conceal the triangular look of a surface is to keep the size of the triangles smaller than the pixel size. This approach has been used widely in professional rendering programs, such as Pixar's RenderMan, and has recently taken its place in real-time applications.
+Returning to the early discussion on discretisation, computer graphics only approximates the shape of real-world continuous objects with discrete data. Since the ultimate goal is to display these shapes on a screen that also operates with discrete data, one well-known approach to conceal the triangular look of a surface is to keep the size of the triangles smaller than the pixel size. This approach has been used widely in professional rendering programs, such as Pixar's RenderMan, and has recently taken its place in real-time applications.
 
 Ray tracing algorithms, which HyperBRDF is built on, do not necessarily need a polygonal representation of objects. Ray tracing computes the intersection point of a ray (a straight line) with the object surface, which can be found either with a geometric or an algebraic solution. The algebraic solution becomes feasible when the surfaces are defined by mathematical equations, known as implicit/algebraic surfaces. A ray equation, essentially a line equation, and the mathematical equation for the surface of an object give us a system of linear equations for which a solution exists if the ray and the object intersect.
 
- Although geometry can be defined by various methods, such as meshes, NURBS, subdivision surfaces, implicit surfaces, etc, this section only discusses polygonal mesh representation. Triangle is the most common rendering primitive used in ray tracing and on modern GPUs. Since the support of only one primitive is preferred due to simplicity and efficiency, most 3D platforms first convert geometry to triangular meshes before rendering.
+Although geometry can be defined using various methods, such as meshes, NURBS, subdivision surfaces, implicit surfaces, etc., this section focuses solely on polygonal mesh representation. Triangles are the most common rendering primitives used in ray tracing and modern GPUs. As supporting a single primitive type is preferred for simplicity and efficiency, most 3D platforms convert geometry to triangular meshes before rendering.
  
-\subsection{Photo-realistic rendering}
-There are different approaches to render an image of a scene. Whichever rendering method we choose, we should expect the same image as the output. In photo-realistic rendering, which is often the most desired, the expectation from a rendered image is to look the same as how our eyes perceive the scene. In other words, the image should look like a "photograph". Achieving such photo-realism requires us to understand two main aspects of our visual system: 1) geometric construction of the shapes with respect to other objects, 2) the physics laws behind appearance. More specifically, photo-realistic rendering focuses on simulating the behaviour of light throughout its propagation and interaction with matter.
+\subsection{Photorealistic rendering}
+There are various approaches to rendering an image of a scene, but regardless of the chosen method, the expectation is to produce the same image output. In photorealistic rendering, which is often the most desired approach, the goal is for the rendered image to appear as it would to the human eye, much like a photograph. Achieving such photorealism requires an understanding of two key aspects of our visual system: 1) the geometric construction of shapes in relation to other objects, and 2) the physical laws governing appearance. Specifically, photorealistic rendering focuses on simulating the behaviour of light as it propagates and interacts with matter.
 
 \paragraph{Perspective projection and visibility.}
 
-The human visual system is inherently an optical system that converges light rays reflected from objects to a focal point. Following the geometry, our eyes perceive objects that are further away smaller than the closer objects of the same size. In other words, objects get smaller in the rendered image in our retina as they move away from our eyes, known as the foreshortening effect. The lens systems in cameras already replicate this effect, and photo-realistic rendering also aims to achieve the foreshortening effect along with simulating the physics laws for appearance.  
+The human visual system is inherently an optical system that converges light rays reflected from objects to a focal point. Following the geometry, our eyes perceive objects that are further away smaller than the closer objects of the same size. In other words, objects get smaller in the rendered image in our retina as they move away from our eyes, known as the foreshortening effect. The lens systems in cameras already replicate this effect, and photorealistic rendering also aims to achieve the foreshortening effect along with simulating the physics laws for appearance.  
 
-To achieve foreshortening effect, imagine we have a canvas or an image plane between the eye and the object. By tracing the lines from the eye to the corners of the objects, we can find the location of the projected corners (points) on the image plane (perspective projection). We can then draw the objects' edges on the image plane to complete the look. However, this look is unlikely to be photo-realistic as we haven't figured what edges are visible from the viewpoint. For instance, if it were an opaque cube, then the back sides would remain hidden behind the front sides. Therefore, rendering involves computations for both the visibility problem and the perspective projection. 
+To achieve foreshortening effect, imagine we have a canvas or an image plane between the eye and the object. By tracing the lines from the eye to the corners of the objects, we can find the location of the projected corners (points) on the image plane (perspective projection). We can then draw the objects' edges on the image plane to complete the look. However, this look is unlikely to be photorealistic as we haven't figured what edges are visible from the viewpoint. For instance, if it were an opaque cube, then the back sides would remain hidden behind the front sides. Therefore, rendering involves computations for both the visibility problem and the perspective projection. 
 
 \begin{figure}[ht]
   \centering
@@ -120,7 +119,7 @@ To achieve foreshortening effect, imagine we have a canvas or an image plane bet
 \end{figure}
 
 
-We can project a 3D scene onto a flat surface in different ways. For instance, in artistic drawing, perspective projection can include multiple focal points (Figure \ref{fig:artistic_drawing}). However, computer graphics generally assumes one-point perspective as it mimics our visual system as well as cameras. In this approach, the line of sight, the line from the eye perpendicular to the canvas, passes through the center of the canvas. The view frustum is the region of the scene projected onto the canvas. The lines passing through the corners of the canvas forms the frustum base (Figure \ref{fig:perspective_projection}). Here, we can change the size of the canvas, which results in the change of the frustum size and, consequently, the visible region of the scene. This resembles the techniques in photography where changing the focal length of the camera lenses adjusts the field of view.
+We can project a 3D scene onto a flat surface in different ways. For instance, in artistic drawing, perspective projection can include multiple focal points (Figure \ref{fig:artistic_drawing}). However, computer graphics generally assumes one-point perspective as it mimics our visual system as well as cameras. In this approach, the line of sight, the line from the eye perpendicular to the canvas, passes through the centre of the canvas. The view frustum is the region of the scene projected onto the canvas. The lines passing through the corners of the canvas forms the frustum base (Figure \ref{fig:perspective_projection}). Here, we can change the size of the canvas, which results in the change of the frustum size and, consequently, the visible region of the scene. This resembles the techniques in photography where changing the focal length of the camera lenses adjusts the field of view.
 
 \begin{figure}[ht]
   \centering
@@ -136,10 +135,10 @@ We can project a 3D scene onto a flat surface in different ways. For instance, i
 % \paragraph{Visibility problem}
 The visibility problem occurs when some parts of the scene are not visible from a known viewpoint. For instance, if we only project the corners of an object and draw the edges, then some corners that shouldn't be visible from the known viewpoint will be included in the rendered image. Furthermore, some objects will be occluded by others. Computer graphics tackles the visibility problem in two ways: rasterisation and ray tracing. I will not go into the details of these algorithms as this is beyond the focus of this thesis.
 
-% In this section, I will mostly focus on ray tracing as HyperBRDF is designed for such renderers.Photo-realistic rendering aims to project or flatten a 3D scene onto an image plane that lies between the scene and the camera position or the viewpoint. Mimicking our visual system, we first apply perspective projection via similarity formula in geometry and then decide which points are visible from the viewpoint. Some will be indeed occluded by other objects or the front sides. 
+% In this section, I will mostly focus on ray tracing as HyperBRDF is designed for such renderers.photorealistic rendering aims to project or flatten a 3D scene onto an image plane that lies between the scene and the camera position or the viewpoint. Mimicking our visual system, we first apply perspective projection via similarity formula in geometry and then decide which points are visible from the viewpoint. Some will be indeed occluded by other objects or the front sides. 
 
 \paragraph{Appearance.}
-Perspective projection and visibility only project the size and shape of the scene realistically without any consideration for appearance, such as the colour, texture, brightness, etc. We can only perceive an object if the light bounces off its surface. Therefore, appearance involves light-matter interactions, where the light travels in a ray form in space and gets absorbed or reflected when it interacts with the surface of an object. Different light sources, such as the sun or light bulbs, can emit light. After the light bounces off a surface, it continues its journey until it either reaches our eyes, where it is converted to electrical signals or another surface where the interaction steps repeat.
+Perspective projection and visibility only project the size and shape of the scene realistically without any consideration for appearance, such as the colour, texture, and brightness. We can only perceive an object if the light bounces off its surface. Therefore, appearance involves light-matter interactions, where the light travels in a ray form in space and gets absorbed or reflected when it interacts with the surface of an object. Different light sources, such as the sun or light bulbs, can emit light. After the light bounces off a surface, it continues its journey until it either reaches our eyes, where it is converted to electrical signals or another surface where the interaction steps repeat.
 
 \begin{wrapfigure}{l}{4.8cm}
   \centering
@@ -153,21 +152,20 @@ The colour of an object is defined by the mixture of the reflected light colours
 
 At the object level, reflection can be considered a mirror-like look, where the light turns around the normal to the surface at the point of contact. The outgoing direction becomes the reflected version of the incoming one. Microscopic level interactions are more complex with light bouncing off in random directions, known as scattering. Computing the photon-atom interactions is indeed impractical. Therefore, computer graphics researchers have developed mathematical models to simulate the light-matter interactions at the microscopic level. I will discuss them later in this chapter. Section \ref{hyperbrdf-RW} will also compare HyperBRDF with such mathematical formulas. Here, I will overview some of the well-known shading and lighting effects:
 
-\begin{wrapfigure}{r}{4.8cm}
-\includegraphics[width=\linewidth]{Images/rough_river_surface_reflection.png}
-\caption{The ripples on the water's surface cause a blurred image of the bridge, acting as a rough surface.}\label{fig:water_reflection}
-\end{wrapfigure}  
-
 \textbf{\textit{Reflection}} occurs when light interacts with mirror-like objects that change the direction of light in the reverse direction with the same angle reflected around the point of contact. The incoming light, also known as the incident light, turns around the normal and leaves the surface in the reflected/outgoing direction (Figure \ref{fig:microfacet} - right). Metals, such as silver and aluminium are considered materials with high reflectivity. The surface of the water or glass also creates reflection, but their reflectivity is considerably lower.
 
 \textbf{\textit{Specular reflection}} appears when the surface is not perfectly smooth, and its roughness causes lights to bounce off in different directions. Consider a rough surface at the microscopic level having many microfacets looking in slightly different directions. The complex nature of the material surface then reflects the lights at a microfacet level, each microfacet acting as a mirror (Figure \ref{fig:microfacet}). The overall outgoing light becomes the combination of each of these reflections, known as specular or glossy reflection. Most often, these microfacets are not visible to our eyes akin to smooth surface appearance. The deviation of lights from the mirror direction depends on how rough the surface is, that is, how varied the facet orientations are with respect to a smooth surface. More microfacets with higher variance in orientations will lead to greater divergence from the mirror angle, enlarging the glossy region of the surface. Here, roughness and glossiness are used antonymous to describe the specularity of a material. This kind of reflection often leads to blurred or deformed images, as shown in Figure \ref{fig:water_reflection}. 
-
 
 
 \begin{figure}
 \includegraphics[width=\linewidth]{Images/diagram_microfacet.png}
 \caption{Reflection on a surface with microfacets vs smooth surface. Image from [Guy and Agopian, 2024]}\label{fig:microfacet}
 \end{figure} 
+
+\begin{wrapfigure}{r}{5.4cm}
+\includegraphics[width=\linewidth]{Images/rough_river_surface_reflection.png}
+\caption{The ripples on the water's surface cause a blurred image of the bridge, acting as a rough surface.}\label{fig:water_reflection}
+\end{wrapfigure}  
 
 % \begin{figure}
 %   \centering
@@ -467,7 +465,7 @@ x, & \text{if $x>0$}\\
 
 \subsection{Neural implicit representations}
 
-At the beginning of this chapter, I discussed the limitations of the image display and representation due to discretization. The real world is in a continuous spectrum, including geometry, light, reflectivity, and sound. However, we should discretise the inherently continuous signals for virtual representations and storage in computers. For example, images are represented as a grid of pixels, geometry as point clouds or meshes, and sound waves and electrical signals as discrete samples. The discrete representation bounds the amount of information about a signal to a discrete structure of a certain size. Not only scaling up an image does not bring any additional information but also causes artifacts, such as blurring or aliasing. 
+At the beginning of this chapter, I discussed the limitations of the image display and representation due to discretisation. The real world is in a continuous spectrum, including geometry, light, reflectivity, and sound. However, we should discretise the inherently continuous signals for virtual representations and storage in computers. For example, images are represented as a grid of pixels, geometry as point clouds or meshes, and sound waves and electrical signals as discrete samples. The discrete representation bounds the amount of information about a signal to a discrete structure of a certain size. Not only scaling up an image does not bring any additional information but also causes artifacts, such as blurring or aliasing. 
 
 To represent signals in a continuous domain, imagine we have a continuous function $f$ that maps the coordinates or locations to corresponding signal values. In an image case, the function $f$ takes $(x, y)$ pixel coordinates as input and outputs the corresponding RGB pixel value. This representation allows us to sample pixel grids at any resolution. More generally, the parameterisation of a signal as a mathematical formula offers a mapping from the coordinate space to the value space without resolution limitations. The difficulty with such a representation is to find the appropriate function since most signals are usually too complex to be analytically tractable. Neural implicit representations address this by representing signals with neural networks as they are essentially universal function approximators \cite{cybenko1989approximation}.
 
