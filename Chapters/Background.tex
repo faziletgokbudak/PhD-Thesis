@@ -409,7 +409,7 @@ Inspired by biological neural networks, deep neural networks (\gls{DNN}) are des
  %  \includegraphics[width=\linewidth]{Images/neuron.png}
  %  \caption{Graph representation of a linear equation. Figure from [Issac, 2018].}
    %\label{fig:neuron}
-%\end{wrapfigure}
+   %\end{wrapfigure}
 
 The machine learning bit of neural networks is known as deep learning, a subfield of \gls{ML} in which the learning process discussed above is used to learn the weights and biases of this equation or, more generally, the neural network. I mentioned earlier that nonlinearity is an inherent feature of deep learning. This comes from an additional function, known as activation function $\sigma$, applied to the linear equation above ($y = \sigma(\vec{w} ^T. \vec{x} + b)$). The nonlinearity helps bring additional information to the linear system, which, otherwise, could have infinitely many solutions in the linear space.
 
@@ -448,6 +448,20 @@ The passing of the input towards the network to obtain the output is called forw
 
 \gls{ReLU} is one of the most commonly used activation functions in computer vision problems due to the lack of vanishing gradients and computational efficiency. It is also an ideal choice when the output values should not go below zero. For instance, the value range of image pixels is, in general, $[0, 1]$ after pre-processing, or the \gls{BRDF} values should hold the positivity property.
 
+\item Leaky ReLU:
+\begin{equation}
+ \sigma(x) = \begin{cases}
+x, & \text{if $x\geq0$}\\
+\alpha \, x,  & \text{if $x<0$} 
+  \end{cases}
+\end{equation}
+
+
+\item Softmax:
+\begin{equation}
+\sigma(x_i) = \frac{e^{x_{i}}}{\sum_{j=1}^K e^{x_{j}}} \ \ \ for\ i=1,2,\dots,K
+\end{equation}
+
 \item The exponential linear unit (\gls{ELU}):
 \begin{equation}
  \sigma(x) = \begin{cases}
@@ -456,7 +470,7 @@ x, & \text{if $x>0$}\\
   \end{cases}
 \end{equation}
 
-\item Sinusoidal Activation Function:
+\item Sinusoidal activation function:
 
 \begin{equation}
 \sigma(x) = \sin(x)
