@@ -11,7 +11,7 @@ While there has been prior work that attempts to tackle similar tasks by estimat
   \centering
    \includegraphics[width=\linewidth]{Chapters/hyperbrdf-figs/teaser_cropped.png}
    \caption{A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls{BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli].}
-   \label{fig:teaser}
+   \label{fig:hyper-teaser}
 \end{figure}
 
 Recent advances in deep learning have enabled the accurate representation of complex continuous signals (\textit{e.g.} images, surfaces, volumes, materials, \textit{etc.}) using a Neural Field~\cite{sitzmann2020siren, ffn, cnf2023}, \textit{i.e.} a neural network mapping coordinate inputs to sampled values, without compromising model compactness. Consequently, neural fields have gained substantial popularity for representing continuous \gls{BRDF}s in recent works~\cite{sztrajman2021neural, cnf2023}. However, reconstructing a neural field representation for \gls{BRDF}s typically requires training the network with a regression loss function to overfit to a single material, which demands dense sampling and extensive computational resources, while being unable to generalise to new materials.
