@@ -26,7 +26,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Text-guided transient attribute transfer}{18}{subsection.1.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}HyperBRDF: Neural generalizable material representation}{18}{subsection.1.1.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces Seasonal transitions of a tree throughout the year. Image from [Michael Melford/Getty Images]}}{19}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:colour-approximate}{{1.3}{19}{Seasonal transitions of a tree throughout the year. Image from [Michael Melford/Getty Images]}{figure.caption.7}{}}
+\newlabel{fig:TAT-overview}{{1.3}{19}{Seasonal transitions of a tree throughout the year. Image from [Michael Melford/Getty Images]}{figure.caption.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Contributions and publications}{19}{section.1.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces Photorealistic rendering can be achieved through extensive ray tracing for which reflectance should be accurately measured and represented. Image from [Star Wars Real-Time Ray Tracing Demo by Epic Games, NVIDIA, and ILMxLAB].}}{20}{figure.caption.8}\protected@file@percent }
 \newlabel{fig:brdf-intro}{{1.4}{20}{Photorealistic rendering can be achieved through extensive ray tracing for which reflectance should be accurately measured and represented. Image from [Star Wars Real-Time Ray Tracing Demo by Epic Games, NVIDIA, and ILMxLAB]}{figure.caption.8}{}}
@@ -143,7 +143,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces To overcome the spectral bias in coordinate-based MLPs, a Fourier feature mapping \cite  {ffn} can be applied before feeding the input to the model. Here, 'none' represents an MLP model without mapping. 'basic' and 'gauss' are variants of Fourier feature maps, and 'GT' is the ground truth.}}{48}{figure.caption.35}\protected@file@percent }
 \newlabel{fig:ffn}{{2.23}{48}{To overcome the spectral bias in coordinate-based MLPs, a Fourier feature mapping \cite {ffn} can be applied before feeding the input to the model. Here, 'none' represents an MLP model without mapping. 'basic' and 'gauss' are variants of Fourier feature maps, and 'GT' is the ground truth}{figure.caption.35}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces Three conditioning mechanisms for generalisable neural representations. Coordinate-based MLPs can be conditioned by 1) the concatenation of input coordinates \textbf  {x} and latent code \textbf  {z} (left), 2) another neural network predicting the weights of the primary MLP which takes the input coordinates as the input (middle), or 3) attention layers with a set of tokens (\textbf  {z}) and coordinate-related query . Here, $\gamma $ is an optional component and defines the mapping function discussed earlier. Figure from [\citeauthor  {rebain2022attention}, \citeyear  {rebain2022attention}]}}{48}{figure.caption.37}\protected@file@percent }
-\newlabel{fig:ffn}{{2.24}{48}{Three conditioning mechanisms for generalisable neural representations. Coordinate-based MLPs can be conditioned by 1) the concatenation of input coordinates \textbf {x} and latent code \textbf {z} (left), 2) another neural network predicting the weights of the primary MLP which takes the input coordinates as the input (middle), or 3) attention layers with a set of tokens (\textbf {z}) and coordinate-related query . Here, $\gamma $ is an optional component and defines the mapping function discussed earlier. Figure from [\citeauthor {rebain2022attention}, \citeyear {rebain2022attention}]}{figure.caption.37}{}}
+\newlabel{fig:gnfs}{{2.24}{48}{Three conditioning mechanisms for generalisable neural representations. Coordinate-based MLPs can be conditioned by 1) the concatenation of input coordinates \textbf {x} and latent code \textbf {z} (left), 2) another neural network predicting the weights of the primary MLP which takes the input coordinates as the input (middle), or 3) attention layers with a set of tokens (\textbf {z}) and coordinate-related query . Here, $\gamma $ is an optional component and defines the mapping function discussed earlier. Figure from [\citeauthor {rebain2022attention}, \citeyear {rebain2022attention}]}{figure.caption.37}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}One-shot Detail Retouching}{51}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -388,8 +388,8 @@
 \newlabel{fig:zero-shot-grid-search}{{4.4}{85}{Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset"}{figure.caption.73}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.5}Limitations and future work}{86}{section.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4.6}Summary}{86}{section.4.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite  {laffont2014transient}. Additional results can be found in Section \ref {zero-shot-additional}.}}{87}{figure.caption.75}\protected@file@percent }
-\newlabel{fig:zero-shot-comparison}{{4.5}{87}{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite {laffont2014transient}. Additional results can be found in Section \ref {zero-shot-additional}}{figure.caption.75}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite  {laffont2014transient}. Additional results can be found in Appendix \ref {TAT:add_res}.}}{87}{figure.caption.75}\protected@file@percent }
+\newlabel{fig:zero-shot-comparison}{{4.5}{87}{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite {laffont2014transient}. Additional results can be found in Appendix \ref {TAT:add_res}}{figure.caption.75}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}HyperBRDF: Neural Generalizable Material Representation}{89}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -401,7 +401,7 @@
 \citation{sitzmann2020siren,ffn,cnf2023}
 \citation{sztrajman2021neural,cnf2023}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli].}}{90}{figure.caption.76}\protected@file@percent }
-\newlabel{fig:teaser}{{5.1}{90}{A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli]}{figure.caption.76}{}}
+\newlabel{fig:hyper-teaser}{{5.1}{90}{A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli]}{figure.caption.76}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{90}{section.5.1}\protected@file@percent }
 \newlabel{sec:intro}{{5.1}{90}{Introduction}{section.5.1}{}}
 \citation{rebain2022attention}
@@ -684,13 +684,13 @@
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{one-shot-add}{{A}{125}{One-shot Detail Retouching}{appendix.A}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Qualitative comparison - Additional results.}}{126}{figure.caption.101}\protected@file@percent }
-\newlabel{fig:appendix-tat1}{{A.1}{126}{Qualitative comparison - Additional results}{figure.caption.101}{}}
+\newlabel{fig:appendix-DR-face}{{A.1}{126}{Qualitative comparison - Additional results}{figure.caption.101}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Qualitative comparison - Additional results.}}{127}{figure.caption.102}\protected@file@percent }
-\newlabel{fig:appendix-tat2}{{A.2}{127}{Qualitative comparison - Additional results}{figure.caption.102}{}}
+\newlabel{fig:appendix-DR-room}{{A.2}{127}{Qualitative comparison - Additional results}{figure.caption.102}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Qualitative comparison - Additional results.}}{128}{figure.caption.103}\protected@file@percent }
-\newlabel{fig:appendix-tat1}{{A.3}{128}{Qualitative comparison - Additional results}{figure.caption.103}{}}
+\newlabel{fig:appendix-DR-material}{{A.3}{128}{Qualitative comparison - Additional results}{figure.caption.103}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Qualitative comparison - Additional results.}}{129}{figure.caption.104}\protected@file@percent }
-\newlabel{fig:appendix-tat2}{{A.4}{129}{Qualitative comparison - Additional results}{figure.caption.104}{}}
+\newlabel{fig:appendix-DR-landscape}{{A.4}{129}{Qualitative comparison - Additional results}{figure.caption.104}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{131}{appendix.B}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -727,9 +727,9 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {C.6}{\ignorespaces Sparse reconstruction results, $N = 4000$.}}{140}{figure.caption.113}\protected@file@percent }
 \newlabel{fig:4000}{{C.6}{140}{Sparse reconstruction results, $N = 4000$}{figure.caption.113}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {C.7}{\ignorespaces Compression - Additional results - 1}}{141}{figure.caption.114}\protected@file@percent }
-\newlabel{fig:full-comp}{{C.7}{141}{Compression - Additional results - 1}{figure.caption.114}{}}
+\newlabel{fig:appendix-compression1}{{C.7}{141}{Compression - Additional results - 1}{figure.caption.114}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {C.8}{\ignorespaces Compression - Additional results - 2}}{142}{figure.caption.115}\protected@file@percent }
-\newlabel{fig:full-comp}{{C.8}{142}{Compression - Additional results - 2}{figure.caption.115}{}}
+\newlabel{fig:appendix-compression2}{{C.8}{142}{Compression - Additional results - 2}{figure.caption.115}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {C.9}{\ignorespaces Compression - Additional results - 3}}{143}{figure.caption.116}\protected@file@percent }
-\newlabel{fig:full-comp}{{C.9}{143}{Compression - Additional results - 3}{figure.caption.116}{}}
+\newlabel{fig:appendix-compression3}{{C.9}{143}{Compression - Additional results - 3}{figure.caption.116}{}}
 \gdef \@abspage@last{144}
