@@ -76,44 +76,44 @@
 \contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{82}{subsection.4.4.4}%
 \contentsline {paragraph}{Baselines.}{82}{section*.74}%
 \contentsline {section}{\numberline {4.5}Limitations and future work}{84}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Conclusions}{84}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Summary}{84}{section.4.6}%
 \contentsline {chapter}{\numberline {5}HyperBRDF: Neural Generalizable Material Representation}{87}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction}{88}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Motivation and impact}{90}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Related work}{91}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Analytic BRDF models}{91}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.3}Related work}{90}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Analytic BRDF models}{90}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Regression-based BRDF estimation}{91}{subsection.5.3.2}%
-\contentsline {paragraph}{Deep learning for BRDF modeling.}{91}{section*.77}%
-\contentsline {subsection}{\numberline {5.3.3}Efficient BRDF acquisition}{92}{subsection.5.3.3}%
+\contentsline {paragraph}{Deep learning for BRDF modelling.}{91}{section*.77}%
+\contentsline {subsection}{\numberline {5.3.3}Efficient BRDF acquisition}{91}{subsection.5.3.3}%
 \contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{92}{section*.78}%
 \contentsline {subsection}{\numberline {5.3.4}Hypernetworks and GNFs}{92}{subsection.5.3.4}%
 \contentsline {section}{\numberline {5.4}Methodology}{92}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Pre-processing}{93}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Hypernetwork}{94}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.1}Pre-processing}{92}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Hypernetwork}{93}{subsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.2.1}Set encoder}{94}{subsubsection.5.4.2.1}%
 \contentsline {subsubsection}{\numberline {5.4.2.2}Hypernetwork decoder and hyponet}{94}{subsubsection.5.4.2.2}%
 \contentsline {subsection}{\numberline {5.4.3}Training}{94}{subsection.5.4.3}%
 \contentsline {paragraph}{Inference:}{95}{section*.80}%
 \contentsline {section}{\numberline {5.5}Experiments}{95}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Datasets and baselines}{95}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Sparse BRDF reconstruction}{96}{subsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.2.1}Qualitative comparison}{96}{subsubsection.5.5.2.1}%
+\contentsline {subsection}{\numberline {5.5.2}Sparse BRDF reconstruction}{95}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}Qualitative comparison}{97}{subsubsection.5.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.5.2.2}Quantitative evaluation}{99}{subsubsection.5.5.2.2}%
 \contentsline {paragraph}{Sparse and full reconstruction results:}{99}{table.caption.86}%
 \contentsline {subsubsection}{\numberline {5.5.2.3}Comparison with casual capture setups}{100}{subsubsection.5.5.2.3}%
-\contentsline {subsection}{\numberline {5.5.3}Compression}{101}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.5.4}BRDF editing}{102}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.3}Compression}{100}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}BRDF editing}{101}{subsection.5.5.4}%
 \contentsline {subsection}{\numberline {5.5.5}Ablation studies}{102}{subsection.5.5.5}%
 \contentsline {subsubsection}{\numberline {5.5.5.1}Latent dimension}{102}{subsubsection.5.5.5.1}%
 \contentsline {subsubsection}{\numberline {5.5.5.2}Log relative mapping (LRM)}{102}{subsubsection.5.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.5.3}Cosine weighting}{103}{subsubsection.5.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.5.3}Cosine weighting}{102}{subsubsection.5.5.5.3}%
 \contentsline {subsubsection}{\numberline {5.5.5.4}Principal component analysis (PCA)}{103}{subsubsection.5.5.5.4}%
 \contentsline {paragraph}{Number of Principal Components:}{103}{section*.92}%
 \contentsline {subsection}{\numberline {5.5.6}Scene renderings}{104}{subsection.5.5.6}%
 \contentsline {subsection}{\numberline {5.5.7}Limitations and future work}{104}{subsection.5.5.7}%
 \contentsline {paragraph}{Specular components:}{104}{section*.96}%
 \contentsline {paragraph}{BRDF editing:}{104}{section*.97}%
-\contentsline {paragraph}{SVBRDF representations:}{105}{section*.98}%
+\contentsline {paragraph}{SVBRDF representations:}{104}{section*.98}%
 \contentsline {section}{\numberline {5.6}Summary}{105}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Conclusion and Future Work}{107}{chapter.6}%
 \contentsline {chapter}{Bibliography}{109}{section*.99}%

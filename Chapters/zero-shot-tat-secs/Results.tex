@@ -1,11 +1,11 @@
 \section{Experiments}\label{zero-shot-exp}
 
 \subsection{Fine-tuning}
-During training, ControlNet learns a highly accurate mapping between the input and target images according to text guidance. Figure  \ref{fig:controlnet-train} shows that even the details, such as tree branches, small buildings, or windows, remain as they should. The effect of text guidance is also clearly visible in the model outputs, such as "daylight" enlightening the scene (first two columns) or "night" darkening the street (right-most column).
+During fine-tuning, ControlNet learns a highly accurate mapping between the input and target images according to text guidance. Figure  \ref{fig:controlnet-train} shows that even the details, such as tree branches, small buildings, or windows, remain as they should. The effect of text guidance is also clearly visible in the model outputs, such as "daylight" enlightening the scene (first two columns) or "night" darkening the street (right-most column).
  
 \begin{figure}[ht]
   \includegraphics[width=\textwidth]{Chapters/zero-shot-tat-figs/Controlnet2.png}
-  \caption{Samples from the training examples guided with the associated text prompts. Rows shows input images, target images and the model outputs in order. The subtitles indicate the attributes guiding the training.}
+  \caption{ControlNet samples from the training examples guided with the associated text prompts. Rows demonstrate input images, target images and the model outputs, in order. The subtitles indicate the attributes guiding the model.}
   \label{fig:controlnet-train}
 \end{figure}
 
@@ -14,7 +14,7 @@ Although ControlNet performs extremely well on the training examples, its comple
 In terms of overfitting, the fine-tuned Stable Diffusion (second right-most column in Figure \ref{fig:zero-shot-comparison}) can preserve the wooden house in the "winter" prompt and maintain the car structure in "daylight." It can also perform content creation with respect to text guidance, comparable to ControlNet. However, both models can overdo the content creation with some newly added structures, such as clouds, covering large areas in the input image.
 
 \subsection{Zero-shot latent diffusion}
-In the zero-shot case, the similarity of the model output to the input image is controlled by the start step  $t_s$, which counts from the end step  $T$. That is, the input of the sampling process is the intermediate latent that was denoised for $t_s$ steps, starting with pure noise. I keep the total number of steps at 150 in all experiments. I also experimented with larger and smaller time steps; however, I observed that as long as the ratio of the start step to the total number of steps is the same, the results remain similar. Therefore, I only experimented with the start step to maintain the core features.
+In the zero-shot case, the similarity of the model output to the input image is controlled by the start step  $t_s$, which counts from the end step  $T$. That is, the input of the sampling process is the intermediate latent that was denoised for $t_s$ steps, starting with pure noise. I keep the total number of steps as 150 in all experiments. I also experimented with larger and smaller time steps; however, I observed that as long as the ratio of the start step to the total number of steps is the same, the results remain similar. Therefore, I only experimented with the start step to maintain the core features.
 
 
 The guidance scale is another crucial parameter for the success of the zero-shot setting, as it transforms the input image according to the desired attribute. I tried four different values (10, 20, 30, 40) and observed that there is no one-size-fits-all value for all images. This also applies to the start step and poses a trade-off between the preservation of the essential content and the strength of the desired transfers. I chose the zero-shot results in Figure \ref{fig:zero-shot-comparison}  (right-most column) based on the subjective judgement of this trade-off.
