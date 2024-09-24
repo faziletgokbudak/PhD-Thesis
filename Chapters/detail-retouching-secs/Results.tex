@@ -9,7 +9,7 @@
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=1.5\textwidth]{Chapters/detail-retouching-figs/MainFig.pdf}
-  \caption{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf{x}_i$, $\mathbf{y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (\gls{MLP} block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and \gls{MLP} parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}
+  \caption{The proposed technique learns a separate mapping per frequency band by decomposing images into five different bands with a Laplacian pyramid. At each Laplacian band $l$, a separate mapping is defined between flattened patches $\mathbf{x}_i$, $\mathbf{y}_i$ extracted from before-after bands $X_l$, $Y_l$. The field based method (MLP block) adapts transformations to input patches, providing local context-aware adjustments. The transformation matrices and MLP parameters are learned jointly from scratch for each Laplacian band of the before-after pair.}
  \label{fig:modelT}
 
 \end{figure}
@@ -42,28 +42,28 @@ To normalise the weights, I choose Softmax as the last activation function, whil
         
         \For{$l \gets 0$ \KwTo $n_l$}{
         \Comment{Extract patches from the bands..}\\
-        $x_i \gets \FPatch(X_l)$\;
-        $y_i \gets \FPatch(Y_l)$\;
-        $f_k \gets \FMLPBLOCK(x_i)$\;
-        $y(x_i) \gets \sum^{K}_{k = 0} f_k(x_i) A_k x_i$\;
-        $\mathcal{L} \gets E_{X, Y} \abs{(y(x_i) - y_i)}$\;  
-        $(f_k, A_k) \gets \Fprob(\mathcal{L})$}
+        $\mathbf{x}_i \gets \FPatch(X_l)$\;
+        $\mathbf{y}_i \gets \FPatch(Y_l)$\;
+        $f_k \gets \FMLPBLOCK(\mathbf{x}_i)$\;
+        $\mathbf{y}(\mathbf{x}_i) \gets \sum^{K}_{k = 0} f_k(\mathbf{x}_i) \mathbf{A}_k \mathbf{x}_i$\;
+        $\mathcal{L} \gets  = \mathbb{E}_{X, Y} || \mathbf{y}_i -   \mathbf{y} (\mathbf{x}_i) ||$\;  
+        $(f_k, \mathbf{A}_k) \gets \Fprob(\mathcal{L})$}
         }
 %\end{algorithm}
 
 %\begin{algorithm}
 %\caption{One-shot Detail Retouching}
 
-\Fn{\FDetailRetouchInf{input image $I$, blending weights $f_k$, transformation matrices $A_k$}}{
+\Fn{\FDetailRetouchInf{input image $I$, blending weights $f_k$, transformation matrices $\mathbf{A}_k$}}{
 
         $I_l \gets \FPyramid(I)$\;
         
         \For{$l \gets 0$ \KwTo $n_l$}{
-        $i_i \gets \FPatch(I_l)$\;
-        \Comment{Transform input patches $i_i$ with learned weights and matrices.}\\
-        $o_i \gets \sum^{K}_{k = 1} f_k(i_i) A_k i_i$\;
+        $\mathbf{i}_i \gets \FPatch(I_l)$\;
+        \Comment{Transform input patches $\mathbf{i}_i$ with learned weights and matrices.}\\
+        $\mathbf{o}_i \gets \sum^{K}_{k = 1} f_k(\mathbf{i}_i) \mathbf{A}_k \mathbf{i}_i$\;
         	\Comment{Place the patches on the output grid $O_l$.}\\
-        $O_l \gets \Fpatchmerge(o_i)$}
+        $O_l \gets \Fpatchmerge(\mathbf{o}_i)$}
      
         \Comment{Sum all output bands with input residual.}\\
         $O = I_{n_l} + \sum_l O_l$\;
