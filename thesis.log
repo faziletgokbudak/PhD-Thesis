@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  24 SEP 2024 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  25 SEP 2024 10:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2056,25 +2056,25 @@ Chapter 6.
 
 ]
 Appendix A.
-<Chapters/appendix-figs/face.pdf, id=3431, 741.77126pt x 1225.57875pt>
+<Chapters/appendix-figs/face.pdf, id=3433, 741.77126pt x 1225.57875pt>
 File: Chapters/appendix-figs/face.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/face.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/face.pdf  used on input line 9.
 
 (pdftex.def)             Requested size: 364.19667pt x 601.7357pt.
-<Chapters/appendix-figs/room.pdf, id=3432, 741.77126pt x 1225.57875pt>
+<Chapters/appendix-figs/room.pdf, id=3434, 741.77126pt x 1225.57875pt>
 File: Chapters/appendix-figs/room.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/room.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/room.pdf  used on input line 20
 .
 (pdftex.def)             Requested size: 364.19667pt x 601.7357pt.
-<Chapters/appendix-figs/material.pdf, id=3433, 741.77126pt x 1225.57875pt>
+<Chapters/appendix-figs/material.pdf, id=3435, 741.77126pt x 1225.57875pt>
 File: Chapters/appendix-figs/material.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/material.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/material.pdf  used on input lin
 e 31.
 (pdftex.def)             Requested size: 364.19667pt x 601.7357pt.
-<Chapters/appendix-figs/landscape.pdf, id=3434, 741.77126pt x 1225.57875pt>
+<Chapters/appendix-figs/landscape.pdf, id=3436, 741.77126pt x 1225.57875pt>
 File: Chapters/appendix-figs/landscape.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/landscape.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/landscape.pdf  used on input li
@@ -2091,7 +2091,7 @@ Appendix B.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/TAT-compressed.pdf): PDF inclusion: found PDF version <1.
 7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/TAT-compressed.pdf, id=3989, 750.805pt x 1955.305pt>
+<Chapters/appendix-figs/TAT-compressed.pdf, id=3991, 750.805pt x 1955.305pt>
 File: Chapters/appendix-figs/TAT-compressed.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/TAT-compressed.pdf>
 Package pdftex.def Info: Chapters/appendix-figs/TAT-compressed.pdf  used on inp
@@ -2110,7 +2110,7 @@ Appendix C.
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/qualitative_comp_40_all_samples-compressed.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/qualitative_comp_40_all_samples-compressed.pdf, id=4176
+<Chapters/appendix-figs/qualitative_comp_40_all_samples-compressed.pdf, id=4178
 , 1347.0325pt x 2436.10126pt>
 File: Chapters/appendix-figs/qualitative_comp_40_all_samples-compressed.pdf Gra
 phic file (type pdf)
@@ -2118,7 +2118,7 @@ phic file (type pdf)
 Package pdftex.def Info: Chapters/appendix-figs/qualitative_comp_40_all_samples
 -compressed.pdf  used on input line 34.
 (pdftex.def)             Requested size: 300.46277pt x 543.37831pt.
-<Chapters/hyperbrdf-figs/vbar.png, id=4177, 57.816pt x 320.1561pt>
+<Chapters/hyperbrdf-figs/vbar.png, id=4179, 57.816pt x 320.1561pt>
 File: Chapters/hyperbrdf-figs/vbar.png Graphic file (type png)
 <use Chapters/hyperbrdf-figs/vbar.png>
 Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 3
@@ -2131,7 +2131,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 3
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/supp_40-compressed.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/supp_40-compressed.pdf, id=4183, 1105.12875pt x 2436.10
+<Chapters/appendix-figs/supp_40-compressed.pdf, id=4185, 1105.12875pt x 2436.10
 126pt>
 File: Chapters/appendix-figs/supp_40-compressed.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/supp_40-compressed.pdf>
@@ -2148,7 +2148,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 5
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/supp_160-compressed.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/supp_160-compressed.pdf, id=4184, 1105.12875pt x 2436.1
+<Chapters/appendix-figs/supp_160-compressed.pdf, id=4186, 1105.12875pt x 2436.1
 0126pt>
 File: Chapters/appendix-figs/supp_160-compressed.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/supp_160-compressed.pdf>
@@ -2165,7 +2165,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 6
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/supp_400-compressed.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/supp_400-compressed.pdf, id=4185, 1105.12875pt x 2436.1
+<Chapters/appendix-figs/supp_400-compressed.pdf, id=4187, 1105.12875pt x 2436.1
 0126pt>
 File: Chapters/appendix-figs/supp_400-compressed.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/supp_400-compressed.pdf>
@@ -2182,7 +2182,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 7
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/supp_2000-compressed.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/supp_2000-compressed.pdf, id=4186, 1105.12875pt x 2436.
+<Chapters/appendix-figs/supp_2000-compressed.pdf, id=4188, 1105.12875pt x 2436.
 10126pt>
 File: Chapters/appendix-figs/supp_2000-compressed.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/supp_2000-compressed.pdf>
@@ -2199,7 +2199,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 9
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/supp_4000-compressed.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/supp_4000-compressed.pdf, id=4187, 1105.12875pt x 2436.
+<Chapters/appendix-figs/supp_4000-compressed.pdf, id=4189, 1105.12875pt x 2436.
 10126pt>
 File: Chapters/appendix-figs/supp_4000-compressed.pdf Graphic file (type pdf)
 <use Chapters/appendix-figs/supp_4000-compressed.pdf>
@@ -2216,7 +2216,7 @@ Package pdftex.def Info: Chapters/hyperbrdf-figs/vbar.png  used on input line 1
 pdfTeX warning: /usr/local/texlive/2024/bin/universal-darwin/pdflatex (file ./C
 hapters/appendix-figs/Compression-compressed.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.6> allowed
-<Chapters/appendix-figs/Compression-compressed.pdf, id=4188, 1137.24875pt x 121
+<Chapters/appendix-figs/Compression-compressed.pdf, id=4190, 1137.24875pt x 121
 20.28125pt>
 File: Chapters/appendix-figs/Compression-compressed.pdf Graphic file (type pdf)
 
@@ -2393,10 +2393,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (144 pages, 247622107 bytes).
+Output written on thesis.pdf (144 pages, 247623925 bytes).
 PDF statistics:
- 6539 PDF objects out of 7423 (max. 8388607)
- 2851 compressed objects within 29 object streams
+ 6541 PDF objects out of 7423 (max. 8388607)
+ 2853 compressed objects within 29 object streams
  554 named destinations out of 1000 (max. 500000)
  55891 words of extra memory for PDF output out of 61914 (max. 10000000)
 
