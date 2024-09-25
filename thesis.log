@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  25 SEP 2024 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.9)  25 SEP 2024 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -866,24 +866,24 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 337.
+LaTeX Font Info:    ... okay on input line 337.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -907,19 +907,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 328.
-Package microtype Info: Applying patch `item' on input line 328.
-Package microtype Info: Applying patch `toc' on input line 328.
-Package microtype Info: Applying patch `eqnum' on input line 328.
-Package microtype Info: Applying patch `footnote' on input line 328.
-Package microtype Info: Applying patch `verbatim' on input line 328.
+LaTeX Info: Redefining \microtypecontext on input line 337.
+Package microtype Info: Applying patch `item' on input line 337.
+Package microtype Info: Applying patch `toc' on input line 337.
+Package microtype Info: Applying patch `eqnum' on input line 337.
+Package microtype Info: Applying patch `footnote' on input line 337.
+Package microtype Info: Applying patch `verbatim' on input line 337.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 328.
+LaTeX Info: Redefining \showhyphens on input line 337.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -928,7 +928,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring ON on input line 328.
+Package hyperref Info: Link coloring ON on input line 337.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
@@ -953,10 +953,10 @@ Package caption Info: End \AtBeginDocument code.
 <CollegeShields/CUni.pdf, id=353, 330.23375pt x 69.25874pt>
 File: CollegeShields/CUni.pdf Graphic file (type pdf)
 <use CollegeShields/CUni.pdf>
-Package pdftex.def Info: CollegeShields/CUni.pdf  used on input line 333.
+Package pdftex.def Info: CollegeShields/CUni.pdf  used on input line 342.
 (pdftex.def)             Requested size: 207.70511pt x 43.56242pt.
 \cam@title=\box83
-LaTeX Font Info:    Trying to load font information for U+msa on input line 333
+LaTeX Font Info:    Trying to load font information for U+msa on input line 342
 .
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -964,7 +964,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 333
+LaTeX Font Info:    Trying to load font information for U+msb on input line 342
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -977,7 +977,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <CollegeShields/Queens.pdf, id=354, 240.42578pt x 284.52756pt>
 File: CollegeShields/Queens.pdf Graphic file (type pdf)
 <use CollegeShields/Queens.pdf>
-Package pdftex.def Info: CollegeShields/Queens.pdf  used on input line 333.
+Package pdftex.def Info: CollegeShields/Queens.pdf  used on input line 342.
 (pdftex.def)             Requested size: 48.08429pt x 56.9055pt.
 \cam@authorcollege=\box85
 \cam@submitnotice=\box86
@@ -989,9 +989,9 @@ Package pdftex.def Info: CollegeShields/Queens.pdf  used on input line 333.
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Colle
 geShields/CUni.pdf> <./CollegeShields/Queens.pdf>] [2
 
-] [3] [4] [5
+] [3] [4
 
-] [6
+] [5] [6
 
 ] [7] [8
 
@@ -2393,7 +2393,7 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (144 pages, 247623925 bytes).
+Output written on thesis.pdf (144 pages, 247623382 bytes).
 PDF statistics:
  6541 PDF objects out of 7423 (max. 8388607)
  2853 compressed objects within 29 object streams
