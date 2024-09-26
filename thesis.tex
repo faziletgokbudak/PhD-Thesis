@@ -23,6 +23,7 @@
 %   backrefs    - add back references in the Bibliography section
 %
 % For more info see `README.md`
+
 \documentclass[withindex, glossary]{cam-thesis}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 
@@ -143,7 +144,7 @@ Appearance Manipulations}
 % \submissionnotice{A badass thesis submitted on time for the Degree of PhD}
 
 %% Declaration date:
-\date{My Month, My Year}
+\date{09, 2024}
 
 %% PDF meta-info:
 \subjectline{Computer Science}
@@ -360,7 +361,7 @@ This dissertation explores the appearance of a 3D scene from multiple perspectiv
 
 The contributions of this thesis address core problems in appearance manipulation, particularly the scarcity of training data, the preservation of photorealism throughout appearance transformations, and the challenges of controlling scene features. Focusing on learning-based approaches that can generalise well to new data, even when trained on a limited number of examples, I present methods that leverage priors that are either learned or imposed through architectural design to overcome the limitations of traditional and machine learning-based techniques. For instance, the \gls{ML} framework introduced in Chapter \ref{one-shot} is designed to mimic manual retouching techniques produced by artists and photographers, which, as a prior, helps to constrain the solution space of the learning problem. Additionally, HyperBRDF embodies learned priors in a latent embedding, enhancing the model's ability for sparse reconstruction, while transient attribute transfer utilises a pre-trained diffusion model as a learned prior to capture highly complex appearance transitions. The proposed methods push the boundaries of data-driven approaches by offering precise control over intricate details, transient attributes, and reflectance, thereby opening the door to several new possibilities in the study of realistic and effective appearance manipulation.
 
-Considering the recent and rapid growth in the field of photorealistic 3D scene generation, future work could expand upon the fundamental approach introduced in this thesis for the study of appearance. This dissertation demonstrates that the physics-based nature of appearance is crucial to the success of photorealistic appearance manipulations, proposing HyperBRDF as an explicit approach to appearance representation and editing. A promising direction for future research is to extend the methods introduced for detail retouching and transient attribute transfer beyond image-based implicit editing, incorporating a scene-level understanding of texture and illumination for finer control over appearance. This could involve exploring new architectures or optimisation strategies that can extract intricate texture details or accurately estimate the intrinsic components of images, such as shading and reflectance, while maintaining data efficiency. Furthermore, integrating such techniques into real-time and neural rendering pipelines could make them even more practical for interactive applications, where data is scarce and performance is critical.
+Considering the recent and rapid growth in the field of photorealistic 3D scene generation, future work could expand upon the fundamental approach introduced in this thesis for the study of appearance. This dissertation demonstrates that the physics-based nature of appearance is crucial to the success of photorealistic appearance manipulations, proposing HyperBRDF as an explicit approach to appearance representation and editing. A promising direction for future research is to extend the methods introduced for detail retouching and transient attribute transfer beyond image-based implicit editing, incorporating a scene-level understanding of texture and illumination for finer control over appearance. This could involve exploring new architectures or optimisation strategies that can extract intricate texture details or accurately estimate the intrinsic components of images, such as shading and reflectance, while maintaining data efficiency. Furthermore, integrating the proposed techniques into real-time and neural rendering pipelines could make them even more practical for interactive applications, where data is scarce and performance is critical.
 
 
 
@@ -378,7 +379,7 @@ Considering the recent and rapid growth in the field of photorealistic 3D scene 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Appendix:
 %%
-
+\let\cleardoublepage\clearpage
 \appendix
 
 \input{Chapters/Appendix-One-Shot}

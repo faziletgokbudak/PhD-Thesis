@@ -3,10 +3,10 @@
 
 \section{Full reconstruction}\label{sec:full_rec}
 
-We first evaluated the full reconstruction capacity of our method by using all available samples during the inference time. Figure \ref{fig:qual_comp} shows our results without/with LRM (Sec. \ref{sec:lrm}) along with the results for Hyper autoencoder (Hyper-AE) \cite{sztrajman2021neural}, PCA, and IPCA. For all methods, we do the same train/test split and compare the methods both qualitatively (Figure \ref{fig:qual_comp}) and quantitatively (Table \ref{table: comparison results}) over the test set. Please note that Hyper-AE is not included in the results for reconstruction with sparse samples since it only works with a fixed grid of input samples, unable to reconstruct materials with varying sizes. 
+I first evaluated the full reconstruction capacity of HyperBRDF by using all available samples during the inference time. Figure \ref{fig:qual_comp} shows our results without/with LRM (Sec. \ref{sec:lrm}) along with the results for Hyper autoencoder (Hyper-AE) \cite{sztrajman2021neural}, PCA, and IPCA. For all methods, I do the same train/test split and compare the methods both qualitatively (Figure \ref{fig:qual_comp}) and quantitatively (Table \ref{table: comparison results}) over the test set. Note that Hyper-AE is not included in the results for reconstruction with sparse samples since it only works with a fixed grid of input samples, unable to reconstruct materials with varying sizes. 
 
 
-Figure \ref{fig:qual_comp} shows that our method attains superior results in terms of the reconstruction quality of measured BRDFs. The reconstructed materials with PCA or Hyper-AE cannot capture the material properties, such as the diffuse components, effectively. They can also cause some artifacts (chrome, green-metallic-paint). The linear structure of PCA cannot handle the high dynamic range of the data. Although IPCA \cite{nielsen2015optimal} improves the results substantially, they still have difficulty capturing the right colors. The NBRDF \cite{sztrajman2021neural} reconstruction results can be found in their supplementary. Since our hypernetwork model offers a generalizable approach to NBRDF, it is expected that an overfitting NBRDF model performs better in reconstruction with full samples. 
+Figure \ref{fig:qual_comp} shows that our method attains superior results in terms of the reconstruction quality of measured BRDFs. The reconstructed materials with PCA or Hyper-AE cannot capture the material properties, such as the diffuse components, effectively. They can also cause some artifacts (chrome, green-metallic-paint). The linear structure of PCA cannot handle the high dynamic range of the data. Although IPCA \cite{nielsen2015optimal} improves the results substantially, they still have difficulty capturing the right colours. The NBRDF \cite{sztrajman2021neural} reconstruction results can be found in their supplementary. Since our hypernetwork model offers a generalisable approach to NBRDF, it is expected that an overfitting NBRDF model performs better in reconstruction with full samples. 
 
 \begin{table*}[ht]
     \centering
@@ -42,6 +42,7 @@ Figure \ref{fig:qual_comp} shows that our method attains superior results in ter
 
 \newpage
 \section{Sparse reconstruction}
+In addition to full reconstruction results, I also provide below the sparse reconstruction results reported in Section \ref{sec:brdf_rec} for sample numbers $N = 40, 160, 400, 2000, 4000$.
 
 \begin{figure*}[ht]
   \centering
@@ -106,13 +107,17 @@ Figure \ref{fig:qual_comp} shows that our method attains superior results in ter
    \label{fig:4000}
 \end{figure*}
 
+
+
 \section{Compression}
+Table \ref{table: oursvsnps} reports quantitative comparison with IPCA \cite{nielsen2015optimal} and NPs \cite{zheng2021compact} and includes average metric values across the full MERL dataset of 100 materials. Additional qualitative comparison results that were included in the calculation of Table \ref{table: oursvsnps} can be found below.
+
  \begin{figure*}[ht]
    \centering
 %{\includegraphics[width=\linewidth]{Chapters/appendix-figs/Compression.pdf}}
     \adjustbox{trim={0.0\width} {.839\height} {0.0\width} {0.0\height},clip}%
   {\includegraphics[width=0.85\linewidth]{Chapters/appendix-figs/Compression-compressed.pdf}}
-  \caption{Compression - Additional results - 1}
+  \caption{Compression - Additional results}
     \label{fig:appendix-compression1}
  \end{figure*}
  
@@ -122,7 +127,7 @@ Figure \ref{fig:qual_comp} shows that our method attains superior results in ter
 %{\includegraphics[width=\linewidth]{Chapters/appendix-figs/Compression.pdf}}
     \adjustbox{trim={0.0\width} {.6795\height} {0.0\width} {0.161\height},clip}%
   {\includegraphics[width=0.85\linewidth]{Chapters/appendix-figs/Compression-compressed.pdf}}
-  \caption{Compression - Additional results - 2}
+  \caption{Compression - Additional results}
     \label{fig:appendix-compression2}
  \end{figure*}
 
@@ -132,7 +137,7 @@ Figure \ref{fig:qual_comp} shows that our method attains superior results in ter
 %{\includegraphics[width=\linewidth]{Chapters/appendix-figs/Compression.pdf}}
     \adjustbox{trim={0.0\width} {.520\height} {0.0\width} {0.321\height},clip}%
   {\includegraphics[width=0.85\linewidth]{Chapters/appendix-figs/Compression-compressed.pdf}}
-  \caption{Compression - Additional results - 3}
+  \caption{Compression - Additional results}
     \label{fig:appendix-compression3}
  \end{figure*}
 

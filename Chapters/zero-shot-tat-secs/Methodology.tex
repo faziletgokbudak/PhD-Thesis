@@ -51,6 +51,7 @@ Here, the first term inside the parenthesis is the "predicted $\bm{x}_0$" multip
 Another important term to mention before discussing the experimental results is the guidance scale. A pre-trained U-Net model predicts the noise $\epsilon_t$ at each time step. In the text-conditional case, the noise prediction includes one term for the unconditional prediction and one for the text-conditioned prediction. The output noise prediction becomes the weighted average of these two, with a guidance scale $\sigma_s$:
 
 $$\epsilon_{pred} = \epsilon_{uncond} + \sigma_s * (\epsilon_{text} - \epsilon_{uncond} )$$.
-\TODO{Double check this part from the main paper -- what is the difference between classifier-free vs }
+
+Here, I work with the classifier-free guidance.
 
 %here: \href{https://github.com/lllyasviel/ControlNet}{ControlNet}, \href{https://github.com/timothybrooks/instruct-pix2pix}{Stable Diffusion v1.5}. 

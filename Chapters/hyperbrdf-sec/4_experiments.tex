@@ -3,7 +3,7 @@
 
 \subsection{Datasets and baselines}
 
-To show the effectiveness of the proposed method, I use MERL \cite{Matusik2003jul} and RGL (51 isotropic materials) \cite{dupuy2018adaptive} datasets, which are the most commonly used \gls{BRDF} datasets that include isotropic materials. The MERL dataset \cite{Matusik2003jul} consists of 100 real-world materials, covering a wide range of appearances. Each material includes reflectance measurements from a dense set of directions, parameterized as the spherical angles ($\theta$, $\phi$) of the $H$ and $D$ vectors from the Rusinkiewicz parameterization \cite{rusinkiewicz1998new}. Each colour channel has a resolution of $90 \times 90 \times 180$, leading to 1,458,000 reflectance measurements. 
+To show the effectiveness of the proposed method, I use MERL \cite{Matusik2003jul} and RGL (51 isotropic materials) \cite{dupuy2018adaptive} datasets, which are the most commonly used \gls{BRDF} datasets that include isotropic materials. The MERL dataset \cite{Matusik2003jul} consists of 100 real-world materials, covering a wide range of appearances. Each material includes reflectance measurements from a dense set of directions, parameterised as the spherical angles ($\theta$, $\phi$) of the $H$ and $D$ vectors from the Rusinkiewicz parameterisation \cite{rusinkiewicz1998new}. Each colour channel has a resolution of $90 \times 90 \times 180$, leading to 1,458,000 reflectance measurements. 
 
 
 
@@ -80,7 +80,7 @@ Considering the hypernetwork architecture, we understand that the gap between re
 
 I first compare the results with the ground truth renderings for varying sample sizes. Figure \ref{fig:imp_comp_upt} shows that the hypernetwork can still reconstruct test materials even with $N = 40$ samples. However, as I reduce the sample number to 10, the reconstruction quality highly decreases. 
 
-During inference time, hypernetwork fits the samples to a \gls{BRDF}. Even with a few samples, it can still accurately reconstruct test materials. Its success comes from the fact that it learns a prior for material appearance through training with a dataset of multiple materials. Therefore, I validate this generalizable approach by comparing the hypernetwork with an analytic model, GGX  \cite{walter2007microfacet}, NBRDF \cite{sztrajman2021neural} and PCA with Log Relative Mapping (IPCA) \cite{nielsen2015optimal}.
+During inference time, hypernetwork fits the samples to a \gls{BRDF}. Even with a few samples, it can still accurately reconstruct test materials. Its success comes from the fact that it learns a prior for material appearance through training with a dataset of multiple materials. Therefore, I validate this generalisable approach by comparing the hypernetwork with an analytic model, GGX  \cite{walter2007microfacet}, NBRDF \cite{sztrajman2021neural} and PCA with Log Relative Mapping (IPCA) \cite{nielsen2015optimal}.
 
 Sparse GGX results are obtained by fitting to the sparse number of measured \gls{BRDF} samples using a non-linear optimisation (L-BFGS-B method) with Log $\mathcal{L}_{1}$ loss (same loss used in NBRDF). For the results with all samples, I used the dj\_brdf mitsuba plug-in \cite{dupuy2015photorealistic}. NBRDF \cite{sztrajman2021neural} is designed to implicitly represent an individual \gls{BRDF}. It can reconstruct materials with very high accuracy (\gls{SSIM} $\approx$ 0.995) when the sample size is high. It first trains the network on a material and then estimates the \gls{BRDF} values of the same material. For a fair comparison, I first fit an NBRDF model to a material \gls{BRDF} with the query sample size, then estimate the function with the same sample size. 
 
@@ -97,7 +97,7 @@ I observe that the diffuse colours of some reconstructed materials by NBRDF can 
 
 \subsubsection{Quantitative evaluation}
 
-I compare the proposed method quantitatively with the aforementioned techniques in multiple image-based error metrics through rendering results. The metrics include \gls{PSNR}, Delta E (CIE 2000), \gls{SSIM}, \gls{MAE}, root mean square error (RMSE), and relative absolute error (RAE). I take the average over the test dataset for each metric. I plot the metric results across five different sample sizes (40, 160, 400, 2000, 4000). Since I optimize IPCA on the test dataset for the $N = 40$ case, it offers more competitive results. Nevertheless, HyperBRDF can reconstruct the \gls{BRDF}s of unseen materials more precisely. Figure \ref{fig:imp_plots} shows that across all sample sizes, the hypernetwork attains superior performance in terms of \gls{PSNR}, Delta E (CIE 2000) and \gls{SSIM}. 
+I compare the proposed method quantitatively with the aforementioned techniques in multiple image-based error metrics through rendering results. The metrics include \gls{PSNR}, Delta E (CIE 2000), \gls{SSIM}, \gls{MAE}, root mean square error (RMSE), and relative absolute error (RAE). I take the average over the test dataset for each metric. I plot the metric results across five different sample sizes (40, 160, 400, 2000, 4000). Since I optimise IPCA on the test dataset for the $N = 40$ case, it offers more competitive results. Nevertheless, HyperBRDF can reconstruct the \gls{BRDF}s of unseen materials more precisely. Figure \ref{fig:imp_plots} shows that across all sample sizes, the hypernetwork attains superior performance in terms of \gls{PSNR}, Delta E (CIE 2000) and \gls{SSIM}. 
 
 Additionally, Table \ref{table: ours_diff_samples} shows that expanding the training set, even with materials captured from a different point-based setup, helps improve the performance of the hypernetwork. Also, note that compared to MERL materials, the colours of RGL materials are more saturated, which could explain a slight increase in Delta E.
 
@@ -269,7 +269,7 @@ I analyzed the optimal number of principal components by initially choosing the 
   \centering
 
   {\includegraphics[width=0.6\linewidth]{Chapters/hyperbrdf-figs/ipca_opt_q_40_cropped.pdf}}
-   \caption{IPCA optimization for the number of principal components.}
+   \caption{IPCA optimisation for the number of principal components.}
    \label{fig:ipca_opt}
 \end{figure}
 
@@ -308,4 +308,4 @@ Furthermore, I rendered various scenes \cite{resources16} using HyperBRDF's reco
 
 \paragraph{BRDF editing:} The \gls{BRDF} editing approach is rather non-intuitive with an interpolation approach. Finding a map between the embeddings and certain attributes of the materials, such as diffuse/specular colours or haziness, can lead to more interactive \gls{BRDF} editing. I plan to map the latent space to material parameter space so that users can easily edit materials through more interpretable parameters.
 
-\paragraph{SVBRDF representations:} In this work, I focused on the task of generalizable neural representations for spatially uniform \gls{BRDF}s. As the future work, I plan to extend HyperBRDF to SVBRDF representations.
+\paragraph{SVBRDF representations:} In this work, I focused on the task of generalisable neural representations for spatially uniform \gls{BRDF}s. As the future work, I plan to extend HyperBRDF to SVBRDF representations.

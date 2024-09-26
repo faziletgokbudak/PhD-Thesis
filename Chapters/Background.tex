@@ -340,12 +340,12 @@ Note that earlier, I defined the \gls{BRDF} as a function of only two parameters
 
 To conclude the rendering section, let's define the rendering equation used to reproduce the outgoing light in ray tracing algorithms for the realistic simulation of light-material interactions.:
 \begin{equation}
-L_o(\mathbf{x}, \omega_o) = L_e(\mathbf{x}, \omega_o)  +  \int_S^2 L_i(\mathbf{x}, \omega_i) \, f_{\mathbf{x}}(\omega_o,  \omega_i) \, \abs{w_i . N} d\omega_i
+L_o(\mathbf{x}, \omega_o) = L_e(\mathbf{x}, \omega_o)  +  \int_{S^2} L_i(\mathbf{x}, \omega_i) \, f_{\mathbf{x}}(\omega_o,  \omega_i) \, \abs{w_i . N} d\omega_i
 \label{eqn:rendering-eqn}
 \end{equation}
-Here, $L_o(\mathbf{x}, \omega_o) $ is the outgoing light at point $x$ in the direction of $\omega_o$, $L_e(\mathbf{x}, \omega_o)$ is the emitted light that represents the light sources, $L_i(\mathbf{x}, \omega_i) $ is the incoming light at point $x$ in the direction of $\omega_i$, $f_{\mathbf{x}}(\omega_o,  \omega_i)$ is the \gls{BRDF}, and $\abs{w_i . N} = \cos(\theta_i)$ is the Lambert's cosine term.
+Here, $L_o(\mathbf{x}, \omega_o) $ is the outgoing light at point $\mathbf{x}$ in the direction of $\omega_o$, $L_e(\mathbf{x}, \omega_o)$ is the emitted light that represents the light sources, $L_i(\mathbf{x}, \omega_i) $ is the incoming light at point $\mathbf{x}$ in the direction of $\omega_i$, $f_{\mathbf{x}}(\omega_o,  \omega_i)$ is the \gls{BRDF}, and $\abs{w_i . N} = \cos(\theta_i)$ is the Lambert's cosine term.
 
-The rendering equation computes the outgoing light at point $x$ for a given incident light direction with the known \gls{BRDF}. Here, we can define the \gls{BRDF} term in multiple ways, such as with mathematical models discussed earlier, with a neural network outputting the \gls{BRDF} values when fed with the directions or with physical measurements captured with special instruments. 
+The rendering equation computes the outgoing light at point $\mathbf{x}$ for a given incident light direction with the known \gls{BRDF}. Here, we can define the \gls{BRDF} term in multiple ways, such as with mathematical models discussed earlier, with a neural network outputting the \gls{BRDF} values when fed with the directions or with physical measurements captured with special instruments. 
 
 \section{Machine learning}
 This section gives an overview of the machine learning techniques I have utilised for the appearance manipulation techniques proposed in the following chapters. Machine learning (\gls{ML}) techniques have become the state-of-the-art approach in most computer vision and graphics tasks due to their promising ability to learn. The advances in the field with the introduction of deep learning that offers inherent nonlinearity have made these models ideal for tackling ill-posed image editing tasks that most often have $many$ solutions.
@@ -489,7 +489,7 @@ Recent advancements in computer vision and graphics research have transitioned f
 
 Fourier feature mapping function $\gamma$ maps input points $\mathbf{v}$ to a higher dimensional space with a set of sinusoid:
 \begin{equation}
-\gamma(v) = [\alpha_1 \cos(2 \, \pi \, \mathbf{b}^T_1 \, \mathbf{v}), \alpha_1 \sin(2 \, \pi \, \mathbf{b}^T_1 \, \mathbf{v}), ..., \alpha_1 \cos(n \, \pi \, \mathbf{b}^T_n \, \mathbf{v}), \alpha_1 \sin(n \, \pi \, \mathbf{b}^T_n \, \mathbf{v})]
+\gamma(\mathbf{v}) = [\alpha_1 \cos(2 \, \pi \, \mathbf{b}^\mathrm{T}_1 \, \mathbf{v}), \alpha_1 \sin(2 \, \pi \, \mathbf{b}^\mathrm{T}_1 \, \mathbf{v}), ..., \alpha_m \cos(2 \, \pi \, \mathbf{b}^\mathrm{T}_m \, \mathbf{v}), \alpha_m \sin(2 \, \pi \, \mathbf{b}^\mathrm{T}_m \, \mathbf{v})]^\mathrm{T}
 \label{eq:ffn}
 \end{equation}
 

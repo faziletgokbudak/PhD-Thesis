@@ -117,9 +117,9 @@
 \contentsline {section}{\numberline {5.6}Summary}{107}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Conclusion and Future Work}{109}{chapter.6}%
 \contentsline {chapter}{Bibliography}{111}{section*.99}%
-\contentsline {chapter}{\numberline {A}One-shot Detail Retouching}{125}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{131}{appendix.B}%
-\contentsline {chapter}{\numberline {C}HyperBRDF}{133}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Full reconstruction}{133}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Sparse reconstruction}{134}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Compression}{134}{section.C.3}%
+\contentsline {chapter}{\numberline {A}One-shot Detail Retouching}{124}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{129}{appendix.B}%
+\contentsline {chapter}{\numberline {C}HyperBRDF}{131}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Full reconstruction}{131}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Sparse reconstruction}{132}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Compression}{132}{section.C.3}%
