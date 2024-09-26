@@ -1,6 +1,6 @@
 \chapter{One-shot Detail Retouching}
 \label{one-shot-add}
-Table \ref{tablecomparison} compares the proposed detail retouching technique with a U-Net model\cite{ronneberger2015u}, ASAPNet generator \cite{shaham2021spatially}, and Deep edge-aware filters \cite{xu2015deep} over 182 images (100 face images, 22 material images, 30 room images, and 30 landscape images) across four different image processing filters (Gaussian, unsharp masking, bilateral filtering and \gls{LLF}). Below, additional qualitative comparison results from the calculation of Table \ref{tablecomparison} can be found. Note that bilater
+Table \ref{tablecomparison} compares the proposed detail retouching technique with a U-Net model \cite{ronneberger2015u}, ASAPNet generator \cite{shaham2021spatially}, and Deep edge-aware filters \cite{xu2015deep} over 182 images, comprising 100 face images, 22 material images, 30 room images, and 30 landscape images. These are tested across four different image processing filters: Gaussian, unsharp masking, bilateral filtering, and \gls{LLF}. Below, additional qualitative comparison results obtained from Table \ref{tablecomparison} calculations are presented. Note that the bilateral filter and \gls{LLF} are edge-aware nonlinear filters. Additionally, \gls{LLF} can perform both detail enhancement ($\alpha=0.5, \sigma=0.1$) and edge-preserving smoothing ($\alpha=2, \sigma=0.2$), depending on the parameters $\alpha$ and $\sigma$.
 
 
 \begin{figure}[ht]
