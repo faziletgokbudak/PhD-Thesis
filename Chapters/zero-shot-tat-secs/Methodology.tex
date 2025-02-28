@@ -1,5 +1,5 @@
 \section{Methodology}
-I first fine-tune two pre-trained models,  a stable diffusion model with the v1.5 checkpoint weights \cite{rombach2022high} and ControlNet \cite{zhang2023adding} on the Transient Attribute Dataset \cite{laffont2014transient}. 
+I first finetune two pre-trained models,  a stable diffusion model with the v1.5 checkpoint weights \cite{rombach2022high} and ControlNet \cite{zhang2023adding} on the Transient Attribute Dataset \cite{laffont2014transient}. 
 
 \subsection{Transient attribute dataset} 
 
@@ -15,7 +15,13 @@ Each image is later annotated with the corresponding attributes by workers on Am
 
 \subsection{Transient attribute transfer}
 
-\paragraph{Fine-tuning.} Following the same convention for the attributes list, I select the annotations with scores > 0.8 to generate the associated text prompts for the images. In cases where images have multiple annotations with high scores, I merge them with a comma separator. For example, if an image has high scores for both the "sunny" and "daylight" annotations, then the text prompt is "daylight, sunny". I fine-tune the models with 8,571 images conditioned on the text prompts (attribute labels). For the fine-tuning of the models, I reform the dataset following the instructions provided in the models' official GitHub repository. I only fine-tune the U-Net parameters, freezing the parameters of all other components (encoders and decoders).
+\paragraph{Finetuning.} Following the same convention for the attributes list, I select the annotations with scores > 0.8 to generate the associated text prompts for the images. In cases where images have multiple annotations with high scores, I merge them with a comma separator. For example, if an image has high scores for both the "sunny" and "daylight" annotations, then the text prompt is "daylight, sunny". I finetune the models with 8,571 images conditioned on the text prompts (attribute labels). For the finetuning of the models, I reform the dataset following the instructions provided in the models' official GitHub repository. I only finetune the U-Net parameters, freezing the parameters of all other components (encoders and decoders).
+
+\begin{figure}[ht]
+  \includegraphics[width=\textwidth]{Chapters/zero-shot-tat-figs/TAT-overview.pdf}
+  \caption{The fine-tuning of both Stable Diffusion v1.5 and ControlNet includes an input image (source) along with a text prompt extracted from the annotations with the objective of learning the target attribute. Note that the figure only consists of a representative of the diffusion models. The network architecture of ControlNet remains the same as described in the main paper \cite{zhang2023adding}.}
+  \label{fig:ddim-inversion}
+\end{figure}
 
 
 %\TODO{GPU info and how long you trained}

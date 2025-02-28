@@ -354,40 +354,44 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Transient attribute dataset}{80}{subsection.4.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Attribute labels.}{80}{section*.67}\protected@file@percent }
 \citation{laffont2014transient}
+\citation{zhang2023adding}
+\citation{zhang2023adding}
 \citation{dhariwal2021diffusion,song2020denoising}
-\citation{song2020denoising}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Transient attribute transfer}{81}{subsection.4.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Fine-tuning.}{81}{section*.68}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{DDIM inversion.}{81}{section*.69}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point.}}{82}{figure.caption.70}\protected@file@percent }
-\newlabel{fig:ddim-inversion}{{4.2}{82}{In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point}{figure.caption.70}{}}
-\@writefile{toc}{\contentsline {paragraph}{DDIM sampling.}{82}{section*.71}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Finetuning.}{81}{section*.68}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The fine-tuning of both Stable Diffusion v1.5 and ControlNet includes an input image (source) along with a text prompt extracted from the annotations with the objective of learning the target attribute. Note that the figure only consists of a representative of the diffusion models. The network architecture of ControlNet remains the same as described in the main paper \cite  {zhang2023adding}.}}{81}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:ddim-inversion}{{4.2}{81}{The fine-tuning of both Stable Diffusion v1.5 and ControlNet includes an input image (source) along with a text prompt extracted from the annotations with the objective of learning the target attribute. Note that the figure only consists of a representative of the diffusion models. The network architecture of ControlNet remains the same as described in the main paper \cite {zhang2023adding}}{figure.caption.69}{}}
+\@writefile{toc}{\contentsline {paragraph}{DDIM inversion.}{81}{section*.70}\protected@file@percent }
+\citation{song2020denoising}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point.}}{82}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:ddim-inversion}{{4.3}{82}{In the forward process of a diffusion model, an input image gradually turns into a random noise by adding small amounts of Gaussian noise at each time step. Here, the total number of time steps is 100. In DDIM inversion, the sampling process replaces the random noise with an intermediate time step, such as $t_s = 49$, for its starting point}{figure.caption.71}{}}
+\@writefile{toc}{\contentsline {paragraph}{DDIM sampling.}{82}{section*.72}\protected@file@percent }
 \newlabel{eq:ddim-sample}{{4.2}{82}{DDIM sampling}{equation.4.3.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.4}Experiments}{83}{section.4.4}\protected@file@percent }
 \newlabel{zero-shot-exp}{{4.4}{83}{Experiments}{section.4.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Fine-tuning}{83}{subsection.4.4.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces ControlNet samples from the training examples guided with the associated text prompts. Rows demonstrate input images, target images and the model outputs, in order. The subtitles indicate the attributes guiding the model.}}{83}{figure.caption.72}\protected@file@percent }
-\newlabel{fig:controlnet-train}{{4.3}{83}{ControlNet samples from the training examples guided with the associated text prompts. Rows demonstrate input images, target images and the model outputs, in order. The subtitles indicate the attributes guiding the model}{figure.caption.72}{}}
-\citation{laffont2014transient}
-\citation{laffont2014transient}
-\citation{brooks2023instructpix2pix}
-\citation{laffont2014transient}
-\citation{laffont2014transient}
-\citation{brooks2023instructpix2pix}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Zero-shot latent diffusion}{84}{subsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Finetuning}{83}{subsection.4.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Zero-shot latent diffusion}{83}{subsection.4.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces ControlNet samples from the training examples guided with the associated text prompts. Rows demonstrate input images, target images and the model outputs, in order. The subtitles indicate the attributes guiding the model.}}{84}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:controlnet-train}{{4.4}{84}{ControlNet samples from the training examples guided with the associated text prompts. Rows demonstrate input images, target images and the model outputs, in order. The subtitles indicate the attributes guiding the model}{figure.caption.73}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Grid search}{84}{subsection.4.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{84}{subsection.4.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Baselines.}{84}{section*.74}\protected@file@percent }
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{brooks2023instructpix2pix}
+\citation{laffont2014transient}
+\citation{laffont2014transient}
+\citation{brooks2023instructpix2pix}
 \citation{laffont2014transient}
 \citation{laffont2014transient}
 \citation{laffont2014transient}
 \citation{laffont2014transient}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset".}}{85}{figure.caption.73}\protected@file@percent }
-\newlabel{fig:zero-shot-grid-search}{{4.4}{85}{Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset"}{figure.caption.73}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset".}}{85}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:zero-shot-grid-search}{{4.5}{85}{Grid search on DDIM inversion for the start step and the guidance scale. Here, the text prompt is "sunrise sunset"}{figure.caption.74}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Qualitative comparison}{85}{subsection.4.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Baselines.}{85}{section*.75}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4.5}Limitations and future work}{86}{section.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4.6}Summary}{86}{section.4.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite  {laffont2014transient}. Additional results can be found in Appendix \ref {TAT:add_res}.}}{87}{figure.caption.75}\protected@file@percent }
-\newlabel{fig:zero-shot-comparison}{{4.5}{87}{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite {laffont2014transient}. Additional results can be found in Appendix \ref {TAT:add_res}}{figure.caption.75}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite  {laffont2014transient}. Additional results can be found in Appendix \ref {TAT:add_res}.}}{87}{figure.caption.76}\protected@file@percent }
+\newlabel{fig:zero-shot-comparison}{{4.6}{87}{Qualitative comparison with the baseline methods on the test images of the Transient Attribute Dataset \cite {laffont2014transient}. Additional results can be found in Appendix \ref {TAT:add_res}}{figure.caption.76}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}HyperBRDF: Neural Generalizable Material Representation}{89}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -398,8 +402,8 @@
 \citation{nielsen2015optimal}
 \citation{sitzmann2020siren,ffn,cnf2023}
 \citation{sztrajman2021neural,cnf2023}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli].}}{90}{figure.caption.76}\protected@file@percent }
-\newlabel{fig:hyper-teaser}{{5.1}{90}{A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli]}{figure.caption.76}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli].}}{90}{figure.caption.77}\protected@file@percent }
+\newlabel{fig:hyper-teaser}{{5.1}{90}{A room scene rendered with materials reconstructed by HyperBRDF, including sparse reconstruction (table top and legs, door, door and picture frames, hinge), compression (two teapots on the left, door handle) and \gls {BRDF} interpolation (right-most teapot). Scene courtesy of [Benedikt Bitterli]}{figure.caption.77}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{90}{section.5.1}\protected@file@percent }
 \newlabel{sec:intro}{{5.1}{90}{Introduction}{section.5.1}{}}
 \citation{rebain2022attention}
@@ -435,7 +439,7 @@
 \citation{nielsen2015optimal}
 \citation{liu2023learning}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Regression-based BRDF estimation}{93}{subsection.5.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Deep learning for BRDF modelling.}{93}{section*.77}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Deep learning for BRDF modelling.}{93}{section*.78}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Efficient BRDF acquisition}{93}{subsection.5.3.3}\protected@file@percent }
 \citation{kang2018efficient,kang2019learning,ma2021free,ma2023opensvbrdf,tunwattanapong2013acquiring}
 \citation{guo2021highlight,hui2017reflectance,deschaintre2018single,deschaintre2019flexible,martin2022materia,zhou2021adversarial,gao2019deep}
@@ -443,7 +447,7 @@
 \citation{erkocc2023hyperdiffusion}
 \citation{wang2022attention,yang2023contranerf}
 \citation{nielsen2015optimal}
-\@writefile{toc}{\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{94}{section*.78}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Spatially-varying BRDFs (SVBRDF):}{94}{section*.79}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Hypernetworks and GNFs}{94}{subsection.5.3.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5.4}Methodology}{94}{section.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Pre-processing}{94}{subsection.5.4.1}\protected@file@percent }
@@ -455,8 +459,8 @@
 \citation{sitzmann2020metasdf}
 \citation{rusinkiewicz1998new}
 \citation{zaheer2017deepsets}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values.}}{95}{figure.caption.79}\protected@file@percent }
-\newlabel{fig:mainfig}{{5.2}{95}{During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values}{figure.caption.79}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values.}}{95}{figure.caption.80}\protected@file@percent }
+\newlabel{fig:mainfig}{{5.2}{95}{During training, the set encoder and hypernetwork decoder are trained on a set of materials to predict the weights of hyponet (MLP) so that it can reconstruct the training set. The BRDF data is provided as a set of BRDF coordinates, $H_n,D_n$, and the corresponding reflectance values $f_r(H_n,D_n)$. To reconstruct a new material from a small set of BRDF reflectance samples, the trained set encoder and hypernetwork decoder are used to predict the weights of hyponet for the unknown material. Once those weights are known, we can query BRDF at any coordinates and for any new materials, conditioned on the embedding of their sampled BRDF values}{figure.caption.80}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Hypernetwork}{95}{subsection.5.4.2}\protected@file@percent }
 \newlabel{sec:hypernet}{{5.4.2}{95}{Hypernetwork}{subsection.5.4.2}{}}
 \citation{sztrajman2021neural}
@@ -472,54 +476,54 @@
 \citation{Matusik2003jul}
 \citation{rusinkiewicz1998new}
 \newlabel{eq:Lrec}{{5.3}{97}{Training}{equation.5.4.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{Inference:}{97}{section*.80}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Inference:}{97}{section*.81}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5.5}Experiments}{97}{section.5.5}\protected@file@percent }
 \newlabel{sec:exp}{{5.5}{97}{Experiments}{section.5.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Datasets and baselines}{97}{subsection.5.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Sparse BRDF reconstruction}{97}{subsection.5.5.2}\protected@file@percent }
 \newlabel{sec:brdf_rec}{{5.5.2}{97}{Sparse BRDF reconstruction}{subsection.5.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$.}}{98}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:tsne-vis-imputation}{{5.3}{98}{t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$}{figure.caption.81}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$.}}{98}{figure.caption.82}\protected@file@percent }
+\newlabel{fig:tsne-vis-imputation}{{5.3}{98}{t-SNE clustering of the test embeddings with different sample sizes, including $N=8, 40, 160, 4\,000, 40\,000, 640\,000$}{figure.caption.82}{}}
 \citation{walter2007microfacet}
 \citation{sztrajman2021neural}
 \citation{nielsen2015optimal}
 \citation{dupuy2015photorealistic}
 \citation{sztrajman2021neural}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that the hypernetwork model learns for material appearance through training, it can accurately estimate theBRDFs of unseen materials and preserve the colours better than the baselines.}}{99}{figure.caption.82}\protected@file@percent }
-\newlabel{fig:imp_comp_upt}{{5.4}{99}{Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that the hypernetwork model learns for material appearance through training, it can accurately estimate theBRDFs of unseen materials and preserve the colours better than the baselines}{figure.caption.82}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that the hypernetwork model learns for material appearance through training, it can accurately estimate theBRDFs of unseen materials and preserve the colours better than the baselines.}}{99}{figure.caption.83}\protected@file@percent }
+\newlabel{fig:imp_comp_upt}{{5.4}{99}{Qualitative comparison results for reconstruction with small sample sizes. Thanks to the prior that the hypernetwork model learns for material appearance through training, it can accurately estimate theBRDFs of unseen materials and preserve the colours better than the baselines}{figure.caption.83}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.1}Qualitative comparison}{99}{subsubsection.5.5.2.1}\protected@file@percent }
 \newlabel{sec:qual_comp}{{5.5.2.1}{99}{Qualitative comparison}{subsubsection.5.5.2.1}{}}
 \citation{matusik2003data,ngan2006image}
 \citation{nielsen2015optimal}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Average \gls {PSNR}, Delta E (CIE 2000), \gls {SSIM}, MAE, RMSE, and RAE results across different sample sizes. }}{100}{figure.caption.83}\protected@file@percent }
-\newlabel{fig:imp_plots}{{5.5}{100}{Average \gls {PSNR}, Delta E (CIE 2000), \gls {SSIM}, MAE, RMSE, and RAE results across different sample sizes}{figure.caption.83}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Average \gls {PSNR}, Delta E (CIE 2000), \gls {SSIM}, MAE, RMSE, and RAE results across different sample sizes. }}{100}{figure.caption.84}\protected@file@percent }
+\newlabel{fig:imp_plots}{{5.5}{100}{Average \gls {PSNR}, Delta E (CIE 2000), \gls {SSIM}, MAE, RMSE, and RAE results across different sample sizes}{figure.caption.84}{}}
 \citation{chen2021invertible}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.2}Quantitative evaluation}{101}{subsubsection.5.5.2.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{101}{table.caption.84}\protected@file@percent }
-\newlabel{table: ours_diff_samples}{{5.1}{101}{Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.84}{}}
-\@writefile{toc}{\contentsline {paragraph}{Sparse and full reconstruction results:}{101}{table.caption.86}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{101}{table.caption.85}\protected@file@percent }
+\newlabel{table: ours_diff_samples}{{5.1}{101}{Hypernetwork sparse reconstruction - Average metric results across varying sample sizes ($N$) over the test set. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.85}{}}
+\@writefile{toc}{\contentsline {paragraph}{Sparse and full reconstruction results:}{101}{table.caption.87}\protected@file@percent }
 \citation{chen2021invertible}
 \citation{chen2021invertible}
 \citation{chen2021invertible}
 \citation{zheng2021compact}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials).}}{102}{table.caption.86}\protected@file@percent }
-\newlabel{table: ours_large_samples}{{5.2}{102}{Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials)}{table.caption.86}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials).}}{102}{table.caption.87}\protected@file@percent }
+\newlabel{table: ours_large_samples}{{5.2}{102}{Hypernetwork - Average metric results across varying sample sizes ($N$) over the test set (Sparse and full reconstruction of unseen materials)}{table.caption.87}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.3}Comparison with casual capture setups}{102}{subsubsection.5.5.2.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison with iBRDF \cite  {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{102}{table.caption.87}\protected@file@percent }
-\newlabel{table: oursvsibrdf}{{5.3}{102}{Comparison with iBRDF \cite {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.87}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison with iBRDF \cite  {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{102}{table.caption.88}\protected@file@percent }
+\newlabel{table: oursvsibrdf}{{5.3}{102}{Comparison with iBRDF \cite {chen2021invertible} - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.88}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Compression}{102}{subsection.5.5.3}\protected@file@percent }
 \newlabel{sec:compression}{{5.5.3}{102}{Compression}{subsection.5.5.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{103}{table.caption.88}\protected@file@percent }
-\newlabel{table: oursvsnps}{{5.4}{103}{Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.88}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Reconstruction results for BRDF compression (GT: ground truths).}}{103}{figure.caption.89}\protected@file@percent }
-\newlabel{fig:comp-fig}{{5.6}{103}{Reconstruction results for BRDF compression (GT: ground truths)}{figure.caption.89}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results.}}{103}{table.caption.89}\protected@file@percent }
+\newlabel{table: oursvsnps}{{5.4}{103}{Compression - Average metric results over the renderings of the entire MERL dataset. We highlight \colorbox {blue!25}{best} and \colorbox {orange!25}{second best} results}{table.caption.89}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Reconstruction results for BRDF compression (GT: ground truths).}}{103}{figure.caption.90}\protected@file@percent }
+\newlabel{fig:comp-fig}{{5.6}{103}{Reconstruction results for BRDF compression (GT: ground truths)}{figure.caption.90}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.4}BRDF editing}{103}{subsection.5.5.4}\protected@file@percent }
 \newlabel{sec:brdf-editing}{{5.5.4}{103}{BRDF editing}{subsection.5.5.4}{}}
 \citation{nielsen2015optimal}
 \citation{ngan2005experimental}
 \citation{ngan2005experimental}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces BRDF editing through linear interpolation between the embeddings of two materials.}}{104}{figure.caption.90}\protected@file@percent }
-\newlabel{fig:interpolation}{{5.7}{104}{BRDF editing through linear interpolation between the embeddings of two materials}{figure.caption.90}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces BRDF editing through linear interpolation between the embeddings of two materials.}}{104}{figure.caption.91}\protected@file@percent }
+\newlabel{fig:interpolation}{{5.7}{104}{BRDF editing through linear interpolation between the embeddings of two materials}{figure.caption.91}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.5}Ablation studies}{104}{subsection.5.5.5}\protected@file@percent }
 \newlabel{sec:abl}{{5.5.5}{104}{Ablation studies}{subsection.5.5.5}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.1}Latent dimension}{104}{subsubsection.5.5.5.1}\protected@file@percent }
@@ -527,24 +531,24 @@
 \newlabel{sec:lrm}{{5.5.5.2}{104}{Log relative mapping (LRM)}{subsubsection.5.5.5.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.3}Cosine weighting}{104}{subsubsection.5.5.5.3}\protected@file@percent }
 \citation{resources16}
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric results over the renderings of the test set (20 MERL materials).}}{105}{table.caption.91}\protected@file@percent }
-\newlabel{table: cos_abl}{{5.5}{105}{Average metric results over the renderings of the test set (20 MERL materials)}{table.caption.91}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric results over the renderings of the test set (20 MERL materials).}}{105}{table.caption.92}\protected@file@percent }
+\newlabel{table: cos_abl}{{5.5}{105}{Average metric results over the renderings of the test set (20 MERL materials)}{table.caption.92}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5.4}Principal component analysis (PCA)}{105}{subsubsection.5.5.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Number of Principal Components:}{105}{section*.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces IPCA optimisation for the number of principal components.}}{105}{figure.caption.93}\protected@file@percent }
-\newlabel{fig:ipca_opt}{{5.8}{105}{IPCA optimisation for the number of principal components}{figure.caption.93}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row).}}{106}{table.caption.94}\protected@file@percent }
-\newlabel{table: z_abl}{{5.6}{106}{Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}{table.caption.94}{}}
+\@writefile{toc}{\contentsline {paragraph}{Number of Principal Components:}{105}{section*.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces IPCA optimisation for the number of principal components.}}{105}{figure.caption.94}\protected@file@percent }
+\newlabel{fig:ipca_opt}{{5.8}{105}{IPCA optimisation for the number of principal components}{figure.caption.94}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row).}}{106}{table.caption.95}\protected@file@percent }
+\newlabel{table: z_abl}{{5.6}{106}{Average mean squared errors for varying latent space dimensions (first row) and number of principal components (second row)}{table.caption.95}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.6}Scene renderings}{106}{subsection.5.5.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.7}Limitations and future work}{106}{subsection.5.5.7}\protected@file@percent }
 \newlabel{sec:limits}{{5.5.7}{106}{Limitations and future work}{subsection.5.5.7}{}}
-\@writefile{toc}{\contentsline {paragraph}{Specular components:}{106}{section*.96}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{BRDF editing:}{106}{section*.97}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{SVBRDF representations:}{106}{section*.98}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Specular components:}{106}{section*.97}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{BRDF editing:}{106}{section*.98}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{SVBRDF representations:}{106}{section*.99}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5.6}Summary}{107}{section.5.6}\protected@file@percent }
 \newlabel{sec:conc}{{5.6}{107}{Summary}{section.5.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Scene renderings with materials reconstructed by HyperBRDF.}}{108}{figure.caption.95}\protected@file@percent }
-\newlabel{fig:scene-render}{{5.9}{108}{Scene renderings with materials reconstructed by HyperBRDF}{figure.caption.95}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Scene renderings with materials reconstructed by HyperBRDF.}}{108}{figure.caption.96}\protected@file@percent }
+\newlabel{fig:scene-render}{{5.9}{108}{Scene renderings with materials reconstructed by HyperBRDF}{figure.caption.96}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{109}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -561,7 +565,7 @@
 \bibcite{bilgili2011general}{{8}{2011}{{Bilgili et~al.}}{{Bilgili, {\"O}zt{\"u}rk, and Kurt}}}
 \bibcite{blinn77}{{9}{1977}{{Blinn}}{{}}}
 \bibcite{boss2021nerd}{{10}{2021}{{Boss et~al.}}{{Boss, Braun, Jampani, Barron, Liu, and Lensch}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{111}{section*.99}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{111}{section*.100}\protected@file@percent }
 \bibcite{Boyadzhiev15Band}{{11}{2015}{{Boyadzhiev et~al.}}{{Boyadzhiev, Bala, Paris, and Adelson}}}
 \bibcite{triangulation}{{12}{2019}{{Broeren et~al.}}{{Broeren, van~de Sande, van~der Wijk, and Herder}}}
 \bibcite{Bychkovsky11Learning}{{13}{2011}{{Bychkovsky et~al.}}{{Bychkovsky, Paris, Chan, and Durand}}}
@@ -684,23 +688,23 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{one-shot-add}{{A}{124}{One-shot Detail Retouching}{appendix.A}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Qualitative comparison - Additional results.}}{125}{figure.caption.101}\protected@file@percent }
-\newlabel{fig:appendix-DR-face}{{A.1}{125}{Qualitative comparison - Additional results}{figure.caption.101}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Qualitative comparison - Additional results.}}{126}{figure.caption.102}\protected@file@percent }
-\newlabel{fig:appendix-DR-room}{{A.2}{126}{Qualitative comparison - Additional results}{figure.caption.102}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Qualitative comparison - Additional results.}}{127}{figure.caption.103}\protected@file@percent }
-\newlabel{fig:appendix-DR-material}{{A.3}{127}{Qualitative comparison - Additional results}{figure.caption.103}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Qualitative comparison - Additional results.}}{128}{figure.caption.104}\protected@file@percent }
-\newlabel{fig:appendix-DR-landscape}{{A.4}{128}{Qualitative comparison - Additional results}{figure.caption.104}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Qualitative comparison - Additional results.}}{125}{figure.caption.102}\protected@file@percent }
+\newlabel{fig:appendix-DR-face}{{A.1}{125}{Qualitative comparison - Additional results}{figure.caption.102}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Qualitative comparison - Additional results.}}{126}{figure.caption.103}\protected@file@percent }
+\newlabel{fig:appendix-DR-room}{{A.2}{126}{Qualitative comparison - Additional results}{figure.caption.103}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Qualitative comparison - Additional results.}}{127}{figure.caption.104}\protected@file@percent }
+\newlabel{fig:appendix-DR-material}{{A.3}{127}{Qualitative comparison - Additional results}{figure.caption.104}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Qualitative comparison - Additional results.}}{128}{figure.caption.105}\protected@file@percent }
+\newlabel{fig:appendix-DR-landscape}{{A.4}{128}{Qualitative comparison - Additional results}{figure.caption.105}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {B}Transient Attribute Transfer}{129}{appendix.B}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{TAT:add_res}{{B}{129}{Transient Attribute Transfer}{appendix.B}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Qualitative comparison - Additional results from the test dataset.}}{129}{figure.caption.105}\protected@file@percent }
-\newlabel{fig:appendix-tat1}{{B.1}{129}{Qualitative comparison - Additional results from the test dataset}{figure.caption.105}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Qualitative comparison - Additional results from the test dataset..}}{130}{figure.caption.106}\protected@file@percent }
-\newlabel{fig:appendix-tat2}{{B.2}{130}{Qualitative comparison - Additional results from the test dataset.}{figure.caption.106}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Qualitative comparison - Additional results from the test dataset.}}{129}{figure.caption.106}\protected@file@percent }
+\newlabel{fig:appendix-tat1}{{B.1}{129}{Qualitative comparison - Additional results from the test dataset}{figure.caption.106}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Qualitative comparison - Additional results from the test dataset..}}{130}{figure.caption.107}\protected@file@percent }
+\newlabel{fig:appendix-tat2}{{B.2}{130}{Qualitative comparison - Additional results from the test dataset.}{figure.caption.107}{}}
 \citation{sztrajman2021neural}
 \citation{nielsen2015optimal}
 \citation{sztrajman2021neural}
@@ -711,28 +715,28 @@
 \newlabel{hyperbrdf:add_res}{{C}{131}{HyperBRDF}{appendix.C}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {C.1}Full reconstruction}{131}{section.C.1}\protected@file@percent }
 \newlabel{sec:full_rec}{{C.1}{131}{Full reconstruction}{section.C.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Quantitative comparison results for full reconstruction over the renderings of the test set.}}{131}{table.caption.107}\protected@file@percent }
-\newlabel{table: comparison results}{{C.1}{131}{Quantitative comparison results for full reconstruction over the renderings of the test set}{table.caption.107}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Quantitative comparison results for full reconstruction over the renderings of the test set.}}{131}{table.caption.108}\protected@file@percent }
+\newlabel{table: comparison results}{{C.1}{131}{Quantitative comparison results for full reconstruction over the renderings of the test set}{table.caption.108}{}}
 \citation{nielsen2015optimal}
 \citation{zheng2021compact}
 \@writefile{toc}{\contentsline {section}{\numberline {C.2}Sparse reconstruction}{132}{section.C.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {C.3}Compression}{132}{section.C.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Qualitative comparison for full reconstruction capacity on the test dataset.}}{133}{figure.caption.108}\protected@file@percent }
-\newlabel{fig:qual_comp}{{C.1}{133}{Qualitative comparison for full reconstruction capacity on the test dataset}{figure.caption.108}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Sparse reconstruction results, $N = 40$.}}{134}{figure.caption.109}\protected@file@percent }
-\newlabel{fig:40}{{C.2}{134}{Sparse reconstruction results, $N = 40$}{figure.caption.109}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Sparse reconstruction results, $N = 160$.}}{135}{figure.caption.110}\protected@file@percent }
-\newlabel{fig:160}{{C.3}{135}{Sparse reconstruction results, $N = 160$}{figure.caption.110}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Sparse reconstruction results, $N = 400$.}}{136}{figure.caption.111}\protected@file@percent }
-\newlabel{fig:400}{{C.4}{136}{Sparse reconstruction results, $N = 400$}{figure.caption.111}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Sparse reconstruction results, $N = 2000$.}}{137}{figure.caption.112}\protected@file@percent }
-\newlabel{fig:2000}{{C.5}{137}{Sparse reconstruction results, $N = 2000$}{figure.caption.112}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.6}{\ignorespaces Sparse reconstruction results, $N = 4000$.}}{138}{figure.caption.113}\protected@file@percent }
-\newlabel{fig:4000}{{C.6}{138}{Sparse reconstruction results, $N = 4000$}{figure.caption.113}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.7}{\ignorespaces Compression - Additional results}}{139}{figure.caption.114}\protected@file@percent }
-\newlabel{fig:appendix-compression1}{{C.7}{139}{Compression - Additional results}{figure.caption.114}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.8}{\ignorespaces Compression - Additional results}}{140}{figure.caption.115}\protected@file@percent }
-\newlabel{fig:appendix-compression2}{{C.8}{140}{Compression - Additional results}{figure.caption.115}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.9}{\ignorespaces Compression - Additional results}}{141}{figure.caption.116}\protected@file@percent }
-\newlabel{fig:appendix-compression3}{{C.9}{141}{Compression - Additional results}{figure.caption.116}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Qualitative comparison for full reconstruction capacity on the test dataset.}}{133}{figure.caption.109}\protected@file@percent }
+\newlabel{fig:qual_comp}{{C.1}{133}{Qualitative comparison for full reconstruction capacity on the test dataset}{figure.caption.109}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Sparse reconstruction results, $N = 40$.}}{134}{figure.caption.110}\protected@file@percent }
+\newlabel{fig:40}{{C.2}{134}{Sparse reconstruction results, $N = 40$}{figure.caption.110}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Sparse reconstruction results, $N = 160$.}}{135}{figure.caption.111}\protected@file@percent }
+\newlabel{fig:160}{{C.3}{135}{Sparse reconstruction results, $N = 160$}{figure.caption.111}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Sparse reconstruction results, $N = 400$.}}{136}{figure.caption.112}\protected@file@percent }
+\newlabel{fig:400}{{C.4}{136}{Sparse reconstruction results, $N = 400$}{figure.caption.112}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Sparse reconstruction results, $N = 2000$.}}{137}{figure.caption.113}\protected@file@percent }
+\newlabel{fig:2000}{{C.5}{137}{Sparse reconstruction results, $N = 2000$}{figure.caption.113}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.6}{\ignorespaces Sparse reconstruction results, $N = 4000$.}}{138}{figure.caption.114}\protected@file@percent }
+\newlabel{fig:4000}{{C.6}{138}{Sparse reconstruction results, $N = 4000$}{figure.caption.114}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.7}{\ignorespaces Compression - Additional results}}{139}{figure.caption.115}\protected@file@percent }
+\newlabel{fig:appendix-compression1}{{C.7}{139}{Compression - Additional results}{figure.caption.115}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.8}{\ignorespaces Compression - Additional results}}{140}{figure.caption.116}\protected@file@percent }
+\newlabel{fig:appendix-compression2}{{C.8}{140}{Compression - Additional results}{figure.caption.116}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.9}{\ignorespaces Compression - Additional results}}{141}{figure.caption.117}\protected@file@percent }
+\newlabel{fig:appendix-compression3}{{C.9}{141}{Compression - Additional results}{figure.caption.117}{}}
 \gdef \@abspage@last{141}
